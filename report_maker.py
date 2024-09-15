@@ -1,4 +1,3 @@
-
 import glob
 from abaqus import *
 from abaqusConstants import *
