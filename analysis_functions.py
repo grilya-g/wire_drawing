@@ -371,7 +371,6 @@ def max_er(pred, ground_true):
 
     return maxerror
 
-
 # %%
 # @title Функция для подсчета максимальной средней ошибки для графиков
 def max_graph_er(pred, ground_true):
@@ -382,7 +381,6 @@ def max_graph_er(pred, ground_true):
         maxerror = cmape if cmape > maxerror else maxerror
 
     return maxerror
-
 
 # %%
 # @title Функция для подсчета медианной средней ошибки для графиков
