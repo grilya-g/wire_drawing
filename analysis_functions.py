@@ -371,6 +371,7 @@ def max_er(pred, ground_true):
 
     return maxerror
 
+
 # %%
 # @title Функция для подсчета максимальной средней ошибки для графиков
 def max_graph_er(pred, ground_true):
@@ -381,6 +382,7 @@ def max_graph_er(pred, ground_true):
         maxerror = cmape if cmape > maxerror else maxerror
 
     return maxerror
+
 
 # %%
 # @title Функция для подсчета медианной средней ошибки для графиков
@@ -412,7 +414,8 @@ def do_rep_list(path_import):
                 if isfile(join(path_import, fil)) and fil.endswith('.txt')]
     return rep_list
 
-#%%
+
+# %%
 def do_preprocessing(list_names, path_import):
     vel20ListFiles = []
     for fi in list_names:
@@ -425,7 +428,8 @@ def do_preprocessing(list_names, path_import):
     print('')
     return all20Arrays
 
-#%%
+
+# %%
 def data_preparer(train_list, train_arrays):
     """
     Преобразует массивы из preprocessing_np
@@ -438,7 +442,6 @@ def data_preparer(train_list, train_arrays):
     X_strain_components = []
     X_components = [X_stress_components, X_strain_components]
 
-
     y_stress_components = []
     y_strain_components = []
     y_components = [y_stress_components, y_strain_components]
@@ -450,11 +453,11 @@ def data_preparer(train_list, train_arrays):
 
             for i, job_name in enumerate(train_list):
                 red, cal, ha, vel, fric, value = get_param(job_name,
-                                                            train_list,
-                                                            train_arrays,
-                                                            char_1 = 2 + char,
-                                                            char_2 = comp
-                                                            )
+                                                           train_list,
+                                                           train_arrays,
+                                                           char_1=2 + char,
+                                                           char_2=comp
+                                                           )
 
                 X[i] = np.array([red, cal, ha, fric, vel])
                 y[i] = value
@@ -467,17 +470,17 @@ def data_preparer(train_list, train_arrays):
     y_stress_components = np.array(y_stress_components)
     y_strain_components = np.array(y_strain_components)
 
-    return X_stress_components, X_strain_components,\
-           y_stress_components, y_strain_components
+    return X_stress_components, X_strain_components, \
+        y_stress_components, y_strain_components
 
 
-#%%
+# %%
 def plot_result_stress_avr_v(list_files, labels, name, **kwargs):
     """Строит графики для минимальных, максимальных и средних деформаций для переданных списков в вертикальной ориентации"""
     plt.figure(figsize=(18, 10))
     global colours_
     global markers_
-    #f = plt.figure(figsize=(9,6))
+    # f = plt.figure(figsize=(9,6))
 
     # preped_arrays = [preprocessing_res_np(item) for item in list_files]
     preped_arrays = list_files
@@ -500,15 +503,15 @@ def plot_result_stress_avr_v(list_files, labels, name, **kwargs):
             #             plt.plot(x_1/R1, max_strain, '-.', markersize=9, color = colours_[i])
 
             if (j == 1):
-                plt.ylabel('$ \sigma_{r}$, -', fontsize=20,)
+                plt.ylabel('$ \sigma_{r}$, -', fontsize=20, )
 
             elif (j == 2):
-                plt.ylabel('$ \sigma_{z}$, -', fontsize=20,)
+                plt.ylabel('$ \sigma_{z}$, -', fontsize=20, )
 
             elif (j == 3):
-                plt.ylabel('$ \sigma_{\phi}$, -', fontsize=20,)
+                plt.ylabel('$ \sigma_{\phi}$, -', fontsize=20, )
 
-            #elif(i==4):
+            # elif(i==4):
             #   plt.ylabel('$\sigma_{rz}$, MPa ', fontsize=22)
 
             plt.xlim(0, 1.01)
@@ -516,8 +519,8 @@ def plot_result_stress_avr_v(list_files, labels, name, **kwargs):
             plt.tick_params(axis='y', length=5, labelsize=10, zorder=15)
             plt.xticks(np.arange(0, 1.02, 0.2))
 
-            plt.xlabel(' r, -', fontsize=20,)
-            #plt.grid(True)
+            plt.xlabel(' r, -', fontsize=20, )
+            # plt.grid(True)
 
     if kwargs.get('to_plot_legend', False): plt.legend(loc='best')
     to_save = kwargs.get('to_save', False)
@@ -531,83 +534,84 @@ def plot_result_stress_avr_v(list_files, labels, name, **kwargs):
 
 
 def flatten_r(X_train_fair, y_train_fair):
-  # ic(y_train_fair.shape)
-  X_1 = np.zeros((len(X_train_fair) * 20, X_train_fair.shape[1] + 1))
-  y_1 = np.zeros((len(X_train_fair) * 20,))
-  for i in range(len(X_train_fair)):
-    for j in range(20):
-      X_1[i * 20 + j] = np.hstack((X_train_fair[i], j / 19))
-      y_1[i * 20 + j] = y_train_fair[i][j]
-  return X_1, y_1
-  # %%
+    # ic(y_train_fair.shape)
+    X_1 = np.zeros((len(X_train_fair) * 20, X_train_fair.shape[1] + 1))
+    y_1 = np.zeros((len(X_train_fair) * 20,))
+    for i in range(len(X_train_fair)):
+        for j in range(20):
+            X_1[i * 20 + j] = np.hstack((X_train_fair[i], j / 19))
+            y_1[i * 20 + j] = y_train_fair[i][j]
+    return X_1, y_1
+    # %%
 
 
 def split_transform(X, y):
-  splitted_X, splitted_y = [], []
-  for comp in range(3):
-    cur_X, cur_y = X[comp], y[comp]
+    splitted_X, splitted_y = [], []
+    for comp in range(3):
+        cur_X, cur_y = X[comp], y[comp]
+        cur_X_train, cur_X_test, cur_y_train, cur_y_test = \
+            train_test_split(cur_X, cur_y, train_size=.7, random_state=50)
+        cur_X_train, cur_y_train = flatten_r(cur_X_train, cur_y_train)
+        cur_X_val, cur_X_test, cur_y_val, cur_y_test = \
+            train_test_split(cur_X_test, cur_y_test,
+                             train_size=.5, random_state=50)
+        cur_X_test, cur_y_test = flatten_r(cur_X_test, cur_y_test)
+        cur_X_val, cur_y_val = flatten_r(cur_X_val, cur_y_val)
+        splitted_X.append([cur_X_train, cur_X_val, cur_X_test])
+        splitted_y.append([cur_y_train, cur_y_val, cur_y_test])
+    return splitted_X, splitted_y
+    # %%
+
+
+def split_transform_one_comp(X, y):
+    splitted_X, splitted_y = [], []
+    cur_X, cur_y = X, y
     cur_X_train, cur_X_test, cur_y_train, cur_y_test = \
-      train_test_split(cur_X, cur_y, train_size=.7, random_state=50)
+        train_test_split(cur_X, cur_y, train_size=.7, random_state=50)
     cur_X_train, cur_y_train = flatten_r(cur_X_train, cur_y_train)
     cur_X_val, cur_X_test, cur_y_val, cur_y_test = \
-      train_test_split(cur_X_test, cur_y_test,
-                       train_size=.5, random_state=50)
+        train_test_split(cur_X_test, cur_y_test, train_size=.5, random_state=50)
     cur_X_test, cur_y_test = flatten_r(cur_X_test, cur_y_test)
     cur_X_val, cur_y_val = flatten_r(cur_X_val, cur_y_val)
     splitted_X.append([cur_X_train, cur_X_val, cur_X_test])
     splitted_y.append([cur_y_train, cur_y_val, cur_y_test])
-  return splitted_X, splitted_y
-  # %%
-
-
-def split_transform_one_comp(X, y):
-  splitted_X, splitted_y = [], []
-  cur_X, cur_y = X, y
-  cur_X_train, cur_X_test, cur_y_train, cur_y_test = \
-    train_test_split(cur_X, cur_y, train_size=.7, random_state=50)
-  cur_X_train, cur_y_train = flatten_r(cur_X_train, cur_y_train)
-  cur_X_val, cur_X_test, cur_y_val, cur_y_test = \
-    train_test_split(cur_X_test, cur_y_test, train_size=.5, random_state=50)
-  cur_X_test, cur_y_test = flatten_r(cur_X_test, cur_y_test)
-  cur_X_val, cur_y_val = flatten_r(cur_X_val, cur_y_val)
-  splitted_X.append([cur_X_train, cur_X_val, cur_X_test])
-  splitted_y.append([cur_y_train, cur_y_val, cur_y_test])
-  return splitted_X[0], splitted_y[0]
-  # %%
+    return splitted_X[0], splitted_y[0]
+    # %%
 
 
 def split_transform_one_comp_train_test(X, y):
-  cur_X_train, cur_X_test, cur_y_train, cur_y_test = \
-    train_test_split(X, y, train_size=.7, random_state=50)
-  cur_X_train, cur_y_train = flatten_r(cur_X_train, cur_y_train)
-  cur_X_test, cur_y_test = flatten_r(cur_X_test, cur_y_test)
+    cur_X_train, cur_X_test, cur_y_train, cur_y_test = \
+        train_test_split(X, y, train_size=.7, random_state=50)
+    cur_X_train, cur_y_train = flatten_r(cur_X_train, cur_y_train)
+    cur_X_test, cur_y_test = flatten_r(cur_X_test, cur_y_test)
 
-  return cur_X_train, cur_X_test, cur_y_train, cur_y_test
+    return cur_X_train, cur_X_test, cur_y_train, cur_y_test
 
-#%%
+
+# %%
 
 def scorer(y_true, y_pred, pipeline, X_train):
-    evs = explained_variance_score(y_true, y_pred) # 1-- BEST , 0 -- WORST
-    medae = median_absolute_error(y_true, y_pred) # 0 -- BEST, \INF -- WORST
-    mse = mean_squared_error(y_true, y_pred) # 0 -- BEST
-    mae = mean_absolute_error(y_true, y_pred) # 0 -- BEST
-    r2 = r2_score(y_true, y_pred) # 1 --BEST
-    me = max_error(y_true, y_pred) # 0-- BEST
-    rmse = mean_squared_error(y_true, y_pred, squared=False) # 0 -- BEST
+    evs = explained_variance_score(y_true, y_pred)  # 1-- BEST , 0 -- WORST
+    medae = median_absolute_error(y_true, y_pred)  # 0 -- BEST, \INF -- WORST
+    mse = mean_squared_error(y_true, y_pred)  # 0 -- BEST
+    mae = mean_absolute_error(y_true, y_pred)  # 0 -- BEST
+    r2 = r2_score(y_true, y_pred)  # 1 --BEST
+    me = max_error(y_true, y_pred)  # 0-- BEST
+    rmse = mean_squared_error(y_true, y_pred, squared=False)  # 0 -- BEST
 
     model = pipeline['mlpregressor']
     n_params = model.coefs_[0].size + model.coefs_[1].size
     n = len(X_train)  # number of samples
-    aic = n * np.log(mse) + 2 * n_params # 0 -- BEST
-    bic = n * np.log(mse) + n_params * np.log(n) # 0 -- BEST
-
+    aic = n * np.log(mse) + 2 * n_params  # 0 -- BEST
+    bic = n * np.log(mse) + n_params * np.log(n)  # 0 -- BEST
 
     errors = np.array([evs, medae, mse, mae, r2, me, aic, bic, rmse])
 
     return errors
 
+
 def choose_worst(val_metrics):
-    worst = np.zeros(8)
+    worst = np.zeros(9)
     worst[0] = val_metrics[:, 0].min()
     worst[1] = val_metrics[:, 1].max()
     worst[2] = val_metrics[:, 2].max()
@@ -619,13 +623,14 @@ def choose_worst(val_metrics):
     worst[8] = val_metrics[:, 8].max()
 
     return worst
-#%%
-def split_transform_one_comp_cv(X, y, n_splits=5):
 
+
+# %%
+def split_transform_one_comp_cv(X, y, n_splits=5):
     val_set_X, val_set_y, train_set_X, train_set_y = [], [], [], []
     # Split to get test set
-    cur_X_train, cur_X_test, cur_y_train, cur_y_test =\
-    train_test_split(X, y, train_size=0.85, random_state=50)
+    cur_X_train, cur_X_test, cur_y_train, cur_y_test = \
+        train_test_split(X, y, train_size=0.85, random_state=50)
     # Format val set
     cur_X_test, cur_y_test = flatten_r(cur_X_test, cur_y_test)
     # Shuffle to get test and val sets
@@ -638,22 +643,22 @@ def split_transform_one_comp_cv(X, y, n_splits=5):
         cur_y_val_splitted = cur_y_train[test_index]
         cur_y_train_splitted = cur_y_train[train_index]
         # Formatting
-        cur_X_val_formatted, cur_y_val_formatted =\
-         flatten_r(cur_X_val_splitted, cur_y_val_splitted)
-        cur_X_train_formatted, cur_y_train_formatted =\
-         flatten_r(cur_X_train_splitted, cur_y_train_splitted)
+        cur_X_val_formatted, cur_y_val_formatted = \
+            flatten_r(cur_X_val_splitted, cur_y_val_splitted)
+        cur_X_train_formatted, cur_y_train_formatted = \
+            flatten_r(cur_X_train_splitted, cur_y_train_splitted)
         # Saving results
         val_set_X.append(cur_X_val_formatted)
         val_set_y.append(cur_y_val_formatted)
         train_set_X.append(cur_X_train_formatted)
         train_set_y.append(cur_y_train_formatted)
 
-    return cur_X_test, cur_y_test, val_set_X, val_set_y, train_set_X,\
-     train_set_y
+    return cur_X_test, cur_y_test, val_set_X, val_set_y, train_set_X, \
+        train_set_y
 
 
-#%%
 from csv import writer
+
 
 def append_list_as_row(file_name, list_of_elem):
     file_name_path = path + file_name
@@ -665,10 +670,9 @@ def append_list_as_row(file_name, list_of_elem):
         csv_writer.writerow(list_of_elem)
 
 
-
-#%%
+# %%
 def taught_checker(path_import, fname, i, j):
-    return pd.read_csv(path_import+fname, names=[
+    return pd.read_csv(path_import + fname, names=[
         # Constructional
         'n_layers', 'n_neurons', 'solver', 'max_iter',
         'learning_rate_init', 'learning_rate', 'early_stopping',
@@ -683,9 +687,11 @@ def taught_checker(path_import, fname, i, j):
         'explained_variance_score_test', 'median_absolute_error_test',
         'mean_squared_error_test', 'mean_absolute_error_test',
         'r2_score_test', 'max_error_test', 'AIC_test', 'BIC_test'
-        ])[['n_layers', 'n_neurons']]\
+    ])[['n_layers', 'n_neurons']] \
         .query(f'(n_layers == {i}) & (n_neurons == {j})').empty
-#%%
+
+
+# %%
 # @title ANN
 @ignore_warnings(category=ConvergenceWarning)
 def special_ann_stress_strains_val(fname, range_layers, range_neurons,
@@ -694,8 +700,6 @@ def special_ann_stress_strains_val(fname, range_layers, range_neurons,
                                    learning_rate_init=0.001, activation='relu',
                                    early_stopping=True, max_iter=200,
                                    n_splits=5):
-
-
     # I've got an idea to perform a Cross-Validation
     # so i want to build k train-val-test sets once here
     # and use them during the fitting later
@@ -703,9 +707,8 @@ def special_ann_stress_strains_val(fname, range_layers, range_neurons,
     today = datetime.now()
 
     # Preparing datasets
-    cur_X_test, cur_y_test, val_list_X, val_list_y, train_list_X, train_list_y=\
-    split_transform_one_comp_cv(X, y)
-
+    cur_X_test, cur_y_test, val_list_X, val_list_y, train_list_X, train_list_y = \
+        split_transform_one_comp_cv(X, y)
 
     # Start of a outer cycle
     for j in range_neurons:
@@ -719,8 +722,8 @@ def special_ann_stress_strains_val(fname, range_layers, range_neurons,
 
             # hidden layers construction
             hls_tuple = ()
-            for _ in range(1, i+1):
-                hls_tuple = hls_tuple + (j, )
+            for _ in range(1, i + 1):
+                hls_tuple = hls_tuple + (j,)
 
             #############################################################
             #                                                           #
@@ -728,22 +731,21 @@ def special_ann_stress_strains_val(fname, range_layers, range_neurons,
             #                                                           #
             #############################################################
 
-
             # Making a model sceleton
             regr = make_pipeline(
                 StandardScaler(),
                 MLPRegressor(hidden_layer_sizes=hls_tuple,
-                                learning_rate_init=learning_rate_init,
-                                learning_rate=learning_rate,
-                                activation=activation,
-                                random_state=100,
-                                #  alpha=alpha,
-                                early_stopping=True,
-                                solver=solver,
-                                # verbose=True,
-                                max_iter=max_iter
-                                ),
-                )
+                             learning_rate_init=learning_rate_init,
+                             learning_rate=learning_rate,
+                             activation=activation,
+                             random_state=100,
+                             #  alpha=alpha,
+                             early_stopping=True,
+                             solver=solver,
+                             # verbose=True,
+                             max_iter=max_iter
+                             ),
+            )
 
             # Fitting and scoring `n_split` times
             errors = np.zeros((n_splits, 8))
@@ -767,19 +769,16 @@ def special_ann_stress_strains_val(fname, range_layers, range_neurons,
             # Collect validation result
             val_metrics = choose_worst(errors)
 
-
             ########################################################
             #                                                      #
             #                        TESTING                       #
             #                                                      #
             ########################################################
 
-
             # Scoring on the test set
             test_prediction = regr.predict(cur_X_test)
             test_metrics = scorer(cur_y_test, test_prediction,
                                   regr, train_list_X[0])
-
 
             ########################################################
             #                                                      #
@@ -787,40 +786,43 @@ def special_ann_stress_strains_val(fname, range_layers, range_neurons,
             #                                                      #
             ########################################################
 
-
             new_row = [i, j, solver, max_iter, learning_rate_init,
                        learning_rate, early_stopping, activation, n_splits,
                        alpha] + list(val_metrics) + list(test_metrics)
             append_list_as_row(fname, new_row)
 
             print(f'{solver} for {i:>3} hidden layers of size {j:>3}:'
-             f'\ttime:{ datetime.now()}, taken:{datetime.now() - today}\n'
-             'explained_variance_score, median_absolute_error,'
-             'mean_squared_error, mean_absolute_error,'
-             'r2_score, max_error, AIC, BIC\n'
-             'val metrics are'
-             f'\n {list(val_metrics)}\n'
-             f'test metrics are\n {list(test_metrics)}\n'
-             )
+                  f'\ttime:{datetime.now()}, taken:{datetime.now() - today}\n'
+                  'explained_variance_score, median_absolute_error,'
+                  'mean_squared_error, mean_absolute_error,'
+                  'r2_score, max_error, AIC, BIC\n'
+                  'val metrics are'
+                  f'\n {list(val_metrics)}\n'
+                  f'test metrics are\n {list(test_metrics)}\n'
+                  )
 
     return regr, cur_X_test, cur_y_test
 
 
-#%%
-def do_optuna(X, y, n_trials=100):
-    # Preparing datasets
-    cur_X_test, cur_y_test, val_list_X, val_list_y, train_list_X, train_list_y=\
-    split_transform_one_comp_cv(X, y)
+def clean_input_array(x, y):
+    mask = ~(np.isin(x, [np.nan, np.inf, -np.inf]).any(axis=1) | np.isin(y, [np.nan, np.inf, -np.inf]))
+    x = x[mask].round(15)
+    y = y[mask].round(15)
+    return x, y
 
-    @ignore_warnings(category=ConvergenceWarning)
+
+def do_optuna(X, y, n_trials=100, **kwargs):
+    n_splits = kwargs.get('n_splits', 3)
+    # Preparing datasets
+    cur_X_test, cur_y_test, val_list_X, val_list_y, train_list_X, train_list_y = \
+        split_transform_one_comp_cv(X, y, n_splits=n_splits)
+
     def optuna_ann_stress_strains_val(trial):
 
-        n_layers = trial.suggest_int('n_layers', 1, 10)
+        n_layers = trial.suggest_int('n_layers', 1, 30)
         layers = []
         for i in range(n_layers):
             layers.append(trial.suggest_int(f'n_units_{i}', 1, 100))
-
-        n_splits = 5
 
         params = {
             'hidden_layer_sizes': tuple(layers),
@@ -828,27 +830,29 @@ def do_optuna(X, y, n_trials=100):
             'random_state': 100,
             'early_stopping': trial.suggest_categorical("early_stopping", [True, False]),
             'max_iter': trial.suggest_int('max_iter', 10, 15000),
-            "learning_rate": trial.suggest_categorical("learning_rate", ['constant','invscaling','adaptive']),
-            "alpha": trial.suggest_categorical("alpha",[.3,.1,.01,.001,.0001]),
-            "activation": trial.suggest_categorical("activation",['logistic','relu','tanh']),
+            "learning_rate": trial.suggest_categorical("learning_rate", ['constant', 'invscaling', 'adaptive']),
+            "alpha": trial.suggest_categorical("alpha", [.3, .1, .01, .001, .0001]),
+            "activation": trial.suggest_categorical("activation", ['logistic', 'relu', 'tanh']),
             "solver": trial.suggest_categorical("solver", ['lbfgs', 'adam', 'sgd'])
-            }
-
-        # Making a model sceleton
-        regr = make_pipeline(
-            StandardScaler(),
-            MLPRegressor(**params),
-            )
+        }
 
         # Fitting and scoring `n_split` times
         errors = np.zeros((n_splits, 9))
 
         for split_idx in range(n_splits):
+            regr = make_pipeline(
+                StandardScaler(),
+                MLPRegressor(**params),
+            )
+
             cur_X_train = train_list_X[split_idx]
             cur_y_train = train_list_y[split_idx]
 
             cur_X_val = val_list_X[split_idx]
             cur_y_val = val_list_y[split_idx]
+
+            cur_X_train, cur_y_train = clean_input_array(cur_X_train, cur_y_train)
+            cur_X_val, cur_y_val = clean_input_array(cur_X_val, cur_y_val)
 
             regr.fit(cur_X_train, cur_y_train)
 
@@ -856,19 +860,52 @@ def do_optuna(X, y, n_trials=100):
             #  Prediction
             cur_prediction = regr.predict(cur_X_val)
             # Scoring
-            errors[split_idx] = scorer(cur_y_val, cur_prediction,
-                                        regr, cur_X_train)
+            errors[split_idx] = scorer(cur_y_val, cur_prediction, regr, cur_X_train)
 
         # Collect validation result
         val_metrics = choose_worst(errors)
-        # return val_metrics[0]
-        return val_metrics[8] # rmse
+        # return_value = val_metrics[0] if pd.notnull(val_metrics[0]) else -1e6 # для evs
+        return_value = val_metrics[-1] if pd.notnull(val_metrics[-1]) else +1e6  # для rmse
+        return return_value
 
     # Create a study object to optimize the objective
-    # study = optuna.create_study(direction='maximize') # val_metrics[0]
-    study = optuna.create_study(direction='minimize') # rmse
+    # study = optuna.create_study(direction='maximize') # evs
+    study = optuna.create_study(direction='minimize')  # rmse
     study.optimize(optuna_ann_stress_strains_val, n_trials=n_trials, n_jobs=-1)
 
     # Print the best hyperparameters found by Optuna
     best_params = study.best_params
     print("Best Hyperparameters:", best_params)
+
+    return best_params, cur_X_test, cur_y_test
+
+
+def test_after_opt(best_params, x, y, model_name, path_import):
+
+    n_layers = best_params.get('n_layers')
+    layers = []
+    for i in range(n_layers):
+        layers.append(best_params.get(f'n_units_{i}'))
+
+    params = best_params.copy()
+    [params.pop(k) for k in best_params.keys() if 'n_' in k]
+    params['hidden_layer_sizes'] = tuple(layers)
+
+    best_regr = make_pipeline(
+        StandardScaler(),
+        MLPRegressor(**params),
+    )
+
+    cur_X_test, cur_y_test, cur_X_train, cur_y_train = get_train_test(x, y)
+
+    best_regr.fit(cur_X_train, cur_y_train)
+
+    #######  testing ########
+    cur_prediction = best_regr.predict(cur_X_test)
+
+    model_to_save = (best_regr, cur_prediction, cur_y_test, cur_X_test)
+    saver(model_to_save, model_name=model_name, path_import=path_import)
+
+    print('test rmse = ', np.sqrt(mean_squared_error(cur_y_test, cur_prediction)))
+    return best_regr, cur_prediction, cur_y_test, cur_X_test
+
