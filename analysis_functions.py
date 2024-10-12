@@ -89,7 +89,7 @@ def average_in_list(list):
     Функция подсчета среднего значения в списке
     param: list -- список для поиска среднего
 
-    return summ / len(list) -- среднее значения в списке
+    return summ / len(list) -- среднее значение в списке
     """
     summ = 0
     for i in list:
@@ -130,7 +130,7 @@ def read_data_txt_np(name_of_file, example_dir):
 # %%
 def files_list(list_one, dir_):
     """
-    Функция для считывания данных для переданого списка
+    Функция для считывания данных для переданного списка
     params:
     list_one -- список файлов
     dir_ -- директория файлов
