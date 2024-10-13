@@ -880,8 +880,11 @@ def do_optuna(X, y, n_trials=100, **kwargs):
     return best_params, cur_X_test, cur_y_test
 
 
-def test_after_opt(best_params, x, y, model_name, path_import):
+def rmse(y_true, y_pred):
+    return np.sqrt(mean_squared_error(y_true, y_pred))
 
+
+def test_after_opt(best_params, x, y, model_name, path_import, metric='rmse'):
     n_layers = best_params.get('n_layers')
     layers = []
     for i in range(n_layers):
@@ -897,7 +900,6 @@ def test_after_opt(best_params, x, y, model_name, path_import):
     )
 
     cur_X_test, cur_y_test, cur_X_train, cur_y_train = get_train_test(x, y)
-
     best_regr.fit(cur_X_train, cur_y_train)
 
     #######  testing ########
@@ -906,6 +908,15 @@ def test_after_opt(best_params, x, y, model_name, path_import):
     model_to_save = (best_regr, cur_prediction, cur_y_test, cur_X_test)
     saver(model_to_save, model_name=model_name, path_import=path_import)
 
-    print('test rmse = ', np.sqrt(mean_squared_error(cur_y_test, cur_prediction)))
-    return best_regr, cur_prediction, cur_y_test, cur_X_test
-
+    metrics_dict = {
+        'rmse': rmse,
+        'max_error': max_error,
+        'mae': mean_absolute_error,
+        'mse': mean_squared_error,
+        'evs': explained_variance_score,
+        'mape': mean_absolute_percentage_error
+    }
+    _metric = metrics_dict.get(metric)
+    test_error = _metric(cur_y_test, cur_prediction)
+    print(f'test {metric} = {test_error}')
+    return best_regr, cur_prediction, cur_y_test, cur_X_test, test_error
