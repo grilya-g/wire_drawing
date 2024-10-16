@@ -52,6 +52,7 @@ from tqdm import tqdm, trange
 import multiprocessing as mp
 import time
 import sys
+from csv import writer
 
 np.set_printoptions(threshold=1000)
 
@@ -657,7 +658,13 @@ def split_transform_one_comp_cv(X, y, n_splits=5):
         train_set_y
 
 
-from csv import writer
+def get_train_test(x, y):
+    x_train, x_test, y_train, y_test = train_test_split(x, y,
+                                                        train_size=.85,
+                                                        random_state=50)
+    x_train, y_train = flatten_r(x_train, y_train)
+    x_test, y_test = flatten_r(x_test, y_test)
+    return x_test, y_test, x_train, y_train
 
 
 def append_list_as_row(file_name, list_of_elem):
@@ -905,6 +912,9 @@ def test_after_opt(best_params, x, y, model_name, path_import, metric='rmse'):
 
     #######  testing ########
     cur_prediction = best_regr.predict(cur_X_test)
+    cur_prediction_train = best_regr.predict(cur_X_train)
+
+
 
     model_to_save = (best_regr, cur_prediction, cur_y_test, cur_X_test)
     saver(model_to_save, model_name=model_name, path_import=path_import)
@@ -919,5 +929,6 @@ def test_after_opt(best_params, x, y, model_name, path_import, metric='rmse'):
     }
     _metric = metrics_dict.get(metric)
     test_error = _metric(cur_y_test, cur_prediction)
+    train_error = _metric(cur_y_train, cur_prediction_train)
     print(f'test {metric} = {test_error}')
-    return best_regr, cur_prediction, cur_y_test, cur_X_test, test_error
+    return best_regr, cur_prediction, cur_y_test, cur_X_test, test_error, train_error
