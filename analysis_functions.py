@@ -875,9 +875,10 @@ def do_optuna(X, y, n_trials=100, **kwargs):
 
     # Print the best hyperparameters found by Optuna
     best_params = study.best_params
+    best_value = study.best_value
     print("Best Hyperparameters:", best_params)
 
-    return best_params, cur_X_test, cur_y_test
+    return best_params, cur_X_test, cur_y_test, best_value
 
 
 def rmse(y_true, y_pred):
