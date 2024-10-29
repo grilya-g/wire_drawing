@@ -924,9 +924,9 @@ def do_optuna(X, y, n_trials=100, **kwargs):
 
     def optuna_ann_stress_strains_val(trial):
 
-        n_layers = trial.suggest_int("n_layers", 1, n_layers)
+        k_layers = trial.suggest_int("n_layers", 1, n_layers)
         layers = []
-        for i in range(n_layers):
+        for i in range(k_layers):
             layers.append(trial.suggest_int(f"n_units_{i}", 1, n_neurons))
 
         params = {
