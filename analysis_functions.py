@@ -707,7 +707,7 @@ def split_transform_one_comp_cv(X, y, n_splits=5):
 
 def get_train_test(x, y):
     x_train, x_test, y_train, y_test = train_test_split(
-        x, y, train_size=0.85, random_state=50
+        x, y, train_size=0.85, random_state=0
     )
     x_train, y_train = flatten_r(x_train, y_train)
     x_test, y_test = flatten_r(x_test, y_test)
