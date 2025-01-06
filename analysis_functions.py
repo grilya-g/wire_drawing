@@ -51,7 +51,6 @@ def opener(model_name, path_import):
     return model
 
 
-# %%
 def average_in_list(list):
     """
     Функция подсчета среднего значения в списке
@@ -65,8 +64,7 @@ def average_in_list(list):
     return summ / len(list)
 
 
-# %%
-def read_data_txt_np(name_of_file, example_dir):
+def read_data_txt_np(name_of_file, example_dir, is_nonisothermal=False):
     """
     Функция для считывания данных из отчетных файлов ПО Abaqus
     params:
@@ -76,15 +74,15 @@ def read_data_txt_np(name_of_file, example_dir):
     return:
     data -- считанные данные
     """
-    data_flag = 0
     content = os.listdir(example_dir)
     if os.path.isfile(os.path.join(example_dir, name_of_file)):
         if name_of_file in content:
             file = os.path.join(example_dir, name_of_file)
             if file.endswith(".txt"):
-                # data = np.loadtxt(file, dtype='double', skiprows=56) #thermal
-                data = np.loadtxt(file, dtype="double", skiprows=44)  # isothermal
-                data_flag = 1
+                if is_nonisothermal:
+                    data = np.loadtxt(file, dtype="double", skiprows=56)
+                else:
+                    data = np.loadtxt(file, dtype="double", skiprows=44)
             else:
                 print(f"{file} doesnt ends with .txt")
         else:
@@ -95,7 +93,6 @@ def read_data_txt_np(name_of_file, example_dir):
     return data
 
 
-# %%
 def files_list(list_one, dir_):
     """
     Функция для считывания данных для переданного списка
@@ -114,13 +111,11 @@ def files_list(list_one, dir_):
     return list_files
 
 
-# %%
 def median_np(x):
     """Построение медианы по переданному списку"""
     return np.median(x)
 
 
-# %%
 def preprocessing_res_np(file):
     """
     Создание np.array по репорту
@@ -210,7 +205,6 @@ def preprocessing_res_np(file):
     return x_1_, y_1_, Stress, Strain
 
 
-# %%
 def average_val_np(array_1, nodes=13):
     """Построение осредненных распределений"""
     b = np.zeros((nodes))
@@ -220,7 +214,6 @@ def average_val_np(array_1, nodes=13):
     return b
 
 
-# %%
 def get_param(cur_job_name, vel20List, all20Arrays, char_1=2, char_2=4):
     """
     Функция для извлечения зависимых и независимых переменных для 1 расчета
@@ -248,7 +241,6 @@ def get_param(cur_job_name, vel20List, all20Arrays, char_1=2, char_2=4):
     return [red, cal, ha, vel, fric, char]
 
 
-# %%
 def sorter(xx, heap_of_stresses):
     """
     Сортирует по возрастанию узлы по значению расстояния от оси проволоки и
@@ -276,7 +268,6 @@ def sorter(xx, heap_of_stresses):
     return x_sorted, heap_of_stresses_sorted
 
 
-# %%
 def r(job_name):
     """
     Ищет обжатие по переданному имени файла
@@ -337,7 +328,6 @@ def h(job_name):
     return ha
 
 
-# %%
 # @title Функция для подсчета максимальной ошибки для графиков
 def max_er(pred, ground_true):
     maxerror = 0
@@ -348,7 +338,6 @@ def max_er(pred, ground_true):
     return maxerror
 
 
-# %%
 # @title Функция для подсчета максимальной средней ошибки для графиков
 def max_graph_er(pred, ground_true):
     maxerror = 0
@@ -364,7 +353,6 @@ def max_graph_er(pred, ground_true):
     return maxerror
 
 
-# %%
 # @title Функция для подсчета медианной средней ошибки для графиков
 def med_graph_er(pred, ground_true):
     mapes = np.zeros((len(pred) // 20))
@@ -380,7 +368,6 @@ def med_graph_er(pred, ground_true):
     return med
 
 
-# %%
 # @title Функция для подсчета минимальной средней ошибки для графиков
 def min_graph_er(pred, ground_true):
     minerror = 1e10
@@ -396,7 +383,6 @@ def min_graph_er(pred, ground_true):
     return minerror
 
 
-# %%
 def do_rep_list(path_import):
     rep_list = [
         fil[:-4]
@@ -406,7 +392,6 @@ def do_rep_list(path_import):
     return rep_list
 
 
-# %%
 def do_preprocessing(list_names, path_import):
     vel20ListFiles = []
     for fi in list_names:
@@ -420,7 +405,6 @@ def do_preprocessing(list_names, path_import):
     return all20Arrays
 
 
-# %%
 def data_preparer(train_list, train_arrays):
     """
     Преобразует массивы из preprocessing_np
@@ -466,7 +450,6 @@ def data_preparer(train_list, train_arrays):
     )
 
 
-# %%
 def plot_result_stress_avr_v(list_files, labels, name, **kwargs):
     """Строит графики для минимальных, максимальных и средних деформаций для переданных списков в вертикальной ориентации"""
     plt.figure(figsize=(18, 10))
@@ -536,8 +519,6 @@ def plot_result_stress_avr_v(list_files, labels, name, **kwargs):
     if to_show:
         plt.show()
 
-    # %%
-
 
 def flatten_r(X_train_fair, y_train_fair):
     # ic(y_train_fair.shape)
@@ -548,7 +529,6 @@ def flatten_r(X_train_fair, y_train_fair):
             X_1[i * 20 + j] = np.hstack((X_train_fair[i], j / 19))
             y_1[i * 20 + j] = y_train_fair[i][j]
     return X_1, y_1
-    # %%
 
 
 def split_transform(X, y):
@@ -567,7 +547,6 @@ def split_transform(X, y):
         splitted_X.append([cur_X_train, cur_X_val, cur_X_test])
         splitted_y.append([cur_y_train, cur_y_val, cur_y_test])
     return splitted_X, splitted_y
-    # %%
 
 
 def split_transform_one_comp(X, y):
@@ -585,7 +564,6 @@ def split_transform_one_comp(X, y):
     splitted_X.append([cur_X_train, cur_X_val, cur_X_test])
     splitted_y.append([cur_y_train, cur_y_val, cur_y_test])
     return splitted_X[0], splitted_y[0]
-    # %%
 
 
 def split_transform_one_comp_train_test(X, y):
@@ -596,9 +574,6 @@ def split_transform_one_comp_train_test(X, y):
     cur_X_test, cur_y_test = flatten_r(cur_X_test, cur_y_test)
 
     return cur_X_train, cur_X_test, cur_y_train, cur_y_test
-
-
-# %%
 
 
 def scorer(y_true, y_pred, pipeline, X_train):
@@ -636,7 +611,6 @@ def choose_worst(val_metrics):
     return worst
 
 
-# %%
 def split_transform_one_comp_cv(X, y, n_splits=5):
     val_set_X, val_set_y, train_set_X, train_set_y = [], [], [], []
     # Split to get test set
@@ -686,7 +660,6 @@ def append_list_as_row(file_name, list_of_elem):
         csv_writer.writerow(list_of_elem)
 
 
-# %%
 def taught_checker(path_import, fname, i, j):
     return (
         pd.read_csv(
@@ -728,7 +701,6 @@ def taught_checker(path_import, fname, i, j):
     )
 
 
-# %%
 # @title ANN
 @ignore_warnings(category=ConvergenceWarning)
 def special_ann_stress_strains_val(
