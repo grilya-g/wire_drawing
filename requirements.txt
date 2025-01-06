@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+scipy
+scikit-learn
+jupyter
+seaborn
+math
+re
+copy
+tqdm
+pickle

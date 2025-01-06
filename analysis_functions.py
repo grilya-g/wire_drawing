@@ -1,72 +1,37 @@
-import matplotlib.pyplot as plt
-import seaborn as sns
-import pandas as pd
-import numpy as np
-import pylab as pl
-
-# import xlrd
-import sklearn
-import math
 import os
-import re
-import copy
+
+# np.set_printoptions(threshold=1000)
+##########################
+# SAVE-LOAD using pickle #
+##########################
+import pickle
+from csv import writer
+from datetime import datetime
+from os import listdir
+from os.path import isfile, join
+
+import matplotlib.pyplot as plt
+import numpy as np
 
 # from numba import njit
 # from numba import jit
 import optuna
+import pandas as pd
+
+# import xlrd
+import sklearn
+from sklearn.exceptions import ConvergenceWarning
+from sklearn.metrics import *
+from sklearn.model_selection import ShuffleSplit, train_test_split
 
 # from numba import prange
 # import plotly
-from datetime import date
-
 # plotly.offline.init_notebook_mode(connected=True)
 # import plotly.graph_objects as go
-from time import time
-import sklearn
 from sklearn.neural_network import MLPRegressor
 from sklearn.pipeline import make_pipeline
-from sklearn.datasets import make_regression
-from sklearn.model_selection import cross_validate
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import PolynomialFeatures
-from sklearn.metrics import *
-from sklearn.model_selection import ShuffleSplit
-from datetime import datetime
-
-from os import listdir
-from os.path import isfile, join
 from sklearn.utils._testing import ignore_warnings
-from sklearn.exceptions import ConvergenceWarning
-from sklearn.linear_model import Ridge
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression, Ridge, Lasso
-from sklearn.model_selection import train_test_split, cross_val_score
-from statistics import mean
-
-import tqdm
-from tqdm import tqdm, trange
-import multiprocessing as mp
-import time
-import sys
-from csv import writer
-
-np.set_printoptions(threshold=1000)
-
-# %%
-##########################
-# SAVE-LOAD using pickle #
-##########################
-# !pip install varname
-import pickle
-
-
-# from varname import nameof
 
 
 # save
@@ -513,7 +478,6 @@ def plot_result_stress_avr_v(list_files, labels, name, **kwargs):
     preped_arrays = list_files
 
     for i in range(0, len(list_files)):
-
         x_1 = average_val_np(preped_arrays[i][0])
         R1 = x_1.max()
 
@@ -706,9 +670,7 @@ def split_transform_one_comp_cv(X, y, n_splits=5):
 
 
 def get_train_test(x, y):
-    x_train, x_test, y_train, y_test = train_test_split(
-        x, y, train_size=0.85, random_state=0
-    )
+    x_train, x_test, y_train, y_test = train_test_split(x, y, train_size=0.85, random_state=0)
     x_train, y_train = flatten_r(x_train, y_train)
     x_test, y_test = flatten_r(x_test, y_test)
     return x_test, y_test, x_train, y_train
@@ -799,7 +761,6 @@ def special_ann_stress_strains_val(
     for j in range_neurons:
         # Start of an inner cycle
         for i in range_layers:
-
             # check if already was taught
             if not taught_checker(path_import, fname, i, j):
                 print(f"{i} neurons and {j} layers was in df")
@@ -904,8 +865,7 @@ def special_ann_stress_strains_val(
 
 def clean_input_array(x, y):
     mask = ~(
-        np.isin(x, [np.nan, np.inf, -np.inf]).any(axis=1)
-        | np.isin(y, [np.nan, np.inf, -np.inf])
+        np.isin(x, [np.nan, np.inf, -np.inf]).any(axis=1) | np.isin(y, [np.nan, np.inf, -np.inf])
     )
     x = x[mask].round(15)
     y = y[mask].round(15)
@@ -923,7 +883,6 @@ def do_optuna(X, y, n_trials=100, **kwargs):
     )
 
     def optuna_ann_stress_strains_val(trial):
-
         k_layers = trial.suggest_int("n_layers", 1, n_layers)
         layers = []
         for i in range(k_layers):
@@ -931,23 +890,15 @@ def do_optuna(X, y, n_trials=100, **kwargs):
 
         params = {
             "hidden_layer_sizes": tuple(layers),
-            "learning_rate_init": trial.suggest_float(
-                "learning_rate_init", 1e-6, 0.1, log=True
-            ),
+            "learning_rate_init": trial.suggest_float("learning_rate_init", 1e-6, 0.1, log=True),
             "random_state": 100,
-            "early_stopping": trial.suggest_categorical(
-                "early_stopping", [True, False]
-            ),
+            "early_stopping": trial.suggest_categorical("early_stopping", [True, False]),
             "max_iter": trial.suggest_int("max_iter", 10, 15000),
             "learning_rate": trial.suggest_categorical(
                 "learning_rate", ["constant", "invscaling", "adaptive"]
             ),
-            "alpha": trial.suggest_categorical(
-                "alpha", [0.3, 0.1, 0.01, 0.001, 0.0001]
-            ),
-            "activation": trial.suggest_categorical(
-                "activation", ["logistic", "relu", "tanh"]
-            ),
+            "alpha": trial.suggest_categorical("alpha", [0.3, 0.1, 0.01, 0.001, 0.0001]),
+            "activation": trial.suggest_categorical("activation", ["logistic", "relu", "tanh"]),
             "solver": trial.suggest_categorical("solver", ["lbfgs", "adam", "sgd"]),
         }
 
@@ -980,9 +931,7 @@ def do_optuna(X, y, n_trials=100, **kwargs):
         # Collect validation result
         val_metrics = choose_worst(errors)
         # return_value = val_metrics[0] if pd.notnull(val_metrics[0]) else -1e6 # для evs
-        return_value = (
-            val_metrics[-1] if pd.notnull(val_metrics[-1]) else +1e6
-        )  # для rmse
+        return_value = val_metrics[-1] if pd.notnull(val_metrics[-1]) else +1e6  # для rmse
         return return_value
 
     # Create a study object to optimize the objective
