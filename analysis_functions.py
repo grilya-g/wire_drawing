@@ -21,7 +21,16 @@ import pandas as pd
 # import xlrd
 import sklearn
 from sklearn.exceptions import ConvergenceWarning
-from sklearn.metrics import *
+from sklearn.metrics import (
+    explained_variance_score,
+    max_error,
+    mean_absolute_error,
+    mean_absolute_percentage_error,
+    mean_squared_error,
+    median_absolute_error,
+    r2_score,
+    root_mean_squared_error,
+)
 from sklearn.model_selection import ShuffleSplit, train_test_split
 
 # from numba import prange
@@ -583,7 +592,7 @@ def scorer(y_true, y_pred, pipeline, X_train):
     mae = mean_absolute_error(y_true, y_pred)  # 0 -- BEST
     r2 = r2_score(y_true, y_pred)  # 1 --BEST
     me = max_error(y_true, y_pred)  # 0-- BEST
-    rmse = mean_squared_error(y_true, y_pred, squared=False)  # 0 -- BEST
+    rmse = root_mean_squared_error(y_true, y_pred)  # 0 -- BEST
 
     model = pipeline["mlpregressor"]
     n_params = model.coefs_[0].size + model.coefs_[1].size
@@ -650,7 +659,7 @@ def get_train_test(x, y):
     return x_test, y_test, x_train, y_train
 
 
-def append_list_as_row(file_name, list_of_elem):
+def append_list_as_row(file_name, list_of_elem, path=""):
     file_name_path = path + file_name
     # Open file in append mode
     with open(file_name_path, "a+", newline="") as write_obj:
@@ -717,6 +726,7 @@ def special_ann_stress_strains_val(
     early_stopping=True,
     max_iter=200,
     n_splits=5,
+    path_import="",
 ):
     # I've got an idea to perform a Cross-Validation
     # so i want to build k train-val-test sets once here
@@ -920,7 +930,7 @@ def do_optuna(X, y, n_trials=100, **kwargs):
 
 
 def rmse(y_true, y_pred):
-    return np.sqrt(mean_squared_error(y_true, y_pred))
+    return root_mean_squared_error(y_true, y_pred)
 
 
 def test_after_opt(best_params, x, y, model_name, path_import, metric="rmse"):
@@ -950,10 +960,15 @@ def test_after_opt(best_params, x, y, model_name, path_import, metric="rmse"):
 
     metrics_dict = {
         "rmse": rmse,
+        "root_mean_squared_error": root_mean_squared_error,
         "max_error": max_error,
+        "mean_absolute_error": mean_absolute_error,
         "mae": mean_absolute_error,
+        "mean_squared_error": mean_squared_error,
         "mse": mean_squared_error,
+        "explained_variance_score": explained_variance_score,
         "evs": explained_variance_score,
+        "mean_absolute_percentage_error": mean_absolute_percentage_error,
         "mape": mean_absolute_percentage_error,
     }
     _metric = metrics_dict.get(metric)

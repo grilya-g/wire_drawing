@@ -2,11 +2,8 @@ numpy
 pandas
 matplotlib
 scipy
-scikit-learn
+scikit-learn >= 1.6.0
 jupyter
 seaborn
-math
-re
-copy
 tqdm
-pickle
+optuna
