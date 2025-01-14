@@ -69,7 +69,6 @@ for red in reductions:
                     + "_vel_"
                     + str(vel)
                 )
-                label = str(label)
                 mdb.Model(name=str(label), objectToCopy=mdb.models["Zeides_config"])
 
                 # Setting geometry--------------------------------------------------------------------------------------------------

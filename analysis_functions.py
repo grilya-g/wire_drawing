@@ -929,6 +929,198 @@ def do_optuna(X, y, n_trials=100, **kwargs):
     return best_params, cur_X_test, cur_y_test, best_value
 
 
+from skopt import gp_minimize
+from skopt.space import Categorical, Integer, Real
+from skopt.utils import use_named_args
+
+
+@ignore_warnings(category=ConvergenceWarning)
+def do_skopt(X, y, n_calls=100, **kwargs):
+    n_splits = kwargs.get("n_splits", 3)
+    n_layers = kwargs.get("n_layers", 30)
+    n_neurons = kwargs.get("n_neurons", 100)
+
+    # Preparing datasets
+    cur_X_test, cur_y_test, val_list_X, val_list_y, train_list_X, train_list_y = (
+        split_transform_one_comp_cv(X, y, n_splits=n_splits)
+    )
+
+    # Define the search space
+    space = [
+        Integer(1, n_layers, name="n_layers"),
+        Integer(1, n_neurons, name="n_units_0"),
+        Real(1e-6, 0.1, "log-uniform", name="learning_rate_init"),
+        Categorical([True, False], name="early_stopping"),
+        Integer(10, 15000, name="max_iter"),
+        Categorical(["constant", "invscaling", "adaptive"], name="learning_rate"),
+        Categorical([0.3, 0.1, 0.01, 0.001, 0.0001], name="alpha"),
+        Categorical(["logistic", "relu", "tanh"], name="activation"),
+        Categorical(["lbfgs", "adam", "sgd"], name="solver"),
+    ]
+
+    @use_named_args(space)
+    def objective(**params):
+        k_layers = params.pop("n_layers")
+        layers = [params.pop(f"n_units_{i}", 1) for i in range(k_layers)]
+
+        params["hidden_layer_sizes"] = tuple(layers)
+        params["random_state"] = 100
+
+        # Fitting and scoring `n_split` times
+        errors = np.zeros((n_splits, 9))
+
+        for split_idx in range(n_splits):
+            regr = make_pipeline(
+                StandardScaler(),
+                MLPRegressor(**params),
+            )
+
+            cur_X_train = train_list_X[split_idx]
+            cur_y_train = train_list_y[split_idx]
+
+            cur_X_val = val_list_X[split_idx]
+            cur_y_val = val_list_y[split_idx]
+
+            cur_X_train, cur_y_train = clean_input_array(cur_X_train, cur_y_train)
+            cur_X_val, cur_y_val = clean_input_array(cur_X_val, cur_y_val)
+
+            regr.fit(cur_X_train, cur_y_train)
+
+            #######  Validation  ########
+            #  Prediction
+            cur_prediction = regr.predict(cur_X_val)
+            # Scoring
+            errors[split_idx] = scorer(cur_y_val, cur_prediction, regr, cur_X_train)
+
+        # Collect validation result
+        val_metrics = choose_worst(errors)
+        # return_value = val_metrics[0] if pd.notnull(val_metrics[0]) else -1e6 # для evs
+        return_value = val_metrics[-1] if pd.notnull(val_metrics[-1]) else +1e6  # для rmse
+        return return_value
+
+    # Perform the optimization
+    res = gp_minimize(objective, space, n_calls=n_calls, n_jobs=-1)
+
+    # Extract the best parameters
+    best_params = {dim.name: val for dim, val in zip(space, res.x)}
+    best_value = res.fun
+    print("Best Hyperparameters:", best_params)
+
+    return best_params, cur_X_test, cur_y_test, best_value
+
+
+from bayes_opt import BayesianOptimization
+
+
+@ignore_warnings(category=ConvergenceWarning)
+def do_bayes_opt(X, y, n_iter=100, **kwargs):
+    n_splits = kwargs.get("n_splits", 3)
+    n_layers = kwargs.get("n_layers", 30)
+    n_neurons = kwargs.get("n_neurons", 100)
+
+    # Preparing datasets
+    cur_X_test, cur_y_test, val_list_X, val_list_y, train_list_X, train_list_y = (
+        split_transform_one_comp_cv(X, y, n_splits=n_splits)
+    )
+
+    # Define the search space
+    pbounds = {
+        "n_layers": (1, n_layers),
+        "n_units_0": (1, n_neurons),
+        "learning_rate_init": (1e-6, 0.1),
+        "early_stopping": (0, 1),
+        "max_iter": (10, 15000),
+        "learning_rate": (0, 2),
+        "alpha": (0, 4),
+        "activation": (0, 2),
+        "solver": (0, 2),
+    }
+
+    def objective(
+        n_layers,
+        n_units_0,
+        learning_rate_init,
+        early_stopping,
+        max_iter,
+        learning_rate,
+        alpha,
+        activation,
+        solver,
+    ):
+        k_layers = int(n_layers)
+        layers = [int(n_units_0) for _ in range(k_layers)]
+
+        params = {
+            "hidden_layer_sizes": tuple(layers),
+            "learning_rate_init": learning_rate_init,
+            "random_state": 100,
+            "early_stopping": bool(early_stopping),
+            "max_iter": int(max_iter),
+            "learning_rate": ["constant", "invscaling", "adaptive"][int(learning_rate)],
+            "alpha": [0.3, 0.1, 0.01, 0.001, 0.0001][int(alpha)],
+            "activation": ["logistic", "relu", "tanh"][int(activation)],
+            "solver": ["lbfgs", "adam", "sgd"][int(solver)],
+        }
+
+        # Fitting and scoring `n_split` times
+        errors = np.zeros((n_splits, 9))
+
+        for split_idx in range(n_splits):
+            regr = make_pipeline(
+                StandardScaler(),
+                MLPRegressor(**params),
+            )
+
+            cur_X_train = train_list_X[split_idx]
+            cur_y_train = train_list_y[split_idx]
+
+            cur_X_val = val_list_X[split_idx]
+            cur_y_val = val_list_y[split_idx]
+
+            cur_X_train, cur_y_train = clean_input_array(cur_X_train, cur_y_train)
+            cur_X_val, cur_y_val = clean_input_array(cur_X_val, cur_y_val)
+
+            regr.fit(cur_X_train, cur_y_train)
+
+            #######  Validation  ########
+            #  Prediction
+            cur_prediction = regr.predict(cur_X_val)
+            # Scoring
+            errors[split_idx] = scorer(cur_y_val, cur_prediction, regr, cur_X_train)
+
+        # Collect validation result
+        val_metrics = choose_worst(errors)
+        # return_value = val_metrics[0] if pd.notnull(val_metrics[0]) else -1e6 # для evs
+        return_value = val_metrics[-1] if pd.notnull(val_metrics[-1]) else +1e6  # для rmse
+        return -return_value  # Invert the value for minimization
+
+    # Perform the optimization
+    optimizer = BayesianOptimization(
+        f=objective,
+        pbounds=pbounds,
+        random_state=100,
+    )
+    optimizer.maximize(init_points=10, n_iter=n_iter)
+
+    # Extract the best parameters
+    best_params = optimizer.max["params"]
+    best_params["n_layers"] = int(best_params["n_layers"])
+    best_params["n_units_0"] = int(best_params["n_units_0"])
+    best_params["early_stopping"] = bool(best_params["early_stopping"])
+    best_params["max_iter"] = int(best_params["max_iter"])
+    best_params["learning_rate"] = ["constant", "invscaling", "adaptive"][
+        int(best_params["learning_rate"])
+    ]
+    best_params["alpha"] = [0.3, 0.1, 0.01, 0.001, 0.0001][int(best_params["alpha"])]
+    best_params["activation"] = ["logistic", "relu", "tanh"][int(best_params["activation"])]
+    best_params["solver"] = ["lbfgs", "adam", "sgd"][int(best_params["solver"])]
+
+    best_value = -optimizer.max["target"]
+    print("Best Hyperparameters:", best_params)
+
+    return best_params, cur_X_test, cur_y_test, best_value
+
+
 def rmse(y_true, y_pred):
     return root_mean_squared_error(y_true, y_pred)
 
