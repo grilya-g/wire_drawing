@@ -858,7 +858,8 @@ def special_ann_stress_strains_val(
 
 def clean_input_array(x, y):
     mask = ~(
-        np.isin(x, [np.nan, np.inf, -np.inf]).any(axis=1) | np.isin(y, [np.nan, np.inf, -np.inf])
+        np.isin(x, [np.nan, np.inf, -np.inf]).any(axis=1)
+        | np.isin(y, [np.nan, np.inf, -np.inf])
     )
     x = x[mask].round(15)
     y = y[mask].round(15)
@@ -883,15 +884,23 @@ def do_optuna(X, y, n_trials=100, **kwargs):
 
         params = {
             "hidden_layer_sizes": tuple(layers),
-            "learning_rate_init": trial.suggest_float("learning_rate_init", 1e-6, 0.1, log=True),
+            "learning_rate_init": trial.suggest_float(
+                "learning_rate_init", 1e-6, 0.1, log=True
+            ),
             "random_state": 100,
-            "early_stopping": trial.suggest_categorical("early_stopping", [True, False]),
+            "early_stopping": trial.suggest_categorical(
+                "early_stopping", [True, False]
+            ),
             "max_iter": trial.suggest_int("max_iter", 10, 15000),
             "learning_rate": trial.suggest_categorical(
                 "learning_rate", ["constant", "invscaling", "adaptive"]
             ),
-            "alpha": trial.suggest_categorical("alpha", [0.3, 0.1, 0.01, 0.001, 0.0001]),
-            "activation": trial.suggest_categorical("activation", ["logistic", "relu", "tanh"]),
+            "alpha": trial.suggest_categorical(
+                "alpha", [0.3, 0.1, 0.01, 0.001, 0.0001]
+            ),
+            "activation": trial.suggest_categorical(
+                "activation", ["logistic", "relu", "tanh"]
+            ),
             "solver": trial.suggest_categorical("solver", ["lbfgs", "adam", "sgd"]),
         }
 
