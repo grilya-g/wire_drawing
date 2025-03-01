@@ -1,3 +1,4 @@
+import logging
 import os
 
 # np.set_printoptions(threshold=1000)
@@ -20,6 +21,9 @@ import pandas as pd
 
 # import xlrd
 import sklearn
+import torch
+from bayes_opt import BayesianOptimization
+from kan import KAN
 from sklearn.exceptions import ConvergenceWarning
 from sklearn.metrics import (
     explained_variance_score,
@@ -41,6 +45,11 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.utils._testing import ignore_warnings
+from skopt import gp_minimize
+from skopt.space import Categorical, Integer, Real
+from skopt.utils import use_named_args
+
+RANDOM_STATE = 50
 
 
 # save
@@ -545,11 +554,11 @@ def split_transform(X, y):
     for comp in range(3):
         cur_X, cur_y = X[comp], y[comp]
         cur_X_train, cur_X_test, cur_y_train, cur_y_test = train_test_split(
-            cur_X, cur_y, train_size=0.7, random_state=50
+            cur_X, cur_y, train_size=0.7, random_state=RANDOM_STATE
         )
         cur_X_train, cur_y_train = flatten_r(cur_X_train, cur_y_train)
         cur_X_val, cur_X_test, cur_y_val, cur_y_test = train_test_split(
-            cur_X_test, cur_y_test, train_size=0.5, random_state=50
+            cur_X_test, cur_y_test, train_size=0.5, random_state=RANDOM_STATE
         )
         cur_X_test, cur_y_test = flatten_r(cur_X_test, cur_y_test)
         cur_X_val, cur_y_val = flatten_r(cur_X_val, cur_y_val)
@@ -562,11 +571,11 @@ def split_transform_one_comp(X, y):
     splitted_X, splitted_y = [], []
     cur_X, cur_y = X, y
     cur_X_train, cur_X_test, cur_y_train, cur_y_test = train_test_split(
-        cur_X, cur_y, train_size=0.7, random_state=50
+        cur_X, cur_y, train_size=0.7, random_state=RANDOM_STATE
     )
     cur_X_train, cur_y_train = flatten_r(cur_X_train, cur_y_train)
     cur_X_val, cur_X_test, cur_y_val, cur_y_test = train_test_split(
-        cur_X_test, cur_y_test, train_size=0.5, random_state=50
+        cur_X_test, cur_y_test, train_size=0.5, random_state=RANDOM_STATE
     )
     cur_X_test, cur_y_test = flatten_r(cur_X_test, cur_y_test)
     cur_X_val, cur_y_val = flatten_r(cur_X_val, cur_y_val)
@@ -577,7 +586,7 @@ def split_transform_one_comp(X, y):
 
 def split_transform_one_comp_train_test(X, y):
     cur_X_train, cur_X_test, cur_y_train, cur_y_test = train_test_split(
-        X, y, train_size=0.7, random_state=50
+        X, y, train_size=0.7, random_state=RANDOM_STATE
     )
     cur_X_train, cur_y_train = flatten_r(cur_X_train, cur_y_train)
     cur_X_test, cur_y_test = flatten_r(cur_X_test, cur_y_test)
@@ -624,12 +633,12 @@ def split_transform_one_comp_cv(X, y, n_splits=5):
     val_set_X, val_set_y, train_set_X, train_set_y = [], [], [], []
     # Split to get test set
     cur_X_train, cur_X_test, cur_y_train, cur_y_test = train_test_split(
-        X, y, train_size=0.85, random_state=50
+        X, y, train_size=0.85, random_state=RANDOM_STATE
     )
     # Format val set
     cur_X_test, cur_y_test = flatten_r(cur_X_test, cur_y_test)
     # Shuffle to get test and val sets
-    ss = ShuffleSplit(n_splits=n_splits, test_size=0.15 / (0.7 + 0.15), random_state=0)
+    ss = ShuffleSplit(n_splits=n_splits, test_size=0.15 / (0.7 + 0.15), random_state=RANDOM_STATE)
     for i, (train_index, test_index) in enumerate(ss.split(cur_X_train)):
         # Get train and val sets on iteration
         cur_X_val_splitted = cur_X_train[test_index]
@@ -653,7 +662,9 @@ def split_transform_one_comp_cv(X, y, n_splits=5):
 
 
 def get_train_test(x, y):
-    x_train, x_test, y_train, y_test = train_test_split(x, y, train_size=0.85, random_state=0)
+    x_train, x_test, y_train, y_test = train_test_split(
+        x, y, train_size=0.85, random_state=RANDOM_STATE
+    )
     x_train, y_train = flatten_r(x_train, y_train)
     x_test, y_test = flatten_r(x_test, y_test)
     return x_test, y_test, x_train, y_train
@@ -767,7 +778,7 @@ def special_ann_stress_strains_val(
                     learning_rate_init=learning_rate_init,
                     learning_rate=learning_rate,
                     activation=activation,
-                    random_state=100,
+                    random_state=RANDOM_STATE,
                     #  alpha=alpha,
                     early_stopping=True,
                     solver=solver,
@@ -929,11 +940,6 @@ def do_optuna(X, y, n_trials=100, **kwargs):
     return best_params, cur_X_test, cur_y_test, best_value
 
 
-from skopt import gp_minimize
-from skopt.space import Categorical, Integer, Real
-from skopt.utils import use_named_args
-
-
 @ignore_warnings(category=ConvergenceWarning)
 def do_skopt(X, y, n_calls=100, **kwargs):
     n_splits = kwargs.get("n_splits", 3)
@@ -1007,9 +1013,6 @@ def do_skopt(X, y, n_calls=100, **kwargs):
     print("Best Hyperparameters:", best_params)
 
     return best_params, cur_X_test, cur_y_test, best_value
-
-
-from bayes_opt import BayesianOptimization
 
 
 @ignore_warnings(category=ConvergenceWarning)
@@ -1098,7 +1101,7 @@ def do_bayes_opt(X, y, n_iter=100, **kwargs):
     optimizer = BayesianOptimization(
         f=objective,
         pbounds=pbounds,
-        random_state=100,
+        random_state=RANDOM_STATE,
     )
     optimizer.maximize(init_points=10, n_iter=n_iter)
 
@@ -1168,3 +1171,106 @@ def test_after_opt(best_params, x, y, model_name, path_import, metric="rmse"):
     train_error = _metric(cur_y_train, cur_prediction_train)
     print(f"test {metric} = {test_error}")
     return best_regr, cur_prediction, cur_y_test, cur_X_test, test_error, train_error
+
+
+# Настройка логгера
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logger = logging.getLogger(__name__)
+
+
+class KANModelTrainTest:
+    """Model for create, train and test KAN model"""
+
+    def __init__(self):
+        self.model = None
+        self.train_input = None
+        self.train_label = None
+        self.test_input = None
+        self.test_label = None
+        self.best_params = None
+        self.best_value = None
+
+    def create_train_val_test(self, X, y, n_splits=5):
+        """Create train and test sets"""
+        cur_X_test, cur_y_test, val_set_X, val_set_y, train_set_X, train_set_y = (
+            split_transform_one_comp_cv(X, y, n_splits=n_splits)
+        )
+        self.train_set_X = train_set_X
+        self.train_set_y = train_set_y
+        self.val_set_X = val_set_X
+        self.val_set_y = val_set_y
+        self.cur_X_test = cur_X_test
+        self.cur_y_test = cur_y_test
+        self.input_layer = self.train_set_X[0].shape[1]
+        self.output_layer = (
+            1 if len(self.train_set_y[0].shape) == 1 else self.train_set_y[0].shape[1]
+        )
+
+    def create_dataset(self, x_train, y_train, x_test, y_test):
+        tensor_x = torch.Tensor(x_train)  # transform to torch tensor
+        tensor_y = torch.Tensor(y_train)
+
+        test_tensor_x = torch.Tensor(x_test)
+        test_tensor_y = torch.Tensor(y_test)
+
+        my_dataset = {
+            "train_input": tensor_x,
+            "test_input": test_tensor_x,
+            "train_label": tensor_y,
+            "test_label": test_tensor_y,
+        }
+        return my_dataset
+
+    def train_model(self, width, opt, steps):
+        """Train KAN model"""
+        list_val_rmse = []
+        for x_train, y_train, x_val, y_val in zip(
+            self.train_set_X, self.train_set_y, self.val_set_X, self.val_set_y
+        ):
+            kan_model = KAN(width=width)
+            my_dataset = self.create_dataset(x_train, y_train, x_val, y_val)
+            result: dict = kan_model.fit(my_dataset, opt=opt, steps=steps)
+            val_rmse = result["test_loss"][-1]
+            logger.info(f"val_rmse = {val_rmse}")
+            list_val_rmse.append(val_rmse)
+        return list_val_rmse
+
+    def calc_validation_metric(self, list_val_rmse) -> float:
+        return np.array(list_val_rmse).max()
+
+    def optimize_hyperparams(self, n_trials=100):
+        """Optimize hyperparameters of KAN model using Optuna"""
+
+        def objective(trial):
+            k_layers = trial.suggest_int("n_layers", 1, 3)
+            opt = trial.suggest_categorical("opt", ["LBFGS", "Adam"])
+            steps = trial.suggest_int("steps", 10, 1500)
+            layers = []
+            for i in range(k_layers):
+                layers.append(trial.suggest_int(f"n_units_{i}", 1, 10))
+
+            width = [self.input_layer] + layers + [self.output_layer]
+            logger.info(f"width = {width}")
+            try:
+                list_val_rmse = self.train_model(width=width, opt=opt, steps=steps)
+                return self.calc_validation_metric(list_val_rmse)
+            except Exception as e:
+                logger.error(f"Error during training: {e}")
+                return 1e6
+
+        study = optuna.create_study(direction="minimize")
+        study.optimize(objective, n_trials=n_trials)
+        self.best_params = study.best_params
+        return self.best_params
+
+    def calc_test_metric(self):
+        pass
+
+    def get_train_dataset(self):
+        return self.train_set_X, self.train_set_y
+
+    def get_test_dataset(self):
+        return self.cur_X_test, self.cur_y_test
+
+    def get_val_dataset(self):
+        return self.val_set_X, self.val_set_y
