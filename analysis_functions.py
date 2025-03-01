@@ -603,8 +603,33 @@ def scorer(y_true, y_pred, pipeline, X_train):
     me = max_error(y_true, y_pred)  # 0-- BEST
     rmse = root_mean_squared_error(y_true, y_pred)  # 0 -- BEST
 
-    model = pipeline["mlpregressor"]
-    n_params = model.coefs_[0].size + model.coefs_[1].size
+    if isinstance(
+        pipeline,
+        (
+            MLPRegressor,
+            sklearn.tree.DecisionTreeRegressor,
+            sklearn.ensemble.GradientBoostingRegressor,
+        ),
+    ):
+        model = pipeline
+    else:
+        model = (
+            pipeline.named_steps.get("mlpregressor")
+            or pipeline.named_steps.get("decisiontree")
+            or pipeline.named_steps.get("gradientboosting")
+        )
+
+    if isinstance(model, MLPRegressor):
+        n_params = model.coefs_[0].size + model.coefs_[1].size
+    elif isinstance(model, sklearn.tree.DecisionTreeRegressor):
+        n_params = model.tree_.node_count
+    elif isinstance(model, sklearn.ensemble.GradientBoostingRegressor):
+        n_params = sum(
+            estimator.tree_.node_count for estimator in model.estimators_.ravel()
+        )
+    else:
+        raise ValueError("Unsupported model type")
+
     n = len(X_train)  # number of samples
     aic = n * np.log(mse) + 2 * n_params  # 0 -- BEST
     bic = n * np.log(mse) + n_params * np.log(n)  # 0 -- BEST
@@ -638,7 +663,9 @@ def split_transform_one_comp_cv(X, y, n_splits=5):
     # Format val set
     cur_X_test, cur_y_test = flatten_r(cur_X_test, cur_y_test)
     # Shuffle to get test and val sets
-    ss = ShuffleSplit(n_splits=n_splits, test_size=0.15 / (0.7 + 0.15), random_state=RANDOM_STATE)
+    ss = ShuffleSplit(
+        n_splits=n_splits, test_size=0.15 / (0.7 + 0.15), random_state=RANDOM_STATE
+    )
     for i, (train_index, test_index) in enumerate(ss.split(cur_X_train)):
         # Get train and val sets on iteration
         cur_X_val_splitted = cur_X_train[test_index]
@@ -933,7 +960,9 @@ def do_optuna(X, y, n_trials=100, **kwargs):
         # Collect validation result
         val_metrics = choose_worst(errors)
         # return_value = val_metrics[0] if pd.notnull(val_metrics[0]) else -1e6 # для evs
-        return_value = val_metrics[-1] if pd.notnull(val_metrics[-1]) else +1e6  # для rmse
+        return_value = (
+            val_metrics[-1] if pd.notnull(val_metrics[-1]) else +1e6
+        )  # для rmse
         return return_value
 
     # Create a study object to optimize the objective
@@ -1010,7 +1039,9 @@ def do_skopt(X, y, n_calls=100, **kwargs):
         # Collect validation result
         val_metrics = choose_worst(errors)
         # return_value = val_metrics[0] if pd.notnull(val_metrics[0]) else -1e6 # для evs
-        return_value = val_metrics[-1] if pd.notnull(val_metrics[-1]) else +1e6  # для rmse
+        return_value = (
+            val_metrics[-1] if pd.notnull(val_metrics[-1]) else +1e6
+        )  # для rmse
         return return_value
 
     # Perform the optimization
@@ -1103,7 +1134,9 @@ def do_bayes_opt(X, y, n_iter=100, **kwargs):
         # Collect validation result
         val_metrics = choose_worst(errors)
         # return_value = val_metrics[0] if pd.notnull(val_metrics[0]) else -1e6 # для evs
-        return_value = val_metrics[-1] if pd.notnull(val_metrics[-1]) else +1e6  # для rmse
+        return_value = (
+            val_metrics[-1] if pd.notnull(val_metrics[-1]) else +1e6
+        )  # для rmse
         return -return_value  # Invert the value for minimization
 
     # Perform the optimization
@@ -1124,7 +1157,9 @@ def do_bayes_opt(X, y, n_iter=100, **kwargs):
         int(best_params["learning_rate"])
     ]
     best_params["alpha"] = [0.3, 0.1, 0.01, 0.001, 0.0001][int(best_params["alpha"])]
-    best_params["activation"] = ["logistic", "relu", "tanh"][int(best_params["activation"])]
+    best_params["activation"] = ["logistic", "relu", "tanh"][
+        int(best_params["activation"])
+    ]
     best_params["solver"] = ["lbfgs", "adam", "sgd"][int(best_params["solver"])]
 
     best_value = -optimizer.max["target"]
@@ -1183,7 +1218,9 @@ def test_after_opt(best_params, x, y, model_name, path_import, metric="rmse"):
 
 
 # Настройка логгера
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 logger = logging.getLogger(__name__)
 
 
