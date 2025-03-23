@@ -1290,10 +1290,10 @@ class KANModelTrainTest:
         def objective(trial):
             k_layers = trial.suggest_int("n_layers", 1, 3)
             opt = trial.suggest_categorical("opt", ["LBFGS", "Adam"])
-            steps = trial.suggest_int("steps", 10, 1500)
+            steps = trial.suggest_int("steps", 10, 15)
             layers = []
             for i in range(k_layers):
-                layers.append(trial.suggest_int(f"n_units_{i}", 1, 10))
+                layers.append(trial.suggest_int(f"n_units_{i}", 1, 5))
 
             width = [self.input_layer] + layers + [self.output_layer]
             logger.info(f"width = {width}")
