@@ -1,0 +1,199 @@
+affine_trainable: false
+auto_save: true
+base_fun_name: silu
+ckpt_path: ./model
+device: cpu
+grid: 3
+grid_eps: 0.02
+grid_range:
+- -1
+- 1
+k: 3
+mult_arity: 2
+round: 0
+sb_trainable: true
+sp_trainable: true
+state_id: 2
+symbolic.funs_name.0:
+- - sin
+  - sin
+  - sin
+  - sin
+  - sin
+  - sin
+- - sin
+  - sin
+  - sin
+  - sin
+  - sin
+  - sin
+symbolic.funs_name.1:
+- - x
+  - x
+- - sin
+  - x
+symbolic.funs_name.2:
+- - exp
+  - sin
+- - sin
+  - sin
+- - exp
+  - x
+- - exp
+  - sin
+- - exp
+  - sin
+- - exp
+  - x
+- - sin
+  - sin
+symbolic.funs_name.3:
+- - exp
+  - x
+  - sin
+  - sin
+  - x
+  - x
+  - x
+- - exp
+  - exp
+  - sin
+  - x
+  - sin
+  - sin
+  - x^2
+- - x^2
+  - exp
+  - sin
+  - x
+  - x
+  - sin
+  - x
+- - exp
+  - x^2
+  - sin
+  - sin
+  - sin
+  - sin
+  - exp
+- - exp
+  - exp
+  - sin
+  - x
+  - sin
+  - sin
+  - x^2
+- - exp
+  - exp
+  - sin
+  - sin
+  - sin
+  - sin
+  - x^2
+- - log
+  - x
+  - sin
+  - sin
+  - sin
+  - sin
+  - exp
+- - exp
+  - exp
+  - sin
+  - x
+  - sin
+  - sin
+  - x^2
+- - x^2
+  - exp
+  - sin
+  - x
+  - sin
+  - sin
+  - exp
+- - x^2
+  - x
+  - sin
+  - sin
+  - sin
+  - x
+  - sin
+symbolic.funs_name.4:
+- - x
+  - x^2
+  - sin
+  - exp
+  - exp
+  - sin
+  - exp
+  - x
+  - x^4
+  - sin
+- - x^2
+  - sin
+  - x^2
+  - x
+  - exp
+  - exp
+  - x
+  - x
+  - sin
+  - x
+- - exp
+  - x
+  - x^2
+  - x
+  - exp
+  - sin
+  - sqrt
+  - x
+  - x^4
+  - sin
+symbolic.funs_name.5:
+- - x^2
+  - x^2
+  - x^2
+- - x^2
+  - sin
+  - sin
+- - x^2
+  - sin
+  - sin
+- - x^2
+  - sin
+  - x^2
+- - x^2
+  - exp
+  - sin
+- - x^2
+  - sin
+  - sin
+- - x^2
+  - sin
+  - sin
+symbolic.funs_name.6:
+- - sin
+  - x
+  - x
+  - x^2
+  - sin
+  - x^2
+  - x
+symbolic_enabled: true
+width:
+- - 6
+  - 0
+- - 2
+  - 0
+- - 2
+  - 0
+- - 7
+  - 0
+- - 10
+  - 0
+- - 3
+  - 0
+- - 7
+  - 0
+- - 1
+  - 0
