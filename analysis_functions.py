@@ -1284,16 +1284,18 @@ class KANModelTrainTest:
     def calc_validation_metric(self, list_val_rmse) -> float:
         return np.array(list_val_rmse).max()
 
-    def optimize_hyperparams(self, n_trials=100):
+    def optimize_hyperparams(
+        self, n_trials=100, max_n_layers=3, max_steps=15, max_n_units=5
+    ):
         """Optimize hyperparameters of KAN model using Optuna"""
 
         def objective(trial):
-            k_layers = trial.suggest_int("n_layers", 1, 3)
+            k_layers = trial.suggest_int("n_layers", 1, max_n_layers)
             opt = trial.suggest_categorical("opt", ["LBFGS", "Adam"])
-            steps = trial.suggest_int("steps", 10, 15)
+            steps = trial.suggest_int("steps", 10, max_steps)
             layers = []
             for i in range(k_layers):
-                layers.append(trial.suggest_int(f"n_units_{i}", 1, 5))
+                layers.append(trial.suggest_int(f"n_units_{i}", 1, max_n_units))
 
             width = [self.input_layer] + layers + [self.output_layer]
             logger.info(f"width = {width}")
