@@ -1,6 +1,5 @@
 import logging
 import os
-
 # np.set_printoptions(threshold=1000)
 ##########################
 # SAVE-LOAD using pickle #
@@ -1285,7 +1284,7 @@ class KANModelTrainTest:
         return np.array(list_val_rmse).max()
 
     def optimize_hyperparams(
-        self, n_trials=100, max_n_layers=3, max_steps=15, max_n_units=5
+        self, n_trials=100, max_n_layers=3, max_steps=15, max_n_units=5, n_jobs=1
     ):
         """Optimize hyperparameters of KAN model using Optuna"""
 
@@ -1307,7 +1306,7 @@ class KANModelTrainTest:
                 return 1e6
 
         study = optuna.create_study(direction="minimize")
-        study.optimize(objective, n_trials=n_trials)
+        study.optimize(objective, n_trials=n_trials, gc_after_trial=True, n_jobs=n_jobs)
         self.best_params = study.best_params
         return self.best_params
 
