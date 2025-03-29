@@ -1234,6 +1234,7 @@ class KANModelTrainTest:
         self.test_label = None
         self.best_params = None
         self.best_value = None
+        self.seed = RANDOM_STATE
 
     def create_train_val_test(self, X, y, n_splits=5):
         """Create train and test sets"""
@@ -1264,6 +1265,7 @@ class KANModelTrainTest:
             "train_label": tensor_y,
             "test_label": test_tensor_y,
         }
+        
         return my_dataset
 
     def train_model(self, width, opt, steps):
@@ -1272,7 +1274,7 @@ class KANModelTrainTest:
         for x_train, y_train, x_val, y_val in zip(
             self.train_set_X, self.train_set_y, self.val_set_X, self.val_set_y
         ):
-            kan_model = KAN(width=width)
+            kan_model = KAN(width=width, seed=self.seed)
             my_dataset = self.create_dataset(x_train, y_train, x_val, y_val)
             result: dict = kan_model.fit(my_dataset, opt=opt, steps=steps)
             val_rmse = result["test_loss"][-1]
@@ -1288,10 +1290,19 @@ class KANModelTrainTest:
     ):
         """Optimize hyperparameters of KAN model using Optuna"""
 
-        def objective(trial):
+        def objective(trial: optuna.trial.Trial):
+            """
+            Objective function for Optuna to optimize the hyperparameters of the KAN model.
+
+            Args:
+            trial (optuna.trial.Trial): A single trial object to suggest hyperparameters.
+
+            Returns:
+            float: The validation metric (e.g., RMSE) to minimize.
+            """
             k_layers = trial.suggest_int("n_layers", 1, max_n_layers)
             opt = trial.suggest_categorical("opt", ["LBFGS", "Adam"])
-            steps = trial.suggest_int("steps", 10, max_steps)
+            steps = trial.suggest_int("steps", 1, max_steps)
             layers = []
             for i in range(k_layers):
                 layers.append(trial.suggest_int(f"n_units_{i}", 1, max_n_units))
@@ -1311,7 +1322,27 @@ class KANModelTrainTest:
         return self.best_params
 
     def calc_test_metric(self):
-        pass
+        """Calculate metric on test dataset"""
+        k_layers = self.best_params.get("n_layers")
+        layers = []
+        for i in range(k_layers):
+            layers.append(self.best_params.get(f"n_units_{i}"))
+
+        width = [self.input_layer] + layers + [self.output_layer]
+        opt = self.best_params.get("opt")
+        steps = self.best_params.get("steps")
+
+        kan_model = KAN(width=width, seed=self.seed)
+        my_dataset = self.create_dataset(
+            self.train_set_X[0],
+            self.train_set_y[0],
+            self.cur_X_test,
+            self.cur_y_test,
+        )
+        result: dict = kan_model.fit(my_dataset, opt=opt, steps=steps)
+        test_rmse = result["test_loss"][-1]
+        logger.info(f"test_rmse = {test_rmse}")
+        return test_rmse
 
     def get_train_dataset(self):
         return self.train_set_X, self.train_set_y
