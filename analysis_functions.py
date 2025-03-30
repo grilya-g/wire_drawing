@@ -1242,11 +1242,11 @@ class KANModelTrainTest:
             split_transform_one_comp_cv(X, y, n_splits=n_splits)
         )
         self.train_set_X = train_set_X
-        self.train_set_y = train_set_y
+        self.train_set_y = [s.reshape(-1, 1) for s in train_set_y]
         self.val_set_X = val_set_X
-        self.val_set_y = val_set_y
+        self.val_set_y = [s.reshape(-1, 1) for s in val_set_y]
         self.cur_X_test = cur_X_test
-        self.cur_y_test = cur_y_test
+        self.cur_y_test = cur_y_test.reshape(-1, 1)
         self.input_layer = self.train_set_X[0].shape[1]
         self.output_layer = (
             1 if len(self.train_set_y[0].shape) == 1 else self.train_set_y[0].shape[1]
@@ -1268,15 +1268,38 @@ class KANModelTrainTest:
         
         return my_dataset
 
-    def train_model(self, width, opt, steps):
+    def train_model(self, width, opt, steps, grid, k):
         """Train KAN model"""
         list_val_rmse = []
         for x_train, y_train, x_val, y_val in zip(
             self.train_set_X, self.train_set_y, self.val_set_X, self.val_set_y
         ):
-            kan_model = KAN(width=width, seed=self.seed)
+            kan_model = KAN(width=width, seed=self.seed, grid=grid, k=k)
             my_dataset = self.create_dataset(x_train, y_train, x_val, y_val)
-            result: dict = kan_model.fit(my_dataset, opt=opt, steps=steps)
+            def train_rmse():
+                with torch.no_grad():
+                    predictions = kan_model(my_dataset["train_input"])
+                    mse = torch.nn.functional.mse_loss(
+                        predictions, my_dataset["train_label"]
+                    )
+                    rmse = torch.sqrt(mse + 1e-6)
+                return rmse
+
+            def test_rmse():
+                with torch.no_grad():
+                    predictions = kan_model(my_dataset["test_input"])
+                    mse = torch.nn.functional.mse_loss(
+                        predictions, my_dataset["test_label"]
+                    )
+                    rmse = torch.sqrt(mse + 1e-6)
+                return rmse
+            result: dict = kan_model.fit(
+                my_dataset,
+                opt=opt,
+                steps=steps,
+                metrics=(train_rmse, test_rmse),
+                loss_fn=torch.nn.MSELoss(),
+            )
             val_rmse = result["test_loss"][-1]
             logger.info(f"val_rmse = {val_rmse}")
             list_val_rmse.append(val_rmse)
@@ -1286,7 +1309,14 @@ class KANModelTrainTest:
         return np.array(list_val_rmse).max()
 
     def optimize_hyperparams(
-        self, n_trials=100, max_n_layers=3, max_steps=15, max_n_units=5, n_jobs=1
+        self,
+        n_trials=100,
+        max_n_layers=3,
+        max_steps=15,
+        max_n_units=5,
+        max_grid=15,
+        max_k=10,
+        n_jobs=1,
     ):
         """Optimize hyperparameters of KAN model using Optuna"""
 
@@ -1300,17 +1330,21 @@ class KANModelTrainTest:
             Returns:
             float: The validation metric (e.g., RMSE) to minimize.
             """
-            k_layers = trial.suggest_int("n_layers", 1, max_n_layers)
+            n_layers = trial.suggest_int("n_layers", 1, max_n_layers)
             opt = trial.suggest_categorical("opt", ["LBFGS", "Adam"])
             steps = trial.suggest_int("steps", 1, max_steps)
+            grid = trial.suggest_int("grid", 1, max_grid)
+            k = trial.suggest_int("k", 1, max_k)
             layers = []
-            for i in range(k_layers):
+            for i in range(n_layers):
                 layers.append(trial.suggest_int(f"n_units_{i}", 1, max_n_units))
 
             width = [self.input_layer] + layers + [self.output_layer]
             logger.info(f"width = {width}")
             try:
-                list_val_rmse = self.train_model(width=width, opt=opt, steps=steps)
+                list_val_rmse = self.train_model(
+                    width=width, opt=opt, steps=steps, grid=grid, k=k
+                )
                 return self.calc_validation_metric(list_val_rmse)
             except Exception as e:
                 logger.error(f"Error during training: {e}")
@@ -1331,18 +1365,50 @@ class KANModelTrainTest:
         width = [self.input_layer] + layers + [self.output_layer]
         opt = self.best_params.get("opt")
         steps = self.best_params.get("steps")
+        k = self.best_params.get("k")
+        grid = self.best_params.get("grid")
 
-        kan_model = KAN(width=width, seed=self.seed)
+        test_model = KAN(
+            width=width,
+            seed=self.seed,
+            grid=grid,
+            k=k,
+        )
         my_dataset = self.create_dataset(
             self.train_set_X[0],
             self.train_set_y[0],
             self.cur_X_test,
             self.cur_y_test,
         )
-        result: dict = kan_model.fit(my_dataset, opt=opt, steps=steps)
-        test_rmse = result["test_loss"][-1]
-        logger.info(f"test_rmse = {test_rmse}")
-        return test_rmse
+        def train_rmse():
+            with torch.no_grad():
+                predictions = test_model(my_dataset["train_input"])
+                mse = torch.nn.functional.mse_loss(
+                    predictions, my_dataset["train_label"]
+                )
+                rmse = torch.sqrt(mse + 1e-6)
+            return rmse
+        def test_rmse():
+            with torch.no_grad():
+                predictions = test_model(my_dataset["test_input"])
+                mse = torch.nn.functional.mse_loss(
+                    predictions, my_dataset["test_label"]
+                )
+                rmse = torch.sqrt(mse + 1e-6)
+            return rmse
+        # Train the model
+        result: dict = test_model.fit(
+            my_dataset,
+            opt=opt,
+            steps=steps,
+            metrics=(train_rmse, test_rmse),
+            loss_fn=torch.nn.MSELoss(),
+        )
+        self.test_rmse = result["test_loss"][-1]
+        self.test_pred = test_model(torch.Tensor(self.cur_X_test))
+        self.final_model = test_model
+        logger.info(f"test_rmse = {self.test_rmse}")
+        return self.test_rmse
 
     def get_train_dataset(self):
         return self.train_set_X, self.train_set_y
