@@ -467,6 +467,57 @@ def data_preparer(train_list, train_arrays):
     )
 
 
+def make_X_y(path_import, path_export, posfix):
+    """
+    Function to load data from the 'path_import' folder,
+    prepare it for learning and save it in the 'path_export' folder
+    with 'postfix' in the end of the names.
+
+    Parameters
+    ----------
+
+    path_import : str
+        Path to the folder with the data.
+    path_export : str
+        Path to the folder where the data will be saved.
+    posfix : str
+        Postfix for the data names.
+    """
+    files = do_rep_list(path_import)
+    arrays = do_preprocessing(files, path_import)
+    (
+        X_stress_components_new,
+        X_strain_components_new,
+        y_stress_components_new,
+        y_strain_components_new,
+    ) = data_preparer(files, arrays)
+    saver(
+        X_stress_components_new,
+        f"X_stress_components_{posfix}",
+        path_import=path_export,
+    )
+    saver(
+        X_strain_components_new,
+        f"X_strain_components_{posfix}",
+        path_import=path_export,
+    )
+    saver(
+        y_stress_components_new,
+        f"y_stress_components_{posfix}",
+        path_import=path_export,
+    )
+    saver(
+        y_strain_components_new,
+        f"y_strain_components_{posfix}",
+        path_import=path_export,
+    )
+
+
+def make_X_y_from_list(path_import_list, path_export, posfix):
+    for path_import in path_import_list:
+        make_X_y(path_import, path_export, posfix)
+
+
 def plot_result_stress_avr_v(list_files, labels, name, **kwargs):
     """Строит графики для минимальных, максимальных и средних деформаций для переданных списков в вертикальной ориентации"""
     plt.figure(figsize=(18, 10))
