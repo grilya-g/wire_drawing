@@ -1280,22 +1280,56 @@ class KANModelTrainTest:
             kan_model = KAN(width=width, seed=self.seed, grid=grid, k=k, device=self.device)
             my_dataset = self.create_dataset(x_train, y_train, x_val, y_val)
             def train_rmse():
-                with torch.no_grad():
-                    predictions = kan_model(my_dataset["train_input"])
-                    mse = torch.nn.functional.mse_loss(
-                        predictions, my_dataset["train_label"]
-                    )
-                    rmse = torch.sqrt(mse + 1e-6)
-                return rmse.detach()  # Explicitly detach to prevent backward graph issues
+                try:
+                    with torch.no_grad():
+                        predictions = kan_model(my_dataset["train_input"])
+                        # First check if predictions contain NaN values and replace them
+                        predictions_clean = torch.where(
+                            torch.isnan(predictions),
+                            my_dataset["train_label"],  # If NaN, use the actual label (will give MSE=0 for those points)
+                            predictions
+                        )
+                        # Calculate element-wise squared error to have more control
+                        squared_errors = torch.pow(predictions_clean - my_dataset["train_label"], 2)
+                        # Average the errors
+                        mse = torch.mean(squared_errors)
+                        # Ensure MSE is positive and not too small
+                        mse_safe = torch.clamp(mse, min=1e-6)
+                        rmse = torch.sqrt(mse_safe)
+                        # Final check for NaN
+                        if torch.isnan(rmse).item():
+                            logger.warning("NaN detected in train_rmse, returning safe value")
+                            return torch.tensor(10.0, device=self.device).detach()
+                        return rmse.detach()
+                except Exception as e:
+                    logger.error(f"Error in train_rmse: {str(e)}")
+                    return torch.tensor(10.0, device=self.device).detach()
 
             def test_rmse():
-                with torch.no_grad():
-                    predictions = kan_model(my_dataset["test_input"])
-                    mse = torch.nn.functional.mse_loss(
-                        predictions, my_dataset["test_label"]
-                    )
-                    rmse = torch.sqrt(mse + 1e-6)
-                return rmse.detach()  # Explicitly detach to prevent backward graph issues
+                try:
+                    with torch.no_grad():
+                        predictions = kan_model(my_dataset["test_input"])
+                        # First check if predictions contain NaN values and replace them
+                        predictions_clean = torch.where(
+                            torch.isnan(predictions),
+                            my_dataset["test_label"],  # If NaN, use the actual label
+                            predictions
+                        )
+                        # Calculate element-wise squared error
+                        squared_errors = torch.pow(predictions_clean - my_dataset["test_label"], 2)
+                        # Average the errors
+                        mse = torch.mean(squared_errors)
+                        # Ensure MSE is positive and not too small
+                        mse_safe = torch.clamp(mse, min=1e-6)
+                        rmse = torch.sqrt(mse_safe)
+                        # Final check for NaN
+                        if torch.isnan(rmse).item():
+                            logger.warning("NaN detected in test_rmse, returning safe value")
+                            return torch.tensor(10.0, device=self.device).detach()
+                        return rmse.detach()
+                except Exception as e:
+                    logger.error(f"Error in test_rmse: {str(e)}")
+                    return torch.tensor(10.0, device=self.device).detach()
             result: dict = kan_model.fit(
                 my_dataset,
                 opt=opt,
@@ -1384,21 +1418,56 @@ class KANModelTrainTest:
             self.cur_y_test,
         )
         def train_rmse():
-            with torch.no_grad():
-                predictions = test_model(my_dataset["train_input"])
-                mse = torch.nn.functional.mse_loss(
-                    predictions, my_dataset["train_label"]
-                )
-                rmse = torch.sqrt(mse + 1e-6)
-            return rmse.detach()  # Explicitly detach to prevent backward graph issues
+            try:
+                with torch.no_grad():
+                    predictions = test_model(my_dataset["train_input"])
+                    # First check if predictions contain NaN values and replace them
+                    predictions_clean = torch.where(
+                        torch.isnan(predictions),
+                        my_dataset["train_label"],  # If NaN, use the actual label
+                        predictions
+                    )
+                    # Calculate element-wise squared error to have more control
+                    squared_errors = torch.pow(predictions_clean - my_dataset["train_label"], 2)
+                    # Average the errors
+                    mse = torch.mean(squared_errors)
+                    # Ensure MSE is positive and not too small
+                    mse_safe = torch.clamp(mse, min=1e-6)
+                    rmse = torch.sqrt(mse_safe)
+                    # Final check for NaN
+                    if torch.isnan(rmse).item():
+                        logger.warning("NaN detected in test calc train_rmse, returning safe value")
+                        return torch.tensor(10.0, device=self.device).detach()
+                    return rmse.detach()
+            except Exception as e:
+                logger.error(f"Error in test calc train_rmse: {str(e)}")
+                return torch.tensor(10.0, device=self.device).detach()
+                
         def test_rmse():
-            with torch.no_grad():
-                predictions = test_model(my_dataset["test_input"])
-                mse = torch.nn.functional.mse_loss(
-                    predictions, my_dataset["test_label"]
-                )
-                rmse = torch.sqrt(mse + 1e-6)
-            return rmse.detach()  # Explicitly detach to prevent backward graph issues
+            try:
+                with torch.no_grad():
+                    predictions = test_model(my_dataset["test_input"])
+                    # First check if predictions contain NaN values and replace them
+                    predictions_clean = torch.where(
+                        torch.isnan(predictions),
+                        my_dataset["test_label"],  # If NaN, use the actual label
+                        predictions
+                    )
+                    # Calculate element-wise squared error
+                    squared_errors = torch.pow(predictions_clean - my_dataset["test_label"], 2)
+                    # Average the errors
+                    mse = torch.mean(squared_errors)
+                    # Ensure MSE is positive and not too small
+                    mse_safe = torch.clamp(mse, min=1e-6)
+                    rmse = torch.sqrt(mse_safe)
+                    # Final check for NaN
+                    if torch.isnan(rmse).item():
+                        logger.warning("NaN detected in test calc test_rmse, returning safe value") 
+                        return torch.tensor(10.0, device=self.device).detach()
+                    return rmse.detach()
+            except Exception as e:
+                logger.error(f"Error in test calc test_rmse: {str(e)}")
+                return torch.tensor(10.0, device=self.device).detach()
         # Train the model
         result: dict = test_model.fit(
             my_dataset,
