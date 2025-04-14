@@ -18,8 +18,8 @@ def main():
     print("="*50)
     
     # Load data
-    X_stress_components_new = opener('X_stress_components_new', path_import='./resources/')
-    y_stress_components_new = opener('y_stress_components_new', path_import='./resources/')
+    X_stress_components_new = opener('X_stress_components_aisi', path_import='./resources/')
+    y_stress_components_new = opener('y_stress_components_aisi', path_import='./resources/')
 
     print(X_stress_components_new.shape)
 
