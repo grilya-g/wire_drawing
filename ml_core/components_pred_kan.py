@@ -23,11 +23,11 @@ def main():
 
     print(X_stress_components_new.shape)
 
-    component_num = 1
+    component_num = 0
     n_trials = 200
     
     # Init KAN model
-    kan_model = KANModelTrainTest() # type: ignore
+    kan_model = KANModelTrainTest(use_gpu=False) # type: ignore
 
     kan_model.create_train_val_test(
         X=X_stress_components_new[component_num],
@@ -110,7 +110,7 @@ def main():
         max_steps=1000,
         max_grid=6,
         max_k=6,
-        n_jobs=1,
+        n_jobs=-1,
     )
     
     # Restore original stdout and stderr
