@@ -982,7 +982,7 @@ def do_optuna(X, y, n_trials=100, **kwargs):
         }
 
         # Fitting and scoring `n_split` times
-        errors = np.zeros((n_splits, 9))
+        errors = np.zeros((n_splits, 5))
 
         for split_idx in range(n_splits):
             regr = make_pipeline(
