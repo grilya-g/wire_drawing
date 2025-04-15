@@ -1,0 +1,29 @@
+job:
+    time_limit: 168h0m0s
+    flavor: "a100-1x"  # используем GPU для ускорения
+    generate_name: "wire-drawing-mlp-gpu-1-component_num"
+    image: docker-hosted.artifactory.tcsbank.ru/risk-scoring-models/npv_models:release-v0.0.1
+    args:
+        - sh
+        - -c
+        - |
+          cd /app && \
+          pip install -r requirements.txt && \
+          pip install torch optuna && \
+          echo 'Dependencies installed successfully' && \
+          python components_pred_mlp.py
+    input:
+        - type: files
+          name: ml_core_files
+          src: ./
+          dst: /app
+          mask: "**/*"
+        # - type: files
+        #   name: requirements
+        #   src: requirements.txt
+        #   dst: /app/requirements.txt
+    output:
+        - type: files
+          name: MY_ARTIFACT
+          src: /output
+          dst: ""
