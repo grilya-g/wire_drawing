@@ -291,7 +291,7 @@ def r(job_name):
     """
     splitted_job = job_name.split("_")
     for i in range(len(splitted_job)):
-        if splitted_job[i] == "red":
+        if splitted_job[i] in ("red", "rd"):
             found = splitted_job[i + 1]
     reduct = float(found) / 10000
     return reduct
@@ -315,7 +315,7 @@ def f(job_name):
     """
     splitted_job = job_name.split("_")
     for i in range(len(splitted_job)):
-        if splitted_job[i] == "fric":
+        if splitted_job[i] in ("fric", "f"):
             found = splitted_job[i + 1][1:]
     fr = float(found) / 1000
     return fr
@@ -327,7 +327,7 @@ def v(job_name):
     """
     splitted_job = job_name.split("_")
     for i in range(len(splitted_job)):
-        if splitted_job[i] == "vel":
+        if splitted_job[i] in ("vel", "v"):
             found = splitted_job[i + 1]
     velo = int(found)
     return velo
