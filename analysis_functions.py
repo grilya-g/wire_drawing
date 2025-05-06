@@ -122,8 +122,14 @@ def files_list(list_one, dir_):
     """
     list_files = []
     for i in range(0, len(list_one)):
-        file = read_data_txt_np(list_one[i], dir_)
-        list_files.append(file)
+        try:
+            file = read_data_txt_np(list_one[i], dir_)
+            list_files.append(file)
+        except:
+            raise Exception(
+                f"File {list_one[i]} is not found in {dir_} or has wrong format"
+            )
+
 
     return list_files
 
