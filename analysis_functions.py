@@ -139,7 +139,7 @@ def median_np(x):
     return np.median(x)
 
 
-def preprocessing_res_np(file):
+def preprocessing_res_np(file, new_notation=True):
     """
     Создание np.array по репорту
     params:
@@ -154,16 +154,30 @@ def preprocessing_res_np(file):
     x_1 = (file[::, 1]) * 10**3
     y_1 = (file[::, 2]) * 10**3
 
-    eps_11_name = file[::, 11]
-    eps_22_name = file[::, 12]
-    eps_33_name = file[::, 13]
-    eps_12_name = file[::, 14]
+    if new_notation:
+        stress_max_name = file[::, 17] / 10**6
+        stress_mid_name = file[::, 18] / 10**6
+        stress_min_name = file[::, 19] / 10**6
 
-    stress_11_name = (file[::, 3]) / 10**6
-    stress_22_name = (file[::, 4]) / 10**6
-    stress_33_name = (file[::, 5]) / 10**6
-    stress_12_name = (file[::, 6]) / 10**6
+        strain_max_name = file[::, 10]
+        strain_mid_name = file[::, 11]
+        strain_min_name = file[::, 12]
 
+        Strain = np.zeros((1, 3))
+        Stress = np.zeros((1, 3))
+    else:
+        eps_11_name = file[::, 11]
+        eps_22_name = file[::, 12]
+        eps_33_name = file[::, 13]
+        eps_12_name = file[::, 14]
+
+        stress_11_name = (file[::, 3]) / 10**6
+        stress_22_name = (file[::, 4]) / 10**6
+        stress_33_name = (file[::, 5]) / 10**6
+        stress_12_name = (file[::, 6]) / 10**6
+
+        Strain = np.zeros((1, 5))
+        Stress = np.zeros((1, 5))
     # nt11_name = (file[::,15])
     # temp_name = (file[::,16])
 
@@ -171,51 +185,72 @@ def preprocessing_res_np(file):
 
     x_1_ = np.zeros((1, 1))
     y_1_ = np.zeros((1, 1))
-    Strain = np.zeros((1, 5))
-    Stress = np.zeros((1, 5))
+
     # NT11 = np.zeros((1, 1))
     # TEMP = np.zeros((1, 1))
     # ind_ = np.zeros((1,1))
-    for j in range(0, np.shape(y_1)[0]):
-        if y_1[j] >= 0.25 * (np.max(y_1) - np.min(y_1)) and y_1[j] <= 0.75 * (
-            np.max(y_1) - np.min(y_1)
-        ):
-            x_1_[index] = x_1[j]
-            y_1_[index] = y_1[j]
-            # ind_[index] = j
+    if not new_notation:
+        for j in range(0, np.shape(y_1)[0]):
+            if y_1[j] >= 0.25 * (np.max(y_1) - np.min(y_1)) and y_1[j] <= 0.75 * (
+                np.max(y_1) - np.min(y_1)
+            ):
+                x_1_[index] = x_1[j]
+                y_1_[index] = y_1[j]
+                # ind_[index] = j
 
-            Stress[index, 0] = stress_11_name[j]
-            Stress[index, 1] = stress_22_name[j]
-            Stress[index, 2] = stress_33_name[j]
-            Stress[index, 3] = stress_12_name[j]
-            Stress[index, 4] = (1 / (np.sqrt(2))) * np.sqrt(
-                (stress_11_name[j] - stress_22_name[j]) ** 2
-                + (stress_22_name[j] - stress_33_name[j]) ** 2
-                + (stress_33_name[j] - stress_11_name[j]) ** 2
-                + 6 * (stress_12_name[j] ** 2)
-            )
+                Stress[index, 0] = stress_11_name[j]
+                Stress[index, 1] = stress_22_name[j]
+                Stress[index, 2] = stress_33_name[j]
+                Stress[index, 3] = stress_12_name[j]
+                Stress[index, 4] = (1 / (np.sqrt(2))) * np.sqrt(
+                    (stress_11_name[j] - stress_22_name[j]) ** 2
+                    + (stress_22_name[j] - stress_33_name[j]) ** 2
+                    + (stress_33_name[j] - stress_11_name[j]) ** 2
+                    + 6 * (stress_12_name[j] ** 2)
+                )
 
-            Strain[index, 0] = eps_11_name[j]
-            Strain[index, 1] = eps_22_name[j]
-            Strain[index, 2] = eps_33_name[j]
-            Strain[index, 3] = eps_12_name[j]
-            Strain[index, 4] = (1 / (np.sqrt(2))) * np.sqrt(
-                (eps_11_name[j] - eps_22_name[j]) ** 2
-                + (eps_22_name[j] - eps_33_name[j]) ** 2
-                + (eps_33_name[j] - eps_11_name[j]) ** 2
-                + 6 * (eps_12_name[j] ** 2)
-            )
+                Strain[index, 0] = eps_11_name[j]
+                Strain[index, 1] = eps_22_name[j]
+                Strain[index, 2] = eps_33_name[j]
+                Strain[index, 3] = eps_12_name[j]
+                Strain[index, 4] = (1 / (np.sqrt(2))) * np.sqrt(
+                    (eps_11_name[j] - eps_22_name[j]) ** 2
+                    + (eps_22_name[j] - eps_33_name[j]) ** 2
+                    + (eps_33_name[j] - eps_11_name[j]) ** 2
+                    + 6 * (eps_12_name[j] ** 2)
+                )
 
-            # NT11[index]=nt11_name[j]
-            # TEMP[index]=temp_name[j]
+                # NT11[index]=nt11_name[j]
+                # TEMP[index]=temp_name[j]
 
-            x_1_ = np.concatenate((x_1_, np.zeros((1, 1))))
-            y_1_ = np.concatenate((y_1_, np.zeros((1, 1))))
-            Stress = np.concatenate((Stress, np.zeros((1, 5))))
-            Strain = np.concatenate((Strain, np.zeros((1, 5))))
-            # NT11 = np.concatenate((NT11,np.zeros((1,1))))
-            # TEMP = np.concatenate((TEMP,np.zeros((1,1))))
-            index = index + 1
+                x_1_ = np.concatenate((x_1_, np.zeros((1, 1))))
+                y_1_ = np.concatenate((y_1_, np.zeros((1, 1))))
+                Stress = np.concatenate((Stress, np.zeros((1, 5))))
+                Strain = np.concatenate((Strain, np.zeros((1, 5))))
+                # NT11 = np.concatenate((NT11,np.zeros((1,1))))
+                # TEMP = np.concatenate((TEMP,np.zeros((1,1))))
+                index = index + 1
+    else:
+        for j in range(0, np.shape(y_1)[0]):
+            if y_1[j] >= 0.25 * (np.max(y_1) - np.min(y_1)) and y_1[j] <= 0.75 * (
+                np.max(y_1) - np.min(y_1)
+            ):
+                x_1_[index] = x_1[j]
+                y_1_[index] = y_1[j]
+
+                Stress[index, 0] = stress_max_name[j]
+                Stress[index, 1] = stress_mid_name[j]
+                Stress[index, 2] = stress_min_name[j]
+
+                Strain[index, 0] = strain_max_name[j]
+                Strain[index, 1] = strain_mid_name[j]
+                Strain[index, 2] = strain_min_name[j]
+
+                x_1_ = np.concatenate((x_1_, np.zeros((1, 1))))
+                y_1_ = np.concatenate((y_1_, np.zeros((1, 1))))
+                Stress = np.concatenate((Stress, np.zeros((1, 3))))
+                Strain = np.concatenate((Strain, np.zeros((1, 3))))
+                index = index + 1
 
     x_1_ = np.delete(x_1_, -1)
     y_1_ = np.delete(y_1_, -1)
