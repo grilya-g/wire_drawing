@@ -125,7 +125,7 @@ def files_list(list_one, dir_):
         try:
             file = read_data_txt_np(list_one[i], dir_)
             list_files.append(file)
-        except:
+        except:  # noqa: E722
             raise Exception(
                 f"File {list_one[i]} is not found in {dir_} or has wrong format"
             )
@@ -1363,41 +1363,81 @@ class KANModelTrainTest:
         
         return my_dataset
 
-    def train_model(self, width, opt, steps, grid, k):
-        """Train KAN model"""
+    def train_model(self, width, opt, steps, grid, k, lr=None):
+        """Train KAN model with robust error handling to prevent NaN errors"""
         list_val_rmse = []
+        
+        # Set default learning rate if not provided
+        if lr is None:
+            if opt == "Adam":
+                lr = 0.0005  # Default conservative learning rate for Adam
+            elif opt == "LBFGS":
+                lr = 0.005   # Default conservative learning rate for LBFGS
+            else:
+                lr = 0.0005  # Default for other optimizers
+                
+        # Log optimizer configuration
+        logger.info(f"Using optimizer: {opt} with learning rate: {lr}")
+        
         for x_train, y_train, x_val, y_val in zip(
             self.train_set_X, self.train_set_y, self.val_set_X, self.val_set_y
         ):
-            kan_model = KAN(width=width, seed=self.seed, grid=grid, k=k, device=self.device)
-            my_dataset = self.create_dataset(x_train, y_train, x_val, y_val)
-            def train_rmse():
-                with torch.no_grad():
-                    predictions = kan_model(my_dataset["train_input"])
-                    mse = torch.nn.functional.mse_loss(
-                        predictions, my_dataset["train_label"]
-                    )
-                    rmse = torch.sqrt(mse + 1e-6)
-                return rmse.detach()  # Explicitly detach to prevent backward graph issues
+            try:
+                # Data validation - Check shapes and values
+                assert x_train.shape[0] > 0 and x_train.shape[1] > 0, "x_train is empty or has zero columns"
+                assert y_train.shape[0] > 0, "y_train is empty"
+                assert not np.isnan(x_train).any(), "x_train contains NaN"
+                assert not np.isnan(y_train).any(), "y_train contains NaN"
+                assert not np.isinf(x_train).any(), "x_train contains Inf"
+                assert not np.isinf(y_train).any(), "y_train contains Inf"
+                
+                # Setup KAN model with appropriate parameters
+                kan_model = KAN(width=width, seed=self.seed, grid=grid, k=k, device=self.device)
+                my_dataset = self.create_dataset(x_train, y_train, x_val, y_val)
+                
+                # Define RMSE calculation functions
+                def train_rmse():
+                    try:
+                        with torch.no_grad():
+                            predictions = kan_model(my_dataset["train_input"])
+                            mse = torch.nn.functional.mse_loss(
+                                predictions, my_dataset["train_label"]
+                            )
+                            rmse = torch.sqrt(mse + 1e-6)
+                    except Exception as e:
+                        logger.error(f"Error during training: {e}")
+                        return float("inf")
+                    return rmse.detach()  # Explicitly detach to prevent backward graph issues
 
-            def test_rmse():
-                with torch.no_grad():
-                    predictions = kan_model(my_dataset["test_input"])
-                    mse = torch.nn.functional.mse_loss(
-                        predictions, my_dataset["test_label"]
-                    )
-                    rmse = torch.sqrt(mse + 1e-6)
-                return rmse.detach()  # Explicitly detach to prevent backward graph issues
-            result: dict = kan_model.fit(
-                my_dataset,
-                opt=opt,
-                steps=steps,
-                metrics=(train_rmse, test_rmse),
-                loss_fn=torch.nn.MSELoss(),
-            )
-            val_rmse = result["test_loss"][-1]
-            logger.info(f"val_rmse = {val_rmse}")
-            list_val_rmse.append(val_rmse)
+                def test_rmse():
+                    try:
+                        with torch.no_grad():
+                            predictions = kan_model(my_dataset["test_input"])
+                            mse = torch.nn.functional.mse_loss(
+                                predictions, my_dataset["test_label"]
+                            )
+                            rmse = torch.sqrt(mse + 1e-6)
+                    except Exception as e:
+                        logger.error(f"Error during testing: {e}")
+                        return float("inf")
+                    return rmse.detach()  # Explicitly detach to prevent backward graph issues
+                
+                # Train the model with specified learning rate
+                result: dict = kan_model.fit(
+                    my_dataset,
+                    opt=opt,
+                    steps=steps,
+                    metrics=(train_rmse, test_rmse),
+                    loss_fn=torch.nn.MSELoss(),
+                    lr=lr,
+                )
+                val_rmse = result["test_loss"][-1]
+                logger.info(f"val_rmse = {val_rmse}")
+                list_val_rmse.append(val_rmse)
+            except Exception as e:
+                logger.error(f"Error during model fitting: {e}")
+                # Return a high validation RMSE to ensure this combination is not selected
+                list_val_rmse.append(float("inf"))
         return list_val_rmse
 
     def calc_validation_metric(self, list_val_rmse) -> float:
@@ -1425,20 +1465,35 @@ class KANModelTrainTest:
             Returns:
             float: The validation metric (e.g., RMSE) to minimize.
             """
+            # Network structure parameters
             n_layers = trial.suggest_int("n_layers", 1, max_n_layers)
             opt = trial.suggest_categorical("opt", ["LBFGS", "Adam"])
             steps = trial.suggest_int("steps", 1, max_steps)
             grid = trial.suggest_int("grid", 1, max_grid)
             k = trial.suggest_int("k", 1, max_k)
+            
+            # Layer units
             layers = []
             for i in range(n_layers):
                 layers.append(trial.suggest_int(f"n_units_{i}", 1, max_n_units))
-
+            
+            # Define the width of the network
             width = [self.input_layer] + layers + [self.output_layer]
             logger.info(f"width = {width}")
+            
+            # Learning rate as hyperparameter (with different ranges based on optimizer)
+            if opt == "Adam":
+                lr = trial.suggest_float("lr", 1e-5, 1e-3, log=True)  # Lower range for Adam stability
+            elif opt == "LBFGS":
+                lr = trial.suggest_float("lr", 1e-3, 5e-2, log=True)  # Range for LBFGS
+            else:
+                lr = trial.suggest_float("lr", 1e-5, 1e-2, log=True)  # Default range
+            
+            logger.info(f"Optimizer: {opt}, Learning rate: {lr}")
+            
             try:
                 list_val_rmse = self.train_model(
-                    width=width, opt=opt, steps=steps, grid=grid, k=k
+                    width=width, opt=opt, steps=steps, grid=grid, k=k, lr=lr
                 )
                 return self.calc_validation_metric(list_val_rmse)
             except Exception as e:
@@ -1462,48 +1517,95 @@ class KANModelTrainTest:
         steps = self.best_params.get("steps")
         k = self.best_params.get("k")
         grid = self.best_params.get("grid")
+        
+        # Get optimized learning rate, with fallback defaults
+        if opt == "Adam":
+            lr = self.best_params.get("lr", 0.0005)
+        elif opt == "LBFGS":
+            lr = self.best_params.get("lr", 0.005)
+        else:
+            lr = self.best_params.get("lr", 0.0005)
 
+        logger.info(f"Testing with optimizer: {opt}, Learning rate: {lr}")
+
+        # Create the KAN model
         test_model = KAN(
             width=width,
             seed=self.seed,
             grid=grid,
             k=k,
+            device=self.device,  # Make sure to use the same device
         )
+        
+        # Create dataset
         my_dataset = self.create_dataset(
             self.train_set_X[0],
             self.train_set_y[0],
             self.cur_X_test,
             self.cur_y_test,
         )
+        
+        # Define RMSE calculation functions with error handling
         def train_rmse():
-            with torch.no_grad():
-                predictions = test_model(my_dataset["train_input"])
-                mse = torch.nn.functional.mse_loss(
-                    predictions, my_dataset["train_label"]
-                )
-                rmse = torch.sqrt(mse + 1e-6)
-            return rmse.detach()  # Explicitly detach to prevent backward graph issues
+            try:
+                with torch.no_grad():
+                    predictions = test_model(my_dataset["train_input"])
+                    mse = torch.nn.functional.mse_loss(
+                        predictions, my_dataset["train_label"]
+                    )
+                    rmse = torch.sqrt(mse + 1e-6)
+                return rmse.detach()  # Explicitly detach to prevent backward graph issues
+            except Exception as e:
+                logger.error(f"Error calculating training RMSE: {e}")
+                return float("inf")
+                
         def test_rmse():
+            try:
+                with torch.no_grad():
+                    predictions = test_model(my_dataset["test_input"])
+                    mse = torch.nn.functional.mse_loss(
+                        predictions, my_dataset["test_label"]
+                    )
+                    rmse = torch.sqrt(mse + 1e-6)
+                return rmse.detach()  # Explicitly detach to prevent backward graph issues
+            except Exception as e:
+                logger.error(f"Error calculating test RMSE: {e}")
+                return float("inf")
+        
+        try:
+            # Train the model with optimized parameters
+            result: dict = test_model.fit(
+                my_dataset,
+                opt=opt,
+                steps=steps,
+                metrics=(train_rmse, test_rmse),
+                loss_fn=torch.nn.MSELoss(),
+                lr=lr,  # Use the optimized learning rate
+            )
+            self.test_rmse = result["test_loss"][-1]
+            
+            # Generate predictions
             with torch.no_grad():
-                predictions = test_model(my_dataset["test_input"])
-                mse = torch.nn.functional.mse_loss(
-                    predictions, my_dataset["test_label"]
-                )
-                rmse = torch.sqrt(mse + 1e-6)
-            return rmse.detach()  # Explicitly detach to prevent backward graph issues
-        # Train the model
-        result: dict = test_model.fit(
-            my_dataset,
-            opt=opt,
-            steps=steps,
-            metrics=(train_rmse, test_rmse),
-            loss_fn=torch.nn.MSELoss(),
-        )
-        self.test_rmse = result["test_loss"][-1]
-        self.test_pred = test_model(torch.Tensor(self.cur_X_test))
-        self.final_model = test_model
-        logger.info(f"test_rmse = {self.test_rmse}")
-        return self.test_rmse
+                self.test_pred = test_model(torch.Tensor(self.cur_X_test).to(self.device))
+            
+            self.final_model = test_model
+            logger.info(f"test_rmse = {self.test_rmse}")
+            return self.test_rmse
+        except Exception as e:
+            logger.error(f"Error during final model training: {e}")
+            return float("inf")
+            self.test_rmse = result["test_loss"][-1]
+            
+            # Generate predictions
+            with torch.no_grad():
+                self.test_pred = test_model(torch.Tensor(self.cur_X_test).to(self.device))
+            
+            self.final_model = test_model
+            logger.info(f"test_rmse = {self.test_rmse}")
+            return self.test_rmse
+        except Exception as e:
+            logger.error(f"Error during final model training: {e}")
+            return float("inf")
 
     def get_train_dataset(self):
         return self.train_set_X, self.train_set_y
