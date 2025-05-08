@@ -23,7 +23,12 @@ def cuml_scorer(y_true, y_pred, pipeline, X_train):
         y_pred = y_pred.to_numpy()
     if hasattr(X_train, 'to_numpy'):
         X_train = X_train.to_numpy()
-        
+
+    # Check for NaNs and handle them
+    if np.isnan(y_true).any() or np.isnan(y_pred).any():
+        # Return large error values to penalize this trial
+        return np.array([0, 1e6, 1e6, 1e6, 0, 1e6, 1e6, 1e6, 1e6])
+
     evs = explained_variance_score(y_true, y_pred)  # 1-- BEST , 0 -- WORST
     medae = median_absolute_error(y_true, y_pred)  # 0 -- BEST, \INF -- WORST
     mse = mean_squared_error(y_true, y_pred)  # 0 -- BEST
@@ -41,6 +46,36 @@ def cuml_scorer(y_true, y_pred, pipeline, X_train):
     bic = n * np.log(mse) + n_params * np.log(n)  # 0 -- BEST
 
     return np.array([evs, medae, mse, mae, r2, me, aic, bic, rmse])
+
+
+
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import TensorDataset, DataLoader
+# Define a PyTorch neural network class
+class MLPNetwork(nn.Module):
+    def __init__(self, layer_sizes, activation="relu"):
+        super(MLPNetwork, self).__init__()
+        self.layers = nn.ModuleList()
+
+        # Map activation string to PyTorch activation
+        activation_fn = {
+            "relu": nn.ReLU(),
+            "tanh": nn.Tanh(),
+            "logistic": nn.Sigmoid(),
+        }[activation]
+
+        # Create layers
+        for i in range(len(layer_sizes) - 1):
+            self.layers.append(nn.Linear(layer_sizes[i], layer_sizes[i + 1]))
+            if i < len(layer_sizes) - 2:
+                self.layers.append(activation_fn)
+
+    def forward(self, x):
+        for layer in self.layers:
+            x = layer(x)
+        return x
 
 
 def do_optuna_pytorch(X, y, n_trials=100, **kwargs):
@@ -71,10 +106,7 @@ def do_optuna_pytorch(X, y, n_trials=100, **kwargs):
     tuple
         (best_params, cur_X_test, cur_y_test, best_value)
     """
-    import torch
-    import torch.nn as nn
-    import torch.optim as optim
-    from torch.utils.data import TensorDataset, DataLoader
+
     
     n_splits = kwargs.get("n_splits", 3)
     n_layers = kwargs.get("n_layers", 30)
@@ -88,30 +120,6 @@ def do_optuna_pytorch(X, y, n_trials=100, **kwargs):
     cur_X_test, cur_y_test, val_list_X, val_list_y, train_list_X, train_list_y = (
         split_transform_one_comp_cv(X, y, n_splits=n_splits)
     )
-    
-    # Define a PyTorch neural network class
-    class MLPNetwork(nn.Module):
-        def __init__(self, layer_sizes, activation='relu'):
-            super(MLPNetwork, self).__init__()
-            self.layers = nn.ModuleList()
-            
-            # Map activation string to PyTorch activation
-            activation_fn = {
-                'relu': nn.ReLU(),
-                'tanh': nn.Tanh(),
-                'logistic': nn.Sigmoid(),
-            }[activation]
-            
-            # Create layers
-            for i in range(len(layer_sizes) - 1):
-                self.layers.append(nn.Linear(layer_sizes[i], layer_sizes[i+1]))
-                if i < len(layer_sizes) - 2:
-                    self.layers.append(activation_fn)
-            
-        def forward(self, x):
-            for layer in self.layers:
-                x = layer(x)
-            return x
     
     def optuna_pytorch_objective(trial):
         # Define hyperparameters to optimize

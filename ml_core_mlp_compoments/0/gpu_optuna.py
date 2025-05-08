@@ -23,7 +23,12 @@ def cuml_scorer(y_true, y_pred, pipeline, X_train):
         y_pred = y_pred.to_numpy()
     if hasattr(X_train, 'to_numpy'):
         X_train = X_train.to_numpy()
-        
+
+    # Check for NaNs and handle them
+    if np.isnan(y_true).any() or np.isnan(y_pred).any():
+        # Return large error values to penalize this trial
+        return np.array([0, 1e6, 1e6, 1e6, 0, 1e6, 1e6, 1e6, 1e6])
+
     evs = explained_variance_score(y_true, y_pred)  # 1-- BEST , 0 -- WORST
     medae = median_absolute_error(y_true, y_pred)  # 0 -- BEST, \INF -- WORST
     mse = mean_squared_error(y_true, y_pred)  # 0 -- BEST
