@@ -1,0 +1,1500 @@
+2025-05-08 17:08:28.4765Z Looking in indexes: https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/simple
+2025-05-08 17:08:28.5987Z Collecting nomkl
+2025-05-08 17:08:28.6820Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nomkl/0.0.3/nomkl-0.0.3.tar.gz (973 bytes)
+2025-05-08 17:08:28.6890Z   Installing build dependencies: started
+2025-05-08 17:08:30.8252Z   Installing build dependencies: finished with status 'done'
+2025-05-08 17:08:30.8264Z   Getting requirements to build wheel: started
+2025-05-08 17:08:31.0775Z   Getting requirements to build wheel: finished with status 'done'
+2025-05-08 17:08:31.0790Z   Preparing metadata (pyproject.toml): started
+2025-05-08 17:08:31.3027Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-05-08 17:08:32.0606Z Collecting numpy
+2025-05-08 17:08:32.0913Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/numpy/2.0.2/numpy-2.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (19.5 MB)
+2025-05-08 17:08:32.2416Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 19.5/19.5 MB 107.5 MB/s eta 0:00:00
+2025-05-08 17:08:32.7920Z Collecting scipy
+2025-05-08 17:08:32.8225Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/scipy/1.13.1/scipy-1.13.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (38.6 MB)
+2025-05-08 17:08:33.1112Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38.6/38.6 MB 74.8 MB/s eta 0:00:00
+2025-05-08 17:08:33.2189Z Building wheels for collected packages: nomkl
+2025-05-08 17:08:33.3069Z   Building wheel for nomkl (pyproject.toml): started
+2025-05-08 17:08:33.4582Z   Building wheel for nomkl (pyproject.toml): finished with status 'done'
+2025-05-08 17:08:33.5074Z   Created wheel for nomkl: filename=nomkl-0.0.3-py3-none-any.whl size=989 sha256=2129e6983abb13e1cb7234647ddc143955675798bc699c9f0bf2ad0088657e07
+2025-05-08 17:08:33.5074Z   Stored in directory: /root/.cache/pip/wheels/df/e6/18/43a7f04b5ffb40bf3073f0cd0ee6f4e7cfe1b19a94467fe680
+2025-05-08 17:08:33.5476Z Successfully built nomkl
+2025-05-08 17:08:33.5874Z Installing collected packages: nomkl, numpy, scipy
+2025-05-08 17:08:39.4333Z Successfully installed nomkl-0.0.3 numpy-2.0.2 scipy-1.13.1
+2025-05-08 17:08:39.4336Z WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2025-05-08 17:08:39.4405Z 
+2025-05-08 17:08:39.4736Z [notice] A new release of pip is available: 23.0.1 -> 25.1.1
+2025-05-08 17:08:39.5135Z [notice] To update, run: pip install --upgrade pip
+2025-05-08 17:08:40.0114Z Looking in indexes: https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/simple
+2025-05-08 17:08:40.2103Z Collecting alembic==1.14.0
+2025-05-08 17:08:40.2447Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/alembic/1.14.0/alembic-1.14.0-py3-none-any.whl (233 kB)
+2025-05-08 17:08:40.3278Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 233.5/233.5 kB 12.4 MB/s eta 0:00:00
+2025-05-08 17:08:40.4939Z Collecting anyio==4.8.0
+2025-05-08 17:08:40.5316Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/anyio/4.8.0/anyio-4.8.0-py3-none-any.whl (96 kB)
+2025-05-08 17:08:40.6101Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.0/96.0 kB 14.2 MB/s eta 0:00:00
+2025-05-08 17:08:40.6111Z Collecting appnope==0.1.4
+2025-05-08 17:08:40.6682Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/appnope/0.1.4/appnope-0.1.4-py2.py3-none-any.whl (4.3 kB)
+2025-05-08 17:08:40.7849Z Collecting argon2-cffi==23.1.0
+2025-05-08 17:08:40.8200Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/argon2-cffi/23.1.0/argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+2025-05-08 17:08:40.9641Z Collecting argon2-cffi-bindings==21.2.0
+2025-05-08 17:08:41.0062Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/argon2-cffi-bindings/21.2.0/argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (86 kB)
+2025-05-08 17:08:41.0086Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.2/86.2 kB 26.5 MB/s eta 0:00:00
+2025-05-08 17:08:41.1020Z Collecting arrow==1.3.0
+2025-05-08 17:08:41.2069Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/arrow/1.3.0/arrow-1.3.0-py3-none-any.whl (66 kB)
+2025-05-08 17:08:41.2069Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.4/66.4 kB 45.3 MB/s eta 0:00:00
+2025-05-08 17:08:41.2517Z Collecting asttokens==3.0.0
+2025-05-08 17:08:41.2887Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/asttokens/3.0.0/asttokens-3.0.0-py3-none-any.whl (26 kB)
+2025-05-08 17:08:41.4242Z Collecting async-lru==2.0.4
+2025-05-08 17:08:41.4643Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/async-lru/2.0.4/async_lru-2.0.4-py3-none-any.whl (6.1 kB)
+2025-05-08 17:08:41.5532Z Collecting attrs==24.3.0
+2025-05-08 17:08:41.6145Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/attrs/24.3.0/attrs-24.3.0-py3-none-any.whl (63 kB)
+2025-05-08 17:08:41.6181Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.4/63.4 kB 43.5 MB/s eta 0:00:00
+2025-05-08 17:08:41.7115Z Collecting babel==2.16.0
+2025-05-08 17:08:41.8053Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/babel/2.16.0/babel-2.16.0-py3-none-any.whl (9.6 MB)
+2025-05-08 17:08:41.8419Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.6/9.6 MB 103.4 MB/s eta 0:00:00
+2025-05-08 17:08:42.0027Z Collecting bayesian-optimization==2.0.3
+2025-05-08 17:08:42.0414Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/bayesian-optimization/2.0.3/bayesian_optimization-2.0.3-py3-none-any.whl (31 kB)
+2025-05-08 17:08:42.1358Z Collecting beautifulsoup4==4.12.3
+2025-05-08 17:08:42.2168Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/beautifulsoup4/4.12.3/beautifulsoup4-4.12.3-py3-none-any.whl (147 kB)
+2025-05-08 17:08:42.2168Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 147.9/147.9 kB 75.1 MB/s eta 0:00:00
+2025-05-08 17:08:42.3009Z Collecting bleach==6.2.0
+2025-05-08 17:08:42.3607Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/bleach/6.2.0/bleach-6.2.0-py3-none-any.whl (163 kB)
+2025-05-08 17:08:42.4066Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.4/163.4 kB 82.8 MB/s eta 0:00:00
+2025-05-08 17:08:42.4665Z Collecting certifi==2024.12.14
+2025-05-08 17:08:42.5014Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/certifi/2024.12.14/certifi-2024.12.14-py3-none-any.whl (164 kB)
+2025-05-08 17:08:42.5057Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 164.9/164.9 kB 87.2 MB/s eta 0:00:00
+2025-05-08 17:08:42.9680Z Collecting cffi==1.17.1
+2025-05-08 17:08:43.0056Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/cffi/1.17.1/cffi-1.17.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (445 kB)
+2025-05-08 17:08:43.1051Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 445.2/445.2 kB 29.2 MB/s eta 0:00:00
+2025-05-08 17:08:43.3398Z Collecting charset-normalizer==3.4.1
+2025-05-08 17:08:43.4012Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/charset-normalizer/3.4.1/charset_normalizer-3.4.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (146 kB)
+2025-05-08 17:08:43.4059Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 146.2/146.2 kB 77.5 MB/s eta 0:00:00
+2025-05-08 17:08:43.5063Z Collecting colorama==0.4.6
+2025-05-08 17:08:43.5381Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/colorama/0.4.6/colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2025-05-08 17:08:43.6934Z Collecting colorlog==6.9.0
+2025-05-08 17:08:43.7334Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/colorlog/6.9.0/colorlog-6.9.0-py3-none-any.whl (11 kB)
+2025-05-08 17:08:43.8280Z Collecting comm==0.2.2
+2025-05-08 17:08:43.9064Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/comm/0.2.2/comm-0.2.2-py3-none-any.whl (7.2 kB)
+2025-05-08 17:08:44.1839Z Collecting contourpy==1.3.0
+2025-05-08 17:08:44.2198Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/contourpy/1.3.0/contourpy-1.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (321 kB)
+2025-05-08 17:08:44.3051Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 321.9/321.9 kB 22.2 MB/s eta 0:00:00
+2025-05-08 17:08:44.3702Z Collecting cycler==0.12.1
+2025-05-08 17:08:44.4069Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/cycler/0.12.1/cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2025-05-08 17:08:44.7759Z Collecting debugpy==1.8.11
+2025-05-08 17:08:44.8415Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/debugpy/1.8.11/debugpy-1.8.11-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+2025-05-08 17:08:44.9062Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 107.2 MB/s eta 0:00:00
+2025-05-08 17:08:44.9712Z Collecting decorator==5.1.1
+2025-05-08 17:08:45.0045Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/decorator/5.1.1/decorator-5.1.1-py3-none-any.whl (9.1 kB)
+2025-05-08 17:08:45.5609Z Collecting defusedxml==0.7.1
+2025-05-08 17:08:45.5983Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/defusedxml/0.7.1/defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+2025-05-08 17:08:45.6824Z Collecting exceptiongroup==1.2.2
+2025-05-08 17:08:45.7438Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/exceptiongroup/1.2.2/exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+2025-05-08 17:08:45.8257Z Collecting executing==2.1.0
+2025-05-08 17:08:45.9097Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/executing/2.1.0/executing-2.1.0-py2.py3-none-any.whl (25 kB)
+2025-05-08 17:08:46.0016Z Collecting fastjsonschema==2.21.1
+2025-05-08 17:08:46.0392Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/fastjsonschema/2.21.1/fastjsonschema-2.21.1-py3-none-any.whl (23 kB)
+2025-05-08 17:08:46.1411Z Collecting filelock==3.17.0
+2025-05-08 17:08:46.1749Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/filelock/3.17.0/filelock-3.17.0-py3-none-any.whl (16 kB)
+2025-05-08 17:08:46.7070Z Collecting fonttools==4.55.3
+2025-05-08 17:08:46.7739Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/fonttools/4.55.3/fonttools-4.55.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.6 MB)
+2025-05-08 17:08:46.8210Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 103.4 MB/s eta 0:00:00
+2025-05-08 17:08:46.9060Z Collecting fpdf==1.7.2
+2025-05-08 17:08:46.9339Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/fpdf/1.7.2/fpdf-1.7.2.tar.gz (39 kB)
+2025-05-08 17:08:46.9461Z   Preparing metadata (setup.py): started
+2025-05-08 17:08:47.3250Z   Preparing metadata (setup.py): finished with status 'done'
+2025-05-08 17:08:47.4058Z Collecting fqdn==1.5.1
+2025-05-08 17:08:47.5059Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/fqdn/1.5.1/fqdn-1.5.1-py3-none-any.whl (9.1 kB)
+2025-05-08 17:08:47.6147Z Collecting fsspec==2025.2.0
+2025-05-08 17:08:47.7052Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/fsspec/2025.2.0/fsspec-2025.2.0-py3-none-any.whl (184 kB)
+2025-05-08 17:08:47.7052Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 184.5/184.5 kB 17.4 MB/s eta 0:00:00
+2025-05-08 17:08:47.7453Z Collecting h11==0.14.0
+2025-05-08 17:08:47.7860Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/h11/0.14.0/h11-0.14.0-py3-none-any.whl (58 kB)
+2025-05-08 17:08:47.8257Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 40.0 MB/s eta 0:00:00
+2025-05-08 17:08:47.9065Z Collecting httpcore==1.0.7
+2025-05-08 17:08:47.9233Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/httpcore/1.0.7/httpcore-1.0.7-py3-none-any.whl (78 kB)
+2025-05-08 17:08:47.9470Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.6/78.6 kB 55.7 MB/s eta 0:00:00
+2025-05-08 17:08:48.0897Z Collecting httpx==0.28.1
+2025-05-08 17:08:48.1247Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/httpx/0.28.1/httpx-0.28.1-py3-none-any.whl (73 kB)
+2025-05-08 17:08:48.1284Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 49.6 MB/s eta 0:00:00
+2025-05-08 17:08:48.2697Z Collecting idna==3.10
+2025-05-08 17:08:48.3289Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/idna/3.10/idna-3.10-py3-none-any.whl (70 kB)
+2025-05-08 17:08:48.3326Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.4/70.4 kB 48.7 MB/s eta 0:00:00
+2025-05-08 17:08:48.4444Z Collecting imageio==2.37.0
+2025-05-08 17:08:48.5065Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/imageio/2.37.0/imageio-2.37.0-py3-none-any.whl (315 kB)
+2025-05-08 17:08:48.5082Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 315.8/315.8 kB 110.6 MB/s eta 0:00:00
+2025-05-08 17:08:48.5989Z Collecting imageio-ffmpeg==0.6.0
+2025-05-08 17:08:48.6377Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/imageio-ffmpeg/0.6.0/imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl (29.5 MB)
+2025-05-08 17:08:48.8685Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29.5/29.5 MB 88.3 MB/s eta 0:00:00
+2025-05-08 17:08:49.0609Z Collecting importlib_metadata==8.5.0
+2025-05-08 17:08:49.1187Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/importlib-metadata/8.5.0/importlib_metadata-8.5.0-py3-none-any.whl (26 kB)
+2025-05-08 17:08:49.2391Z Collecting importlib_resources==6.5.2
+2025-05-08 17:08:49.3076Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/importlib-resources/6.5.2/importlib_resources-6.5.2-py3-none-any.whl (37 kB)
+2025-05-08 17:08:49.4138Z Collecting ipykernel==6.29.5
+2025-05-08 17:08:49.5065Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/ipykernel/6.29.5/ipykernel-6.29.5-py3-none-any.whl (117 kB)
+2025-05-08 17:08:49.5066Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.2/117.2 kB 72.7 MB/s eta 0:00:00
+2025-05-08 17:08:49.7098Z Collecting ipython==8.18.1
+2025-05-08 17:08:49.7697Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/ipython/8.18.1/ipython-8.18.1-py3-none-any.whl (808 kB)
+2025-05-08 17:08:49.7787Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 808.2/808.2 kB 129.0 MB/s eta 0:00:00
+2025-05-08 17:08:49.9096Z Collecting ipywidgets==8.1.5
+2025-05-08 17:08:49.9683Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/ipywidgets/8.1.5/ipywidgets-8.1.5-py3-none-any.whl (139 kB)
+2025-05-08 17:08:49.9726Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.8/139.8 kB 75.6 MB/s eta 0:00:00
+2025-05-08 17:08:50.0468Z Collecting isoduration==20.11.0
+2025-05-08 17:08:50.1060Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/isoduration/20.11.0/isoduration-20.11.0-py3-none-any.whl (11 kB)
+2025-05-08 17:08:50.2351Z Collecting jedi==0.19.2
+2025-05-08 17:08:50.3057Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jedi/0.19.2/jedi-0.19.2-py2.py3-none-any.whl (1.6 MB)
+2025-05-08 17:08:50.3057Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 142.6 MB/s eta 0:00:00
+2025-05-08 17:08:50.4674Z Collecting Jinja2==3.1.5
+2025-05-08 17:08:50.5064Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jinja2/3.1.5/jinja2-3.1.5-py3-none-any.whl (134 kB)
+2025-05-08 17:08:50.5106Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.6/134.6 kB 77.3 MB/s eta 0:00:00
+2025-05-08 17:08:50.6084Z Collecting joblib==1.4.2
+2025-05-08 17:08:50.7163Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/joblib/1.4.2/joblib-1.4.2-py3-none-any.whl (301 kB)
+2025-05-08 17:08:50.7163Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 301.8/301.8 kB 108.9 MB/s eta 0:00:00
+2025-05-08 17:08:50.7723Z Collecting json5==0.10.0
+2025-05-08 17:08:50.8078Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/json5/0.10.0/json5-0.10.0-py3-none-any.whl (34 kB)
+2025-05-08 17:08:50.9488Z Collecting jsonpointer==3.0.0
+2025-05-08 17:08:50.9844Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jsonpointer/3.0.0/jsonpointer-3.0.0-py2.py3-none-any.whl (7.6 kB)
+2025-05-08 17:08:51.1566Z Collecting jsonschema==4.23.0
+2025-05-08 17:08:51.1954Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jsonschema/4.23.0/jsonschema-4.23.0-py3-none-any.whl (88 kB)
+2025-05-08 17:08:51.1991Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.5/88.5 kB 56.3 MB/s eta 0:00:00
+2025-05-08 17:08:51.2830Z Collecting jsonschema-specifications==2024.10.1
+2025-05-08 17:08:51.3455Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jsonschema-specifications/2024.10.1/jsonschema_specifications-2024.10.1-py3-none-any.whl (18 kB)
+2025-05-08 17:08:51.4239Z Collecting jupyter==1.1.1
+2025-05-08 17:08:51.4598Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter/1.1.1/jupyter-1.1.1-py2.py3-none-any.whl (2.7 kB)
+2025-05-08 17:08:51.6039Z Collecting jupyter-console==6.6.3
+2025-05-08 17:08:51.6428Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-console/6.6.3/jupyter_console-6.6.3-py3-none-any.whl (24 kB)
+2025-05-08 17:08:51.7194Z Collecting jupyter-events==0.11.0
+2025-05-08 17:08:51.8068Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-events/0.11.0/jupyter_events-0.11.0-py3-none-any.whl (19 kB)
+2025-05-08 17:08:51.8378Z Collecting jupyter-lsp==2.2.5
+2025-05-08 17:08:51.9029Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-lsp/2.2.5/jupyter_lsp-2.2.5-py3-none-any.whl (69 kB)
+2025-05-08 17:08:52.0054Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.1/69.1 kB 48.2 MB/s eta 0:00:00
+2025-05-08 17:08:52.0305Z Collecting jupyter_client==8.6.3
+2025-05-08 17:08:52.0689Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-client/8.6.3/jupyter_client-8.6.3-py3-none-any.whl (106 kB)
+2025-05-08 17:08:52.0860Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 106.1/106.1 kB 15.2 MB/s eta 0:00:00
+2025-05-08 17:08:52.2361Z Collecting jupyter_core==5.7.2
+2025-05-08 17:08:52.2744Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-core/5.7.2/jupyter_core-5.7.2-py3-none-any.whl (28 kB)
+2025-05-08 17:08:52.4235Z Collecting jupyter_server==2.15.0
+2025-05-08 17:08:52.4821Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-server/2.15.0/jupyter_server-2.15.0-py3-none-any.whl (385 kB)
+2025-05-08 17:08:52.4877Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 385.8/385.8 kB 122.2 MB/s eta 0:00:00
+2025-05-08 17:08:52.5677Z Collecting jupyter_server_terminals==0.5.3
+2025-05-08 17:08:52.6089Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-server-terminals/0.5.3/jupyter_server_terminals-0.5.3-py3-none-any.whl (13 kB)
+2025-05-08 17:08:52.9955Z Collecting jupyterlab==4.3.4
+2025-05-08 17:08:53.0332Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyterlab/4.3.4/jupyterlab-4.3.4-py3-none-any.whl (11.7 MB)
+2025-05-08 17:08:53.1331Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.7/11.7 MB 136.3 MB/s eta 0:00:00
+2025-05-08 17:08:53.2271Z Collecting jupyterlab_pygments==0.3.0
+2025-05-08 17:08:53.3049Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyterlab-pygments/0.3.0/jupyterlab_pygments-0.3.0-py3-none-any.whl (15 kB)
+2025-05-08 17:08:53.4182Z Collecting jupyterlab_server==2.27.3
+2025-05-08 17:08:53.4764Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyterlab-server/2.27.3/jupyterlab_server-2.27.3-py3-none-any.whl (59 kB)
+2025-05-08 17:08:53.4799Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.7/59.7 kB 42.9 MB/s eta 0:00:00
+2025-05-08 17:08:53.5879Z Collecting jupyterlab_widgets==3.0.13
+2025-05-08 17:08:53.6231Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyterlab-widgets/3.0.13/jupyterlab_widgets-3.0.13-py3-none-any.whl (214 kB)
+2025-05-08 17:08:53.6323Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 214.4/214.4 kB 31.2 MB/s eta 0:00:00
+2025-05-08 17:08:53.9242Z Collecting kiwisolver==1.4.7
+2025-05-08 17:08:53.9617Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/kiwisolver/1.4.7/kiwisolver-1.4.7-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+2025-05-08 17:08:53.9747Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 151.8 MB/s eta 0:00:00
+2025-05-08 17:08:54.7787Z Collecting lxml==5.3.2
+2025-05-08 17:08:54.8136Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/lxml/5.3.2/lxml-5.3.2-cp39-cp39-manylinux_2_28_x86_64.whl (5.2 MB)
+2025-05-08 17:08:54.9082Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 107.7 MB/s eta 0:00:00
+2025-05-08 17:08:55.0257Z Collecting Mako==1.3.8
+2025-05-08 17:08:55.1054Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/mako/1.3.8/Mako-1.3.8-py3-none-any.whl (78 kB)
+2025-05-08 17:08:55.1054Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.6/78.6 kB 54.5 MB/s eta 0:00:00
+2025-05-08 17:08:55.2931Z Collecting MarkupSafe==3.0.2
+2025-05-08 17:08:55.3518Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/markupsafe/3.0.2/MarkupSafe-3.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (20 kB)
+2025-05-08 17:08:56.0520Z Collecting matplotlib==3.9.4
+2025-05-08 17:08:56.1128Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/matplotlib/3.9.4/matplotlib-3.9.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (8.3 MB)
+2025-05-08 17:08:56.2070Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 146.8 MB/s eta 0:00:00
+2025-05-08 17:08:56.2653Z Collecting matplotlib-inline==0.1.7
+2025-05-08 17:08:56.2998Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/matplotlib-inline/0.1.7/matplotlib_inline-0.1.7-py3-none-any.whl (9.9 kB)
+2025-05-08 17:08:56.4534Z Collecting mistune==3.1.0
+2025-05-08 17:08:56.4897Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/mistune/3.1.0/mistune-3.1.0-py3-none-any.whl (53 kB)
+2025-05-08 17:08:56.4942Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.7/53.7 kB 21.4 MB/s eta 0:00:00
+2025-05-08 17:08:56.6388Z Collecting moviepy==2.1.2
+2025-05-08 17:08:56.6967Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/moviepy/2.1.2/moviepy-2.1.2-py3-none-any.whl (126 kB)
+2025-05-08 17:08:56.7009Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.7/126.7 kB 73.4 MB/s eta 0:00:00
+2025-05-08 17:08:56.7859Z Collecting mpmath==1.3.0
+2025-05-08 17:08:56.8212Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/mpmath/1.3.0/mpmath-1.3.0-py3-none-any.whl (536 kB)
+2025-05-08 17:08:56.8317Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 67.9 MB/s eta 0:00:00
+2025-05-08 17:08:56.9867Z Collecting nbclient==0.10.2
+2025-05-08 17:08:57.0270Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nbclient/0.10.2/nbclient-0.10.2-py3-none-any.whl (25 kB)
+2025-05-08 17:08:57.1510Z Collecting nbconvert==7.16.5
+2025-05-08 17:08:57.2083Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nbconvert/7.16.5/nbconvert-7.16.5-py3-none-any.whl (258 kB)
+2025-05-08 17:08:57.2136Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 258.1/258.1 kB 102.3 MB/s eta 0:00:00
+2025-05-08 17:08:57.3047Z Collecting nbformat==5.10.4
+2025-05-08 17:08:57.4074Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nbformat/5.10.4/nbformat-5.10.4-py3-none-any.whl (78 kB)
+2025-05-08 17:08:57.4074Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.5/78.5 kB 53.8 MB/s eta 0:00:00
+2025-05-08 17:08:57.4596Z Collecting nest-asyncio==1.6.0
+2025-05-08 17:08:57.4947Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nest-asyncio/1.6.0/nest_asyncio-1.6.0-py3-none-any.whl (5.2 kB)
+2025-05-08 17:08:57.8124Z Collecting networkx==3.2.1
+2025-05-08 17:08:57.8495Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/networkx/3.2.1/networkx-3.2.1-py3-none-any.whl (1.6 MB)
+2025-05-08 17:08:57.8697Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 92.9 MB/s eta 0:00:00
+2025-05-08 17:08:58.0384Z Collecting notebook==7.3.2
+2025-05-08 17:08:58.0737Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/notebook/7.3.2/notebook-7.3.2-py3-none-any.whl (13.2 MB)
+2025-05-08 17:08:58.1631Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.2/13.2 MB 143.9 MB/s eta 0:00:00
+2025-05-08 17:08:58.3152Z Collecting notebook_shim==0.2.4
+2025-05-08 17:08:58.4051Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/notebook-shim/0.2.4/notebook_shim-0.2.4-py3-none-any.whl (13 kB)
+2025-05-08 17:08:58.4051Z Requirement already satisfied: numpy==2.0.2 in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 80)) (2.0.2)
+2025-05-08 17:08:58.4777Z Collecting optuna==4.1.0
+2025-05-08 17:08:58.5129Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/optuna/4.1.0/optuna-4.1.0-py3-none-any.whl (364 kB)
+2025-05-08 17:08:58.6071Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 364.4/364.4 kB 116.3 MB/s eta 0:00:00
+2025-05-08 17:08:58.7888Z Collecting overrides==7.7.0
+2025-05-08 17:08:58.8379Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/overrides/7.7.0/overrides-7.7.0-py3-none-any.whl (17 kB)
+2025-05-08 17:08:59.0159Z Collecting packaging==24.2
+2025-05-08 17:08:59.0524Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/packaging/24.2/packaging-24.2-py3-none-any.whl (65 kB)
+2025-05-08 17:08:59.0560Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.5/65.5 kB 45.9 MB/s eta 0:00:00
+2025-05-08 17:08:59.5600Z Collecting pandas==2.2.3
+2025-05-08 17:08:59.6234Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pandas/2.2.3/pandas-2.2.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.1 MB)
+2025-05-08 17:08:59.7139Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.1/13.1 MB 149.3 MB/s eta 0:00:00
+2025-05-08 17:08:59.8349Z Collecting pandocfilters==1.5.1
+2025-05-08 17:08:59.9054Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pandocfilters/1.5.1/pandocfilters-1.5.1-py2.py3-none-any.whl (8.7 kB)
+2025-05-08 17:08:59.9769Z Collecting parso==0.8.4
+2025-05-08 17:09:00.0407Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/parso/0.8.4/parso-0.8.4-py2.py3-none-any.whl (103 kB)
+2025-05-08 17:09:00.1072Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.7/103.7 kB 64.9 MB/s eta 0:00:00
+2025-05-08 17:09:00.1250Z Collecting pexpect==4.9.0
+2025-05-08 17:09:00.1678Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pexpect/4.9.0/pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+2025-05-08 17:09:00.2905Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 42.1 MB/s eta 0:00:00
+2025-05-08 17:09:00.9324Z Collecting pillow==10.4.0
+2025-05-08 17:09:00.9955Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pillow/10.4.0/pillow-10.4.0-cp39-cp39-manylinux_2_28_x86_64.whl (4.5 MB)
+2025-05-08 17:09:01.0266Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 158.6 MB/s eta 0:00:00
+2025-05-08 17:09:01.1359Z Collecting platformdirs==4.3.6
+2025-05-08 17:09:01.1984Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/platformdirs/4.3.6/platformdirs-4.3.6-py3-none-any.whl (18 kB)
+2025-05-08 17:09:01.2677Z Collecting proglog==0.1.10
+2025-05-08 17:09:01.3290Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/proglog/0.1.10/proglog-0.1.10-py3-none-any.whl (6.1 kB)
+2025-05-08 17:09:01.4257Z Collecting prometheus_client==0.21.1
+2025-05-08 17:09:01.4613Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/prometheus-client/0.21.1/prometheus_client-0.21.1-py3-none-any.whl (54 kB)
+2025-05-08 17:09:01.4648Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.7/54.7 kB 40.2 MB/s eta 0:00:00
+2025-05-08 17:09:01.6623Z Collecting prompt_toolkit==3.0.48
+2025-05-08 17:09:01.7004Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/prompt-toolkit/3.0.48/prompt_toolkit-3.0.48-py3-none-any.whl (386 kB)
+2025-05-08 17:09:01.7176Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 386.6/386.6 kB 25.8 MB/s eta 0:00:00
+2025-05-08 17:09:02.0108Z Collecting psutil==6.1.1
+2025-05-08 17:09:02.0838Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/psutil/6.1.1/psutil-6.1.1-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (287 kB)
+2025-05-08 17:09:02.0893Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 287.5/287.5 kB 99.3 MB/s eta 0:00:00
+2025-05-08 17:09:02.1632Z Collecting ptyprocess==0.7.0
+2025-05-08 17:09:02.2228Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/ptyprocess/0.7.0/ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+2025-05-08 17:09:02.3011Z Collecting pure_eval==0.2.3
+2025-05-08 17:09:02.3636Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pure-eval/0.2.3/pure_eval-0.2.3-py3-none-any.whl (11 kB)
+2025-05-08 17:09:02.4705Z Collecting pyaml==25.1.0
+2025-05-08 17:09:02.5066Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pyaml/25.1.0/pyaml-25.1.0-py3-none-any.whl (26 kB)
+2025-05-08 17:09:02.6471Z Collecting pycparser==2.22
+2025-05-08 17:09:02.6862Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pycparser/2.22/pycparser-2.22-py3-none-any.whl (117 kB)
+2025-05-08 17:09:02.6922Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.6/117.6 kB 31.7 MB/s eta 0:00:00
+2025-05-08 17:09:02.7944Z Collecting Pygments==2.19.0
+2025-05-08 17:09:02.8534Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pygments/2.19.0/pygments-2.19.0-py3-none-any.whl (1.2 MB)
+2025-05-08 17:09:02.8642Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 147.9 MB/s eta 0:00:00
+2025-05-08 17:09:02.9512Z Collecting pykan==0.2.8
+2025-05-08 17:09:03.0085Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pykan/0.2.8/pykan-0.2.8-py3-none-any.whl (78 kB)
+2025-05-08 17:09:03.0085Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.1/78.1 kB 22.3 MB/s eta 0:00:00
+2025-05-08 17:09:03.6829Z Collecting pyparsing==3.2.1
+2025-05-08 17:09:03.7193Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pyparsing/3.2.1/pyparsing-3.2.1-py3-none-any.whl (107 kB)
+2025-05-08 17:09:03.8064Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.7/107.7 kB 9.4 MB/s eta 0:00:00
+2025-05-08 17:09:03.8306Z Collecting PyPDF2==3.0.1
+2025-05-08 17:09:03.8890Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pypdf2/3.0.1/pypdf2-3.0.1-py3-none-any.whl (232 kB)
+2025-05-08 17:09:03.8937Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.6/232.6 kB 99.4 MB/s eta 0:00:00
+2025-05-08 17:09:03.9808Z Collecting python-dateutil==2.9.0.post0
+2025-05-08 17:09:04.0168Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/python-dateutil/2.9.0.post0/python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-05-08 17:09:04.0289Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 29.2 MB/s eta 0:00:00
+2025-05-08 17:09:04.1678Z Collecting python-docx==1.1.2
+2025-05-08 17:09:04.2085Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/python-docx/1.1.2/python_docx-1.1.2-py3-none-any.whl (244 kB)
+2025-05-08 17:09:04.2094Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 244.3/244.3 kB 104.5 MB/s eta 0:00:00
+2025-05-08 17:09:04.3039Z Collecting python-dotenv==1.1.0
+2025-05-08 17:09:04.4073Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/python-dotenv/1.1.0/python_dotenv-1.1.0-py3-none-any.whl (20 kB)
+2025-05-08 17:09:04.4565Z Collecting python-json-logger==3.2.1
+2025-05-08 17:09:04.5190Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/python-json-logger/3.2.1/python_json_logger-3.2.1-py3-none-any.whl (14 kB)
+2025-05-08 17:09:04.6961Z Collecting pytz==2024.2
+2025-05-08 17:09:04.7570Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pytz/2024.2/pytz-2024.2-py2.py3-none-any.whl (508 kB)
+2025-05-08 17:09:04.8054Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 508.0/508.0 kB 91.6 MB/s eta 0:00:00
+2025-05-08 17:09:04.9524Z Collecting PyYAML==6.0.2
+2025-05-08 17:09:05.0178Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pyyaml/6.0.2/PyYAML-6.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (737 kB)
+2025-05-08 17:09:05.0256Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 737.4/737.4 kB 140.6 MB/s eta 0:00:00
+2025-05-08 17:09:05.9841Z Collecting pyzmq==26.2.0
+2025-05-08 17:09:06.0251Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pyzmq/26.2.0/pyzmq-26.2.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (862 kB)
+2025-05-08 17:09:06.1055Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 862.1/862.1 kB 31.1 MB/s eta 0:00:00
+2025-05-08 17:09:06.1768Z Collecting referencing==0.35.1
+2025-05-08 17:09:06.2398Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/referencing/0.35.1/referencing-0.35.1-py3-none-any.whl (26 kB)
+2025-05-08 17:09:06.3668Z Collecting requests==2.32.3
+2025-05-08 17:09:06.4036Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/requests/2.32.3/requests-2.32.3-py3-none-any.whl (64 kB)
+2025-05-08 17:09:06.5072Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.9/64.9 kB 25.1 MB/s eta 0:00:00
+2025-05-08 17:09:06.5644Z Collecting rfc3339-validator==0.1.4
+2025-05-08 17:09:06.6127Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/rfc3339-validator/0.1.4/rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+2025-05-08 17:09:06.7063Z Collecting rfc3986-validator==0.1.1
+2025-05-08 17:09:06.7502Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/rfc3986-validator/0.1.1/rfc3986_validator-0.1.1-py2.py3-none-any.whl (4.2 kB)
+2025-05-08 17:09:07.6807Z Collecting rpds-py==0.22.3
+2025-05-08 17:09:07.7186Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/rpds-py/0.22.3/rpds_py-0.22.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (382 kB)
+2025-05-08 17:09:07.8060Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 382.3/382.3 kB 25.4 MB/s eta 0:00:00
+2025-05-08 17:09:08.1200Z Collecting scikit-learn==1.6.0
+2025-05-08 17:09:08.1592Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/scikit-learn/1.6.0/scikit_learn-1.6.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.5 MB)
+2025-05-08 17:09:08.2668Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.5/13.5 MB 144.0 MB/s eta 0:00:00
+2025-05-08 17:09:08.3699Z Collecting scikit-optimize==0.10.2
+2025-05-08 17:09:08.4338Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/scikit-optimize/0.10.2/scikit_optimize-0.10.2-py2.py3-none-any.whl (107 kB)
+2025-05-08 17:09:08.5149Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.8/107.8 kB 63.0 MB/s eta 0:00:00
+2025-05-08 17:09:08.5150Z Requirement already satisfied: scipy==1.13.1 in /usr/local/lib/python3.9/site-packages (from -r requirements.txt (line 116)) (1.13.1)
+2025-05-08 17:09:08.5554Z Collecting seaborn==0.13.2
+2025-05-08 17:09:08.5951Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/seaborn/0.13.2/seaborn-0.13.2-py3-none-any.whl (294 kB)
+2025-05-08 17:09:08.6358Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 294.9/294.9 kB 108.4 MB/s eta 0:00:00
+2025-05-08 17:09:08.7066Z Collecting Send2Trash==1.8.3
+2025-05-08 17:09:08.7157Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/send2trash/1.8.3/Send2Trash-1.8.3-py3-none-any.whl (18 kB)
+2025-05-08 17:09:08.8634Z Collecting six==1.17.0
+2025-05-08 17:09:08.9080Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/six/1.17.0/six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-05-08 17:09:09.0281Z Collecting sniffio==1.3.1
+2025-05-08 17:09:09.1068Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/sniffio/1.3.1/sniffio-1.3.1-py3-none-any.whl (10 kB)
+2025-05-08 17:09:09.1624Z Collecting soupsieve==2.6
+2025-05-08 17:09:09.2251Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/soupsieve/2.6/soupsieve-2.6-py3-none-any.whl (36 kB)
+2025-05-08 17:09:10.3923Z Collecting SQLAlchemy==2.0.36
+2025-05-08 17:09:10.4583Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/sqlalchemy/2.0.36/SQLAlchemy-2.0.36-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+2025-05-08 17:09:10.5061Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 93.0 MB/s eta 0:00:00
+2025-05-08 17:09:10.5818Z Collecting stack-data==0.6.3
+2025-05-08 17:09:10.6179Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/stack-data/0.6.3/stack_data-0.6.3-py3-none-any.whl (24 kB)
+2025-05-08 17:09:10.7737Z Collecting sympy==1.13.1
+2025-05-08 17:09:10.8113Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/sympy/1.13.1/sympy-1.13.1-py3-none-any.whl (6.2 MB)
+2025-05-08 17:09:10.9068Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 122.2 MB/s eta 0:00:00
+2025-05-08 17:09:10.9691Z Collecting terminado==0.18.1
+2025-05-08 17:09:11.0296Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/terminado/0.18.1/terminado-0.18.1-py3-none-any.whl (14 kB)
+2025-05-08 17:09:11.1165Z Collecting threadpoolctl==3.5.0
+2025-05-08 17:09:11.1559Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/threadpoolctl/3.5.0/threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+2025-05-08 17:09:11.2980Z Collecting tinycss2==1.4.0
+2025-05-08 17:09:11.3329Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/tinycss2/1.4.0/tinycss2-1.4.0-py3-none-any.whl (26 kB)
+2025-05-08 17:09:11.4870Z Collecting tomli==2.2.1
+2025-05-08 17:09:11.5237Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/tomli/2.2.1/tomli-2.2.1-py3-none-any.whl (14 kB)
+2025-05-08 17:09:11.7266Z Collecting torch==2.6.0
+2025-05-08 17:09:11.7862Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/torch/2.6.0/torch-2.6.0-cp39-cp39-manylinux1_x86_64.whl (766.7 MB)
+2025-05-08 17:09:17.5310Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 766.7/766.7 MB 6.0 MB/s eta 0:00:00
+2025-05-08 17:09:18.8578Z Collecting tornado==6.4.2
+2025-05-08 17:09:18.8959Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/tornado/6.4.2/tornado-6.4.2-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (437 kB)
+2025-05-08 17:09:18.9212Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 437.2/437.2 kB 18.9 MB/s eta 0:00:00
+2025-05-08 17:09:19.1362Z Collecting tqdm==4.67.1
+2025-05-08 17:09:19.2054Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/tqdm/4.67.1/tqdm-4.67.1-py3-none-any.whl (78 kB)
+2025-05-08 17:09:19.2054Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.5/78.5 kB 23.4 MB/s eta 0:00:00
+2025-05-08 17:09:19.2762Z Collecting traitlets==5.14.3
+2025-05-08 17:09:19.3373Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/traitlets/5.14.3/traitlets-5.14.3-py3-none-any.whl (85 kB)
+2025-05-08 17:09:19.4065Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.4/85.4 kB 57.7 MB/s eta 0:00:00
+2025-05-08 17:09:19.4357Z Collecting types-python-dateutil==2.9.0.20241206
+2025-05-08 17:09:19.4957Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/types-python-dateutil/2.9.0.20241206/types_python_dateutil-2.9.0.20241206-py3-none-any.whl (14 kB)
+2025-05-08 17:09:19.5953Z Collecting typing_extensions==4.12.2
+2025-05-08 17:09:19.6313Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/typing-extensions/4.12.2/typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+2025-05-08 17:09:19.7795Z Collecting tzdata==2024.2
+2025-05-08 17:09:19.8168Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/tzdata/2024.2/tzdata-2024.2-py2.py3-none-any.whl (346 kB)
+2025-05-08 17:09:19.8302Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 346.6/346.6 kB 31.2 MB/s eta 0:00:00
+2025-05-08 17:09:19.9034Z Collecting uri-template==1.3.0
+2025-05-08 17:09:20.0067Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/uri-template/1.3.0/uri_template-1.3.0-py3-none-any.whl (11 kB)
+2025-05-08 17:09:20.0957Z Collecting urllib3==2.3.0
+2025-05-08 17:09:20.1339Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/urllib3/2.3.0/urllib3-2.3.0-py3-none-any.whl (128 kB)
+2025-05-08 17:09:20.2075Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 128.4/128.4 kB 19.0 MB/s eta 0:00:00
+2025-05-08 17:09:20.2825Z Collecting wcwidth==0.2.13
+2025-05-08 17:09:20.3222Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/wcwidth/0.2.13/wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+2025-05-08 17:09:20.4063Z Collecting webcolors==24.11.1
+2025-05-08 17:09:20.4632Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/webcolors/24.11.1/webcolors-24.11.1-py3-none-any.whl (14 kB)
+2025-05-08 17:09:20.5424Z Collecting webencodings==0.5.1
+2025-05-08 17:09:20.6055Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/webencodings/0.5.1/webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+2025-05-08 17:09:20.7082Z Collecting websocket-client==1.8.0
+2025-05-08 17:09:20.8109Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/websocket-client/1.8.0/websocket_client-1.8.0-py3-none-any.whl (58 kB)
+2025-05-08 17:09:20.8109Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.8/58.8 kB 17.6 MB/s eta 0:00:00
+2025-05-08 17:09:20.9399Z Collecting widgetsnbextension==4.0.13
+2025-05-08 17:09:21.0071Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/widgetsnbextension/4.0.13/widgetsnbextension-4.0.13-py3-none-any.whl (2.3 MB)
+2025-05-08 17:09:21.0096Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 81.8 MB/s eta 0:00:00
+2025-05-08 17:09:21.1243Z Collecting zipp==3.21.0
+2025-05-08 17:09:21.2076Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/zipp/3.21.0/zipp-3.21.0-py3-none-any.whl (9.6 kB)
+2025-05-08 17:09:22.7132Z Requirement already satisfied: setuptools>=40.8.0 in /usr/local/lib/python3.9/site-packages (from jupyterlab==4.3.4->-r requirements.txt (line 60)) (58.1.0)
+2025-05-08 17:09:25.0798Z Collecting greenlet!=0.4.17
+2025-05-08 17:09:25.1469Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/greenlet/3.2.1/greenlet-3.2.1-cp39-cp39-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (579 kB)
+2025-05-08 17:09:25.2076Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 579.1/579.1 kB 30.1 MB/s eta 0:00:00
+2025-05-08 17:09:25.6197Z Collecting nvidia-cublas-cu12==12.4.5.8
+2025-05-08 17:09:25.6544Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cublas-cu12/12.4.5.8/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl (363.4 MB)
+2025-05-08 17:09:28.3881Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 363.4/363.4 MB 12.0 MB/s eta 0:00:00
+2025-05-08 17:09:28.9746Z Collecting nvidia-nccl-cu12==2.21.5
+2025-05-08 17:09:29.0534Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-nccl-cu12/2.21.5/nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl (188.7 MB)
+2025-05-08 17:09:30.4704Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 188.7/188.7 MB 22.0 MB/s eta 0:00:00
+2025-05-08 17:09:30.8181Z Collecting nvidia-cusparse-cu12==12.3.1.170
+2025-05-08 17:09:30.8827Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cusparse-cu12/12.3.1.170/nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_x86_64.whl (207.5 MB)
+2025-05-08 17:09:32.4326Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.5/207.5 MB 20.3 MB/s eta 0:00:00
+2025-05-08 17:09:32.8718Z Collecting nvidia-cusolver-cu12==11.6.1.9
+2025-05-08 17:09:32.9193Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cusolver-cu12/11.6.1.9/nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_x86_64.whl (127.9 MB)
+2025-05-08 17:09:33.8988Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 127.9/127.9 MB 30.7 MB/s eta 0:00:00
+2025-05-08 17:09:34.2308Z Collecting triton==3.2.0
+2025-05-08 17:09:34.2683Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/triton/3.2.0/triton-3.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (253.1 MB)
+2025-05-08 17:09:36.4783Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 253.1/253.1 MB 17.0 MB/s eta 0:00:00
+2025-05-08 17:09:36.8760Z Collecting nvidia-cusparselt-cu12==0.6.2
+2025-05-08 17:09:36.9417Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cusparselt-cu12/0.6.2/nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_x86_64.whl (150.1 MB)
+2025-05-08 17:09:38.0720Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 150.1/150.1 MB 27.3 MB/s eta 0:00:00
+2025-05-08 17:09:38.4230Z Collecting nvidia-cufft-cu12==11.2.1.3
+2025-05-08 17:09:38.4627Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cufft-cu12/11.2.1.3/nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl (211.5 MB)
+2025-05-08 17:09:40.0484Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 211.5/211.5 MB 20.2 MB/s eta 0:00:00
+2025-05-08 17:09:40.4816Z Collecting nvidia-cuda-cupti-cu12==12.4.127
+2025-05-08 17:09:40.5193Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cuda-cupti-cu12/12.4.127/nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (13.8 MB)
+2025-05-08 17:09:40.6541Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.8/13.8 MB 104.4 MB/s eta 0:00:00
+2025-05-08 17:09:40.7619Z Collecting nvidia-curand-cu12==10.3.5.147
+2025-05-08 17:09:40.8223Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-curand-cu12/10.3.5.147/nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_x86_64.whl (56.3 MB)
+2025-05-08 17:09:41.2497Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 MB 58.0 MB/s eta 0:00:00
+2025-05-08 17:09:41.4199Z Collecting nvidia-cuda-runtime-cu12==12.4.127
+2025-05-08 17:09:41.4543Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cuda-runtime-cu12/12.4.127/nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (883 kB)
+2025-05-08 17:09:41.4773Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 883.7/883.7 kB 43.6 MB/s eta 0:00:00
+2025-05-08 17:09:41.6217Z Collecting nvidia-nvjitlink-cu12==12.4.127
+2025-05-08 17:09:41.6580Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-nvjitlink-cu12/12.4.127/nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (21.1 MB)
+2025-05-08 17:09:41.8047Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.1/21.1 MB 121.3 MB/s eta 0:00:00
+2025-05-08 17:09:41.9166Z Collecting nvidia-cuda-nvrtc-cu12==12.4.127
+2025-05-08 17:09:42.0051Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cuda-nvrtc-cu12/12.4.127/nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (24.6 MB)
+2025-05-08 17:09:42.1434Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.6/24.6 MB 120.3 MB/s eta 0:00:00
+2025-05-08 17:09:42.2646Z Collecting nvidia-cudnn-cu12==9.1.0.70
+2025-05-08 17:09:42.2989Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cudnn-cu12/9.1.0.70/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl (664.8 MB)
+2025-05-08 17:09:47.2678Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 664.8/664.8 MB 6.9 MB/s eta 0:00:00
+2025-05-08 17:09:48.2709Z Collecting nvidia-nvtx-cu12==12.4.127
+2025-05-08 17:09:48.3081Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-nvtx-cu12/12.4.127/nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (99 kB)
+2025-05-08 17:09:48.4067Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 5.7 MB/s eta 0:00:00
+2025-05-08 17:09:49.1492Z Building wheels for collected packages: fpdf
+2025-05-08 17:09:49.1498Z   Building wheel for fpdf (setup.py): started
+2025-05-08 17:09:49.4862Z   Building wheel for fpdf (setup.py): finished with status 'done'
+2025-05-08 17:09:49.4868Z   Created wheel for fpdf: filename=fpdf-1.7.2-py2.py3-none-any.whl size=40721 sha256=19a46a206f29cbe2d53efb8c746271edf40c0e7f4c36115dc16154a58b24b937
+2025-05-08 17:09:49.4870Z   Stored in directory: /root/.cache/pip/wheels/42/cc/cc/d27e8b386e853eff39007f369c9ced54bec32581db4fe0f24e
+2025-05-08 17:09:49.5271Z Successfully built fpdf
+2025-05-08 17:09:51.1259Z Installing collected packages: webencodings, wcwidth, triton, pytz, pure_eval, ptyprocess, nvidia-cusparselt-cu12, mpmath, fpdf, fastjsonschema, zipp, widgetsnbextension, websocket-client, webcolors, urllib3, uri-template, tzdata, typing_extensions, types-python-dateutil, traitlets, tqdm, tornado, tomli, tinycss2, threadpoolctl, sympy, soupsieve, sniffio, six, Send2Trash, rpds-py, rfc3986-validator, pyzmq, PyYAML, python-dotenv, pyparsing, pykan, Pygments, pycparser, psutil, prompt_toolkit, prometheus_client, platformdirs, pillow, pexpect, parso, pandocfilters, packaging, overrides, nvidia-nvtx-cu12, nvidia-nvjitlink-cu12, nvidia-nccl-cu12, nvidia-curand-cu12, nvidia-cufft-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, networkx, nest-asyncio, MarkupSafe, lxml, kiwisolver, jupyterlab_widgets, jupyterlab_pygments, jsonpointer, json5, joblib, imageio-ffmpeg, idna, h11, greenlet, fsspec, fqdn, fonttools, filelock, executing, exceptiongroup, defusedxml, decorator, debugpy, cycler, contourpy, colorlog, colorama, charset-normalizer, certifi, bleach, babel, attrs, asttokens, appnope, terminado, stack-data, SQLAlchemy, scikit-learn, rfc3339-validator, requests, referencing, python-json-logger, python-docx, python-dateutil, PyPDF2, pyaml, proglog, nvidia-cusparse-cu12, nvidia-cudnn-cu12, mistune, matplotlib-inline, Mako, jupyter_core, Jinja2, jedi, importlib_resources, importlib_metadata, imageio, httpcore, comm, cffi, beautifulsoup4, async-lru, anyio, scikit-optimize, pandas, nvidia-cusolver-cu12, moviepy, matplotlib, jupyter_server_terminals, jupyter_client, jsonschema-specifications, ipython, httpx, bayesian-optimization, arrow, argon2-cffi-bindings, alembic, torch, seaborn, optuna, jsonschema, isoduration, ipywidgets, ipykernel, argon2-cffi, nbformat, jupyter-console, nbclient, jupyter-events, nbconvert, jupyter_server, notebook_shim, jupyterlab_server, jupyter-lsp, jupyterlab, notebook, jupyter
+2025-05-08 17:11:04.7444Z Successfully installed Jinja2-3.1.5 Mako-1.3.8 MarkupSafe-3.0.2 PyPDF2-3.0.1 PyYAML-6.0.2 Pygments-2.19.0 SQLAlchemy-2.0.36 Send2Trash-1.8.3 alembic-1.14.0 anyio-4.8.0 appnope-0.1.4 argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 arrow-1.3.0 asttokens-3.0.0 async-lru-2.0.4 attrs-24.3.0 babel-2.16.0 bayesian-optimization-2.0.3 beautifulsoup4-4.12.3 bleach-6.2.0 certifi-2024.12.14 cffi-1.17.1 charset-normalizer-3.4.1 colorama-0.4.6 colorlog-6.9.0 comm-0.2.2 contourpy-1.3.0 cycler-0.12.1 debugpy-1.8.11 decorator-5.1.1 defusedxml-0.7.1 exceptiongroup-1.2.2 executing-2.1.0 fastjsonschema-2.21.1 filelock-3.17.0 fonttools-4.55.3 fpdf-1.7.2 fqdn-1.5.1 fsspec-2025.2.0 greenlet-3.2.1 h11-0.14.0 httpcore-1.0.7 httpx-0.28.1 idna-3.10 imageio-2.37.0 imageio-ffmpeg-0.6.0 importlib_metadata-8.5.0 importlib_resources-6.5.2 ipykernel-6.29.5 ipython-8.18.1 ipywidgets-8.1.5 isoduration-20.11.0 jedi-0.19.2 joblib-1.4.2 json5-0.10.0 jsonpointer-3.0.0 jsonschema-4.23.0 jsonschema-specifications-2024.10.1 jupyter-1.1.1 jupyter-console-6.6.3 jupyter-events-0.11.0 jupyter-lsp-2.2.5 jupyter_client-8.6.3 jupyter_core-5.7.2 jupyter_server-2.15.0 jupyter_server_terminals-0.5.3 jupyterlab-4.3.4 jupyterlab_pygments-0.3.0 jupyterlab_server-2.27.3 jupyterlab_widgets-3.0.13 kiwisolver-1.4.7 lxml-5.3.2 matplotlib-3.9.4 matplotlib-inline-0.1.7 mistune-3.1.0 moviepy-2.1.2 mpmath-1.3.0 nbclient-0.10.2 nbconvert-7.16.5 nbformat-5.10.4 nest-asyncio-1.6.0 networkx-3.2.1 notebook-7.3.2 notebook_shim-0.2.4 nvidia-cublas-cu12-12.4.5.8 nvidia-cuda-cupti-cu12-12.4.127 nvidia-cuda-nvrtc-cu12-12.4.127 nvidia-cuda-runtime-cu12-12.4.127 nvidia-cudnn-cu12-9.1.0.70 nvidia-cufft-cu12-11.2.1.3 nvidia-curand-cu12-10.3.5.147 nvidia-cusolver-cu12-11.6.1.9 nvidia-cusparse-cu12-12.3.1.170 nvidia-cusparselt-cu12-0.6.2 nvidia-nccl-cu12-2.21.5 nvidia-nvjitlink-cu12-12.4.127 nvidia-nvtx-cu12-12.4.127 optuna-4.1.0 overrides-7.7.0 packaging-24.2 pandas-2.2.3 pandocfilters-1.5.1 parso-0.8.4 pexpect-4.9.0 pillow-10.4.0 platformdirs-4.3.6 proglog-0.1.10 prometheus_client-0.21.1 prompt_toolkit-3.0.48 psutil-6.1.1 ptyprocess-0.7.0 pure_eval-0.2.3 pyaml-25.1.0 pycparser-2.22 pykan-0.2.8 pyparsing-3.2.1 python-dateutil-2.9.0.post0 python-docx-1.1.2 python-dotenv-1.1.0 python-json-logger-3.2.1 pytz-2024.2 pyzmq-26.2.0 referencing-0.35.1 requests-2.32.3 rfc3339-validator-0.1.4 rfc3986-validator-0.1.1 rpds-py-0.22.3 scikit-learn-1.6.0 scikit-optimize-0.10.2 seaborn-0.13.2 six-1.17.0 sniffio-1.3.1 soupsieve-2.6 stack-data-0.6.3 sympy-1.13.1 terminado-0.18.1 threadpoolctl-3.5.0 tinycss2-1.4.0 tomli-2.2.1 torch-2.6.0 tornado-6.4.2 tqdm-4.67.1 traitlets-5.14.3 triton-3.2.0 types-python-dateutil-2.9.0.20241206 typing_extensions-4.12.2 tzdata-2024.2 uri-template-1.3.0 urllib3-2.3.0 wcwidth-0.2.13 webcolors-24.11.1 webencodings-0.5.1 websocket-client-1.8.0 widgetsnbextension-4.0.13 zipp-3.21.0
+2025-05-08 17:11:04.7446Z WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2025-05-08 17:11:04.7499Z 
+2025-05-08 17:11:04.7851Z [notice] A new release of pip is available: 23.0.1 -> 25.1.1
+2025-05-08 17:11:04.8249Z [notice] To update, run: pip install --upgrade pip
+2025-05-08 17:11:06.1326Z Dependencies installed successfully
+2025-05-08 17:11:11.6063Z Project directory structure:
+2025-05-08 17:11:11.6064Z ./
+2025-05-08 17:11:11.6064Z     .ml-job-preset.yml
+2025-05-08 17:11:11.6473Z     components_pred_kan.py
+2025-05-08 17:11:11.6817Z 2025-05-08 20:11:11,681 - INFO - Using device: cuda
+2025-05-08 17:11:11.6869Z     analysis_functions.py
+2025-05-08 17:11:11.7667Z     requirements.txt
+2025-05-08 17:11:11.8125Z     __pycache__/
+2025-05-08 17:11:11.8468Z         analysis_functions.cpython-39.pyc
+2025-05-08 17:11:11.8870Z     new_components_resources/
+2025-05-08 17:11:11.9267Z         y_strain_components_new_components.pkl
+2025-05-08 17:11:12.0053Z         X_stress_components_new_components.pkl
+2025-05-08 17:11:12.0065Z         X_strain_components_new_components.pkl
+2025-05-08 17:11:12.0467Z         y_stress_components_new_components.pkl
+2025-05-08 17:11:12.0869Z ==================================================
+2025-05-08 17:11:12.1265Z ./new_components_resources//X_stress_components_new_components.pkl
+2025-05-08 17:11:12.2076Z ./new_components_resources//y_stress_components_new_components.pkl
+2025-05-08 17:11:12.2076Z (3, 1597, 5)
+2025-05-08 17:11:12.4814Z Train data shape: torch.Size([22340, 6])
+2025-05-08 17:11:12.4814Z Train target shape: torch.Size([22340, 1])
+2025-05-08 17:11:12.4814Z Test data shape: torch.Size([4800, 6])
+2025-05-08 17:11:12.4819Z 2025-05-08 20:11:12,481 - INFO - KAN Model Training Log - 2025-05-08 20:11:12.481816
+2025-05-08 17:11:12.5214Z Test target shape: torch.Size([4800, 1])
+2025-05-08 17:11:12.6079Z ====================================
+2025-05-08 17:11:12.5616Z 2025-05-08 20:11:12,481 - INFO - ==================================================
+2025-05-08 17:11:12.6822Z 2025-05-08 20:11:12,482 - INFO - Component Number: 2
+2025-05-08 17:11:12.7220Z 2025-05-08 20:11:12,482 - INFO - Number of Trials: 200
+2025-05-08 17:11:12.8154Z 2025-05-08 20:11:12,482 - INFO - Training Process:
+2025-05-08 17:11:12.8154Z [I 2025-05-08 20:11:12,482] A new study created in memory with name: no-name-e67dcc03-f9d2-4931-a371-82fb23e0f29f
+2025-05-08 17:11:12.8556Z 2025-05-08 20:11:12,485 - INFO - width = [6, 47, 60, 13, 73, 84, 61, 59, 7, 28, 67, 74, 72, 51, 1]
+2025-05-08 17:11:12.8958Z 2025-05-08 20:11:12,485 - INFO - Optimizer: Adam, Learning rate: 0.00011900917226702595
+2025-05-08 17:11:12.9364Z 2025-05-08 20:11:12,485 - INFO - Using optimizer: Adam with learning rate: 0.00011900917226702595
+2025-05-08 17:11:13.6103Z 2025-05-08 20:11:13,610 - INFO - checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 17:13:56.2891Z | train_loss: 1.44e+02 | test_loss: 1.44e+02 | reg: 5.71e+02 | : 100%|█| 409/409 [02:42<00:00,  2.51
+2025-05-08 17:14:02.4511Z 2025-05-08 20:14:02,450 - INFO - val_rmse = 144.32884216308594
+2025-05-08 17:14:03.5393Z 2025-05-08 20:14:03,539 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 17:16:44.3023Z | train_loss: 1.44e+02 | test_loss: 1.43e+02 | reg: 5.43e+02 | : 100%|█| 409/409 [02:40<00:00,  2.54
+2025-05-08 17:16:51.5119Z 2025-05-08 20:16:51,511 - INFO - val_rmse = 142.7019805908203
+2025-05-08 17:16:52.5721Z 2025-05-08 20:16:52,571 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 17:19:33.0652Z | train_loss: 1.44e+02 | test_loss: 1.44e+02 | reg: 5.52e+02 | : 100%|█| 409/409 [02:40<00:00,  2.55
+2025-05-08 17:19:40.5835Z 2025-05-08 20:19:40,583 - INFO - val_rmse = 144.35267639160156
+2025-05-08 17:19:41.6244Z 2025-05-08 20:19:41,624 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 17:22:22.3258Z | train_loss: 1.44e+02 | test_loss: 1.48e+02 | reg: 5.47e+02 | : 100%|█| 409/409 [02:40<00:00,  2.55
+2025-05-08 17:22:29.5797Z 2025-05-08 20:22:29,579 - INFO - val_rmse = 147.7921905517578
+2025-05-08 17:22:30.6374Z 2025-05-08 20:22:30,637 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 17:25:11.3878Z | train_loss: 1.44e+02 | test_loss: 1.42e+02 | reg: 5.55e+02 | : 100%|█| 409/409 [02:40<00:00,  2.54
+2025-05-08 17:25:18.6754Z 2025-05-08 20:25:18,674 - INFO - val_rmse = 142.44871520996094
+2025-05-08 17:25:18.6881Z [I 2025-05-08 20:25:18,688] Trial 0 finished with value: 147.7921905517578 and parameters: {'n_layers': 13, 'opt': 'Adam', 'steps': 409, 'grid': 3, 'k': 1, 'n_units_0': 47, 'n_units_1': 60, 'n_units_2': 13, 'n_units_3': 73, 'n_units_4': 84, 'n_units_5': 61, 'n_units_6': 59, 'n_units_7': 7, 'n_units_8': 28, 'n_units_9': 67, 'n_units_10': 74, 'n_units_11': 72, 'n_units_12': 51, 'lr': 0.00011900917226702595}. Best is trial 0 with value: 147.7921905517578.
+2025-05-08 17:25:18.8343Z 2025-05-08 20:25:18,834 - INFO - width = [6, 69, 37, 41, 13, 30, 5, 1]
+2025-05-08 17:25:18.8345Z 2025-05-08 20:25:18,834 - INFO - Optimizer: LBFGS, Learning rate: 0.0010065070335194958
+2025-05-08 17:25:18.8345Z 2025-05-08 20:25:18,834 - INFO - Using optimizer: LBFGS with learning rate: 0.0010065070335194958
+2025-05-08 17:25:19.0125Z 2025-05-08 20:25:19,012 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 17:53:52.2773Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 745/745 [28:33<00:00,  2.30s/it]
+2025-05-08 17:53:53.8097Z 2025-05-08 20:53:53,809 - INFO - val_rmse = nan
+2025-05-08 17:53:54.0137Z 2025-05-08 20:53:54,013 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 18:22:27.6763Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 745/745 [28:33<00:00,  2.30s/it]
+2025-05-08 18:22:28.7911Z 2025-05-08 21:22:28,790 - INFO - val_rmse = nan
+2025-05-08 18:22:28.9704Z 2025-05-08 21:22:28,970 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 18:50:43.7519Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 745/745 [28:14<00:00,  2.27s/it]
+2025-05-08 18:50:44.8561Z 2025-05-08 21:50:44,855 - INFO - val_rmse = nan
+2025-05-08 18:50:45.1943Z 2025-05-08 21:50:45,194 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 19:19:04.9058Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 745/745 [28:19<00:00,  2.28s/it]
+2025-05-08 19:19:06.0254Z 2025-05-08 22:19:06,024 - INFO - val_rmse = nan
+2025-05-08 19:19:06.2097Z 2025-05-08 22:19:06,209 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 19:47:21.4835Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 745/745 [28:15<00:00,  2.28s/it]
+2025-05-08 19:47:22.5853Z 2025-05-08 22:47:22,584 - INFO - val_rmse = nan
+2025-05-08 19:47:22.5892Z [W 2025-05-08 22:47:22,589] Trial 1 failed with parameters: {'n_layers': 6, 'opt': 'LBFGS', 'steps': 745, 'grid': 6, 'k': 4, 'n_units_0': 69, 'n_units_1': 37, 'n_units_2': 41, 'n_units_3': 13, 'n_units_4': 30, 'n_units_5': 5, 'lr': 0.0010065070335194958} because of the following error: The value nan is not acceptable.
+2025-05-08 19:47:22.5893Z [W 2025-05-08 22:47:22,589] Trial 1 failed with value np.float32(nan).
+2025-05-08 19:47:22.7252Z 2025-05-08 22:47:22,725 - INFO - width = [6, 19, 47, 12, 79, 78, 19, 1]
+2025-05-08 19:47:22.7253Z 2025-05-08 22:47:22,725 - INFO - Optimizer: LBFGS, Learning rate: 0.003471433817084463
+2025-05-08 19:47:22.7254Z 2025-05-08 22:47:22,725 - INFO - Using optimizer: LBFGS with learning rate: 0.003471433817084463
+2025-05-08 19:47:23.0120Z 2025-05-08 22:47:23,011 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 19:53:39.9578Z | train_loss: 8.93e+01 | test_loss: 9.03e+01 | reg: 1.01e+03 | : 100%|█| 423/423 [06:16<00:00,  1.12
+2025-05-08 19:53:41.9498Z 2025-05-08 22:53:41,949 - INFO - val_rmse = 90.31864929199219
+2025-05-08 19:53:42.3954Z 2025-05-08 22:53:42,395 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 19:58:44.5182Z | train_loss: 9.48e+01 | test_loss: 9.35e+01 | reg: 9.64e+02 | : 100%|█| 423/423 [05:02<00:00,  1.40
+2025-05-08 19:58:46.5839Z 2025-05-08 22:58:46,583 - INFO - val_rmse = 93.47332763671875
+2025-05-08 19:58:46.8753Z 2025-05-08 22:58:46,875 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 20:07:08.1683Z | train_loss: 7.48e+01 | test_loss: 7.70e+01 | reg: 1.65e+03 | : 100%|█| 423/423 [08:21<00:00,  1.19
+2025-05-08 20:07:10.1796Z 2025-05-08 23:07:10,179 - INFO - val_rmse = 76.95719146728516
+2025-05-08 20:07:10.4735Z 2025-05-08 23:07:10,473 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 20:12:52.6965Z | train_loss: 8.80e+01 | test_loss: 8.90e+01 | reg: 8.00e+02 | : 100%|█| 423/423 [05:42<00:00,  1.24
+2025-05-08 20:12:54.8676Z 2025-05-08 23:12:54,867 - INFO - val_rmse = 89.01696014404297
+2025-05-08 20:12:55.1635Z 2025-05-08 23:12:55,163 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 20:27:42.5210Z | train_loss: 9.40e+01 | test_loss: 9.74e+01 | reg: 8.57e+02 | : 100%|█| 423/423 [14:47<00:00,  2.10
+2025-05-08 20:27:44.5526Z 2025-05-08 23:27:44,552 - INFO - val_rmse = 97.40312194824219
+2025-05-08 20:27:44.5573Z [I 2025-05-08 23:27:44,557] Trial 2 finished with value: 97.40312194824219 and parameters: {'n_layers': 6, 'opt': 'LBFGS', 'steps': 423, 'grid': 4, 'k': 3, 'n_units_0': 19, 'n_units_1': 47, 'n_units_2': 12, 'n_units_3': 79, 'n_units_4': 78, 'n_units_5': 19, 'lr': 0.003471433817084463}. Best is trial 2 with value: 97.40312194824219.
+2025-05-08 20:27:44.7173Z 2025-05-08 23:27:44,717 - INFO - width = [6, 92, 94, 57, 16, 82, 11, 12, 1, 60, 46, 58, 33, 1]
+2025-05-08 20:27:44.7175Z 2025-05-08 23:27:44,717 - INFO - Optimizer: Adam, Learning rate: 0.0005202443558651979
+2025-05-08 20:27:44.7175Z 2025-05-08 23:27:44,717 - INFO - Using optimizer: Adam with learning rate: 0.0005202443558651979
+2025-05-08 20:27:45.5508Z 2025-05-08 23:27:45,550 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 20:33:58.3419Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 843/843 [06:12<00:00,  2.26it/s]
+2025-05-08 20:34:03.2203Z 2025-05-08 23:34:03,219 - INFO - val_rmse = nan
+2025-05-08 20:34:04.0918Z 2025-05-08 23:34:04,091 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 20:40:30.5808Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 843/843 [06:26<00:00,  2.18it/s]
+2025-05-08 20:40:35.6380Z 2025-05-08 23:40:35,637 - INFO - val_rmse = nan
+2025-05-08 20:40:36.4988Z 2025-05-08 23:40:36,498 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 20:46:53.2817Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 843/843 [06:16<00:00,  2.24it/s]
+2025-05-08 20:46:58.3198Z 2025-05-08 23:46:58,318 - INFO - val_rmse = nan
+2025-05-08 20:46:59.1631Z 2025-05-08 23:46:59,163 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 20:53:10.2756Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 843/843 [06:11<00:00,  2.27it/s]
+2025-05-08 20:53:15.2554Z 2025-05-08 23:53:15,254 - INFO - val_rmse = nan
+2025-05-08 20:53:16.1220Z 2025-05-08 23:53:16,121 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 20:59:30.8752Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 843/843 [06:14<00:00,  2.25it/s]
+2025-05-08 20:59:35.9163Z 2025-05-08 23:59:35,915 - INFO - val_rmse = nan
+2025-05-08 20:59:35.9245Z [W 2025-05-08 23:59:35,924] Trial 3 failed with parameters: {'n_layers': 12, 'opt': 'Adam', 'steps': 843, 'grid': 4, 'k': 5, 'n_units_0': 92, 'n_units_1': 94, 'n_units_2': 57, 'n_units_3': 16, 'n_units_4': 82, 'n_units_5': 11, 'n_units_6': 12, 'n_units_7': 1, 'n_units_8': 60, 'n_units_9': 46, 'n_units_10': 58, 'n_units_11': 33, 'lr': 0.0005202443558651979} because of the following error: The value nan is not acceptable.
+2025-05-08 20:59:35.9245Z [W 2025-05-08 23:59:35,924] Trial 3 failed with value np.float32(nan).
+2025-05-08 20:59:36.0628Z 2025-05-08 23:59:36,062 - INFO - width = [6, 44, 3, 69, 86, 21, 68, 16, 58, 62, 45, 93, 42, 1]
+2025-05-08 20:59:36.1069Z 2025-05-08 23:59:36,062 - INFO - Optimizer: Adam, Learning rate: 0.0001322795187462169
+2025-05-08 20:59:36.1069Z 2025-05-08 23:59:36,063 - INFO - Using optimizer: Adam with learning rate: 0.0001322795187462169
+2025-05-08 20:59:36.9207Z 2025-05-08 23:59:36,920 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:03:47.8727Z | train_loss: 4.27e+01 | test_loss: 4.53e+01 | reg: 8.53e+03 | : 100%|█| 546/546 [04:10<00:00,  2.18
+2025-05-08 21:03:53.0695Z 2025-05-09 00:03:53,069 - INFO - val_rmse = 45.27777099609375
+2025-05-08 21:03:53.9859Z 2025-05-09 00:03:53,985 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:08:05.0675Z | train_loss: 7.18e+01 | test_loss: 6.91e+01 | reg: 9.34e+03 | : 100%|█| 546/546 [04:11<00:00,  2.17
+2025-05-08 21:08:10.2817Z 2025-05-09 00:08:10,281 - INFO - val_rmse = 69.10968017578125
+2025-05-08 21:08:11.1976Z 2025-05-09 00:08:11,197 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:12:12.5634Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 546/546 [04:01<00:00,  2.26it/s]
+2025-05-08 21:12:17.7841Z 2025-05-09 00:12:17,783 - INFO - val_rmse = nan
+2025-05-08 21:12:18.6980Z 2025-05-09 00:12:18,697 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:16:29.7229Z | train_loss: 7.65e+01 | test_loss: 8.27e+01 | reg: 4.13e+03 | : 100%|█| 546/546 [04:11<00:00,  2.18
+2025-05-08 21:16:34.9593Z 2025-05-09 00:16:34,958 - INFO - val_rmse = 82.65055084228516
+2025-05-08 21:16:35.9093Z 2025-05-09 00:16:35,909 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:20:46.8527Z | train_loss: 1.04e+02 | test_loss: 1.04e+02 | reg: 1.06e+04 | : 100%|█| 546/546 [04:10<00:00,  2.18
+2025-05-08 21:20:52.0743Z 2025-05-09 00:20:52,073 - INFO - val_rmse = 104.34322357177734
+2025-05-08 21:20:52.0834Z [W 2025-05-09 00:20:52,083] Trial 4 failed with parameters: {'n_layers': 12, 'opt': 'Adam', 'steps': 546, 'grid': 6, 'k': 3, 'n_units_0': 44, 'n_units_1': 3, 'n_units_2': 69, 'n_units_3': 86, 'n_units_4': 21, 'n_units_5': 68, 'n_units_6': 16, 'n_units_7': 58, 'n_units_8': 62, 'n_units_9': 45, 'n_units_10': 93, 'n_units_11': 42, 'lr': 0.0001322795187462169} because of the following error: The value nan is not acceptable.
+2025-05-08 21:20:52.0834Z [W 2025-05-09 00:20:52,083] Trial 4 failed with value np.float32(nan).
+2025-05-08 21:20:52.2219Z 2025-05-09 00:20:52,221 - INFO - width = [6, 57, 1]
+2025-05-08 21:20:52.2220Z 2025-05-09 00:20:52,222 - INFO - Optimizer: LBFGS, Learning rate: 0.0403604924674922
+2025-05-08 21:20:52.2220Z 2025-05-09 00:20:52,222 - INFO - Using optimizer: LBFGS with learning rate: 0.0403604924674922
+2025-05-08 21:20:52.2627Z 2025-05-09 00:20:52,256 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:25:20.5033Z | train_loss: 1.75e+01 | test_loss: 1.86e+01 | reg: 1.86e+03 | : 100%|█| 958/958 [04:28<00:00,  3.57
+2025-05-08 21:25:20.9049Z 2025-05-09 00:25:20,904 - INFO - val_rmse = 18.563434600830078
+2025-05-08 21:25:20.9393Z 2025-05-09 00:25:20,933 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:29:50.4335Z | train_loss: 1.73e+01 | test_loss: 1.83e+01 | reg: 1.37e+03 | : 100%|█| 958/958 [04:29<00:00,  3.55
+2025-05-08 21:29:50.5086Z 2025-05-09 00:29:50,508 - INFO - val_rmse = 18.269025802612305
+2025-05-08 21:29:50.6068Z 2025-05-09 00:29:50,536 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:34:20.4730Z | train_loss: 1.83e+01 | test_loss: 1.94e+01 | reg: 1.21e+03 | : 100%|█| 958/958 [04:29<00:00,  3.55
+2025-05-08 21:34:20.5478Z 2025-05-09 00:34:20,547 - INFO - val_rmse = 19.44784164428711
+2025-05-08 21:34:20.6068Z 2025-05-09 00:34:20,572 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:38:50.6633Z | train_loss: 1.65e+01 | test_loss: 1.62e+01 | reg: 1.69e+03 | : 100%|█| 958/958 [04:30<00:00,  3.55
+2025-05-08 21:38:50.7381Z 2025-05-09 00:38:50,737 - INFO - val_rmse = 16.18980598449707
+2025-05-08 21:38:50.8078Z 2025-05-09 00:38:50,765 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:43:20.1247Z | train_loss: 1.77e+01 | test_loss: 1.94e+01 | reg: 1.91e+03 | : 100%|█| 958/958 [04:29<00:00,  3.56
+2025-05-08 21:43:20.1998Z 2025-05-09 00:43:20,199 - INFO - val_rmse = 19.357601165771484
+2025-05-08 21:43:20.2032Z [I 2025-05-09 00:43:20,203] Trial 5 finished with value: 19.44784164428711 and parameters: {'n_layers': 1, 'opt': 'LBFGS', 'steps': 958, 'grid': 1, 'k': 2, 'n_units_0': 57, 'lr': 0.0403604924674922}. Best is trial 5 with value: 19.44784164428711.
+2025-05-08 21:43:20.3411Z 2025-05-09 00:43:20,341 - INFO - width = [6, 99, 1, 57, 80, 18, 40, 1]
+2025-05-08 21:43:20.3413Z 2025-05-09 00:43:20,341 - INFO - Optimizer: Adam, Learning rate: 0.0003625781305338512
+2025-05-08 21:43:20.3474Z 2025-05-09 00:43:20,341 - INFO - Using optimizer: Adam with learning rate: 0.0003625781305338512
+2025-05-08 21:43:20.5790Z 2025-05-09 00:43:20,578 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:43:34.4831Z | train_loss: 1.45e+02 | test_loss: 1.45e+02 | reg: 2.26e+02 | : 100%|█| 18/18 [00:13<00:00,  1.29it
+2025-05-08 21:43:35.9110Z 2025-05-09 00:43:35,910 - INFO - val_rmse = 144.6544647216797
+2025-05-08 21:43:36.1514Z 2025-05-09 00:43:36,151 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:43:50.0569Z | train_loss: 1.45e+02 | test_loss: 1.43e+02 | reg: 3.26e+02 | : 100%|█| 18/18 [00:13<00:00,  1.29it
+2025-05-08 21:43:51.5471Z 2025-05-09 00:43:51,546 - INFO - val_rmse = 143.1400146484375
+2025-05-08 21:43:51.8973Z 2025-05-09 00:43:51,897 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:44:05.8388Z | train_loss: 1.45e+02 | test_loss: 1.45e+02 | reg: 3.95e+03 | : 100%|█| 18/18 [00:13<00:00,  1.29it
+2025-05-08 21:44:07.3257Z 2025-05-09 00:44:07,325 - INFO - val_rmse = 144.72360229492188
+2025-05-08 21:44:07.5589Z 2025-05-09 00:44:07,558 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:44:21.5044Z | train_loss: 1.44e+02 | test_loss: 1.48e+02 | reg: 2.16e+02 | : 100%|█| 18/18 [00:13<00:00,  1.29it
+2025-05-08 21:44:22.9950Z 2025-05-09 00:44:22,994 - INFO - val_rmse = 148.11810302734375
+2025-05-08 21:44:23.2409Z 2025-05-09 00:44:23,240 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:44:37.1926Z | train_loss: 1.45e+02 | test_loss: 1.43e+02 | reg: 2.17e+02 | : 100%|█| 18/18 [00:13<00:00,  1.29it
+2025-05-08 21:44:38.6893Z 2025-05-09 00:44:38,689 - INFO - val_rmse = 142.89369201660156
+2025-05-08 21:44:38.6915Z [I 2025-05-09 00:44:38,691] Trial 6 finished with value: 148.11810302734375 and parameters: {'n_layers': 6, 'opt': 'Adam', 'steps': 18, 'grid': 6, 'k': 3, 'n_units_0': 99, 'n_units_1': 1, 'n_units_2': 57, 'n_units_3': 80, 'n_units_4': 18, 'n_units_5': 40, 'lr': 0.0003625781305338512}. Best is trial 5 with value: 19.44784164428711.
+2025-05-08 21:44:38.8251Z 2025-05-09 00:44:38,825 - INFO - width = [6, 37, 4, 34, 64, 39, 91, 52, 1]
+2025-05-08 21:44:38.8252Z 2025-05-09 00:44:38,825 - INFO - Optimizer: Adam, Learning rate: 0.0003054306821107297
+2025-05-08 21:44:38.8253Z 2025-05-09 00:44:38,825 - INFO - Using optimizer: Adam with learning rate: 0.0003054306821107297
+2025-05-08 21:44:39.2130Z 2025-05-09 00:44:39,212 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:45:05.9118Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████████| 30/30 [00:26<00:00,  1.12it/s]
+2025-05-08 21:45:08.5010Z 2025-05-09 00:45:08,500 - INFO - val_rmse = nan
+2025-05-08 21:45:09.0258Z 2025-05-09 00:45:09,025 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:45:35.7225Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████████| 30/30 [00:26<00:00,  1.12it/s]
+2025-05-08 21:45:38.4009Z 2025-05-09 00:45:38,400 - INFO - val_rmse = nan
+2025-05-08 21:45:38.7868Z 2025-05-09 00:45:38,786 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:46:05.4767Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████████| 30/30 [00:26<00:00,  1.12it/s]
+2025-05-08 21:46:08.2837Z 2025-05-09 00:46:08,283 - INFO - val_rmse = nan
+2025-05-08 21:46:08.6768Z 2025-05-09 00:46:08,676 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:46:35.3689Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████████| 30/30 [00:26<00:00,  1.12it/s]
+2025-05-08 21:46:38.0563Z 2025-05-09 00:46:38,056 - INFO - val_rmse = nan
+2025-05-08 21:46:38.5659Z 2025-05-09 00:46:38,565 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:47:05.2863Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████████| 30/30 [00:26<00:00,  1.12it/s]
+2025-05-08 21:47:07.9732Z 2025-05-09 00:47:07,972 - INFO - val_rmse = nan
+2025-05-08 21:47:07.9761Z [W 2025-05-09 00:47:07,976] Trial 7 failed with parameters: {'n_layers': 7, 'opt': 'Adam', 'steps': 30, 'grid': 6, 'k': 2, 'n_units_0': 37, 'n_units_1': 4, 'n_units_2': 34, 'n_units_3': 64, 'n_units_4': 39, 'n_units_5': 91, 'n_units_6': 52, 'lr': 0.0003054306821107297} because of the following error: The value nan is not acceptable.
+2025-05-08 21:47:07.9761Z [W 2025-05-09 00:47:07,976] Trial 7 failed with value np.float32(nan).
+2025-05-08 21:47:08.1000Z 2025-05-09 00:47:08,099 - INFO - width = [6, 89, 24, 26, 14, 67, 30, 35, 53, 90, 56, 75, 68, 10, 92, 22, 1]
+2025-05-08 21:47:08.1057Z 2025-05-09 00:47:08,100 - INFO - Optimizer: Adam, Learning rate: 5.0564176315334897e-05
+2025-05-08 21:47:08.1057Z 2025-05-09 00:47:08,100 - INFO - Using optimizer: Adam with learning rate: 5.0564176315334897e-05
+2025-05-08 21:47:09.0841Z 2025-05-09 00:47:09,083 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:52:40.5017Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 456/456 [05:31<00:00,  1.38it/s]
+2025-05-08 21:52:46.7087Z 2025-05-09 00:52:46,708 - INFO - val_rmse = nan
+2025-05-08 21:52:47.7554Z 2025-05-09 00:52:47,755 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 21:58:19.4897Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 456/456 [05:31<00:00,  1.37it/s]
+2025-05-08 21:58:26.0579Z 2025-05-09 00:58:26,057 - INFO - val_rmse = nan
+2025-05-08 21:58:27.0707Z 2025-05-09 00:58:27,070 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 22:04:03.6980Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 456/456 [05:36<00:00,  1.35it/s]
+2025-05-08 22:04:10.1439Z 2025-05-09 01:04:10,143 - INFO - val_rmse = nan
+2025-05-08 22:04:11.1849Z 2025-05-09 01:04:11,184 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 22:09:37.8417Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 456/456 [05:26<00:00,  1.40it/s]
+2025-05-08 22:09:44.2158Z 2025-05-09 01:09:44,215 - INFO - val_rmse = nan
+2025-05-08 22:09:45.4017Z 2025-05-09 01:09:45,401 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 22:15:16.7464Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 456/456 [05:31<00:00,  1.38it/s]
+2025-05-08 22:15:23.2932Z 2025-05-09 01:15:23,292 - INFO - val_rmse = nan
+2025-05-08 22:15:23.2997Z [W 2025-05-09 01:15:23,299] Trial 8 failed with parameters: {'n_layers': 15, 'opt': 'Adam', 'steps': 456, 'grid': 4, 'k': 5, 'n_units_0': 89, 'n_units_1': 24, 'n_units_2': 26, 'n_units_3': 14, 'n_units_4': 67, 'n_units_5': 30, 'n_units_6': 35, 'n_units_7': 53, 'n_units_8': 90, 'n_units_9': 56, 'n_units_10': 75, 'n_units_11': 68, 'n_units_12': 10, 'n_units_13': 92, 'n_units_14': 22, 'lr': 5.0564176315334897e-05} because of the following error: The value nan is not acceptable.
+2025-05-08 22:15:23.3000Z [W 2025-05-09 01:15:23,299] Trial 8 failed with value np.float32(nan).
+2025-05-08 22:15:23.3958Z 2025-05-09 01:15:23,395 - INFO - width = [6, 94, 54, 96, 93, 4, 68, 76, 86, 6, 85, 1]
+2025-05-08 22:15:23.4056Z 2025-05-09 01:15:23,395 - INFO - Optimizer: Adam, Learning rate: 8.924313768526128e-05
+2025-05-08 22:15:23.4143Z 2025-05-09 01:15:23,395 - INFO - Using optimizer: Adam with learning rate: 8.924313768526128e-05
+2025-05-08 22:15:24.3964Z 2025-05-09 01:15:24,396 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 22:18:44.5221Z | train_loss: 1.96e+06 | test_loss: 2.11e+06 | reg: 2.37e+06 | : 100%|█| 305/305 [03:20<00:00,  1.52
+2025-05-08 22:18:51.1199Z 2025-05-09 01:18:51,119 - INFO - val_rmse = 2110721.75
+2025-05-08 22:18:52.1997Z 2025-05-09 01:18:52,199 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 22:22:08.1190Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 305/305 [03:15<00:00,  1.56it/s]
+2025-05-08 22:22:14.8475Z 2025-05-09 01:22:14,847 - INFO - val_rmse = nan
+2025-05-08 22:22:15.9630Z 2025-05-09 01:22:15,962 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 22:25:36.1349Z | train_loss: 5.32e+06 | test_loss: 6.48e+04 | reg: 2.64e+06 | : 100%|█| 305/305 [03:20<00:00,  1.52
+2025-05-08 22:25:42.7698Z 2025-05-09 01:25:42,769 - INFO - val_rmse = 64756.80859375
+2025-05-08 22:25:43.8636Z 2025-05-09 01:25:43,863 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 22:29:04.0851Z | train_loss: 1.17e+02 | test_loss: 1.23e+02 | reg: 1.42e+03 | : 100%|█| 305/305 [03:20<00:00,  1.52
+2025-05-08 22:29:10.6776Z 2025-05-09 01:29:10,677 - INFO - val_rmse = 122.60696411132812
+2025-05-08 22:29:11.7557Z 2025-05-09 01:29:11,755 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 22:32:31.9533Z | train_loss: 9.07e+01 | test_loss: 9.28e+01 | reg: 8.74e+03 | : 100%|█| 305/305 [03:20<00:00,  1.52
+2025-05-08 22:32:38.5502Z 2025-05-09 01:32:38,549 - INFO - val_rmse = 92.841064453125
+2025-05-08 22:32:38.5602Z [W 2025-05-09 01:32:38,560] Trial 9 failed with parameters: {'n_layers': 10, 'opt': 'Adam', 'steps': 305, 'grid': 5, 'k': 3, 'n_units_0': 94, 'n_units_1': 54, 'n_units_2': 96, 'n_units_3': 93, 'n_units_4': 4, 'n_units_5': 68, 'n_units_6': 76, 'n_units_7': 86, 'n_units_8': 6, 'n_units_9': 85, 'lr': 8.924313768526128e-05} because of the following error: The value nan is not acceptable.
+2025-05-08 22:32:38.5602Z [W 2025-05-09 01:32:38,560] Trial 9 failed with value np.float32(nan).
+2025-05-08 22:32:38.6984Z 2025-05-09 01:32:38,698 - INFO - width = [6, 29, 39, 100, 1]
+2025-05-08 22:32:38.7108Z 2025-05-09 01:32:38,698 - INFO - Optimizer: Adam, Learning rate: 0.00020048533243845977
+2025-05-08 22:32:38.7108Z 2025-05-09 01:32:38,698 - INFO - Using optimizer: Adam with learning rate: 0.00020048533243845977
+2025-05-08 22:32:38.8528Z 2025-05-09 01:32:38,852 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 22:34:21.8279Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 657/657 [01:42<00:00,  6.38it/s]
+2025-05-08 22:34:23.2429Z 2025-05-09 01:34:23,242 - INFO - val_rmse = nan
+2025-05-08 22:34:23.4075Z 2025-05-09 01:34:23,407 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 22:36:05.9438Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 657/657 [01:42<00:00,  6.41it/s]
+2025-05-08 22:36:07.0074Z 2025-05-09 01:36:07,006 - INFO - val_rmse = nan
+2025-05-08 22:36:07.1704Z 2025-05-09 01:36:07,170 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 22:37:49.1852Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 657/657 [01:42<00:00,  6.44it/s]
+2025-05-08 22:37:50.2362Z 2025-05-09 01:37:50,235 - INFO - val_rmse = nan
+2025-05-08 22:37:50.5336Z 2025-05-09 01:37:50,533 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 22:39:33.9078Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 657/657 [01:43<00:00,  6.36it/s]
+2025-05-08 22:39:34.9640Z 2025-05-09 01:39:34,963 - INFO - val_rmse = nan
+2025-05-08 22:39:35.1257Z 2025-05-09 01:39:35,125 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 22:41:17.1444Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 657/657 [01:42<00:00,  6.44it/s]
+2025-05-08 22:41:18.1876Z 2025-05-09 01:41:18,187 - INFO - val_rmse = nan
+2025-05-08 22:41:18.1913Z [W 2025-05-09 01:41:18,191] Trial 10 failed with parameters: {'n_layers': 3, 'opt': 'Adam', 'steps': 657, 'grid': 5, 'k': 6, 'n_units_0': 29, 'n_units_1': 39, 'n_units_2': 100, 'lr': 0.00020048533243845977} because of the following error: The value nan is not acceptable.
+2025-05-08 22:41:18.1913Z [W 2025-05-09 01:41:18,191] Trial 10 failed with value np.float32(nan).
+2025-05-08 22:41:18.3300Z 2025-05-09 01:41:18,329 - INFO - width = [6, 3, 67, 32, 13, 18, 79, 41, 66, 85, 98, 59, 40, 100, 1]
+2025-05-08 22:41:18.3301Z 2025-05-09 01:41:18,330 - INFO - Optimizer: LBFGS, Learning rate: 0.03602082436131238
+2025-05-08 22:41:18.3302Z 2025-05-09 01:41:18,330 - INFO - Using optimizer: LBFGS with learning rate: 0.03602082436131238
+2025-05-08 22:41:19.4373Z 2025-05-09 01:41:19,437 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-08 23:24:05.9128Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 415/415 [42:46<00:00,  6.18s/it]
+2025-05-08 23:24:12.9242Z 2025-05-09 02:24:12,923 - INFO - val_rmse = nan
+2025-05-08 23:24:14.2460Z 2025-05-09 02:24:14,245 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 00:07:32.4933Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 415/415 [43:18<00:00,  6.26s/it]
+2025-05-09 00:07:39.8574Z 2025-05-09 03:07:39,856 - INFO - val_rmse = nan
+2025-05-09 00:07:41.0480Z 2025-05-09 03:07:41,047 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 00:22:53.6677Z | train_loss: 2.59e+02 | test_loss: 2.90e+02 | reg: 1.10e+04 | : 100%|█| 415/415 [15:12<00:00,  2.20
+2025-05-09 00:23:01.1219Z 2025-05-09 03:23:01,121 - INFO - val_rmse = 289.6258544921875
+2025-05-09 00:23:02.3166Z 2025-05-09 03:23:02,316 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 00:42:14.7928Z | train_loss: 1.16e+02 | test_loss: 1.19e+02 | reg: 5.83e+04 | : 100%|█| 415/415 [19:12<00:00,  2.78
+2025-05-09 00:42:22.2177Z 2025-05-09 03:42:22,217 - INFO - val_rmse = 119.16708374023438
+2025-05-09 00:42:23.5434Z 2025-05-09 03:42:23,543 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 01:01:53.5586Z | train_loss: 1.44e+02 | test_loss: 1.42e+02 | reg: 7.33e+03 | : 100%|█| 415/415 [19:30<00:00,  2.82
+2025-05-09 01:02:01.0053Z 2025-05-09 04:02:01,004 - INFO - val_rmse = 141.5159149169922
+2025-05-09 01:02:01.0159Z [W 2025-05-09 04:02:01,015] Trial 11 failed with parameters: {'n_layers': 13, 'opt': 'LBFGS', 'steps': 415, 'grid': 5, 'k': 3, 'n_units_0': 3, 'n_units_1': 67, 'n_units_2': 32, 'n_units_3': 13, 'n_units_4': 18, 'n_units_5': 79, 'n_units_6': 41, 'n_units_7': 66, 'n_units_8': 85, 'n_units_9': 98, 'n_units_10': 59, 'n_units_11': 40, 'n_units_12': 100, 'lr': 0.03602082436131238} because of the following error: The value nan is not acceptable.
+2025-05-09 01:02:01.0160Z [W 2025-05-09 04:02:01,015] Trial 11 failed with value np.float32(nan).
+2025-05-09 01:02:01.1620Z 2025-05-09 04:02:01,161 - INFO - width = [6, 94, 39, 58, 1]
+2025-05-09 01:02:01.2068Z 2025-05-09 04:02:01,162 - INFO - Optimizer: LBFGS, Learning rate: 0.013883313805620728
+2025-05-09 01:02:01.2068Z 2025-05-09 04:02:01,162 - INFO - Using optimizer: LBFGS with learning rate: 0.013883313805620728
+2025-05-09 01:02:01.3504Z 2025-05-09 04:02:01,350 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 01:32:08.4455Z | train_loss: 1.53e+01 | test_loss: 1.63e+01 | reg: 9.63e+02 | : 100%|█| 947/947 [30:07<00:00,  1.91
+2025-05-09 01:32:10.1846Z 2025-05-09 04:32:10,184 - INFO - val_rmse = 16.265464782714844
+2025-05-09 01:32:10.3779Z 2025-05-09 04:32:10,377 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 01:49:08.9418Z | train_loss: 2.52e+01 | test_loss: 2.60e+01 | reg: 1.07e+03 | : 100%|█| 947/947 [16:58<00:00,  1.08
+2025-05-09 01:49:10.3003Z 2025-05-09 04:49:10,299 - INFO - val_rmse = 25.983306884765625
+2025-05-09 01:49:10.6375Z 2025-05-09 04:49:10,637 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 02:16:19.9355Z | train_loss: 1.85e+01 | test_loss: 2.16e+01 | reg: 8.94e+02 | : 100%|█| 947/947 [27:09<00:00,  1.72
+2025-05-09 02:16:21.2909Z 2025-05-09 05:16:21,290 - INFO - val_rmse = 21.570362091064453
+2025-05-09 02:16:21.4927Z 2025-05-09 05:16:21,492 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 02:42:14.8521Z | train_loss: 1.90e+01 | test_loss: 1.92e+01 | reg: 1.01e+03 | : 100%|█| 947/947 [25:53<00:00,  1.64
+2025-05-09 02:42:16.2010Z 2025-05-09 05:42:16,200 - INFO - val_rmse = 19.185686111450195
+2025-05-09 02:42:16.3944Z 2025-05-09 05:42:16,394 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 03:09:58.0049Z | train_loss: 1.85e+01 | test_loss: 2.21e+01 | reg: 1.14e+03 | : 100%|█| 947/947 [27:41<00:00,  1.75
+2025-05-09 03:09:59.3519Z 2025-05-09 06:09:59,351 - INFO - val_rmse = 22.130285263061523
+2025-05-09 03:09:59.3566Z [I 2025-05-09 06:09:59,356] Trial 12 finished with value: 25.983306884765625 and parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 947, 'grid': 3, 'k': 5, 'n_units_0': 94, 'n_units_1': 39, 'n_units_2': 58, 'lr': 0.013883313805620728}. Best is trial 5 with value: 19.44784164428711.
+2025-05-09 03:09:59.5072Z 2025-05-09 06:09:59,507 - INFO - width = [6, 6, 48, 86, 89, 69, 10, 40, 76, 16, 43, 63, 1]
+2025-05-09 03:09:59.5074Z 2025-05-09 06:09:59,507 - INFO - Optimizer: LBFGS, Learning rate: 0.026030798891724313
+2025-05-09 03:09:59.5074Z 2025-05-09 06:09:59,507 - INFO - Using optimizer: LBFGS with learning rate: 0.026030798891724313
+2025-05-09 03:10:00.3563Z 2025-05-09 06:10:00,356 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 03:22:45.2952Z | train_loss: 1.41e+02 | test_loss: 1.41e+02 | reg: 6.07e+02 | : 100%|█| 583/583 [12:44<00:00,  1.31
+2025-05-09 03:22:50.5430Z 2025-05-09 06:22:50,542 - INFO - val_rmse = 141.486083984375
+2025-05-09 03:22:51.4612Z 2025-05-09 06:22:51,461 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 03:37:10.7248Z | train_loss: 8.53e+01 | test_loss: 8.44e+01 | reg: 2.36e+03 | : 100%|█| 583/583 [14:19<00:00,  1.47
+2025-05-09 03:37:16.3189Z 2025-05-09 06:37:16,318 - INFO - val_rmse = 84.40386199951172
+2025-05-09 03:37:17.2233Z 2025-05-09 06:37:17,223 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 03:48:54.8105Z | train_loss: 5.83e+01 | test_loss: 6.24e+01 | reg: 5.57e+03 | : 100%|█| 583/583 [11:37<00:00,  1.20
+2025-05-09 03:49:00.4470Z 2025-05-09 06:49:00,446 - INFO - val_rmse = 62.4454345703125
+2025-05-09 03:49:01.3668Z 2025-05-09 06:49:01,366 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 04:02:39.9047Z | train_loss: 7.33e+01 | test_loss: 7.68e+01 | reg: 7.47e+03 | : 100%|█| 583/583 [13:38<00:00,  1.40
+2025-05-09 04:02:45.4625Z 2025-05-09 07:02:45,461 - INFO - val_rmse = 76.75877380371094
+2025-05-09 04:02:46.3880Z 2025-05-09 07:02:46,387 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 04:14:19.9794Z | train_loss: 6.86e+01 | test_loss: 6.76e+01 | reg: 2.58e+03 | : 100%|█| 583/583 [11:33<00:00,  1.19
+2025-05-09 04:14:25.5438Z 2025-05-09 07:14:25,543 - INFO - val_rmse = 67.55341339111328
+2025-05-09 04:14:25.5530Z [I 2025-05-09 07:14:25,552] Trial 13 finished with value: 141.486083984375 and parameters: {'n_layers': 11, 'opt': 'LBFGS', 'steps': 583, 'grid': 3, 'k': 4, 'n_units_0': 6, 'n_units_1': 48, 'n_units_2': 86, 'n_units_3': 89, 'n_units_4': 69, 'n_units_5': 10, 'n_units_6': 40, 'n_units_7': 76, 'n_units_8': 16, 'n_units_9': 43, 'n_units_10': 63, 'lr': 0.026030798891724313}. Best is trial 5 with value: 19.44784164428711.
+2025-05-09 04:14:25.7025Z 2025-05-09 07:14:25,702 - INFO - width = [6, 92, 1]
+2025-05-09 04:14:25.7068Z 2025-05-09 07:14:25,702 - INFO - Optimizer: Adam, Learning rate: 5.647005732133704e-05
+2025-05-09 04:14:25.7068Z 2025-05-09 07:14:25,702 - INFO - Using optimizer: Adam with learning rate: 5.647005732133704e-05
+2025-05-09 04:14:25.7470Z 2025-05-09 07:14:25,732 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 04:14:35.1525Z | train_loss: 1.38e+02 | test_loss: 1.38e+02 | reg: 9.07e+01 | : 100%|█| 433/433 [00:09<00:00, 45.97
+2025-05-09 04:14:35.6221Z 2025-05-09 07:14:35,621 - INFO - val_rmse = 138.2085723876953
+2025-05-09 04:14:35.6575Z 2025-05-09 07:14:35,657 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 04:14:45.0854Z | train_loss: 1.38e+02 | test_loss: 1.37e+02 | reg: 9.07e+01 | : 100%|█| 433/433 [00:09<00:00, 45.93
+2025-05-09 04:14:45.2225Z 2025-05-09 07:14:45,222 - INFO - val_rmse = 136.63743591308594
+2025-05-09 04:14:45.2570Z 2025-05-09 07:14:45,256 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 04:14:54.7055Z | train_loss: 1.38e+02 | test_loss: 1.38e+02 | reg: 9.08e+01 | : 100%|█| 433/433 [00:09<00:00, 45.83
+2025-05-09 04:14:54.8474Z 2025-05-09 07:14:54,847 - INFO - val_rmse = 138.47262573242188
+2025-05-09 04:14:54.9065Z 2025-05-09 07:14:54,881 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 04:15:04.3882Z | train_loss: 1.37e+02 | test_loss: 1.41e+02 | reg: 9.08e+01 | : 100%|█| 433/433 [00:09<00:00, 45.55
+2025-05-09 04:15:04.5190Z 2025-05-09 07:15:04,518 - INFO - val_rmse = 141.36045837402344
+2025-05-09 04:15:04.5475Z 2025-05-09 07:15:04,547 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 04:15:13.9298Z | train_loss: 1.38e+02 | test_loss: 1.37e+02 | reg: 9.07e+01 | : 100%|█| 433/433 [00:09<00:00, 46.15
+2025-05-09 04:15:14.0593Z 2025-05-09 07:15:14,059 - INFO - val_rmse = 136.9210205078125
+2025-05-09 04:15:14.1061Z [I 2025-05-09 07:15:14,061] Trial 14 finished with value: 141.36045837402344 and parameters: {'n_layers': 1, 'opt': 'Adam', 'steps': 433, 'grid': 2, 'k': 2, 'n_units_0': 92, 'lr': 5.647005732133704e-05}. Best is trial 5 with value: 19.44784164428711.
+2025-05-09 04:15:14.2095Z 2025-05-09 07:15:14,209 - INFO - width = [6, 1, 46, 76, 80, 67, 5, 1]
+2025-05-09 04:15:14.3071Z 2025-05-09 07:15:14,209 - INFO - Optimizer: LBFGS, Learning rate: 0.0166831477799198
+2025-05-09 04:15:14.3071Z 2025-05-09 07:15:14,209 - INFO - Using optimizer: LBFGS with learning rate: 0.0166831477799198
+2025-05-09 04:15:14.6113Z 2025-05-09 07:15:14,611 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 04:17:42.0436Z | train_loss: 9.93e+01 | test_loss: 9.93e+01 | reg: 1.10e+03 | : 100%|█| 68/68 [02:27<00:00,  2.17s/
+2025-05-09 04:17:45.0176Z 2025-05-09 07:17:45,017 - INFO - val_rmse = 99.27824401855469
+2025-05-09 04:17:45.5862Z 2025-05-09 07:17:45,586 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 04:21:25.9741Z | train_loss: 7.59e+01 | test_loss: 7.52e+01 | reg: 9.60e+02 | : 100%|█| 68/68 [03:40<00:00,  3.24s/
+2025-05-09 04:21:29.0665Z 2025-05-09 07:21:29,066 - INFO - val_rmse = 75.234619140625
+2025-05-09 04:21:29.6332Z 2025-05-09 07:21:29,633 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 04:26:06.5992Z | train_loss: 6.60e+01 | test_loss: 6.70e+01 | reg: 1.74e+03 | : 100%|█| 68/68 [04:36<00:00,  4.07s/
+2025-05-09 04:26:09.7520Z 2025-05-09 07:26:09,751 - INFO - val_rmse = 67.00399017333984
+2025-05-09 04:26:10.1590Z 2025-05-09 07:26:10,158 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 04:28:50.9792Z | train_loss: 9.34e+01 | test_loss: 9.53e+01 | reg: 4.58e+02 | : 100%|█| 68/68 [02:40<00:00,  2.36s/
+2025-05-09 04:28:54.0794Z 2025-05-09 07:28:54,079 - INFO - val_rmse = 95.30457305908203
+2025-05-09 04:28:54.6376Z 2025-05-09 07:28:54,637 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 04:31:17.2764Z | train_loss: 9.99e+01 | test_loss: 1.01e+02 | reg: 9.62e+02 | : 100%|█| 68/68 [02:22<00:00,  2.10s/
+2025-05-09 04:31:20.3985Z 2025-05-09 07:31:20,398 - INFO - val_rmse = 100.61421966552734
+2025-05-09 04:31:20.4033Z [I 2025-05-09 07:31:20,403] Trial 15 finished with value: 100.61421966552734 and parameters: {'n_layers': 6, 'opt': 'LBFGS', 'steps': 68, 'grid': 1, 'k': 6, 'n_units_0': 1, 'n_units_1': 46, 'n_units_2': 76, 'n_units_3': 80, 'n_units_4': 67, 'n_units_5': 5, 'lr': 0.0166831477799198}. Best is trial 5 with value: 19.44784164428711.
+2025-05-09 04:31:20.5429Z 2025-05-09 07:31:20,542 - INFO - width = [6, 27, 35, 63, 35, 98, 91, 83, 67, 8, 28, 33, 16, 96, 59, 1]
+2025-05-09 04:31:20.5430Z 2025-05-09 07:31:20,543 - INFO - Optimizer: LBFGS, Learning rate: 0.003893491211310672
+2025-05-09 04:31:20.5482Z 2025-05-09 07:31:20,543 - INFO - Using optimizer: LBFGS with learning rate: 0.003893491211310672
+2025-05-09 04:31:21.7091Z 2025-05-09 07:31:21,708 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 04:51:54.9213Z | train_loss: 9.44e+01 | test_loss: 9.54e+01 | reg: 1.07e+03 | : 100%|█| 436/436 [20:33<00:00,  2.83
+2025-05-09 04:52:02.8334Z 2025-05-09 07:52:02,832 - INFO - val_rmse = 95.40271759033203
+2025-05-09 04:52:04.1926Z 2025-05-09 07:52:04,192 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 05:42:23.8393Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 436/436 [50:19<00:00,  6.93s/it]
+2025-05-09 05:42:32.0297Z 2025-05-09 08:42:32,028 - INFO - val_rmse = nan
+2025-05-09 05:42:33.2538Z 2025-05-09 08:42:33,253 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 05:58:15.3583Z | train_loss: 1.43e+02 | test_loss: 1.43e+02 | reg: 1.46e+03 | : 100%|█| 436/436 [15:42<00:00,  2.16
+2025-05-09 05:58:23.4433Z 2025-05-09 08:58:23,442 - INFO - val_rmse = 143.41012573242188
+2025-05-09 05:58:24.8072Z 2025-05-09 08:58:24,807 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 07:05:31.1732Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 436/436 [1:07:06<00:00,  9.23s/it]
+2025-05-09 07:05:39.4226Z 2025-05-09 10:05:39,422 - INFO - val_rmse = nan
+2025-05-09 07:05:40.6369Z 2025-05-09 10:05:40,636 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 08:13:09.3495Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 436/436 [1:07:28<00:00,  9.29s/it]
+2025-05-09 08:13:17.5013Z 2025-05-09 11:13:17,500 - INFO - val_rmse = nan
+2025-05-09 08:13:17.5130Z [W 2025-05-09 11:13:17,512] Trial 16 failed with parameters: {'n_layers': 14, 'opt': 'LBFGS', 'steps': 436, 'grid': 1, 'k': 6, 'n_units_0': 27, 'n_units_1': 35, 'n_units_2': 63, 'n_units_3': 35, 'n_units_4': 98, 'n_units_5': 91, 'n_units_6': 83, 'n_units_7': 67, 'n_units_8': 8, 'n_units_9': 28, 'n_units_10': 33, 'n_units_11': 16, 'n_units_12': 96, 'n_units_13': 59, 'lr': 0.003893491211310672} because of the following error: The value nan is not acceptable.
+2025-05-09 08:13:17.6061Z [W 2025-05-09 11:13:17,513] Trial 16 failed with value np.float32(nan).
+2025-05-09 08:13:17.6474Z 2025-05-09 11:13:17,647 - INFO - width = [6, 83, 66, 59, 30, 56, 39, 23, 44, 57, 1]
+2025-05-09 08:13:17.6475Z 2025-05-09 11:13:17,647 - INFO - Optimizer: Adam, Learning rate: 1.4131362918245127e-05
+2025-05-09 08:13:17.6867Z 2025-05-09 11:13:17,647 - INFO - Using optimizer: Adam with learning rate: 1.4131362918245127e-05
+2025-05-09 08:13:18.1897Z 2025-05-09 11:13:18,189 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 08:15:33.8128Z | train_loss: 1.44e+02 | test_loss: 1.45e+02 | reg: 5.08e+02 | : 100%|█| 573/573 [02:15<00:00,  4.22
+2025-05-09 08:15:38.3407Z 2025-05-09 11:15:38,340 - INFO - val_rmse = 144.50863647460938
+2025-05-09 08:15:38.8955Z 2025-05-09 11:15:38,895 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 08:17:54.3253Z | train_loss: 1.45e+02 | test_loss: 1.43e+02 | reg: 5.05e+02 | : 100%|█| 573/573 [02:15<00:00,  4.23
+2025-05-09 08:17:58.5514Z 2025-05-09 11:17:58,551 - INFO - val_rmse = 142.99635314941406
+2025-05-09 08:17:59.0905Z 2025-05-09 11:17:59,090 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 08:20:14.6955Z | train_loss: 1.44e+02 | test_loss: 1.45e+02 | reg: 5.08e+02 | : 100%|█| 573/573 [02:15<00:00,  4.23
+2025-05-09 08:20:18.9088Z 2025-05-09 11:20:18,908 - INFO - val_rmse = 144.58827209472656
+2025-05-09 08:20:19.6120Z 2025-05-09 11:20:19,611 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 08:22:35.5596Z | train_loss: 1.44e+02 | test_loss: 1.48e+02 | reg: 5.08e+02 | : 100%|█| 573/573 [02:15<00:00,  4.21
+2025-05-09 08:22:39.5545Z 2025-05-09 11:22:39,554 - INFO - val_rmse = 147.9823760986328
+2025-05-09 08:22:40.2765Z 2025-05-09 11:22:40,276 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 08:24:56.1555Z | train_loss: 1.45e+02 | test_loss: 1.43e+02 | reg: 5.08e+02 | : 100%|█| 573/573 [02:15<00:00,  4.22
+2025-05-09 08:25:00.1625Z 2025-05-09 11:25:00,162 - INFO - val_rmse = 142.77719116210938
+2025-05-09 08:25:00.1696Z [I 2025-05-09 11:25:00,169] Trial 17 finished with value: 147.9823760986328 and parameters: {'n_layers': 9, 'opt': 'Adam', 'steps': 573, 'grid': 3, 'k': 2, 'n_units_0': 83, 'n_units_1': 66, 'n_units_2': 59, 'n_units_3': 30, 'n_units_4': 56, 'n_units_5': 39, 'n_units_6': 23, 'n_units_7': 44, 'n_units_8': 57, 'lr': 1.4131362918245127e-05}. Best is trial 5 with value: 19.44784164428711.
+2025-05-09 08:25:00.3161Z 2025-05-09 11:25:00,316 - INFO - width = [6, 25, 41, 20, 14, 33, 38, 56, 74, 23, 55, 76, 30, 31, 38, 85, 1]
+2025-05-09 08:25:00.3162Z 2025-05-09 11:25:00,316 - INFO - Optimizer: LBFGS, Learning rate: 0.03593578994682028
+2025-05-09 08:25:00.3163Z 2025-05-09 11:25:00,316 - INFO - Using optimizer: LBFGS with learning rate: 0.03593578994682028
+2025-05-09 08:25:01.1427Z 2025-05-09 11:25:01,142 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 10:03:43.1100Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 673/673 [1:38:41<00:00,  8.80s/it]
+2025-05-09 10:03:48.1910Z 2025-05-09 13:03:48,190 - INFO - val_rmse = nan
+2025-05-09 10:03:49.0633Z 2025-05-09 13:03:49,063 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 11:41:15.0068Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 673/673 [1:37:25<00:00,  8.69s/it]
+2025-05-09 11:41:20.4218Z 2025-05-09 14:41:20,420 - INFO - val_rmse = nan
+2025-05-09 11:41:21.1391Z 2025-05-09 14:41:21,138 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 13:19:01.9376Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 673/673 [1:37:40<00:00,  8.71s/it]
+2025-05-09 13:19:07.1554Z 2025-05-09 16:19:07,154 - INFO - val_rmse = nan
+2025-05-09 13:19:08.0727Z 2025-05-09 16:19:08,072 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 14:57:50.8064Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 673/673 [1:38:42<00:00,  8.80s/it]
+2025-05-09 14:57:56.0328Z 2025-05-09 17:57:56,031 - INFO - val_rmse = nan
+2025-05-09 14:57:56.9140Z 2025-05-09 17:57:56,913 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 16:34:58.0294Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 673/673 [1:37:01<00:00,  8.65s/it]
+2025-05-09 16:35:03.1933Z 2025-05-09 19:35:03,192 - INFO - val_rmse = nan
+2025-05-09 16:35:03.2019Z [W 2025-05-09 19:35:03,201] Trial 18 failed with parameters: {'n_layers': 15, 'opt': 'LBFGS', 'steps': 673, 'grid': 3, 'k': 6, 'n_units_0': 25, 'n_units_1': 41, 'n_units_2': 20, 'n_units_3': 14, 'n_units_4': 33, 'n_units_5': 38, 'n_units_6': 56, 'n_units_7': 74, 'n_units_8': 23, 'n_units_9': 55, 'n_units_10': 76, 'n_units_11': 30, 'n_units_12': 31, 'n_units_13': 38, 'n_units_14': 85, 'lr': 0.03593578994682028} because of the following error: The value nan is not acceptable.
+2025-05-09 16:35:03.3052Z [W 2025-05-09 19:35:03,201] Trial 18 failed with value np.float32(nan).
+2025-05-09 16:35:03.3504Z 2025-05-09 19:35:03,350 - INFO - width = [6, 23, 76, 44, 57, 88, 6, 1]
+2025-05-09 16:35:03.3506Z 2025-05-09 19:35:03,350 - INFO - Optimizer: Adam, Learning rate: 0.00042634794430403014
+2025-05-09 16:35:03.3907Z 2025-05-09 19:35:03,350 - INFO - Using optimizer: Adam with learning rate: 0.00042634794430403014
+2025-05-09 16:35:03.7109Z 2025-05-09 19:35:03,710 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 16:35:31.5068Z | train_loss: 1.45e+02 | test_loss: 1.45e+02 | reg: 4.20e+02 | : 100%|█| 22/22 [00:27<00:00,  1.26s/
+2025-05-09 16:35:34.3444Z 2025-05-09 19:35:34,344 - INFO - val_rmse = 144.6289825439453
+2025-05-09 16:35:34.8504Z 2025-05-09 19:35:34,850 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 16:36:02.6422Z | train_loss: 1.45e+02 | test_loss: 1.43e+02 | reg: 4.23e+02 | : 100%|█| 22/22 [00:27<00:00,  1.26s/
+2025-05-09 16:36:05.3767Z 2025-05-09 19:36:05,376 - INFO - val_rmse = 142.7995147705078
+2025-05-09 16:36:05.7472Z 2025-05-09 19:36:05,747 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 16:36:33.5268Z | train_loss: 1.44e+02 | test_loss: 1.47e+02 | reg: 4.38e+02 | : 100%|█| 22/22 [00:27<00:00,  1.26s/
+2025-05-09 16:36:36.2449Z 2025-05-09 19:36:36,244 - INFO - val_rmse = 147.18038940429688
+2025-05-09 16:36:36.7864Z 2025-05-09 19:36:36,786 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 16:37:04.5568Z | train_loss: 1.70e+04 | test_loss: 1.52e+06 | reg: 1.14e+04 | : 100%|█| 22/22 [00:27<00:00,  1.26s/
+2025-05-09 16:37:07.2697Z 2025-05-09 19:37:07,269 - INFO - val_rmse = 1519680.75
+2025-05-09 16:37:07.7958Z 2025-05-09 19:37:07,795 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 16:37:35.5897Z | train_loss: 1.44e+02 | test_loss: 3.95e+02 | reg: 4.33e+02 | : 100%|█| 22/22 [00:27<00:00,  1.26s/
+2025-05-09 16:37:38.3206Z 2025-05-09 19:37:38,320 - INFO - val_rmse = 395.230712890625
+2025-05-09 16:37:38.3242Z [I 2025-05-09 19:37:38,324] Trial 19 finished with value: 1519680.75 and parameters: {'n_layers': 6, 'opt': 'Adam', 'steps': 22, 'grid': 3, 'k': 5, 'n_units_0': 23, 'n_units_1': 76, 'n_units_2': 44, 'n_units_3': 57, 'n_units_4': 88, 'n_units_5': 6, 'lr': 0.00042634794430403014}. Best is trial 5 with value: 19.44784164428711.
+2025-05-09 16:37:38.5309Z 2025-05-09 19:37:38,530 - INFO - width = [6, 65, 99, 99, 4, 7, 100, 95, 92, 97, 4, 8, 2, 97, 93, 86, 1]
+2025-05-09 16:37:38.5342Z 2025-05-09 19:37:38,534 - INFO - Optimizer: LBFGS, Learning rate: 0.045160962494125004
+2025-05-09 16:37:38.5342Z 2025-05-09 19:37:38,534 - INFO - Using optimizer: LBFGS with learning rate: 0.045160962494125004
+2025-05-09 16:37:40.2660Z 2025-05-09 19:37:40,265 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 18:11:12.3566Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 982/982 [1:33:32<00:00,  5.71s/it]
+2025-05-09 18:11:24.5078Z 2025-05-09 21:11:24,507 - INFO - val_rmse = nan
+2025-05-09 18:11:26.3883Z 2025-05-09 21:11:26,388 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 19:44:59.5724Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 982/982 [1:33:33<00:00,  5.72s/it]
+2025-05-09 19:45:11.6362Z 2025-05-09 22:45:11,635 - INFO - val_rmse = nan
+2025-05-09 19:45:13.4907Z 2025-05-09 22:45:13,490 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 21:18:46.5956Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 982/982 [1:33:33<00:00,  5.72s/it]
+2025-05-09 21:18:59.1480Z 2025-05-10 00:18:59,147 - INFO - val_rmse = nan
+2025-05-09 21:19:01.0055Z 2025-05-10 00:19:01,005 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 22:52:42.4542Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 982/982 [1:33:41<00:00,  5.72s/it]
+2025-05-09 22:52:56.1062Z 2025-05-10 01:52:56,105 - INFO - val_rmse = nan
+2025-05-09 22:52:57.8225Z 2025-05-10 01:52:57,822 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 23:17:34.6273Z | train_loss: 1.45e+02 | test_loss: 1.43e+02 | reg: 7.07e+02 | : 100%|█| 982/982 [24:36<00:00,  1.50
+2025-05-09 23:17:47.9665Z 2025-05-10 02:17:47,965 - INFO - val_rmse = 142.93724060058594
+2025-05-09 23:17:47.9813Z [W 2025-05-10 02:17:47,981] Trial 20 failed with parameters: {'n_layers': 15, 'opt': 'LBFGS', 'steps': 982, 'grid': 1, 'k': 1, 'n_units_0': 65, 'n_units_1': 99, 'n_units_2': 99, 'n_units_3': 4, 'n_units_4': 7, 'n_units_5': 100, 'n_units_6': 95, 'n_units_7': 92, 'n_units_8': 97, 'n_units_9': 4, 'n_units_10': 8, 'n_units_11': 2, 'n_units_12': 97, 'n_units_13': 93, 'n_units_14': 86, 'lr': 0.045160962494125004} because of the following error: The value nan is not acceptable.
+2025-05-09 23:17:47.9814Z [W 2025-05-10 02:17:47,981] Trial 20 failed with value np.float32(nan).
+2025-05-09 23:17:48.1276Z 2025-05-10 02:17:48,127 - INFO - width = [6, 63, 1]
+2025-05-09 23:17:48.1310Z 2025-05-10 02:17:48,130 - INFO - Optimizer: LBFGS, Learning rate: 0.04170337414459171
+2025-05-09 23:17:48.1311Z 2025-05-10 02:17:48,131 - INFO - Using optimizer: LBFGS with learning rate: 0.04170337414459171
+2025-05-09 23:17:48.1683Z 2025-05-10 02:17:48,160 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 23:22:07.8072Z | train_loss: 1.68e+01 | test_loss: 1.91e+01 | reg: 1.98e+03 | : 100%|█| 962/962 [04:19<00:00,  3.71
+2025-05-09 23:22:08.7489Z 2025-05-10 02:22:08,748 - INFO - val_rmse = 19.143903732299805
+2025-05-09 23:22:08.7863Z 2025-05-10 02:22:08,786 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 23:25:58.6151Z | train_loss: 1.88e+01 | test_loss: 1.96e+01 | reg: 1.86e+03 | : 100%|█| 962/962 [03:49<00:00,  4.19
+2025-05-09 23:25:58.7165Z 2025-05-10 02:25:58,715 - INFO - val_rmse = 19.573585510253906
+2025-05-09 23:25:58.7457Z 2025-05-10 02:25:58,740 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 23:30:05.6755Z | train_loss: 1.87e+01 | test_loss: 1.97e+01 | reg: 1.96e+03 | : 100%|█| 962/962 [04:06<00:00,  3.90
+2025-05-09 23:30:05.7764Z 2025-05-10 02:30:05,776 - INFO - val_rmse = 19.67884063720703
+2025-05-09 23:30:05.8064Z 2025-05-10 02:30:05,804 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 23:33:22.0029Z | train_loss: 1.75e+01 | test_loss: 1.72e+01 | reg: 2.14e+03 | : 100%|█| 962/962 [03:16<00:00,  4.90
+2025-05-09 23:33:22.1073Z 2025-05-10 02:33:22,106 - INFO - val_rmse = 17.192712783813477
+2025-05-09 23:33:22.1370Z 2025-05-10 02:33:22,131 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 23:37:28.6386Z | train_loss: 1.81e+01 | test_loss: 2.02e+01 | reg: 2.33e+03 | : 100%|█| 962/962 [04:06<00:00,  3.90
+2025-05-09 23:37:28.7487Z 2025-05-10 02:37:28,748 - INFO - val_rmse = 20.233427047729492
+2025-05-09 23:37:28.7528Z [I 2025-05-10 02:37:28,752] Trial 21 finished with value: 20.233427047729492 and parameters: {'n_layers': 1, 'opt': 'LBFGS', 'steps': 962, 'grid': 1, 'k': 1, 'n_units_0': 63, 'lr': 0.04170337414459171}. Best is trial 5 with value: 19.44784164428711.
+2025-05-09 23:37:28.9367Z 2025-05-10 02:37:28,936 - INFO - width = [6, 64, 1]
+2025-05-09 23:37:28.9401Z 2025-05-10 02:37:28,940 - INFO - Optimizer: LBFGS, Learning rate: 0.04923219705929541
+2025-05-09 23:37:28.9401Z 2025-05-10 02:37:28,940 - INFO - Using optimizer: LBFGS with learning rate: 0.04923219705929541
+2025-05-09 23:37:28.9773Z 2025-05-10 02:37:28,968 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 23:41:48.0903Z | train_loss: 1.71e+01 | test_loss: 1.84e+01 | reg: 2.04e+03 | : 100%|█| 973/973 [04:19<00:00,  3.76
+2025-05-09 23:41:48.1928Z 2025-05-10 02:41:48,192 - INFO - val_rmse = 18.358684539794922
+2025-05-09 23:41:48.2237Z 2025-05-10 02:41:48,223 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 23:44:05.8064Z | train_loss: 3.04e+01 | test_loss: 3.20e+01 | reg: 1.53e+03 | : 100%|█| 973/973 [02:17<00:00,  7.07
+2025-05-09 23:44:05.9101Z 2025-05-10 02:44:05,909 - INFO - val_rmse = 32.041175842285156
+2025-05-09 23:44:06.0060Z 2025-05-10 02:44:05,936 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 23:48:28.4801Z | train_loss: 1.65e+01 | test_loss: 1.87e+01 | reg: 2.42e+03 | : 100%|█| 973/973 [04:22<00:00,  3.71
+2025-05-09 23:48:28.5882Z 2025-05-10 02:48:28,587 - INFO - val_rmse = 18.69556999206543
+2025-05-09 23:48:28.6180Z 2025-05-10 02:48:28,617 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 23:52:49.3515Z | train_loss: 1.83e+01 | test_loss: 1.85e+01 | reg: 1.62e+03 | : 100%|█| 973/973 [04:20<00:00,  3.73
+2025-05-09 23:52:49.4525Z 2025-05-10 02:52:49,451 - INFO - val_rmse = 18.47968101501465
+2025-05-09 23:52:49.5066Z 2025-05-10 02:52:49,480 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-09 23:56:28.2363Z | train_loss: 2.02e+01 | test_loss: 2.16e+01 | reg: 1.82e+03 | : 100%|█| 973/973 [03:38<00:00,  4.45
+2025-05-09 23:56:28.3390Z 2025-05-10 02:56:28,338 - INFO - val_rmse = 21.604738235473633
+2025-05-09 23:56:28.4064Z [I 2025-05-10 02:56:28,342] Trial 22 finished with value: 32.041175842285156 and parameters: {'n_layers': 1, 'opt': 'LBFGS', 'steps': 973, 'grid': 1, 'k': 1, 'n_units_0': 64, 'lr': 0.04923219705929541}. Best is trial 5 with value: 19.44784164428711.
+2025-05-09 23:56:28.5364Z 2025-05-10 02:56:28,536 - INFO - width = [6, 58, 100, 97, 1]
+2025-05-09 23:56:28.6067Z 2025-05-10 02:56:28,539 - INFO - Optimizer: LBFGS, Learning rate: 0.04513628543736188
+2025-05-09 23:56:28.6067Z 2025-05-10 02:56:28,539 - INFO - Using optimizer: LBFGS with learning rate: 0.04513628543736188
+2025-05-09 23:56:28.9380Z 2025-05-10 02:56:28,937 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 00:16:35.3331Z | train_loss: 1.70e+01 | test_loss: 1.78e+01 | reg: 1.21e+03 | : 100%|█| 785/785 [20:06<00:00,  1.54
+2025-05-10 00:16:38.6100Z 2025-05-10 03:16:38,609 - INFO - val_rmse = 17.796220779418945
+2025-05-10 00:16:39.2018Z 2025-05-10 03:16:39,201 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 00:34:41.3554Z | train_loss: 1.99e+01 | test_loss: 1.96e+01 | reg: 1.34e+03 | : 100%|█| 785/785 [18:02<00:00,  1.38
+2025-05-10 00:34:44.8516Z 2025-05-10 03:34:44,851 - INFO - val_rmse = 19.61615753173828
+2025-05-10 00:34:45.4530Z 2025-05-10 03:34:45,452 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 00:54:45.4924Z | train_loss: 1.70e+01 | test_loss: 1.94e+01 | reg: 1.31e+03 | : 100%|█| 785/785 [20:00<00:00,  1.53
+2025-05-10 00:54:48.9528Z 2025-05-10 03:54:48,952 - INFO - val_rmse = 19.414390563964844
+2025-05-10 00:54:49.3636Z 2025-05-10 03:54:49,363 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 01:14:56.7768Z | train_loss: 1.80e+01 | test_loss: 1.91e+01 | reg: 1.24e+03 | : 100%|█| 785/785 [20:07<00:00,  1.54
+2025-05-10 01:15:00.4155Z 2025-05-10 04:15:00,415 - INFO - val_rmse = 19.146961212158203
+2025-05-10 01:15:00.8242Z 2025-05-10 04:15:00,824 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 01:28:38.3849Z | train_loss: 2.76e+01 | test_loss: 2.88e+01 | reg: 1.21e+03 | : 100%|█| 785/785 [13:37<00:00,  1.04
+2025-05-10 01:28:41.8144Z 2025-05-10 04:28:41,813 - INFO - val_rmse = 28.79191017150879
+2025-05-10 01:28:41.8211Z [I 2025-05-10 04:28:41,820] Trial 23 finished with value: 28.79191017150879 and parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 785, 'grid': 1, 'k': 2, 'n_units_0': 58, 'n_units_1': 100, 'n_units_2': 97, 'lr': 0.04513628543736188}. Best is trial 5 with value: 19.44784164428711.
+2025-05-10 01:28:42.0170Z 2025-05-10 04:28:42,016 - INFO - width = [6, 41, 1, 35, 1]
+2025-05-10 01:28:42.0205Z 2025-05-10 04:28:42,020 - INFO - Optimizer: LBFGS, Learning rate: 0.007398887578016011
+2025-05-10 01:28:42.0205Z 2025-05-10 04:28:42,020 - INFO - Using optimizer: LBFGS with learning rate: 0.007398887578016011
+2025-05-10 01:28:42.0581Z 2025-05-10 04:28:42,053 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 01:33:39.1724Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 807/807 [04:57<00:00,  2.72it/s]
+2025-05-10 01:33:39.4527Z 2025-05-10 04:33:39,452 - INFO - val_rmse = nan
+2025-05-10 01:33:39.4876Z 2025-05-10 04:33:39,487 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 01:38:38.0115Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 807/807 [04:58<00:00,  2.70it/s]
+2025-05-10 01:38:38.0844Z 2025-05-10 04:38:38,083 - INFO - val_rmse = nan
+2025-05-10 01:38:38.1171Z 2025-05-10 04:38:38,116 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 01:43:38.5000Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 807/807 [05:00<00:00,  2.69it/s]
+2025-05-10 01:43:38.5738Z 2025-05-10 04:43:38,573 - INFO - val_rmse = nan
+2025-05-10 01:43:38.6112Z 2025-05-10 04:43:38,606 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 01:48:39.3316Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 807/807 [05:00<00:00,  2.68it/s]
+2025-05-10 01:48:39.4065Z 2025-05-10 04:48:39,405 - INFO - val_rmse = nan
+2025-05-10 01:48:39.5063Z 2025-05-10 04:48:39,433 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 01:53:40.0961Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 807/807 [05:00<00:00,  2.68it/s]
+2025-05-10 01:53:40.1696Z 2025-05-10 04:53:40,168 - INFO - val_rmse = nan
+2025-05-10 01:53:40.2067Z [W 2025-05-10 04:53:40,172] Trial 24 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 807, 'grid': 5, 'k': 1, 'n_units_0': 41, 'n_units_1': 1, 'n_units_2': 35, 'lr': 0.007398887578016011} because of the following error: The value nan is not acceptable.
+2025-05-10 01:53:40.2067Z [W 2025-05-10 04:53:40,172] Trial 24 failed with value np.float32(nan).
+2025-05-10 01:53:40.3702Z 2025-05-10 04:53:40,370 - INFO - width = [6, 44, 2, 29, 1]
+2025-05-10 01:53:40.4057Z 2025-05-10 04:53:40,373 - INFO - Optimizer: LBFGS, Learning rate: 0.006893341875659888
+2025-05-10 01:53:40.4057Z 2025-05-10 04:53:40,373 - INFO - Using optimizer: LBFGS with learning rate: 0.006893341875659888
+2025-05-10 01:53:40.4465Z 2025-05-10 04:53:40,408 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 02:01:27.8825Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 791/791 [07:47<00:00,  1.69it/s]
+2025-05-10 02:01:27.9674Z 2025-05-10 05:01:27,967 - INFO - val_rmse = nan
+2025-05-10 02:01:28.0071Z 2025-05-10 05:01:27,997 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 02:09:15.7222Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 791/791 [07:47<00:00,  1.69it/s]
+2025-05-10 02:09:15.8127Z 2025-05-10 05:09:15,812 - INFO - val_rmse = nan
+2025-05-10 02:09:15.9060Z 2025-05-10 05:09:15,847 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 02:17:03.8277Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 791/791 [07:47<00:00,  1.69it/s]
+2025-05-10 02:17:03.9161Z 2025-05-10 05:17:03,915 - INFO - val_rmse = nan
+2025-05-10 02:17:04.0066Z 2025-05-10 05:17:03,951 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 02:24:52.1834Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 791/791 [07:48<00:00,  1.69it/s]
+2025-05-10 02:24:52.2711Z 2025-05-10 05:24:52,270 - INFO - val_rmse = nan
+2025-05-10 02:24:52.3076Z 2025-05-10 05:24:52,306 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 02:32:38.7842Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 791/791 [07:46<00:00,  1.70it/s]
+2025-05-10 02:32:38.8737Z 2025-05-10 05:32:38,873 - INFO - val_rmse = nan
+2025-05-10 02:32:38.9056Z [W 2025-05-10 05:32:38,876] Trial 25 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 791, 'grid': 5, 'k': 1, 'n_units_0': 44, 'n_units_1': 2, 'n_units_2': 29, 'lr': 0.006893341875659888} because of the following error: The value nan is not acceptable.
+2025-05-10 02:32:38.9056Z [W 2025-05-10 05:32:38,877] Trial 25 failed with value np.float32(nan).
+2025-05-10 02:32:39.0701Z 2025-05-10 05:32:39,070 - INFO - width = [6, 45, 1, 33, 1]
+2025-05-10 02:32:39.1067Z 2025-05-10 05:32:39,073 - INFO - Optimizer: LBFGS, Learning rate: 0.006961277481071099
+2025-05-10 02:32:39.1067Z 2025-05-10 05:32:39,073 - INFO - Using optimizer: LBFGS with learning rate: 0.006961277481071099
+2025-05-10 02:32:39.1475Z 2025-05-10 05:32:39,107 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 02:37:24.8840Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 776/776 [04:45<00:00,  2.72it/s]
+2025-05-10 02:37:24.9589Z 2025-05-10 05:37:24,958 - INFO - val_rmse = nan
+2025-05-10 02:37:25.0060Z 2025-05-10 05:37:24,987 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 02:42:15.5838Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 776/776 [04:50<00:00,  2.67it/s]
+2025-05-10 02:42:15.6625Z 2025-05-10 05:42:15,661 - INFO - val_rmse = nan
+2025-05-10 02:42:15.7061Z 2025-05-10 05:42:15,689 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 02:47:06.0939Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 776/776 [04:50<00:00,  2.67it/s]
+2025-05-10 02:47:06.1764Z 2025-05-10 05:47:06,175 - INFO - val_rmse = nan
+2025-05-10 02:47:06.2111Z 2025-05-10 05:47:06,210 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 02:51:56.6290Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 776/776 [04:50<00:00,  2.67it/s]
+2025-05-10 02:51:56.7057Z 2025-05-10 05:51:56,705 - INFO - val_rmse = nan
+2025-05-10 02:51:56.8056Z 2025-05-10 05:51:56,740 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 02:56:47.7469Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 776/776 [04:51<00:00,  2.67it/s]
+2025-05-10 02:56:47.8267Z 2025-05-10 05:56:47,826 - INFO - val_rmse = nan
+2025-05-10 02:56:47.9062Z [W 2025-05-10 05:56:47,829] Trial 26 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 776, 'grid': 5, 'k': 1, 'n_units_0': 45, 'n_units_1': 1, 'n_units_2': 33, 'lr': 0.006961277481071099} because of the following error: The value nan is not acceptable.
+2025-05-10 02:56:47.9062Z [W 2025-05-10 05:56:47,829] Trial 26 failed with value np.float32(nan).
+2025-05-10 02:56:48.0341Z 2025-05-10 05:56:48,033 - INFO - width = [6, 43, 4, 41, 1]
+2025-05-10 02:56:48.1067Z 2025-05-10 05:56:48,037 - INFO - Optimizer: LBFGS, Learning rate: 0.00895099154942463
+2025-05-10 02:56:48.1067Z 2025-05-10 05:56:48,037 - INFO - Using optimizer: LBFGS with learning rate: 0.00895099154942463
+2025-05-10 02:56:48.1469Z 2025-05-10 05:56:48,077 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 03:04:45.2604Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 799/799 [07:57<00:00,  1.67it/s]
+2025-05-10 03:04:45.3832Z 2025-05-10 06:04:45,383 - INFO - val_rmse = nan
+2025-05-10 03:04:45.4208Z 2025-05-10 06:04:45,420 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 03:12:40.7731Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 799/799 [07:55<00:00,  1.68it/s]
+2025-05-10 03:12:40.9001Z 2025-05-10 06:12:40,899 - INFO - val_rmse = nan
+2025-05-10 03:12:40.9412Z 2025-05-10 06:12:40,941 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 03:20:37.5000Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 799/799 [07:56<00:00,  1.68it/s]
+2025-05-10 03:20:37.6193Z 2025-05-10 06:20:37,618 - INFO - val_rmse = nan
+2025-05-10 03:20:37.6588Z 2025-05-10 06:20:37,653 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 03:28:33.9365Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 799/799 [07:56<00:00,  1.68it/s]
+2025-05-10 03:28:34.0616Z 2025-05-10 06:28:34,060 - INFO - val_rmse = nan
+2025-05-10 03:28:34.1074Z 2025-05-10 06:28:34,102 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 03:36:23.7333Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 799/799 [07:49<00:00,  1.70it/s]
+2025-05-10 03:36:23.8466Z 2025-05-10 06:36:23,845 - INFO - val_rmse = nan
+2025-05-10 03:36:23.9060Z [W 2025-05-10 06:36:23,849] Trial 27 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 799, 'grid': 5, 'k': 1, 'n_units_0': 43, 'n_units_1': 4, 'n_units_2': 41, 'lr': 0.00895099154942463} because of the following error: The value nan is not acceptable.
+2025-05-10 03:36:23.9060Z [W 2025-05-10 06:36:23,849] Trial 27 failed with value np.float32(nan).
+2025-05-10 03:36:24.0387Z 2025-05-10 06:36:24,038 - INFO - width = [6, 46, 12, 35, 1]
+2025-05-10 03:36:24.1052Z 2025-05-10 06:36:24,042 - INFO - Optimizer: LBFGS, Learning rate: 0.00730862109820825
+2025-05-10 03:36:24.1052Z 2025-05-10 06:36:24,042 - INFO - Using optimizer: LBFGS with learning rate: 0.00730862109820825
+2025-05-10 03:36:24.1454Z 2025-05-10 06:36:24,097 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 03:44:26.7742Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 792/792 [08:02<00:00,  1.64it/s]
+2025-05-10 03:44:27.0548Z 2025-05-10 06:44:27,054 - INFO - val_rmse = nan
+2025-05-10 03:44:27.1108Z 2025-05-10 06:44:27,110 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 03:52:40.8179Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 792/792 [08:13<00:00,  1.60it/s]
+2025-05-10 03:52:41.1103Z 2025-05-10 06:52:41,109 - INFO - val_rmse = nan
+2025-05-10 03:52:41.1645Z 2025-05-10 06:52:41,164 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 04:00:55.9403Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 792/792 [08:14<00:00,  1.60it/s]
+2025-05-10 04:00:56.2274Z 2025-05-10 07:00:56,226 - INFO - val_rmse = nan
+2025-05-10 04:00:56.2856Z 2025-05-10 07:00:56,280 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 04:09:11.3173Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 792/792 [08:15<00:00,  1.60it/s]
+2025-05-10 04:09:11.6147Z 2025-05-10 07:09:11,613 - INFO - val_rmse = nan
+2025-05-10 04:09:11.6688Z 2025-05-10 07:09:11,663 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 04:17:26.9550Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 792/792 [08:15<00:00,  1.60it/s]
+2025-05-10 04:17:27.2412Z 2025-05-10 07:17:27,240 - INFO - val_rmse = nan
+2025-05-10 04:17:27.2448Z [W 2025-05-10 07:17:27,244] Trial 28 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 792, 'grid': 5, 'k': 1, 'n_units_0': 46, 'n_units_1': 12, 'n_units_2': 35, 'lr': 0.00730862109820825} because of the following error: The value nan is not acceptable.
+2025-05-10 04:17:27.2449Z [W 2025-05-10 07:17:27,244] Trial 28 failed with value np.float32(nan).
+2025-05-10 04:17:27.4396Z 2025-05-10 07:17:27,439 - INFO - width = [6, 44, 15, 35, 1]
+2025-05-10 04:17:27.4430Z 2025-05-10 07:17:27,442 - INFO - Optimizer: LBFGS, Learning rate: 0.007319198948778836
+2025-05-10 04:17:27.4430Z 2025-05-10 07:17:27,443 - INFO - Using optimizer: LBFGS with learning rate: 0.007319198948778836
+2025-05-10 04:17:27.5076Z 2025-05-10 07:17:27,502 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 04:25:39.2620Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [08:11<00:00,  1.59it/s]
+2025-05-10 04:25:39.5948Z 2025-05-10 07:25:39,594 - INFO - val_rmse = nan
+2025-05-10 04:25:39.6546Z 2025-05-10 07:25:39,654 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 04:33:52.0650Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [08:12<00:00,  1.59it/s]
+2025-05-10 04:33:52.3884Z 2025-05-10 07:33:52,387 - INFO - val_rmse = nan
+2025-05-10 04:33:52.4490Z 2025-05-10 07:33:52,448 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 04:42:05.4361Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [08:12<00:00,  1.59it/s]
+2025-05-10 04:42:05.7558Z 2025-05-10 07:42:05,755 - INFO - val_rmse = nan
+2025-05-10 04:42:05.8165Z 2025-05-10 07:42:05,816 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 04:50:18.9851Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [08:13<00:00,  1.59it/s]
+2025-05-10 04:50:19.3067Z 2025-05-10 07:50:19,306 - INFO - val_rmse = nan
+2025-05-10 04:50:19.3674Z 2025-05-10 07:50:19,367 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 04:58:32.7118Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [08:13<00:00,  1.59it/s]
+2025-05-10 04:58:33.0458Z 2025-05-10 07:58:33,045 - INFO - val_rmse = nan
+2025-05-10 04:58:33.0494Z [W 2025-05-10 07:58:33,049] Trial 29 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 784, 'grid': 5, 'k': 1, 'n_units_0': 44, 'n_units_1': 15, 'n_units_2': 35, 'lr': 0.007319198948778836} because of the following error: The value nan is not acceptable.
+2025-05-10 04:58:33.0494Z [W 2025-05-10 07:58:33,049] Trial 29 failed with value np.float32(nan).
+2025-05-10 04:58:33.2460Z 2025-05-10 07:58:33,245 - INFO - width = [6, 43, 4, 33, 1]
+2025-05-10 04:58:33.2494Z 2025-05-10 07:58:33,249 - INFO - Optimizer: LBFGS, Learning rate: 0.006658843015121272
+2025-05-10 04:58:33.2494Z 2025-05-10 07:58:33,249 - INFO - Using optimizer: LBFGS with learning rate: 0.006658843015121272
+2025-05-10 04:58:33.2866Z 2025-05-10 07:58:33,281 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 05:06:19.4047Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [07:46<00:00,  1.68it/s]
+2025-05-10 05:06:19.5273Z 2025-05-10 08:06:19,527 - INFO - val_rmse = nan
+2025-05-10 05:06:19.6107Z 2025-05-10 08:06:19,567 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 05:14:04.7616Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [07:45<00:00,  1.69it/s]
+2025-05-10 05:14:04.8861Z 2025-05-10 08:14:04,885 - INFO - val_rmse = nan
+2025-05-10 05:14:04.9262Z 2025-05-10 08:14:04,926 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 05:21:50.6667Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [07:45<00:00,  1.68it/s]
+2025-05-10 05:21:50.7853Z 2025-05-10 08:21:50,784 - INFO - val_rmse = nan
+2025-05-10 05:21:50.8250Z 2025-05-10 08:21:50,824 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 05:29:36.5183Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [07:45<00:00,  1.68it/s]
+2025-05-10 05:29:36.6376Z 2025-05-10 08:29:36,637 - INFO - val_rmse = nan
+2025-05-10 05:29:36.7053Z 2025-05-10 08:29:36,681 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 05:37:22.9576Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [07:46<00:00,  1.68it/s]
+2025-05-10 05:37:23.0732Z 2025-05-10 08:37:23,072 - INFO - val_rmse = nan
+2025-05-10 05:37:23.1060Z [W 2025-05-10 08:37:23,076] Trial 30 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 784, 'grid': 5, 'k': 1, 'n_units_0': 43, 'n_units_1': 4, 'n_units_2': 33, 'lr': 0.006658843015121272} because of the following error: The value nan is not acceptable.
+2025-05-10 05:37:23.1061Z [W 2025-05-10 08:37:23,076] Trial 30 failed with value np.float32(nan).
+2025-05-10 05:37:23.2817Z 2025-05-10 08:37:23,281 - INFO - width = [6, 44, 1, 34, 1]
+2025-05-10 05:37:23.3059Z 2025-05-10 08:37:23,285 - INFO - Optimizer: LBFGS, Learning rate: 0.00587780293326404
+2025-05-10 05:37:23.3059Z 2025-05-10 08:37:23,285 - INFO - Using optimizer: LBFGS with learning rate: 0.00587780293326404
+2025-05-10 05:37:23.3462Z 2025-05-10 08:37:23,318 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 05:42:22.1207Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 790/790 [04:58<00:00,  2.64it/s]
+2025-05-10 05:42:22.2023Z 2025-05-10 08:42:22,202 - INFO - val_rmse = nan
+2025-05-10 05:42:22.3079Z 2025-05-10 08:42:22,235 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 05:47:19.9747Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 790/790 [04:57<00:00,  2.65it/s]
+2025-05-10 05:47:20.0524Z 2025-05-10 08:47:20,051 - INFO - val_rmse = nan
+2025-05-10 05:47:20.1074Z 2025-05-10 08:47:20,084 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 05:52:19.7532Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 790/790 [04:59<00:00,  2.64it/s]
+2025-05-10 05:52:19.8316Z 2025-05-10 08:52:19,831 - INFO - val_rmse = nan
+2025-05-10 05:52:19.9088Z 2025-05-10 08:52:19,858 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 05:57:18.9073Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 790/790 [04:59<00:00,  2.64it/s]
+2025-05-10 05:57:18.9857Z 2025-05-10 08:57:18,985 - INFO - val_rmse = nan
+2025-05-10 05:57:19.0269Z 2025-05-10 08:57:19,026 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 06:02:18.0299Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 790/790 [04:59<00:00,  2.64it/s]
+2025-05-10 06:02:18.1093Z 2025-05-10 09:02:18,108 - INFO - val_rmse = nan
+2025-05-10 06:02:18.2081Z [W 2025-05-10 09:02:18,112] Trial 31 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 790, 'grid': 5, 'k': 1, 'n_units_0': 44, 'n_units_1': 1, 'n_units_2': 34, 'lr': 0.00587780293326404} because of the following error: The value nan is not acceptable.
+2025-05-10 06:02:18.2081Z [W 2025-05-10 09:02:18,112] Trial 31 failed with value np.float32(nan).
+2025-05-10 06:02:18.3121Z 2025-05-10 09:02:18,312 - INFO - width = [6, 43, 3, 37, 1]
+2025-05-10 06:02:18.4059Z 2025-05-10 09:02:18,315 - INFO - Optimizer: LBFGS, Learning rate: 0.007440643447803592
+2025-05-10 06:02:18.4059Z 2025-05-10 09:02:18,315 - INFO - Using optimizer: LBFGS with learning rate: 0.007440643447803592
+2025-05-10 06:02:18.4461Z 2025-05-10 09:02:18,346 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 06:10:32.1078Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 834/834 [08:13<00:00,  1.69it/s]
+2025-05-10 06:10:32.2146Z 2025-05-10 09:10:32,214 - INFO - val_rmse = nan
+2025-05-10 06:10:32.3068Z 2025-05-10 09:10:32,252 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 06:18:46.3435Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 834/834 [08:14<00:00,  1.69it/s]
+2025-05-10 06:18:46.4477Z 2025-05-10 09:18:46,447 - INFO - val_rmse = nan
+2025-05-10 06:18:46.5071Z 2025-05-10 09:18:46,486 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 06:27:01.4131Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 834/834 [08:14<00:00,  1.69it/s]
+2025-05-10 06:27:01.5220Z 2025-05-10 09:27:01,521 - INFO - val_rmse = nan
+2025-05-10 06:27:01.6068Z 2025-05-10 09:27:01,553 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 06:35:16.4307Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 834/834 [08:14<00:00,  1.69it/s]
+2025-05-10 06:35:16.5517Z 2025-05-10 09:35:16,551 - INFO - val_rmse = nan
+2025-05-10 06:35:16.6095Z 2025-05-10 09:35:16,590 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 06:43:32.5307Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 834/834 [08:15<00:00,  1.68it/s]
+2025-05-10 06:43:32.6526Z 2025-05-10 09:43:32,651 - INFO - val_rmse = nan
+2025-05-10 06:43:32.7127Z [W 2025-05-10 09:43:32,656] Trial 32 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 834, 'grid': 5, 'k': 1, 'n_units_0': 43, 'n_units_1': 3, 'n_units_2': 37, 'lr': 0.007440643447803592} because of the following error: The value nan is not acceptable.
+2025-05-10 06:43:32.7128Z [W 2025-05-10 09:43:32,656] Trial 32 failed with value np.float32(nan).
+2025-05-10 06:43:32.8707Z 2025-05-10 09:43:32,870 - INFO - width = [6, 45, 2, 32, 1]
+2025-05-10 06:43:32.9082Z 2025-05-10 09:43:32,874 - INFO - Optimizer: LBFGS, Learning rate: 0.007145644376573258
+2025-05-10 06:43:32.9082Z 2025-05-10 09:43:32,874 - INFO - Using optimizer: LBFGS with learning rate: 0.007145644376573258
+2025-05-10 06:43:32.9491Z 2025-05-10 09:43:32,908 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 06:51:17.9729Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [07:45<00:00,  1.69it/s]
+2025-05-10 06:51:18.0646Z 2025-05-10 09:51:18,064 - INFO - val_rmse = nan
+2025-05-10 06:51:18.1077Z 2025-05-10 09:51:18,095 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 06:59:03.5326Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [07:45<00:00,  1.68it/s]
+2025-05-10 06:59:03.6314Z 2025-05-10 09:59:03,630 - INFO - val_rmse = nan
+2025-05-10 06:59:03.7069Z 2025-05-10 09:59:03,674 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 07:06:50.9870Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [07:47<00:00,  1.68it/s]
+2025-05-10 07:06:51.0859Z 2025-05-10 10:06:51,085 - INFO - val_rmse = nan
+2025-05-10 07:06:51.1222Z 2025-05-10 10:06:51,122 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 07:14:38.7466Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [07:47<00:00,  1.68it/s]
+2025-05-10 07:14:38.8412Z 2025-05-10 10:14:38,840 - INFO - val_rmse = nan
+2025-05-10 07:14:38.9073Z 2025-05-10 10:14:38,876 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 07:22:26.7599Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 784/784 [07:47<00:00,  1.68it/s]
+2025-05-10 07:22:26.8577Z 2025-05-10 10:22:26,857 - INFO - val_rmse = nan
+2025-05-10 07:22:26.9075Z [W 2025-05-10 10:22:26,860] Trial 33 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 784, 'grid': 5, 'k': 1, 'n_units_0': 45, 'n_units_1': 2, 'n_units_2': 32, 'lr': 0.007145644376573258} because of the following error: The value nan is not acceptable.
+2025-05-10 07:22:26.9075Z [W 2025-05-10 10:22:26,860] Trial 33 failed with value np.float32(nan).
+2025-05-10 07:22:27.0646Z 2025-05-10 10:22:27,064 - INFO - width = [6, 46, 2, 32, 1]
+2025-05-10 07:22:27.1056Z 2025-05-10 10:22:27,068 - INFO - Optimizer: LBFGS, Learning rate: 0.008087029606957273
+2025-05-10 07:22:27.1056Z 2025-05-10 10:22:27,068 - INFO - Using optimizer: LBFGS with learning rate: 0.008087029606957273
+2025-05-10 07:22:27.1465Z 2025-05-10 10:22:27,110 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 07:30:06.4028Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 770/770 [07:39<00:00,  1.68it/s]
+2025-05-10 07:30:06.4969Z 2025-05-10 10:30:06,496 - INFO - val_rmse = nan
+2025-05-10 07:30:06.5345Z 2025-05-10 10:30:06,534 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 07:37:45.9643Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 770/770 [07:39<00:00,  1.68it/s]
+2025-05-10 07:37:46.0679Z 2025-05-10 10:37:46,067 - INFO - val_rmse = nan
+2025-05-10 07:37:46.1062Z 2025-05-10 10:37:46,099 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 07:45:25.5795Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 770/770 [07:39<00:00,  1.68it/s]
+2025-05-10 07:45:25.6745Z 2025-05-10 10:45:25,673 - INFO - val_rmse = nan
+2025-05-10 07:45:25.7097Z 2025-05-10 10:45:25,704 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 07:53:05.3018Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 770/770 [07:39<00:00,  1.68it/s]
+2025-05-10 07:53:05.4027Z 2025-05-10 10:53:05,401 - INFO - val_rmse = nan
+2025-05-10 07:53:05.5065Z 2025-05-10 10:53:05,433 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 08:00:45.6224Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 770/770 [07:40<00:00,  1.67it/s]
+2025-05-10 08:00:45.7194Z 2025-05-10 11:00:45,718 - INFO - val_rmse = nan
+2025-05-10 08:00:45.8058Z [W 2025-05-10 11:00:45,723] Trial 34 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 770, 'grid': 5, 'k': 1, 'n_units_0': 46, 'n_units_1': 2, 'n_units_2': 32, 'lr': 0.008087029606957273} because of the following error: The value nan is not acceptable.
+2025-05-10 08:00:45.8058Z [W 2025-05-10 11:00:45,723] Trial 34 failed with value np.float32(nan).
+2025-05-10 08:00:45.9326Z 2025-05-10 11:00:45,932 - INFO - width = [6, 45, 5, 39, 1]
+2025-05-10 08:00:46.0064Z 2025-05-10 11:00:45,936 - INFO - Optimizer: LBFGS, Learning rate: 0.009046179931614499
+2025-05-10 08:00:46.0064Z 2025-05-10 11:00:45,936 - INFO - Using optimizer: LBFGS with learning rate: 0.009046179931614499
+2025-05-10 08:00:46.0466Z 2025-05-10 11:00:45,971 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 08:08:23.9291Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 763/763 [07:37<00:00,  1.67it/s]
+2025-05-10 08:08:24.0620Z 2025-05-10 11:08:24,061 - INFO - val_rmse = nan
+2025-05-10 08:08:24.1067Z 2025-05-10 11:08:24,098 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 08:16:01.3094Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 763/763 [07:37<00:00,  1.67it/s]
+2025-05-10 08:16:01.4465Z 2025-05-10 11:16:01,445 - INFO - val_rmse = nan
+2025-05-10 08:16:01.5077Z 2025-05-10 11:16:01,489 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 08:23:39.6286Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 763/763 [07:38<00:00,  1.67it/s]
+2025-05-10 08:23:39.7634Z 2025-05-10 11:23:39,762 - INFO - val_rmse = nan
+2025-05-10 08:23:39.8067Z 2025-05-10 11:23:39,805 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 08:31:18.5637Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 763/763 [07:38<00:00,  1.66it/s]
+2025-05-10 08:31:18.7018Z 2025-05-10 11:31:18,701 - INFO - val_rmse = nan
+2025-05-10 08:31:18.7431Z 2025-05-10 11:31:18,738 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 08:38:56.4671Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 763/763 [07:37<00:00,  1.67it/s]
+2025-05-10 08:38:56.6041Z 2025-05-10 11:38:56,603 - INFO - val_rmse = nan
+2025-05-10 08:38:56.6071Z [W 2025-05-10 11:38:56,606] Trial 35 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 763, 'grid': 5, 'k': 1, 'n_units_0': 45, 'n_units_1': 5, 'n_units_2': 39, 'lr': 0.009046179931614499} because of the following error: The value nan is not acceptable.
+2025-05-10 08:38:56.6072Z [W 2025-05-10 11:38:56,607] Trial 35 failed with value np.float32(nan).
+2025-05-10 08:38:56.8095Z 2025-05-10 11:38:56,809 - INFO - width = [6, 42, 2, 33, 1]
+2025-05-10 08:38:56.8132Z 2025-05-10 11:38:56,813 - INFO - Optimizer: LBFGS, Learning rate: 0.007165639312374941
+2025-05-10 08:38:56.8132Z 2025-05-10 11:38:56,813 - INFO - Using optimizer: LBFGS with learning rate: 0.007165639312374941
+2025-05-10 08:38:56.8532Z 2025-05-10 11:38:56,848 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 08:46:28.8370Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 763/763 [07:31<00:00,  1.69it/s]
+2025-05-10 08:46:28.9352Z 2025-05-10 11:46:28,934 - INFO - val_rmse = nan
+2025-05-10 08:46:29.0061Z 2025-05-10 11:46:28,971 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 08:53:59.9378Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 763/763 [07:30<00:00,  1.69it/s]
+2025-05-10 08:54:00.0269Z 2025-05-10 11:54:00,026 - INFO - val_rmse = nan
+2025-05-10 08:54:00.1066Z 2025-05-10 11:54:00,062 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 09:01:32.6005Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 763/763 [07:32<00:00,  1.69it/s]
+2025-05-10 09:01:32.6923Z 2025-05-10 12:01:32,691 - INFO - val_rmse = nan
+2025-05-10 09:01:32.7259Z 2025-05-10 12:01:32,720 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 09:09:04.4650Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 763/763 [07:31<00:00,  1.69it/s]
+2025-05-10 09:09:04.5606Z 2025-05-10 12:09:04,559 - INFO - val_rmse = nan
+2025-05-10 09:09:04.5978Z 2025-05-10 12:09:04,592 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 09:16:37.3880Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 763/763 [07:32<00:00,  1.69it/s]
+2025-05-10 09:16:37.4795Z 2025-05-10 12:16:37,479 - INFO - val_rmse = nan
+2025-05-10 09:16:37.5058Z [W 2025-05-10 12:16:37,482] Trial 36 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 763, 'grid': 5, 'k': 1, 'n_units_0': 42, 'n_units_1': 2, 'n_units_2': 33, 'lr': 0.007165639312374941} because of the following error: The value nan is not acceptable.
+2025-05-10 09:16:37.5058Z [W 2025-05-10 12:16:37,482] Trial 36 failed with value np.float32(nan).
+2025-05-10 09:16:37.6824Z 2025-05-10 12:16:37,682 - INFO - width = [6, 72, 1, 31, 1]
+2025-05-10 09:16:37.7051Z 2025-05-10 12:16:37,685 - INFO - Optimizer: LBFGS, Learning rate: 0.0070207277168605345
+2025-05-10 09:16:37.7052Z 2025-05-10 12:16:37,685 - INFO - Using optimizer: LBFGS with learning rate: 0.0070207277168605345
+2025-05-10 09:16:37.7459Z 2025-05-10 12:16:37,724 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 09:21:34.7836Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 766/766 [04:57<00:00,  2.58it/s]
+2025-05-10 09:21:34.8892Z 2025-05-10 12:21:34,888 - INFO - val_rmse = nan
+2025-05-10 09:21:34.9287Z 2025-05-10 12:21:34,928 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 09:26:22.9939Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 766/766 [04:48<00:00,  2.66it/s]
+2025-05-10 09:26:23.1011Z 2025-05-10 12:26:23,100 - INFO - val_rmse = nan
+2025-05-10 09:26:23.1400Z 2025-05-10 12:26:23,139 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 09:31:12.8056Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 766/766 [04:49<00:00,  2.64it/s]
+2025-05-10 09:31:12.9125Z 2025-05-10 12:31:12,911 - INFO - val_rmse = nan
+2025-05-10 09:31:13.0067Z 2025-05-10 12:31:12,952 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 09:35:55.6389Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 766/766 [04:42<00:00,  2.71it/s]
+2025-05-10 09:35:55.7451Z 2025-05-10 12:35:55,744 - INFO - val_rmse = nan
+2025-05-10 09:35:55.8062Z 2025-05-10 12:35:55,781 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 09:40:50.0101Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 766/766 [04:54<00:00,  2.60it/s]
+2025-05-10 09:40:50.1262Z 2025-05-10 12:40:50,125 - INFO - val_rmse = nan
+2025-05-10 09:40:50.1799Z [W 2025-05-10 12:40:50,129] Trial 37 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 766, 'grid': 5, 'k': 1, 'n_units_0': 72, 'n_units_1': 1, 'n_units_2': 31, 'lr': 0.0070207277168605345} because of the following error: The value nan is not acceptable.
+2025-05-10 09:40:50.1799Z [W 2025-05-10 12:40:50,129] Trial 37 failed with value np.float32(nan).
+2025-05-10 09:40:50.3323Z 2025-05-10 12:40:50,332 - INFO - width = [6, 42, 1, 32, 1]
+2025-05-10 09:40:50.3358Z 2025-05-10 12:40:50,335 - INFO - Optimizer: LBFGS, Learning rate: 0.006937104447659053
+2025-05-10 09:40:50.3358Z 2025-05-10 12:40:50,335 - INFO - Using optimizer: LBFGS with learning rate: 0.006937104447659053
+2025-05-10 09:40:50.3732Z 2025-05-10 12:40:50,364 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 09:45:43.6870Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 785/785 [04:53<00:00,  2.68it/s]
+2025-05-10 09:45:43.7658Z 2025-05-10 12:45:43,765 - INFO - val_rmse = nan
+2025-05-10 09:45:43.8056Z 2025-05-10 12:45:43,793 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 09:50:37.1798Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 785/785 [04:53<00:00,  2.68it/s]
+2025-05-10 09:50:37.2569Z 2025-05-10 12:50:37,256 - INFO - val_rmse = nan
+2025-05-10 09:50:37.3066Z 2025-05-10 12:50:37,296 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 09:55:30.1974Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 785/785 [04:52<00:00,  2.68it/s]
+2025-05-10 09:55:30.2746Z 2025-05-10 12:55:30,274 - INFO - val_rmse = nan
+2025-05-10 09:55:30.3072Z 2025-05-10 12:55:30,301 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 10:00:23.4144Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 785/785 [04:53<00:00,  2.68it/s]
+2025-05-10 10:00:23.4897Z 2025-05-10 13:00:23,489 - INFO - val_rmse = nan
+2025-05-10 10:00:23.5220Z 2025-05-10 13:00:23,516 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 10:05:16.9640Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 785/785 [04:53<00:00,  2.68it/s]
+2025-05-10 10:05:17.0422Z 2025-05-10 13:05:17,041 - INFO - val_rmse = nan
+2025-05-10 10:05:17.1052Z [W 2025-05-10 13:05:17,045] Trial 38 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 785, 'grid': 5, 'k': 1, 'n_units_0': 42, 'n_units_1': 1, 'n_units_2': 32, 'lr': 0.006937104447659053} because of the following error: The value nan is not acceptable.
+2025-05-10 10:05:17.1052Z [W 2025-05-10 13:05:17,045] Trial 38 failed with value np.float32(nan).
+2025-05-10 10:05:17.2437Z 2025-05-10 13:05:17,243 - INFO - width = [6, 42, 10, 28, 1]
+2025-05-10 10:05:17.3064Z 2025-05-10 13:05:17,247 - INFO - Optimizer: LBFGS, Learning rate: 0.008402190595881742
+2025-05-10 10:05:17.3064Z 2025-05-10 13:05:17,247 - INFO - Using optimizer: LBFGS with learning rate: 0.008402190595881742
+2025-05-10 10:05:17.3466Z 2025-05-10 13:05:17,294 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 10:13:13.7035Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 781/781 [07:56<00:00,  1.64it/s]
+2025-05-10 10:13:13.8689Z 2025-05-10 13:13:13,868 - INFO - val_rmse = nan
+2025-05-10 10:13:13.9162Z 2025-05-10 13:13:13,915 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 10:21:10.9734Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 781/781 [07:57<00:00,  1.64it/s]
+2025-05-10 10:21:11.1528Z 2025-05-10 13:21:11,152 - INFO - val_rmse = nan
+2025-05-10 10:21:11.2066Z 2025-05-10 13:21:11,201 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 10:29:07.8166Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 781/781 [07:56<00:00,  1.64it/s]
+2025-05-10 10:29:07.9869Z 2025-05-10 13:29:07,986 - INFO - val_rmse = nan
+2025-05-10 10:29:08.0390Z 2025-05-10 13:29:08,033 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 10:37:02.6948Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 781/781 [07:54<00:00,  1.65it/s]
+2025-05-10 10:37:02.8651Z 2025-05-10 13:37:02,864 - INFO - val_rmse = nan
+2025-05-10 10:37:02.9181Z 2025-05-10 13:37:02,913 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 10:44:57.7120Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 781/781 [07:54<00:00,  1.64it/s]
+2025-05-10 10:44:57.8849Z 2025-05-10 13:44:57,884 - INFO - val_rmse = nan
+2025-05-10 10:44:57.9058Z [W 2025-05-10 13:44:57,887] Trial 39 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 781, 'grid': 5, 'k': 1, 'n_units_0': 42, 'n_units_1': 10, 'n_units_2': 28, 'lr': 0.008402190595881742} because of the following error: The value nan is not acceptable.
+2025-05-10 10:44:57.9058Z [W 2025-05-10 13:44:57,888] Trial 39 failed with value np.float32(nan).
+2025-05-10 10:44:58.0810Z 2025-05-10 13:44:58,080 - INFO - width = [6, 45, 1, 37, 1]
+2025-05-10 10:44:58.1072Z 2025-05-10 13:44:58,084 - INFO - Optimizer: LBFGS, Learning rate: 0.005482436636931228
+2025-05-10 10:44:58.1072Z 2025-05-10 13:44:58,084 - INFO - Using optimizer: LBFGS with learning rate: 0.005482436636931228
+2025-05-10 10:44:58.1479Z 2025-05-10 13:44:58,116 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 10:49:47.7967Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 788/788 [04:49<00:00,  2.72it/s]
+2025-05-10 10:49:47.8839Z 2025-05-10 13:49:47,883 - INFO - val_rmse = nan
+2025-05-10 10:49:47.9199Z 2025-05-10 13:49:47,919 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 10:54:36.6990Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 788/788 [04:48<00:00,  2.73it/s]
+2025-05-10 10:54:36.7803Z 2025-05-10 13:54:36,779 - INFO - val_rmse = nan
+2025-05-10 10:54:36.8193Z 2025-05-10 13:54:36,814 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 10:59:26.8293Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 788/788 [04:50<00:00,  2.72it/s]
+2025-05-10 10:59:26.9090Z 2025-05-10 13:59:26,908 - INFO - val_rmse = nan
+2025-05-10 10:59:27.0060Z 2025-05-10 13:59:26,936 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 11:04:15.7098Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 788/788 [04:48<00:00,  2.73it/s]
+2025-05-10 11:04:15.7930Z 2025-05-10 14:04:15,792 - INFO - val_rmse = nan
+2025-05-10 11:04:15.8260Z 2025-05-10 14:04:15,825 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 11:09:05.1585Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 788/788 [04:49<00:00,  2.72it/s]
+2025-05-10 11:09:05.2429Z 2025-05-10 14:09:05,242 - INFO - val_rmse = nan
+2025-05-10 11:09:05.3074Z [W 2025-05-10 14:09:05,245] Trial 40 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 788, 'grid': 5, 'k': 1, 'n_units_0': 45, 'n_units_1': 1, 'n_units_2': 37, 'lr': 0.005482436636931228} because of the following error: The value nan is not acceptable.
+2025-05-10 11:09:05.3074Z [W 2025-05-10 14:09:05,246] Trial 40 failed with value np.float32(nan).
+2025-05-10 11:09:05.4446Z 2025-05-10 14:09:05,444 - INFO - width = [6, 42, 1, 28, 1]
+2025-05-10 11:09:05.5072Z 2025-05-10 14:09:05,447 - INFO - Optimizer: LBFGS, Learning rate: 0.007763257573139474
+2025-05-10 11:09:05.5072Z 2025-05-10 14:09:05,448 - INFO - Using optimizer: LBFGS with learning rate: 0.007763257573139474
+2025-05-10 11:09:05.5474Z 2025-05-10 14:09:05,480 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 11:13:49.1923Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 774/774 [04:43<00:00,  2.73it/s]
+2025-05-10 11:13:49.2688Z 2025-05-10 14:13:49,268 - INFO - val_rmse = nan
+2025-05-10 11:13:49.3072Z 2025-05-10 14:13:49,301 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 11:18:32.6811Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 774/774 [04:43<00:00,  2.73it/s]
+2025-05-10 11:18:32.7548Z 2025-05-10 14:18:32,754 - INFO - val_rmse = nan
+2025-05-10 11:18:32.8060Z 2025-05-10 14:18:32,786 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 11:23:17.7343Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 774/774 [04:44<00:00,  2.72it/s]
+2025-05-10 11:23:17.8074Z 2025-05-10 14:23:17,806 - INFO - val_rmse = nan
+2025-05-10 11:23:17.9074Z 2025-05-10 14:23:17,840 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 11:28:01.9149Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 774/774 [04:44<00:00,  2.72it/s]
+2025-05-10 11:28:01.9898Z 2025-05-10 14:28:01,989 - INFO - val_rmse = nan
+2025-05-10 11:28:02.0220Z 2025-05-10 14:28:02,016 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 11:32:47.2867Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 774/774 [04:45<00:00,  2.71it/s]
+2025-05-10 11:32:47.3607Z 2025-05-10 14:32:47,360 - INFO - val_rmse = nan
+2025-05-10 11:32:47.4088Z [W 2025-05-10 14:32:47,363] Trial 41 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 774, 'grid': 5, 'k': 1, 'n_units_0': 42, 'n_units_1': 1, 'n_units_2': 28, 'lr': 0.007763257573139474} because of the following error: The value nan is not acceptable.
+2025-05-10 11:32:47.4088Z [W 2025-05-10 14:32:47,363] Trial 41 failed with value np.float32(nan).
+2025-05-10 11:32:47.5579Z 2025-05-10 14:32:47,557 - INFO - width = [6, 40, 3, 29, 1]
+2025-05-10 11:32:47.6067Z 2025-05-10 14:32:47,561 - INFO - Optimizer: LBFGS, Learning rate: 0.0065937181483111855
+2025-05-10 11:32:47.6067Z 2025-05-10 14:32:47,561 - INFO - Using optimizer: LBFGS with learning rate: 0.0065937181483111855
+2025-05-10 11:32:47.6471Z 2025-05-10 14:32:47,596 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 11:40:33.8201Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 798/798 [07:46<00:00,  1.71it/s]
+2025-05-10 11:40:33.9120Z 2025-05-10 14:40:33,911 - INFO - val_rmse = nan
+2025-05-10 11:40:34.0076Z 2025-05-10 14:40:33,949 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 11:48:22.0821Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 798/798 [07:48<00:00,  1.70it/s]
+2025-05-10 11:48:22.1832Z 2025-05-10 14:48:22,182 - INFO - val_rmse = nan
+2025-05-10 11:48:22.2208Z 2025-05-10 14:48:22,215 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 11:56:10.4339Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 798/798 [07:48<00:00,  1.70it/s]
+2025-05-10 11:56:10.5253Z 2025-05-10 14:56:10,524 - INFO - val_rmse = nan
+2025-05-10 11:56:10.6062Z 2025-05-10 14:56:10,561 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 12:03:59.5297Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 798/798 [07:48<00:00,  1.70it/s]
+2025-05-10 12:03:59.6222Z 2025-05-10 15:03:59,621 - INFO - val_rmse = nan
+2025-05-10 12:03:59.7079Z 2025-05-10 15:03:59,658 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 12:11:52.2154Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 798/798 [07:52<00:00,  1.69it/s]
+2025-05-10 12:11:52.3091Z 2025-05-10 15:11:52,308 - INFO - val_rmse = nan
+2025-05-10 12:11:52.4061Z [W 2025-05-10 15:11:52,312] Trial 42 failed with parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 798, 'grid': 5, 'k': 1, 'n_units_0': 40, 'n_units_1': 3, 'n_units_2': 29, 'lr': 0.0065937181483111855} because of the following error: The value nan is not acceptable.
+2025-05-10 12:11:52.4062Z [W 2025-05-10 15:11:52,312] Trial 42 failed with value np.float32(nan).
+2025-05-10 12:11:52.5106Z 2025-05-10 15:11:52,510 - INFO - width = [6, 42, 2, 30, 1]
+2025-05-10 12:11:52.6064Z 2025-05-10 15:11:52,514 - INFO - Optimizer: LBFGS, Learning rate: 0.008238354109722719
+2025-05-10 12:11:52.6064Z 2025-05-10 15:11:52,514 - INFO - Using optimizer: LBFGS with learning rate: 0.008238354109722719
+2025-05-10 12:11:52.6466Z 2025-05-10 15:11:52,548 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 12:15:58.8657Z | train_loss: 2.39e+01 | test_loss: 2.51e+01 | reg: 2.60e+02 | : 100%|█| 803/803 [04:06<00:00,  3.26
+2025-05-10 12:15:58.9521Z 2025-05-10 15:15:58,951 - INFO - val_rmse = 25.06276512145996
+2025-05-10 12:15:59.0065Z 2025-05-10 15:15:58,981 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 12:20:17.5478Z | train_loss: 2.64e+01 | test_loss: 2.64e+01 | reg: 5.00e+02 | : 100%|█| 803/803 [04:18<00:00,  3.11
+2025-05-10 12:20:17.6352Z 2025-05-10 15:20:17,634 - INFO - val_rmse = 26.417491912841797
+2025-05-10 12:20:17.7062Z 2025-05-10 15:20:17,663 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 12:24:10.3195Z | train_loss: 2.46e+01 | test_loss: 2.57e+01 | reg: 2.46e+02 | : 100%|█| 803/803 [03:52<00:00,  3.45
+2025-05-10 12:24:10.4021Z 2025-05-10 15:24:10,401 - INFO - val_rmse = 25.725574493408203
+2025-05-10 12:24:10.5058Z 2025-05-10 15:24:10,436 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 12:30:41.3107Z | train_loss: 2.08e+01 | test_loss: 2.20e+01 | reg: 5.28e+02 | : 100%|█| 803/803 [06:30<00:00,  2.05
+2025-05-10 12:30:41.4010Z 2025-05-10 15:30:41,400 - INFO - val_rmse = 21.971954345703125
+2025-05-10 12:30:41.4360Z 2025-05-10 15:30:41,435 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 12:38:42.1396Z | train_loss: 1.48e+01 | test_loss: 1.64e+01 | reg: 3.79e+02 | : 100%|█| 803/803 [08:00<00:00,  1.67
+2025-05-10 12:38:42.2283Z 2025-05-10 15:38:42,227 - INFO - val_rmse = 16.39909553527832
+2025-05-10 12:38:42.3084Z [I 2025-05-10 15:38:42,231] Trial 43 finished with value: 26.417491912841797 and parameters: {'n_layers': 3, 'opt': 'LBFGS', 'steps': 803, 'grid': 2, 'k': 1, 'n_units_0': 42, 'n_units_1': 2, 'n_units_2': 30, 'lr': 0.008238354109722719}. Best is trial 5 with value: 19.44784164428711.
+2025-05-10 12:38:42.4339Z 2025-05-10 15:38:42,433 - INFO - width = [6, 72, 23, 29, 6, 1]
+2025-05-10 12:38:42.5086Z 2025-05-10 15:38:42,437 - INFO - Optimizer: LBFGS, Learning rate: 0.02775393613306552
+2025-05-10 12:38:42.5087Z 2025-05-10 15:38:42,437 - INFO - Using optimizer: LBFGS with learning rate: 0.02775393613306552
+2025-05-10 12:38:42.5490Z 2025-05-10 15:38:42,536 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 12:52:09.8931Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 781/781 [13:27<00:00,  1.03s/it]
+2025-05-10 12:52:10.5339Z 2025-05-10 15:52:10,533 - INFO - val_rmse = nan
+2025-05-10 12:52:10.6463Z 2025-05-10 15:52:10,646 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 13:05:37.8197Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 781/781 [13:27<00:00,  1.03s/it]
+2025-05-10 13:05:38.4767Z 2025-05-10 16:05:38,476 - INFO - val_rmse = nan
+2025-05-10 13:05:38.5773Z 2025-05-10 16:05:38,577 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 13:19:07.8894Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 781/781 [13:29<00:00,  1.04s/it]
+2025-05-10 13:19:08.5518Z 2025-05-10 16:19:08,551 - INFO - val_rmse = nan
+2025-05-10 13:19:08.6582Z 2025-05-10 16:19:08,658 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 13:32:37.1807Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 781/781 [13:28<00:00,  1.04s/it]
+2025-05-10 13:32:37.8269Z 2025-05-10 16:32:37,826 - INFO - val_rmse = nan
+2025-05-10 13:32:37.9272Z 2025-05-10 16:32:37,927 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 13:46:05.8244Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 781/781 [13:27<00:00,  1.03s/it]
+2025-05-10 13:46:06.4870Z 2025-05-10 16:46:06,486 - INFO - val_rmse = nan
+2025-05-10 13:46:06.4913Z [W 2025-05-10 16:46:06,491] Trial 44 failed with parameters: {'n_layers': 4, 'opt': 'LBFGS', 'steps': 781, 'grid': 5, 'k': 2, 'n_units_0': 72, 'n_units_1': 23, 'n_units_2': 29, 'n_units_3': 6, 'lr': 0.02775393613306552} because of the following error: The value nan is not acceptable.
+2025-05-10 13:46:06.4914Z [W 2025-05-10 16:46:06,491] Trial 44 failed with value np.float32(nan).
+2025-05-10 13:46:06.7380Z 2025-05-10 16:46:06,737 - INFO - width = [6, 72, 20, 30, 3, 3, 98, 93, 100, 98, 7, 4, 4, 1, 57, 40, 1]
+2025-05-10 13:46:06.7416Z 2025-05-10 16:46:06,741 - INFO - Optimizer: LBFGS, Learning rate: 0.025406892490675327
+2025-05-10 13:46:06.7416Z 2025-05-10 16:46:06,741 - INFO - Using optimizer: LBFGS with learning rate: 0.025406892490675327
+2025-05-10 13:46:07.8333Z 2025-05-10 16:46:07,833 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 14:49:43.8721Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 783/783 [1:03:36<00:00,  4.87s/it]
+2025-05-10 14:49:50.9063Z 2025-05-10 17:49:50,905 - INFO - val_rmse = nan
+2025-05-10 14:49:52.0617Z 2025-05-10 17:49:52,061 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 15:53:30.1770Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 783/783 [1:03:38<00:00,  4.88s/it]
+2025-05-10 15:53:37.9067Z 2025-05-10 18:53:37,906 - INFO - val_rmse = nan
+2025-05-10 15:53:39.0698Z 2025-05-10 18:53:39,069 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 16:57:18.7963Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 783/783 [1:03:39<00:00,  4.88s/it]
+2025-05-10 16:57:26.2729Z 2025-05-10 19:57:26,271 - INFO - val_rmse = nan
+2025-05-10 16:57:27.4613Z 2025-05-10 19:57:27,461 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 18:01:07.1665Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 783/783 [1:03:39<00:00,  4.88s/it]
+2025-05-10 18:01:14.5578Z 2025-05-10 21:01:14,556 - INFO - val_rmse = nan
+2025-05-10 18:01:15.7167Z 2025-05-10 21:01:15,716 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 19:04:54.2945Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 783/783 [1:03:38<00:00,  4.88s/it]
+2025-05-10 19:05:01.9073Z 2025-05-10 22:05:01,906 - INFO - val_rmse = nan
+2025-05-10 19:05:01.9154Z [W 2025-05-10 22:05:01,915] Trial 45 failed with parameters: {'n_layers': 15, 'opt': 'LBFGS', 'steps': 783, 'grid': 5, 'k': 2, 'n_units_0': 72, 'n_units_1': 20, 'n_units_2': 30, 'n_units_3': 3, 'n_units_4': 3, 'n_units_5': 98, 'n_units_6': 93, 'n_units_7': 100, 'n_units_8': 98, 'n_units_9': 7, 'n_units_10': 4, 'n_units_11': 4, 'n_units_12': 1, 'n_units_13': 57, 'n_units_14': 40, 'lr': 0.025406892490675327} because of the following error: The value nan is not acceptable.
+2025-05-10 19:05:01.9154Z [W 2025-05-10 22:05:01,915] Trial 45 failed with value np.float32(nan).
+2025-05-10 19:05:02.1199Z 2025-05-10 22:05:02,119 - INFO - width = [6, 74, 23, 1, 1, 25, 99, 98, 97, 98, 3, 2, 2, 1, 67, 32, 1]
+2025-05-10 19:05:02.1233Z 2025-05-10 22:05:02,123 - INFO - Optimizer: LBFGS, Learning rate: 0.022799151717480436
+2025-05-10 19:05:02.1234Z 2025-05-10 22:05:02,123 - INFO - Using optimizer: LBFGS with learning rate: 0.022799151717480436
+2025-05-10 19:05:03.2564Z 2025-05-10 22:05:03,256 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 20:07:50.6637Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 811/811 [1:02:47<00:00,  4.65s/it]
+2025-05-10 20:07:58.8905Z 2025-05-10 23:07:58,890 - INFO - val_rmse = nan
+2025-05-10 20:08:00.2927Z 2025-05-10 23:08:00,292 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 21:10:49.5508Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 811/811 [1:02:49<00:00,  4.65s/it]
+2025-05-10 21:10:57.2113Z 2025-05-11 00:10:57,210 - INFO - val_rmse = nan
+2025-05-10 21:10:58.4638Z 2025-05-11 00:10:58,463 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 22:13:48.0970Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 811/811 [1:02:49<00:00,  4.65s/it]
+2025-05-10 22:13:56.3659Z 2025-05-11 01:13:56,365 - INFO - val_rmse = nan
+2025-05-10 22:13:57.5910Z 2025-05-11 01:13:57,590 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-10 23:16:48.7432Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 811/811 [1:02:51<00:00,  4.65s/it]
+2025-05-10 23:16:57.0484Z 2025-05-11 02:16:57,047 - INFO - val_rmse = nan
+2025-05-10 23:16:58.2665Z 2025-05-11 02:16:58,266 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 00:19:48.3353Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 811/811 [1:02:50<00:00,  4.65s/it]
+2025-05-11 00:19:56.8403Z 2025-05-11 03:19:56,839 - INFO - val_rmse = nan
+2025-05-11 00:19:56.8491Z [W 2025-05-11 03:19:56,848] Trial 46 failed with parameters: {'n_layers': 15, 'opt': 'LBFGS', 'steps': 811, 'grid': 5, 'k': 2, 'n_units_0': 74, 'n_units_1': 23, 'n_units_2': 1, 'n_units_3': 1, 'n_units_4': 25, 'n_units_5': 99, 'n_units_6': 98, 'n_units_7': 97, 'n_units_8': 98, 'n_units_9': 3, 'n_units_10': 2, 'n_units_11': 2, 'n_units_12': 1, 'n_units_13': 67, 'n_units_14': 32, 'lr': 0.022799151717480436} because of the following error: The value nan is not acceptable.
+2025-05-11 00:19:56.8492Z [W 2025-05-11 03:19:56,849] Trial 46 failed with value np.float32(nan).
+2025-05-11 00:19:57.0055Z 2025-05-11 03:19:57,005 - INFO - width = [6, 72, 1]
+2025-05-11 00:19:57.0100Z 2025-05-11 03:19:57,009 - INFO - Optimizer: LBFGS, Learning rate: 0.029511928112736115
+2025-05-11 00:19:57.0101Z 2025-05-11 03:19:57,010 - INFO - Using optimizer: LBFGS with learning rate: 0.029511928112736115
+2025-05-11 00:19:57.0479Z 2025-05-11 03:19:57,044 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 00:24:40.9208Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 777/777 [04:43<00:00,  2.74it/s]
+2025-05-11 00:24:41.5350Z 2025-05-11 03:24:41,534 - INFO - val_rmse = nan
+2025-05-11 00:24:41.5696Z 2025-05-11 03:24:41,564 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 00:29:25.1525Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 777/777 [04:43<00:00,  2.74it/s]
+2025-05-11 00:29:25.2626Z 2025-05-11 03:29:25,262 - INFO - val_rmse = nan
+2025-05-11 00:29:25.3076Z 2025-05-11 03:29:25,297 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 00:34:09.6143Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 777/777 [04:44<00:00,  2.73it/s]
+2025-05-11 00:34:09.7188Z 2025-05-11 03:34:09,718 - INFO - val_rmse = nan
+2025-05-11 00:34:09.8053Z 2025-05-11 03:34:09,752 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 00:38:51.8938Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 777/777 [04:42<00:00,  2.75it/s]
+2025-05-11 00:38:51.9946Z 2025-05-11 03:38:51,993 - INFO - val_rmse = nan
+2025-05-11 00:38:52.0331Z 2025-05-11 03:38:52,027 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 00:43:35.8044Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 777/777 [04:43<00:00,  2.74it/s]
+2025-05-11 00:43:35.9028Z 2025-05-11 03:43:35,902 - INFO - val_rmse = nan
+2025-05-11 00:43:36.0062Z [W 2025-05-11 03:43:35,906] Trial 47 failed with parameters: {'n_layers': 1, 'opt': 'LBFGS', 'steps': 777, 'grid': 5, 'k': 2, 'n_units_0': 72, 'lr': 0.029511928112736115} because of the following error: The value nan is not acceptable.
+2025-05-11 00:43:36.0062Z [W 2025-05-11 03:43:35,906] Trial 47 failed with value np.float32(nan).
+2025-05-11 00:43:36.1080Z 2025-05-11 03:43:36,107 - INFO - width = [6, 72, 1]
+2025-05-11 00:43:36.2060Z 2025-05-11 03:43:36,111 - INFO - Optimizer: LBFGS, Learning rate: 0.02590470859914369
+2025-05-11 00:43:36.2060Z 2025-05-11 03:43:36,111 - INFO - Using optimizer: LBFGS with learning rate: 0.02590470859914369
+2025-05-11 00:43:36.2463Z 2025-05-11 03:43:36,144 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 00:48:22.6025Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 785/785 [04:46<00:00,  2.74it/s]
+2025-05-11 00:48:22.7236Z 2025-05-11 03:48:22,723 - INFO - val_rmse = nan
+2025-05-11 00:48:22.8061Z 2025-05-11 03:48:22,758 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 00:53:09.1074Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 785/785 [04:46<00:00,  2.74it/s]
+2025-05-11 00:53:09.2318Z 2025-05-11 03:53:09,231 - INFO - val_rmse = nan
+2025-05-11 00:53:09.3062Z 2025-05-11 03:53:09,260 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 00:57:56.9505Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 785/785 [04:47<00:00,  2.73it/s]
+2025-05-11 00:57:57.0836Z 2025-05-11 03:57:57,082 - INFO - val_rmse = nan
+2025-05-11 00:57:57.1181Z 2025-05-11 03:57:57,117 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 01:02:43.9675Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 785/785 [04:46<00:00,  2.74it/s]
+2025-05-11 01:02:44.0931Z 2025-05-11 04:02:44,092 - INFO - val_rmse = nan
+2025-05-11 01:02:44.1255Z 2025-05-11 04:02:44,120 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 01:07:31.5569Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 785/785 [04:47<00:00,  2.73it/s]
+2025-05-11 01:07:31.7672Z 2025-05-11 04:07:31,766 - INFO - val_rmse = nan
+2025-05-11 01:07:31.7708Z [W 2025-05-11 04:07:31,770] Trial 48 failed with parameters: {'n_layers': 1, 'opt': 'LBFGS', 'steps': 785, 'grid': 5, 'k': 2, 'n_units_0': 72, 'lr': 0.02590470859914369} because of the following error: The value nan is not acceptable.
+2025-05-11 01:07:31.7708Z [W 2025-05-11 04:07:31,770] Trial 48 failed with value np.float32(nan).
+2025-05-11 01:07:32.0305Z 2025-05-11 04:07:32,030 - INFO - width = [6, 70, 22, 2, 7, 2, 96, 95, 97, 100, 10, 1, 15, 4, 16, 97, 1]
+2025-05-11 01:07:32.0341Z 2025-05-11 04:07:32,034 - INFO - Optimizer: LBFGS, Learning rate: 0.025641376368158553
+2025-05-11 01:07:32.0341Z 2025-05-11 04:07:32,034 - INFO - Using optimizer: LBFGS with learning rate: 0.025641376368158553
+2025-05-11 01:07:33.1328Z 2025-05-11 04:07:33,132 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 02:12:38.8213Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 787/787 [1:05:05<00:00,  4.96s/it]
+2025-05-11 02:12:45.8426Z 2025-05-11 05:12:45,842 - INFO - val_rmse = nan
+2025-05-11 02:12:46.9978Z 2025-05-11 05:12:46,997 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 03:17:49.5286Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 787/787 [1:05:02<00:00,  4.96s/it]
+2025-05-11 03:17:57.1748Z 2025-05-11 06:17:57,173 - INFO - val_rmse = nan
+2025-05-11 03:17:58.2724Z 2025-05-11 06:17:58,272 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 04:23:09.3503Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 787/787 [1:05:11<00:00,  4.97s/it]
+2025-05-11 04:23:17.6751Z 2025-05-11 07:23:17,674 - INFO - val_rmse = nan
+2025-05-11 04:23:18.8607Z 2025-05-11 07:23:18,860 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 05:28:46.4959Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 787/787 [1:05:27<00:00,  4.99s/it]
+2025-05-11 05:28:54.9700Z 2025-05-11 08:28:54,969 - INFO - val_rmse = nan
+2025-05-11 05:28:56.1520Z 2025-05-11 08:28:56,151 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 06:34:16.1995Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 787/787 [1:05:20<00:00,  4.98s/it]
+2025-05-11 06:34:23.8060Z 2025-05-11 09:34:23,804 - INFO - val_rmse = nan
+2025-05-11 06:34:23.8177Z [W 2025-05-11 09:34:23,817] Trial 49 failed with parameters: {'n_layers': 15, 'opt': 'LBFGS', 'steps': 787, 'grid': 6, 'k': 2, 'n_units_0': 70, 'n_units_1': 22, 'n_units_2': 2, 'n_units_3': 7, 'n_units_4': 2, 'n_units_5': 96, 'n_units_6': 95, 'n_units_7': 97, 'n_units_8': 100, 'n_units_9': 10, 'n_units_10': 1, 'n_units_11': 15, 'n_units_12': 4, 'n_units_13': 16, 'n_units_14': 97, 'lr': 0.025641376368158553} because of the following error: The value nan is not acceptable.
+2025-05-11 06:34:23.8178Z [W 2025-05-11 09:34:23,817] Trial 49 failed with value np.float32(nan).
+2025-05-11 06:34:24.0256Z 2025-05-11 09:34:24,025 - INFO - width = [6, 76, 23, 31, 3, 1]
+2025-05-11 06:34:24.0294Z 2025-05-11 09:34:24,029 - INFO - Optimizer: LBFGS, Learning rate: 0.02709964920663076
+2025-05-11 06:34:24.0295Z 2025-05-11 09:34:24,029 - INFO - Using optimizer: LBFGS with learning rate: 0.02709964920663076
+2025-05-11 06:34:24.1355Z 2025-05-11 09:34:24,135 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 06:48:25.7563Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 801/801 [14:01<00:00,  1.05s/it]
+2025-05-11 06:48:26.8903Z 2025-05-11 09:48:26,890 - INFO - val_rmse = nan
+2025-05-11 06:48:26.9986Z 2025-05-11 09:48:26,998 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 07:02:29.8147Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 801/801 [14:02<00:00,  1.05s/it]
+2025-05-11 07:02:30.5135Z 2025-05-11 10:02:30,513 - INFO - val_rmse = nan
+2025-05-11 07:02:30.6261Z 2025-05-11 10:02:30,625 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 07:16:32.6290Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 801/801 [14:02<00:00,  1.05s/it]
+2025-05-11 07:16:33.3035Z 2025-05-11 10:16:33,302 - INFO - val_rmse = nan
+2025-05-11 07:16:33.4152Z 2025-05-11 10:16:33,415 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 07:30:36.9402Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 801/801 [14:03<00:00,  1.05s/it]
+2025-05-11 07:30:37.6257Z 2025-05-11 10:30:37,625 - INFO - val_rmse = nan
+2025-05-11 07:30:37.7393Z 2025-05-11 10:30:37,739 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 07:44:40.2794Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|███████████| 801/801 [14:02<00:00,  1.05s/it]
+2025-05-11 07:44:40.9667Z 2025-05-11 10:44:40,966 - INFO - val_rmse = nan
+2025-05-11 07:44:40.9706Z [W 2025-05-11 10:44:40,970] Trial 50 failed with parameters: {'n_layers': 4, 'opt': 'LBFGS', 'steps': 801, 'grid': 5, 'k': 2, 'n_units_0': 76, 'n_units_1': 23, 'n_units_2': 31, 'n_units_3': 3, 'lr': 0.02709964920663076} because of the following error: The value nan is not acceptable.
+2025-05-11 07:44:40.9706Z [W 2025-05-11 10:44:40,970] Trial 50 failed with value np.float32(nan).
+2025-05-11 07:44:41.2100Z 2025-05-11 10:44:41,209 - INFO - width = [6, 72, 26, 28, 6, 23, 100, 99, 98, 100, 1, 6, 1, 97, 74, 45, 1]
+2025-05-11 07:44:41.2132Z 2025-05-11 10:44:41,213 - INFO - Optimizer: LBFGS, Learning rate: 0.026198653451225493
+2025-05-11 07:44:41.2133Z 2025-05-11 10:44:41,213 - INFO - Using optimizer: LBFGS with learning rate: 0.026198653451225493
+2025-05-11 07:44:42.6101Z 2025-05-11 10:44:42,609 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 08:57:11.6392Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 786/786 [1:12:29<00:00,  5.53s/it]
+2025-05-11 08:57:21.0447Z 2025-05-11 11:57:21,044 - INFO - val_rmse = nan
+2025-05-11 08:57:22.5033Z 2025-05-11 11:57:22,503 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+2025-05-11 10:09:52.2381Z | train_loss: nan | test_loss: nan | reg: nan | : 100%|█████████| 786/786 [1:12:29<00:00,  5.53s/it]
+2025-05-11 10:10:02.7307Z 2025-05-11 13:10:02,729 - INFO - val_rmse = nan
+2025-05-11 10:10:04.4138Z 2025-05-11 13:10:04,413 - INFO - saving model version 0.1checkpoint directory created: ./modelsaving model version 0.0
+
+
+Trial 5 finished with value: 19.44784164428711 and parameters: {'n_layers': 1, 'opt': 'LBFGS', 'steps': 958, 'grid': 1, 'k': 2, 'n_units_0': 57, 'lr': 0.0403604924674922}. Best is trial 5 with value: 19.44784164428711.
