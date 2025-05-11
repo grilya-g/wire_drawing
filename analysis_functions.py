@@ -1433,6 +1433,13 @@ class KANModelTrainTest:
                 )
                 val_rmse = result["test_loss"][-1]
                 logger.info(f"val_rmse = {val_rmse}")
+                
+                # Check if val_rmse is NaN
+                if torch.isnan(val_rmse) if isinstance(val_rmse, torch.Tensor) else np.isnan(val_rmse):
+                    logger.warning("NaN detected in validation RMSE. Breaking the training loop.")
+                    list_val_rmse.append(float("inf"))
+                    break
+                    
                 list_val_rmse.append(val_rmse)
             except Exception as e:
                 logger.error(f"Error during model fitting: {e}")
