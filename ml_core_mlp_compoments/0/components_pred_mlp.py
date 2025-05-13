@@ -46,7 +46,7 @@ def main():
 
     print(X_stress_components_new.shape)
 
-    component_num = 1
+    component_num = 0
     n_trials = 200
 
     # Проверяем доступность GPU
@@ -70,7 +70,7 @@ def main():
     mlp_n_trials = n_trials
     mlp_n_splits = 5
     mlp_n_layers = 15  # Максимальное количество слоев для поиска
-    mlp_n_neurons = 100  # Максимальное количество нейронов в слое для поиска
+    mlp_n_neurons = 200  # Максимальное количество нейронов в слое для поиска
 
     # Запуск оптимизации гиперпараметров MLP на GPU
     print(f"Запуск оптимизации гиперпараметров MLP с {mlp_n_trials} trials...")
