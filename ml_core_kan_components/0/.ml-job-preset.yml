@@ -1,0 +1,29 @@
+job:
+    time_limit: 168h0m0s
+    flavor: "v100-1x" # "10cpu-160ram" # "standard-1x"  # "a100-1x"
+    generate_name: "wire-drawing-0-component_num_kan"
+    image: docker-hosted.artifactory.tcsbank.ru/risk-scoring-models/npv_models:release-v0.0.1
+    args:
+        - sh
+        - -c
+        - |
+          cd /app && \
+          pip install nomkl numpy scipy && \
+          pip install -r requirements.txt && \
+          echo 'Dependencies installed successfully' && \
+          python components_pred_kan.py
+    input:
+        - type: files
+          name: ml_core_files
+          src: ./
+          dst: /app
+          mask: "**/*"
+        # - type: files
+        #   name: requirements
+        #   src: requirements.txt
+        #   dst: /app/requirements.txt
+    output:
+        - type: files
+          name: MY_ARTIFACT
+          src: /output
+          dst: ""
