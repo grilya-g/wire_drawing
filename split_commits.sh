@@ -2,6 +2,19 @@
 
 # Скрипт для разбиения большого количества измененных файлов на отдельные коммиты по 100 штук
 
+# Директория, в которой нужно выполнять операции
+TARGET_DIR="/Users/i.grebenkin/pythonProjects/учеба/wire_drawing/analytics/statistical_analysis"
+
+# Проверка существования директории
+if [ ! -d "$TARGET_DIR" ]; then
+    echo "Ошибка: директория $TARGET_DIR не существует"
+    exit 1
+fi
+
+# Переходим в целевую директорию
+echo "Переходим в директорию $TARGET_DIR"
+cd "$TARGET_DIR" || { echo "Ошибка: не удалось перейти в директорию $TARGET_DIR"; exit 1; }
+
 # Сообщение коммита (можно изменить)
 COMMIT_MESSAGE="Batch commit of filtered files"
 
