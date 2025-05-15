@@ -1,0 +1,716 @@
+2025-05-07 12:59:14.4547Z Looking in indexes: https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/simple
+2025-05-07 12:59:14.8374Z Collecting alembic==1.14.0
+2025-05-07 12:59:14.8743Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/alembic/1.14.0/alembic-1.14.0-py3-none-any.whl (233 kB)
+2025-05-07 12:59:14.8959Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 233.5/233.5 kB 14.0 MB/s eta 0:00:00
+2025-05-07 12:59:15.1269Z Collecting anyio==4.8.0
+2025-05-07 12:59:15.1672Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/anyio/4.8.0/anyio-4.8.0-py3-none-any.whl (96 kB)
+2025-05-07 12:59:15.1734Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.0/96.0 kB 41.2 MB/s eta 0:00:00
+2025-05-07 12:59:15.9249Z Collecting appnope==0.1.4
+2025-05-07 12:59:15.9661Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/appnope/0.1.4/appnope-0.1.4-py2.py3-none-any.whl (4.3 kB)
+2025-05-07 12:59:16.2301Z Collecting argon2-cffi==23.1.0
+2025-05-07 12:59:16.3000Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/argon2-cffi/23.1.0/argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+2025-05-07 12:59:16.4309Z Collecting argon2-cffi-bindings==21.2.0
+2025-05-07 12:59:16.4690Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/argon2-cffi-bindings/21.2.0/argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (86 kB)
+2025-05-07 12:59:16.4791Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.2/86.2 kB 12.7 MB/s eta 0:00:00
+2025-05-07 12:59:17.0909Z Collecting arrow==1.3.0
+2025-05-07 12:59:17.1316Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/arrow/1.3.0/arrow-1.3.0-py3-none-any.whl (66 kB)
+2025-05-07 12:59:17.2141Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.4/66.4 kB 9.0 MB/s eta 0:00:00
+2025-05-07 12:59:17.2537Z Collecting asttokens==3.0.0
+2025-05-07 12:59:17.2870Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/asttokens/3.0.0/asttokens-3.0.0-py3-none-any.whl (26 kB)
+2025-05-07 12:59:17.4379Z Collecting async-lru==2.0.4
+2025-05-07 12:59:17.5025Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/async-lru/2.0.4/async_lru-2.0.4-py3-none-any.whl (6.1 kB)
+2025-05-07 12:59:17.6342Z Collecting attrs==24.3.0
+2025-05-07 12:59:17.6698Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/attrs/24.3.0/attrs-24.3.0-py3-none-any.whl (63 kB)
+2025-05-07 12:59:17.6757Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.4/63.4 kB 29.9 MB/s eta 0:00:00
+2025-05-07 12:59:17.8605Z Collecting babel==2.16.0
+2025-05-07 12:59:17.8958Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/babel/2.16.0/babel-2.16.0-py3-none-any.whl (9.6 MB)
+2025-05-07 12:59:18.0190Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.6/9.6 MB 80.6 MB/s eta 0:00:00
+2025-05-07 12:59:18.6058Z Collecting bayesian-optimization==2.0.3
+2025-05-07 12:59:18.6541Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/bayesian-optimization/2.0.3/bayesian_optimization-2.0.3-py3-none-any.whl (31 kB)
+2025-05-07 12:59:18.9098Z Collecting beautifulsoup4==4.12.3
+2025-05-07 12:59:18.9465Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/beautifulsoup4/4.12.3/beautifulsoup4-4.12.3-py3-none-any.whl (147 kB)
+2025-05-07 12:59:18.9573Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 147.9/147.9 kB 22.0 MB/s eta 0:00:00
+2025-05-07 12:59:19.1142Z Collecting bleach==6.2.0
+2025-05-07 12:59:19.1521Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/bleach/6.2.0/bleach-6.2.0-py3-none-any.whl (163 kB)
+2025-05-07 12:59:19.1595Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.4/163.4 kB 55.9 MB/s eta 0:00:00
+2025-05-07 12:59:19.3051Z Collecting certifi==2024.12.14
+2025-05-07 12:59:19.3409Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/certifi/2024.12.14/certifi-2024.12.14-py3-none-any.whl (164 kB)
+2025-05-07 12:59:19.3481Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 164.9/164.9 kB 58.9 MB/s eta 0:00:00
+2025-05-07 12:59:20.3814Z Collecting cffi==1.17.1
+2025-05-07 12:59:20.4430Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/cffi/1.17.1/cffi-1.17.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (445 kB)
+2025-05-07 12:59:20.5130Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 445.2/445.2 kB 23.5 MB/s eta 0:00:00
+2025-05-07 12:59:21.2805Z Collecting charset-normalizer==3.4.1
+2025-05-07 12:59:21.3301Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/charset-normalizer/3.4.1/charset_normalizer-3.4.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (146 kB)
+2025-05-07 12:59:21.4323Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 146.2/146.2 kB 10.3 MB/s eta 0:00:00
+2025-05-07 12:59:21.5380Z Collecting colorama==0.4.6
+2025-05-07 12:59:21.6142Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/colorama/0.4.6/colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2025-05-07 12:59:21.7174Z Collecting colorlog==6.9.0
+2025-05-07 12:59:21.8169Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/colorlog/6.9.0/colorlog-6.9.0-py3-none-any.whl (11 kB)
+2025-05-07 12:59:22.2236Z Collecting comm==0.2.2
+2025-05-07 12:59:22.2580Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/comm/0.2.2/comm-0.2.2-py3-none-any.whl (7.2 kB)
+2025-05-07 12:59:22.9468Z Collecting contourpy==1.3.0
+2025-05-07 12:59:22.9839Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/contourpy/1.3.0/contourpy-1.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (321 kB)
+2025-05-07 12:59:23.0089Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 321.9/321.9 kB 15.4 MB/s eta 0:00:00
+2025-05-07 12:59:23.1131Z Collecting cycler==0.12.1
+2025-05-07 12:59:23.1530Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/cycler/0.12.1/cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2025-05-07 12:59:24.6701Z Collecting debugpy==1.8.11
+2025-05-07 12:59:24.7246Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/debugpy/1.8.11/debugpy-1.8.11-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+2025-05-07 12:59:24.8118Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 54.6 MB/s eta 0:00:00
+2025-05-07 12:59:24.9234Z Collecting decorator==5.1.1
+2025-05-07 12:59:25.0114Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/decorator/5.1.1/decorator-5.1.1-py3-none-any.whl (9.1 kB)
+2025-05-07 12:59:25.1016Z Collecting defusedxml==0.7.1
+2025-05-07 12:59:25.1598Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/defusedxml/0.7.1/defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+2025-05-07 12:59:25.2659Z Collecting exceptiongroup==1.2.2
+2025-05-07 12:59:25.3002Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/exceptiongroup/1.2.2/exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+2025-05-07 12:59:25.4084Z Collecting executing==2.1.0
+2025-05-07 12:59:25.4675Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/executing/2.1.0/executing-2.1.0-py2.py3-none-any.whl (25 kB)
+2025-05-07 12:59:25.5756Z Collecting fastjsonschema==2.21.1
+2025-05-07 12:59:25.6327Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/fastjsonschema/2.21.1/fastjsonschema-2.21.1-py3-none-any.whl (23 kB)
+2025-05-07 12:59:25.7923Z Collecting filelock==3.17.0
+2025-05-07 12:59:25.8598Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/filelock/3.17.0/filelock-3.17.0-py3-none-any.whl (16 kB)
+2025-05-07 12:59:27.0655Z Collecting fonttools==4.55.3
+2025-05-07 12:59:27.1374Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/fonttools/4.55.3/fonttools-4.55.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.6 MB)
+2025-05-07 12:59:27.2170Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 73.3 MB/s eta 0:00:00
+2025-05-07 12:59:27.3232Z Collecting fpdf==1.7.2
+2025-05-07 12:59:27.4142Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/fpdf/1.7.2/fpdf-1.7.2.tar.gz (39 kB)
+2025-05-07 12:59:27.4142Z   Preparing metadata (setup.py): started
+2025-05-07 12:59:28.0450Z   Preparing metadata (setup.py): finished with status 'done'
+2025-05-07 12:59:28.1482Z Collecting fqdn==1.5.1
+2025-05-07 12:59:28.2233Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/fqdn/1.5.1/fqdn-1.5.1-py3-none-any.whl (9.1 kB)
+2025-05-07 12:59:28.4181Z Collecting fsspec==2025.2.0
+2025-05-07 12:59:28.4627Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/fsspec/2025.2.0/fsspec-2025.2.0-py3-none-any.whl (184 kB)
+2025-05-07 12:59:28.4726Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 184.5/184.5 kB 36.2 MB/s eta 0:00:00
+2025-05-07 12:59:28.5730Z Collecting h11==0.14.0
+2025-05-07 12:59:28.6307Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/h11/0.14.0/h11-0.14.0-py3-none-any.whl (58 kB)
+2025-05-07 12:59:28.6364Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.3/58.3 kB 28.2 MB/s eta 0:00:00
+2025-05-07 12:59:28.7964Z Collecting httpcore==1.0.7
+2025-05-07 12:59:28.8318Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/httpcore/1.0.7/httpcore-1.0.7-py3-none-any.whl (78 kB)
+2025-05-07 12:59:28.8376Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.6/78.6 kB 38.1 MB/s eta 0:00:00
+2025-05-07 12:59:29.0924Z Collecting httpx==0.28.1
+2025-05-07 12:59:29.1304Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/httpx/0.28.1/httpx-0.28.1-py3-none-any.whl (73 kB)
+2025-05-07 12:59:29.2167Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 34.2 MB/s eta 0:00:00
+2025-05-07 12:59:29.3070Z Collecting idna==3.10
+2025-05-07 12:59:29.3425Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/idna/3.10/idna-3.10-py3-none-any.whl (70 kB)
+2025-05-07 12:59:29.4138Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.4/70.4 kB 35.1 MB/s eta 0:00:00
+2025-05-07 12:59:29.7061Z Collecting imageio==2.37.0
+2025-05-07 12:59:29.7449Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/imageio/2.37.0/imageio-2.37.0-py3-none-any.whl (315 kB)
+2025-05-07 12:59:29.8109Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 315.8/315.8 kB 33.7 MB/s eta 0:00:00
+2025-05-07 12:59:30.3554Z Collecting imageio-ffmpeg==0.6.0
+2025-05-07 12:59:30.3973Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/imageio-ffmpeg/0.6.0/imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl (29.5 MB)
+2025-05-07 12:59:30.7490Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29.5/29.5 MB 60.0 MB/s eta 0:00:00
+2025-05-07 12:59:31.1628Z Collecting importlib_metadata==8.5.0
+2025-05-07 12:59:31.1982Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/importlib-metadata/8.5.0/importlib_metadata-8.5.0-py3-none-any.whl (26 kB)
+2025-05-07 12:59:31.4031Z Collecting importlib_resources==6.5.2
+2025-05-07 12:59:31.4449Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/importlib-resources/6.5.2/importlib_resources-6.5.2-py3-none-any.whl (37 kB)
+2025-05-07 12:59:32.2571Z Collecting ipykernel==6.29.5
+2025-05-07 12:59:32.2934Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/ipykernel/6.29.5/ipykernel-6.29.5-py3-none-any.whl (117 kB)
+2025-05-07 12:59:32.3073Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.2/117.2 kB 11.5 MB/s eta 0:00:00
+2025-05-07 12:59:32.6297Z Collecting ipython==8.18.1
+2025-05-07 12:59:32.6971Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/ipython/8.18.1/ipython-8.18.1-py3-none-any.whl (808 kB)
+2025-05-07 12:59:32.7267Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 808.2/808.2 kB 32.1 MB/s eta 0:00:00
+2025-05-07 12:59:32.9667Z Collecting ipywidgets==8.1.5
+2025-05-07 12:59:33.0180Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/ipywidgets/8.1.5/ipywidgets-8.1.5-py3-none-any.whl (139 kB)
+2025-05-07 12:59:33.0307Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.8/139.8 kB 14.7 MB/s eta 0:00:00
+2025-05-07 12:59:33.1929Z Collecting isoduration==20.11.0
+2025-05-07 12:59:33.2312Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/isoduration/20.11.0/isoduration-20.11.0-py3-none-any.whl (11 kB)
+2025-05-07 12:59:33.3547Z Collecting jedi==0.19.2
+2025-05-07 12:59:33.4184Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jedi/0.19.2/jedi-0.19.2-py2.py3-none-any.whl (1.6 MB)
+2025-05-07 12:59:33.4391Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 79.1 MB/s eta 0:00:00
+2025-05-07 12:59:33.6061Z Collecting Jinja2==3.1.5
+2025-05-07 12:59:33.6627Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jinja2/3.1.5/jinja2-3.1.5-py3-none-any.whl (134 kB)
+2025-05-07 12:59:33.6696Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.6/134.6 kB 52.1 MB/s eta 0:00:00
+2025-05-07 12:59:33.8379Z Collecting joblib==1.4.2
+2025-05-07 12:59:33.8843Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/joblib/1.4.2/joblib-1.4.2-py3-none-any.whl (301 kB)
+2025-05-07 12:59:33.8996Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 301.8/301.8 kB 27.3 MB/s eta 0:00:00
+2025-05-07 12:59:34.2747Z Collecting json5==0.10.0
+2025-05-07 12:59:34.3167Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/json5/0.10.0/json5-0.10.0-py3-none-any.whl (34 kB)
+2025-05-07 12:59:34.4261Z Collecting jsonpointer==3.0.0
+2025-05-07 12:59:34.4851Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jsonpointer/3.0.0/jsonpointer-3.0.0-py2.py3-none-any.whl (7.6 kB)
+2025-05-07 12:59:34.6920Z Collecting jsonschema==4.23.0
+2025-05-07 12:59:34.7271Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jsonschema/4.23.0/jsonschema-4.23.0-py3-none-any.whl (88 kB)
+2025-05-07 12:59:34.8125Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.5/88.5 kB 31.5 MB/s eta 0:00:00
+2025-05-07 12:59:34.9101Z Collecting jsonschema-specifications==2024.10.1
+2025-05-07 12:59:35.0131Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jsonschema-specifications/2024.10.1/jsonschema_specifications-2024.10.1-py3-none-any.whl (18 kB)
+2025-05-07 12:59:35.0368Z Collecting jupyter==1.1.1
+2025-05-07 12:59:35.0995Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter/1.1.1/jupyter-1.1.1-py2.py3-none-any.whl (2.7 kB)
+2025-05-07 12:59:35.2271Z Collecting jupyter-console==6.6.3
+2025-05-07 12:59:35.2659Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-console/6.6.3/jupyter_console-6.6.3-py3-none-any.whl (24 kB)
+2025-05-07 12:59:35.4297Z Collecting jupyter-events==0.11.0
+2025-05-07 12:59:35.4781Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-events/0.11.0/jupyter_events-0.11.0-py3-none-any.whl (19 kB)
+2025-05-07 12:59:35.5942Z Collecting jupyter-lsp==2.2.5
+2025-05-07 12:59:35.6642Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-lsp/2.2.5/jupyter_lsp-2.2.5-py3-none-any.whl (69 kB)
+2025-05-07 12:59:35.6700Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.1/69.1 kB 33.7 MB/s eta 0:00:00
+2025-05-07 12:59:36.3387Z Collecting jupyter_client==8.6.3
+2025-05-07 12:59:36.3794Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-client/8.6.3/jupyter_client-8.6.3-py3-none-any.whl (106 kB)
+2025-05-07 12:59:36.3870Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 106.1/106.1 kB 32.2 MB/s eta 0:00:00
+2025-05-07 12:59:36.7403Z Collecting jupyter_core==5.7.2
+2025-05-07 12:59:36.7744Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-core/5.7.2/jupyter_core-5.7.2-py3-none-any.whl (28 kB)
+2025-05-07 12:59:37.0670Z Collecting jupyter_server==2.15.0
+2025-05-07 12:59:37.1299Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-server/2.15.0/jupyter_server-2.15.0-py3-none-any.whl (385 kB)
+2025-05-07 12:59:37.2161Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 385.8/385.8 kB 25.8 MB/s eta 0:00:00
+2025-05-07 12:59:37.3075Z Collecting jupyter_server_terminals==0.5.3
+2025-05-07 12:59:37.4124Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyter-server-terminals/0.5.3/jupyter_server_terminals-0.5.3-py3-none-any.whl (13 kB)
+2025-05-07 12:59:38.1166Z Collecting jupyterlab==4.3.4
+2025-05-07 12:59:38.1634Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyterlab/4.3.4/jupyterlab-4.3.4-py3-none-any.whl (11.7 MB)
+2025-05-07 12:59:38.3108Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.7/11.7 MB 90.3 MB/s eta 0:00:00
+2025-05-07 12:59:38.5144Z Collecting jupyterlab_pygments==0.3.0
+2025-05-07 12:59:38.5520Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyterlab-pygments/0.3.0/jupyterlab_pygments-0.3.0-py3-none-any.whl (15 kB)
+2025-05-07 12:59:38.8477Z Collecting jupyterlab_server==2.27.3
+2025-05-07 12:59:38.8982Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyterlab-server/2.27.3/jupyterlab_server-2.27.3-py3-none-any.whl (59 kB)
+2025-05-07 12:59:38.9047Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.7/59.7 kB 21.0 MB/s eta 0:00:00
+2025-05-07 12:59:39.0789Z Collecting jupyterlab_widgets==3.0.13
+2025-05-07 12:59:39.1518Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/jupyterlab-widgets/3.0.13/jupyterlab_widgets-3.0.13-py3-none-any.whl (214 kB)
+2025-05-07 12:59:39.2136Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 214.4/214.4 kB 66.6 MB/s eta 0:00:00
+2025-05-07 12:59:39.7171Z Collecting kiwisolver==1.4.7
+2025-05-07 12:59:39.7553Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/kiwisolver/1.4.7/kiwisolver-1.4.7-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+2025-05-07 12:59:39.7826Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 69.0 MB/s eta 0:00:00
+2025-05-07 12:59:41.7304Z Collecting lxml==5.3.2
+2025-05-07 12:59:41.8000Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/lxml/5.3.2/lxml-5.3.2-cp39-cp39-manylinux_2_28_x86_64.whl (5.2 MB)
+2025-05-07 12:59:41.8896Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 64.0 MB/s eta 0:00:00
+2025-05-07 12:59:42.0914Z Collecting Mako==1.3.8
+2025-05-07 12:59:42.1269Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/mako/1.3.8/Mako-1.3.8-py3-none-any.whl (78 kB)
+2025-05-07 12:59:42.1374Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.6/78.6 kB 10.6 MB/s eta 0:00:00
+2025-05-07 12:59:42.7194Z Collecting MarkupSafe==3.0.2
+2025-05-07 12:59:42.7563Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/markupsafe/3.0.2/MarkupSafe-3.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (20 kB)
+2025-05-07 12:59:44.1215Z Collecting matplotlib==3.9.4
+2025-05-07 12:59:44.1574Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/matplotlib/3.9.4/matplotlib-3.9.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (8.3 MB)
+2025-05-07 12:59:44.2687Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 77.6 MB/s eta 0:00:00
+2025-05-07 12:59:44.3977Z Collecting matplotlib-inline==0.1.7
+2025-05-07 12:59:44.4461Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/matplotlib-inline/0.1.7/matplotlib_inline-0.1.7-py3-none-any.whl (9.9 kB)
+2025-05-07 12:59:44.5968Z Collecting mistune==3.1.0
+2025-05-07 12:59:44.6701Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/mistune/3.1.0/mistune-3.1.0-py3-none-any.whl (53 kB)
+2025-05-07 12:59:44.7154Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.7/53.7 kB 25.9 MB/s eta 0:00:00
+2025-05-07 12:59:45.2362Z Collecting moviepy==2.1.2
+2025-05-07 12:59:45.2791Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/moviepy/2.1.2/moviepy-2.1.2-py3-none-any.whl (126 kB)
+2025-05-07 12:59:45.2860Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.7/126.7 kB 50.7 MB/s eta 0:00:00
+2025-05-07 12:59:45.4509Z Collecting mpmath==1.3.0
+2025-05-07 12:59:45.4876Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/mpmath/1.3.0/mpmath-1.3.0-py3-none-any.whl (536 kB)
+2025-05-07 12:59:45.5092Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 30.7 MB/s eta 0:00:00
+2025-05-07 12:59:45.7120Z Collecting nbclient==0.10.2
+2025-05-07 12:59:45.8135Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nbclient/0.10.2/nbclient-0.10.2-py3-none-any.whl (25 kB)
+2025-05-07 12:59:45.9696Z Collecting nbconvert==7.16.5
+2025-05-07 12:59:46.0402Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nbconvert/7.16.5/nbconvert-7.16.5-py3-none-any.whl (258 kB)
+2025-05-07 12:59:46.0484Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 258.1/258.1 kB 69.6 MB/s eta 0:00:00
+2025-05-07 12:59:46.1852Z Collecting nbformat==5.10.4
+2025-05-07 12:59:46.2250Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nbformat/5.10.4/nbformat-5.10.4-py3-none-any.whl (78 kB)
+2025-05-07 12:59:46.2309Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.5/78.5 kB 36.7 MB/s eta 0:00:00
+2025-05-07 12:59:46.4218Z Collecting nest-asyncio==1.6.0
+2025-05-07 12:59:46.4585Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nest-asyncio/1.6.0/nest_asyncio-1.6.0-py3-none-any.whl (5.2 kB)
+2025-05-07 12:59:46.6361Z Collecting networkx==3.2.1
+2025-05-07 12:59:46.6973Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/networkx/3.2.1/networkx-3.2.1-py3-none-any.whl (1.6 MB)
+2025-05-07 12:59:46.7200Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 88.6 MB/s eta 0:00:00
+2025-05-07 12:59:47.0472Z Collecting notebook==7.3.2
+2025-05-07 12:59:47.0936Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/notebook/7.3.2/notebook-7.3.2-py3-none-any.whl (13.2 MB)
+2025-05-07 12:59:47.2443Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.2/13.2 MB 94.7 MB/s eta 0:00:00
+2025-05-07 12:59:47.4558Z Collecting notebook_shim==0.2.4
+2025-05-07 12:59:47.4958Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/notebook-shim/0.2.4/notebook_shim-0.2.4-py3-none-any.whl (13 kB)
+2025-05-07 12:59:49.3599Z Collecting numpy==2.0.2
+2025-05-07 12:59:49.4293Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/numpy/2.0.2/numpy-2.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (19.5 MB)
+2025-05-07 12:59:49.6598Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 19.5/19.5 MB 85.6 MB/s eta 0:00:00
+2025-05-07 12:59:49.9536Z Collecting optuna==4.1.0
+2025-05-07 12:59:50.0156Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/optuna/4.1.0/optuna-4.1.0-py3-none-any.whl (364 kB)
+2025-05-07 12:59:50.1125Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 364.4/364.4 kB 80.5 MB/s eta 0:00:00
+2025-05-07 12:59:50.2147Z Collecting overrides==7.7.0
+2025-05-07 12:59:50.3142Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/overrides/7.7.0/overrides-7.7.0-py3-none-any.whl (17 kB)
+2025-05-07 12:59:50.4086Z Collecting packaging==24.2
+2025-05-07 12:59:50.5128Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/packaging/24.2/packaging-24.2-py3-none-any.whl (65 kB)
+2025-05-07 12:59:50.5128Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.5/65.5 kB 30.3 MB/s eta 0:00:00
+2025-05-07 12:59:51.5216Z Collecting pandas==2.2.3
+2025-05-07 12:59:51.5648Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pandas/2.2.3/pandas-2.2.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.1 MB)
+2025-05-07 12:59:51.7106Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.1/13.1 MB 96.4 MB/s eta 0:00:00
+2025-05-07 12:59:51.9406Z Collecting pandocfilters==1.5.1
+2025-05-07 12:59:51.9843Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pandocfilters/1.5.1/pandocfilters-1.5.1-py2.py3-none-any.whl (8.7 kB)
+2025-05-07 12:59:52.0970Z Collecting parso==0.8.4
+2025-05-07 12:59:52.1699Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/parso/0.8.4/parso-0.8.4-py2.py3-none-any.whl (103 kB)
+2025-05-07 12:59:52.1766Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.7/103.7 kB 43.4 MB/s eta 0:00:00
+2025-05-07 12:59:52.2771Z Collecting pexpect==4.9.0
+2025-05-07 12:59:52.3399Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pexpect/4.9.0/pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+2025-05-07 12:59:52.3456Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 31.8 MB/s eta 0:00:00
+2025-05-07 12:59:53.9676Z Collecting pillow==10.4.0
+2025-05-07 12:59:54.0422Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pillow/10.4.0/pillow-10.4.0-cp39-cp39-manylinux_2_28_x86_64.whl (4.5 MB)
+2025-05-07 12:59:54.1231Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 62.6 MB/s eta 0:00:00
+2025-05-07 12:59:54.3082Z Collecting platformdirs==4.3.6
+2025-05-07 12:59:54.3430Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/platformdirs/4.3.6/platformdirs-4.3.6-py3-none-any.whl (18 kB)
+2025-05-07 12:59:54.9054Z Collecting proglog==0.1.10
+2025-05-07 12:59:54.9776Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/proglog/0.1.10/proglog-0.1.10-py3-none-any.whl (6.1 kB)
+2025-05-07 12:59:55.1015Z Collecting prometheus_client==0.21.1
+2025-05-07 12:59:55.1615Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/prometheus-client/0.21.1/prometheus_client-0.21.1-py3-none-any.whl (54 kB)
+2025-05-07 12:59:55.2136Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.7/54.7 kB 26.4 MB/s eta 0:00:00
+2025-05-07 12:59:55.4424Z Collecting prompt_toolkit==3.0.48
+2025-05-07 12:59:55.5087Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/prompt-toolkit/3.0.48/prompt_toolkit-3.0.48-py3-none-any.whl (386 kB)
+2025-05-07 12:59:55.6121Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 386.6/386.6 kB 72.0 MB/s eta 0:00:00
+2025-05-07 12:59:56.2864Z Collecting psutil==6.1.1
+2025-05-07 12:59:56.3526Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/psutil/6.1.1/psutil-6.1.1-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (287 kB)
+2025-05-07 12:59:56.4147Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 287.5/287.5 kB 27.9 MB/s eta 0:00:00
+2025-05-07 12:59:56.4547Z Collecting ptyprocess==0.7.0
+2025-05-07 12:59:56.4926Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/ptyprocess/0.7.0/ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+2025-05-07 12:59:56.5871Z Collecting pure_eval==0.2.3
+2025-05-07 12:59:56.6478Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pure-eval/0.2.3/pure_eval-0.2.3-py3-none-any.whl (11 kB)
+2025-05-07 12:59:57.1897Z Collecting pyaml==25.1.0
+2025-05-07 12:59:57.2416Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pyaml/25.1.0/pyaml-25.1.0-py3-none-any.whl (26 kB)
+2025-05-07 12:59:57.3334Z Collecting pycparser==2.22
+2025-05-07 12:59:57.3966Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pycparser/2.22/pycparser-2.22-py3-none-any.whl (117 kB)
+2025-05-07 12:59:57.4072Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.6/117.6 kB 17.8 MB/s eta 0:00:00
+2025-05-07 12:59:57.9132Z Collecting Pygments==2.19.0
+2025-05-07 12:59:57.9852Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pygments/2.19.0/pygments-2.19.0-py3-none-any.whl (1.2 MB)
+2025-05-07 12:59:58.0174Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 43.4 MB/s eta 0:00:00
+2025-05-07 12:59:58.5818Z Collecting pykan==0.2.8
+2025-05-07 12:59:58.6336Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pykan/0.2.8/pykan-0.2.8-py3-none-any.whl (78 kB)
+2025-05-07 12:59:58.7132Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.1/78.1 kB 12.0 MB/s eta 0:00:00
+2025-05-07 12:59:58.8538Z Collecting pyparsing==3.2.1
+2025-05-07 12:59:58.9277Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pyparsing/3.2.1/pyparsing-3.2.1-py3-none-any.whl (107 kB)
+2025-05-07 12:59:58.9278Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.7/107.7 kB 31.7 MB/s eta 0:00:00
+2025-05-07 12:59:59.0525Z Collecting PyPDF2==3.0.1
+2025-05-07 12:59:59.1276Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pypdf2/3.0.1/pypdf2-3.0.1-py3-none-any.whl (232 kB)
+2025-05-07 12:59:59.1354Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.6/232.6 kB 66.6 MB/s eta 0:00:00
+2025-05-07 12:59:59.2609Z Collecting python-dateutil==2.9.0.post0
+2025-05-07 12:59:59.3143Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/python-dateutil/2.9.0.post0/python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-05-07 12:59:59.3143Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 22.6 MB/s eta 0:00:00
+2025-05-07 12:59:59.4784Z Collecting python-docx==1.1.2
+2025-05-07 12:59:59.5210Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/python-docx/1.1.2/python_docx-1.1.2-py3-none-any.whl (244 kB)
+2025-05-07 12:59:59.5337Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 244.3/244.3 kB 28.2 MB/s eta 0:00:00
+2025-05-07 12:59:59.6626Z Collecting python-dotenv==1.1.0
+2025-05-07 12:59:59.7216Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/python-dotenv/1.1.0/python_dotenv-1.1.0-py3-none-any.whl (20 kB)
+2025-05-07 12:59:59.8343Z Collecting python-json-logger==3.2.1
+2025-05-07 12:59:59.9166Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/python-json-logger/3.2.1/python_json_logger-3.2.1-py3-none-any.whl (14 kB)
+2025-05-07 13:00:00.2188Z Collecting pytz==2024.2
+2025-05-07 13:00:00.2545Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pytz/2024.2/pytz-2024.2-py2.py3-none-any.whl (508 kB)
+2025-05-07 13:00:00.2728Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 508.0/508.0 kB 36.1 MB/s eta 0:00:00
+2025-05-07 13:00:00.6893Z Collecting PyYAML==6.0.2
+2025-05-07 13:00:00.7308Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pyyaml/6.0.2/PyYAML-6.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (737 kB)
+2025-05-07 13:00:00.8158Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 737.4/737.4 kB 59.8 MB/s eta 0:00:00
+2025-05-07 13:00:04.0694Z Collecting pyzmq==26.2.0
+2025-05-07 13:00:04.1241Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/pyzmq/26.2.0/pyzmq-26.2.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (862 kB)
+2025-05-07 13:00:04.2135Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 862.1/862.1 kB 22.3 MB/s eta 0:00:00
+2025-05-07 13:00:04.3828Z Collecting referencing==0.35.1
+2025-05-07 13:00:04.4421Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/referencing/0.35.1/referencing-0.35.1-py3-none-any.whl (26 kB)
+2025-05-07 13:00:04.6518Z Collecting requests==2.32.3
+2025-05-07 13:00:04.6860Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/requests/2.32.3/requests-2.32.3-py3-none-any.whl (64 kB)
+2025-05-07 13:00:04.6922Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.9/64.9 kB 23.9 MB/s eta 0:00:00
+2025-05-07 13:00:04.8586Z Collecting rfc3339-validator==0.1.4
+2025-05-07 13:00:04.8992Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/rfc3339-validator/0.1.4/rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+2025-05-07 13:00:04.9882Z Collecting rfc3986-validator==0.1.1
+2025-05-07 13:00:05.0478Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/rfc3986-validator/0.1.1/rfc3986_validator-0.1.1-py2.py3-none-any.whl (4.2 kB)
+2025-05-07 13:00:07.5273Z Collecting rpds-py==0.22.3
+2025-05-07 13:00:07.6064Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/rpds-py/0.22.3/rpds_py-0.22.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (382 kB)
+2025-05-07 13:00:07.6400Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 382.3/382.3 kB 15.2 MB/s eta 0:00:00
+2025-05-07 13:00:08.5903Z Collecting scikit-learn==1.6.0
+2025-05-07 13:00:08.6542Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/scikit-learn/1.6.0/scikit_learn-1.6.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.5 MB)
+2025-05-07 13:00:08.8183Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.5/13.5 MB 96.4 MB/s eta 0:00:00
+2025-05-07 13:00:09.4119Z Collecting scikit-optimize==0.10.2
+2025-05-07 13:00:09.4979Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/scikit-optimize/0.10.2/scikit_optimize-0.10.2-py2.py3-none-any.whl (107 kB)
+2025-05-07 13:00:09.5048Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.8/107.8 kB 42.6 MB/s eta 0:00:00
+2025-05-07 13:00:10.5853Z Collecting scipy==1.13.1
+2025-05-07 13:00:10.6231Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/scipy/1.13.1/scipy-1.13.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (38.6 MB)
+2025-05-07 13:00:11.0679Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 38.6/38.6 MB 55.4 MB/s eta 0:00:00
+2025-05-07 13:00:11.3788Z Collecting seaborn==0.13.2
+2025-05-07 13:00:11.4147Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/seaborn/0.13.2/seaborn-0.13.2-py3-none-any.whl (294 kB)
+2025-05-07 13:00:11.5132Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 294.9/294.9 kB 20.3 MB/s eta 0:00:00
+2025-05-07 13:00:11.5386Z Collecting Send2Trash==1.8.3
+2025-05-07 13:00:11.6038Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/send2trash/1.8.3/Send2Trash-1.8.3-py3-none-any.whl (18 kB)
+2025-05-07 13:00:11.7133Z Collecting six==1.17.0
+2025-05-07 13:00:11.7470Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/six/1.17.0/six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-05-07 13:00:11.8967Z Collecting sniffio==1.3.1
+2025-05-07 13:00:11.9324Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/sniffio/1.3.1/sniffio-1.3.1-py3-none-any.whl (10 kB)
+2025-05-07 13:00:12.0693Z Collecting soupsieve==2.6
+2025-05-07 13:00:12.1285Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/soupsieve/2.6/soupsieve-2.6-py3-none-any.whl (36 kB)
+2025-05-07 13:00:14.9763Z Collecting SQLAlchemy==2.0.36
+2025-05-07 13:00:15.0951Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/sqlalchemy/2.0.36/SQLAlchemy-2.0.36-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+2025-05-07 13:00:15.1821Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 37.2 MB/s eta 0:00:00
+2025-05-07 13:00:15.8624Z Collecting stack-data==0.6.3
+2025-05-07 13:00:15.8988Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/stack-data/0.6.3/stack_data-0.6.3-py3-none-any.whl (24 kB)
+2025-05-07 13:00:16.0496Z Collecting sympy==1.13.1
+2025-05-07 13:00:16.1164Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/sympy/1.13.1/sympy-1.13.1-py3-none-any.whl (6.2 MB)
+2025-05-07 13:00:16.2144Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.2/6.2 MB 93.0 MB/s eta 0:00:00
+2025-05-07 13:00:16.3611Z Collecting terminado==0.18.1
+2025-05-07 13:00:16.4141Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/terminado/0.18.1/terminado-0.18.1-py3-none-any.whl (14 kB)
+2025-05-07 13:00:16.5696Z Collecting threadpoolctl==3.5.0
+2025-05-07 13:00:16.6149Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/threadpoolctl/3.5.0/threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+2025-05-07 13:00:16.7117Z Collecting tinycss2==1.4.0
+2025-05-07 13:00:16.8111Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/tinycss2/1.4.0/tinycss2-1.4.0-py3-none-any.whl (26 kB)
+2025-05-07 13:00:16.9432Z Collecting tomli==2.2.1
+2025-05-07 13:00:17.0133Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/tomli/2.2.1/tomli-2.2.1-py3-none-any.whl (14 kB)
+2025-05-07 13:00:17.4909Z Collecting torch==2.6.0
+2025-05-07 13:00:17.5550Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/torch/2.6.0/torch-2.6.0-cp39-cp39-manylinux1_x86_64.whl (766.7 MB)
+2025-05-07 13:00:25.9272Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 766.7/766.7 MB 5.0 MB/s eta 0:00:00
+2025-05-07 13:00:28.6702Z Collecting tornado==6.4.2
+2025-05-07 13:00:28.7083Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/tornado/6.4.2/tornado-6.4.2-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (437 kB)
+2025-05-07 13:00:28.8157Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 437.2/437.2 kB 27.3 MB/s eta 0:00:00
+2025-05-07 13:00:29.0142Z Collecting tqdm==4.67.1
+2025-05-07 13:00:29.0757Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/tqdm/4.67.1/tqdm-4.67.1-py3-none-any.whl (78 kB)
+2025-05-07 13:00:29.0815Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.5/78.5 kB 37.6 MB/s eta 0:00:00
+2025-05-07 13:00:29.5286Z Collecting traitlets==5.14.3
+2025-05-07 13:00:29.5674Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/traitlets/5.14.3/traitlets-5.14.3-py3-none-any.whl (85 kB)
+2025-05-07 13:00:29.5733Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.4/85.4 kB 39.9 MB/s eta 0:00:00
+2025-05-07 13:00:29.7645Z Collecting types-python-dateutil==2.9.0.20241206
+2025-05-07 13:00:29.8009Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/types-python-dateutil/2.9.0.20241206/types_python_dateutil-2.9.0.20241206-py3-none-any.whl (14 kB)
+2025-05-07 13:00:29.9506Z Collecting typing_extensions==4.12.2
+2025-05-07 13:00:29.9890Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/typing-extensions/4.12.2/typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+2025-05-07 13:00:30.1025Z Collecting tzdata==2024.2
+2025-05-07 13:00:30.1421Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/tzdata/2024.2/tzdata-2024.2-py2.py3-none-any.whl (346 kB)
+2025-05-07 13:00:30.1553Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 346.6/346.6 kB 38.5 MB/s eta 0:00:00
+2025-05-07 13:00:30.2679Z Collecting uri-template==1.3.0
+2025-05-07 13:00:30.3140Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/uri-template/1.3.0/uri_template-1.3.0-py3-none-any.whl (11 kB)
+2025-05-07 13:00:30.5457Z Collecting urllib3==2.3.0
+2025-05-07 13:00:30.6132Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/urllib3/2.3.0/urllib3-2.3.0-py3-none-any.whl (128 kB)
+2025-05-07 13:00:30.7146Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 128.4/128.4 kB 42.6 MB/s eta 0:00:00
+2025-05-07 13:00:30.7302Z Collecting wcwidth==0.2.13
+2025-05-07 13:00:30.7700Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/wcwidth/0.2.13/wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+2025-05-07 13:00:30.8777Z Collecting webcolors==24.11.1
+2025-05-07 13:00:30.9162Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/webcolors/24.11.1/webcolors-24.11.1-py3-none-any.whl (14 kB)
+2025-05-07 13:00:31.0842Z Collecting webencodings==0.5.1
+2025-05-07 13:00:31.1325Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/webencodings/0.5.1/webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+2025-05-07 13:00:31.2870Z Collecting websocket-client==1.8.0
+2025-05-07 13:00:31.3260Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/websocket-client/1.8.0/websocket_client-1.8.0-py3-none-any.whl (58 kB)
+2025-05-07 13:00:31.3316Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.8/58.8 kB 29.4 MB/s eta 0:00:00
+2025-05-07 13:00:31.6228Z Collecting widgetsnbextension==4.0.13
+2025-05-07 13:00:31.6620Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/widgetsnbextension/4.0.13/widgetsnbextension-4.0.13-py3-none-any.whl (2.3 MB)
+2025-05-07 13:00:31.6988Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 71.1 MB/s eta 0:00:00
+2025-05-07 13:00:31.8576Z Collecting zipp==3.21.0
+2025-05-07 13:00:31.8932Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/zipp/3.21.0/zipp-3.21.0-py3-none-any.whl (9.6 kB)
+2025-05-07 13:00:35.7624Z Requirement already satisfied: setuptools>=40.8.0 in /usr/local/lib/python3.9/site-packages (from jupyterlab==4.3.4->-r requirements.txt (line 60)) (58.1.0)
+2025-05-07 13:00:41.5022Z Collecting greenlet!=0.4.17
+2025-05-07 13:00:41.5658Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/greenlet/3.2.1/greenlet-3.2.1-cp39-cp39-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (579 kB)
+2025-05-07 13:00:41.6146Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 579.1/579.1 kB 21.9 MB/s eta 0:00:00
+2025-05-07 13:00:42.3011Z Collecting nvidia-nvjitlink-cu12==12.4.127
+2025-05-07 13:00:42.3690Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-nvjitlink-cu12/12.4.127/nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (21.1 MB)
+2025-05-07 13:00:42.6168Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.1/21.1 MB 77.1 MB/s eta 0:00:00
+2025-05-07 13:00:42.7898Z Collecting nvidia-cusolver-cu12==11.6.1.9
+2025-05-07 13:00:42.8321Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cusolver-cu12/11.6.1.9/nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_x86_64.whl (127.9 MB)
+2025-05-07 13:00:44.2575Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 127.9/127.9 MB 24.5 MB/s eta 0:00:00
+2025-05-07 13:00:44.7523Z Collecting nvidia-cufft-cu12==11.2.1.3
+2025-05-07 13:00:44.7957Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cufft-cu12/11.2.1.3/nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl (211.5 MB)
+2025-05-07 13:00:47.0890Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 211.5/211.5 MB 16.7 MB/s eta 0:00:00
+2025-05-07 13:00:47.8035Z Collecting triton==3.2.0
+2025-05-07 13:00:47.8848Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/triton/3.2.0/triton-3.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (253.1 MB)
+2025-05-07 13:00:50.6442Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 253.1/253.1 MB 14.2 MB/s eta 0:00:00
+2025-05-07 13:00:51.4720Z Collecting nvidia-cublas-cu12==12.4.5.8
+2025-05-07 13:00:51.5408Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cublas-cu12/12.4.5.8/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl (363.4 MB)
+2025-05-07 13:00:55.5287Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 363.4/363.4 MB 10.2 MB/s eta 0:00:00
+2025-05-07 13:00:56.6615Z Collecting nvidia-cudnn-cu12==9.1.0.70
+2025-05-07 13:00:56.7216Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cudnn-cu12/9.1.0.70/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl (664.8 MB)
+2025-05-07 13:01:04.0206Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 664.8/664.8 MB 5.8 MB/s eta 0:00:00
+2025-05-07 13:01:05.9582Z Collecting nvidia-nccl-cu12==2.21.5
+2025-05-07 13:01:06.0074Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-nccl-cu12/2.21.5/nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl (188.7 MB)
+2025-05-07 13:01:08.1042Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 188.7/188.7 MB 18.3 MB/s eta 0:00:00
+2025-05-07 13:01:08.7557Z Collecting nvidia-nvtx-cu12==12.4.127
+2025-05-07 13:01:08.7940Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-nvtx-cu12/12.4.127/nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (99 kB)
+2025-05-07 13:01:08.8072Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.1/99.1 kB 43.5 MB/s eta 0:00:00
+2025-05-07 13:01:08.9401Z Collecting nvidia-curand-cu12==10.3.5.147
+2025-05-07 13:01:09.0063Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-curand-cu12/10.3.5.147/nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_x86_64.whl (56.3 MB)
+2025-05-07 13:01:09.6354Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 MB 44.5 MB/s eta 0:00:00
+2025-05-07 13:01:09.9191Z Collecting nvidia-cuda-runtime-cu12==12.4.127
+2025-05-07 13:01:09.9615Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cuda-runtime-cu12/12.4.127/nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (883 kB)
+2025-05-07 13:01:09.9878Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 883.7/883.7 kB 40.7 MB/s eta 0:00:00
+2025-05-07 13:01:10.0839Z Collecting nvidia-cusparselt-cu12==0.6.2
+2025-05-07 13:01:10.1353Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cusparselt-cu12/0.6.2/nvidia_cusparselt_cu12-0.6.2-py3-none-manylinux2014_x86_64.whl (150.1 MB)
+2025-05-07 13:01:11.8358Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 150.1/150.1 MB 21.2 MB/s eta 0:00:00
+2025-05-07 13:01:12.3715Z Collecting nvidia-cuda-nvrtc-cu12==12.4.127
+2025-05-07 13:01:12.4384Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cuda-nvrtc-cu12/12.4.127/nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (24.6 MB)
+2025-05-07 13:01:12.7069Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 24.6/24.6 MB 73.2 MB/s eta 0:00:00
+2025-05-07 13:01:12.9053Z Collecting nvidia-cusparse-cu12==12.3.1.170
+2025-05-07 13:01:12.9720Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cusparse-cu12/12.3.1.170/nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_x86_64.whl (207.5 MB)
+2025-05-07 13:01:15.2350Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 207.5/207.5 MB 16.9 MB/s eta 0:00:00
+2025-05-07 13:01:15.9591Z Collecting nvidia-cuda-cupti-cu12==12.4.127
+2025-05-07 13:01:16.0068Z   Downloading https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/packages/packages/nvidia-cuda-cupti-cu12/12.4.127/nvidia_cuda_cupti_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl (13.8 MB)
+2025-05-07 13:01:16.1598Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.8/13.8 MB 95.0 MB/s eta 0:00:00
+2025-05-07 13:01:18.1770Z Building wheels for collected packages: fpdf
+2025-05-07 13:01:18.1780Z   Building wheel for fpdf (setup.py): started
+2025-05-07 13:01:18.8168Z   Building wheel for fpdf (setup.py): finished with status 'done'
+2025-05-07 13:01:18.8179Z   Created wheel for fpdf: filename=fpdf-1.7.2-py2.py3-none-any.whl size=40721 sha256=736dddbadecf4f6a6468aca3faf406fd4628dd14ca7f9e0c1de2063cfebfce70
+2025-05-07 13:01:18.8182Z   Stored in directory: /root/.cache/pip/wheels/42/cc/cc/d27e8b386e853eff39007f369c9ced54bec32581db4fe0f24e
+2025-05-07 13:01:18.8570Z Successfully built fpdf
+2025-05-07 13:01:22.7393Z Installing collected packages: webencodings, wcwidth, triton, pytz, pure_eval, ptyprocess, nvidia-cusparselt-cu12, mpmath, fpdf, fastjsonschema, zipp, widgetsnbextension, websocket-client, webcolors, urllib3, uri-template, tzdata, typing_extensions, types-python-dateutil, traitlets, tqdm, tornado, tomli, tinycss2, threadpoolctl, sympy, soupsieve, sniffio, six, Send2Trash, rpds-py, rfc3986-validator, pyzmq, PyYAML, python-dotenv, pyparsing, pykan, Pygments, pycparser, psutil, prompt_toolkit, prometheus_client, platformdirs, pillow, pexpect, parso, pandocfilters, packaging, overrides, nvidia-nvtx-cu12, nvidia-nvjitlink-cu12, nvidia-nccl-cu12, nvidia-curand-cu12, nvidia-cufft-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, numpy, networkx, nest-asyncio, MarkupSafe, lxml, kiwisolver, jupyterlab_widgets, jupyterlab_pygments, jsonpointer, json5, joblib, imageio-ffmpeg, idna, h11, greenlet, fsspec, fqdn, fonttools, filelock, executing, exceptiongroup, defusedxml, decorator, debugpy, cycler, colorlog, colorama, charset-normalizer, certifi, bleach, babel, attrs, asttokens, appnope, terminado, stack-data, SQLAlchemy, scipy, rfc3339-validator, requests, referencing, python-json-logger, python-docx, python-dateutil, PyPDF2, pyaml, proglog, nvidia-cusparse-cu12, nvidia-cudnn-cu12, mistune, matplotlib-inline, Mako, jupyter_core, Jinja2, jedi, importlib_resources, importlib_metadata, imageio, httpcore, contourpy, comm, cffi, beautifulsoup4, async-lru, anyio, scikit-learn, pandas, nvidia-cusolver-cu12, moviepy, matplotlib, jupyter_server_terminals, jupyter_client, jsonschema-specifications, ipython, httpx, arrow, argon2-cffi-bindings, alembic, torch, seaborn, scikit-optimize, optuna, jsonschema, isoduration, ipywidgets, ipykernel, bayesian-optimization, argon2-cffi, nbformat, jupyter-console, nbclient, jupyter-events, nbconvert, jupyter_server, notebook_shim, jupyterlab_server, jupyter-lsp, jupyterlab, notebook, jupyter
+2025-05-07 13:03:01.9363Z Successfully installed Jinja2-3.1.5 Mako-1.3.8 MarkupSafe-3.0.2 PyPDF2-3.0.1 PyYAML-6.0.2 Pygments-2.19.0 SQLAlchemy-2.0.36 Send2Trash-1.8.3 alembic-1.14.0 anyio-4.8.0 appnope-0.1.4 argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 arrow-1.3.0 asttokens-3.0.0 async-lru-2.0.4 attrs-24.3.0 babel-2.16.0 bayesian-optimization-2.0.3 beautifulsoup4-4.12.3 bleach-6.2.0 certifi-2024.12.14 cffi-1.17.1 charset-normalizer-3.4.1 colorama-0.4.6 colorlog-6.9.0 comm-0.2.2 contourpy-1.3.0 cycler-0.12.1 debugpy-1.8.11 decorator-5.1.1 defusedxml-0.7.1 exceptiongroup-1.2.2 executing-2.1.0 fastjsonschema-2.21.1 filelock-3.17.0 fonttools-4.55.3 fpdf-1.7.2 fqdn-1.5.1 fsspec-2025.2.0 greenlet-3.2.1 h11-0.14.0 httpcore-1.0.7 httpx-0.28.1 idna-3.10 imageio-2.37.0 imageio-ffmpeg-0.6.0 importlib_metadata-8.5.0 importlib_resources-6.5.2 ipykernel-6.29.5 ipython-8.18.1 ipywidgets-8.1.5 isoduration-20.11.0 jedi-0.19.2 joblib-1.4.2 json5-0.10.0 jsonpointer-3.0.0 jsonschema-4.23.0 jsonschema-specifications-2024.10.1 jupyter-1.1.1 jupyter-console-6.6.3 jupyter-events-0.11.0 jupyter-lsp-2.2.5 jupyter_client-8.6.3 jupyter_core-5.7.2 jupyter_server-2.15.0 jupyter_server_terminals-0.5.3 jupyterlab-4.3.4 jupyterlab_pygments-0.3.0 jupyterlab_server-2.27.3 jupyterlab_widgets-3.0.13 kiwisolver-1.4.7 lxml-5.3.2 matplotlib-3.9.4 matplotlib-inline-0.1.7 mistune-3.1.0 moviepy-2.1.2 mpmath-1.3.0 nbclient-0.10.2 nbconvert-7.16.5 nbformat-5.10.4 nest-asyncio-1.6.0 networkx-3.2.1 notebook-7.3.2 notebook_shim-0.2.4 numpy-2.0.2 nvidia-cublas-cu12-12.4.5.8 nvidia-cuda-cupti-cu12-12.4.127 nvidia-cuda-nvrtc-cu12-12.4.127 nvidia-cuda-runtime-cu12-12.4.127 nvidia-cudnn-cu12-9.1.0.70 nvidia-cufft-cu12-11.2.1.3 nvidia-curand-cu12-10.3.5.147 nvidia-cusolver-cu12-11.6.1.9 nvidia-cusparse-cu12-12.3.1.170 nvidia-cusparselt-cu12-0.6.2 nvidia-nccl-cu12-2.21.5 nvidia-nvjitlink-cu12-12.4.127 nvidia-nvtx-cu12-12.4.127 optuna-4.1.0 overrides-7.7.0 packaging-24.2 pandas-2.2.3 pandocfilters-1.5.1 parso-0.8.4 pexpect-4.9.0 pillow-10.4.0 platformdirs-4.3.6 proglog-0.1.10 prometheus_client-0.21.1 prompt_toolkit-3.0.48 psutil-6.1.1 ptyprocess-0.7.0 pure_eval-0.2.3 pyaml-25.1.0 pycparser-2.22 pykan-0.2.8 pyparsing-3.2.1 python-dateutil-2.9.0.post0 python-docx-1.1.2 python-dotenv-1.1.0 python-json-logger-3.2.1 pytz-2024.2 pyzmq-26.2.0 referencing-0.35.1 requests-2.32.3 rfc3339-validator-0.1.4 rfc3986-validator-0.1.1 rpds-py-0.22.3 scikit-learn-1.6.0 scikit-optimize-0.10.2 scipy-1.13.1 seaborn-0.13.2 six-1.17.0 sniffio-1.3.1 soupsieve-2.6 stack-data-0.6.3 sympy-1.13.1 terminado-0.18.1 threadpoolctl-3.5.0 tinycss2-1.4.0 tomli-2.2.1 torch-2.6.0 tornado-6.4.2 tqdm-4.67.1 traitlets-5.14.3 triton-3.2.0 types-python-dateutil-2.9.0.20241206 typing_extensions-4.12.2 tzdata-2024.2 uri-template-1.3.0 urllib3-2.3.0 wcwidth-0.2.13 webcolors-24.11.1 webencodings-0.5.1 websocket-client-1.8.0 widgetsnbextension-4.0.13 zipp-3.21.0
+2025-05-07 13:03:01.9368Z WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2025-05-07 13:03:02.2923Z 
+2025-05-07 13:03:02.2923Z [notice] A new release of pip is available: 23.0.1 -> 25.1.1
+2025-05-07 13:03:02.2923Z [notice] To update, run: pip install --upgrade pip
+2025-05-07 13:03:04.6285Z Looking in indexes: https://artifactory.tcsbank.ru/artifactory/api/pypi/python-all/simple
+2025-05-07 13:03:04.6292Z Requirement already satisfied: torch in /usr/local/lib/python3.9/site-packages (2.6.0)
+2025-05-07 13:03:04.6299Z Requirement already satisfied: optuna in /usr/local/lib/python3.9/site-packages (4.1.0)
+2025-05-07 13:03:04.7264Z Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.4.127 in /usr/local/lib/python3.9/site-packages (from torch) (12.4.127)
+2025-05-07 13:03:04.8147Z Requirement already satisfied: sympy==1.13.1 in /usr/local/lib/python3.9/site-packages (from torch) (1.13.1)
+2025-05-07 13:03:04.8147Z Requirement already satisfied: nvidia-nvtx-cu12==12.4.127 in /usr/local/lib/python3.9/site-packages (from torch) (12.4.127)
+2025-05-07 13:03:04.8550Z Requirement already satisfied: fsspec in /usr/local/lib/python3.9/site-packages (from torch) (2025.2.0)
+2025-05-07 13:03:04.8951Z Requirement already satisfied: nvidia-cuda-cupti-cu12==12.4.127 in /usr/local/lib/python3.9/site-packages (from torch) (12.4.127)
+2025-05-07 13:03:04.9347Z Requirement already satisfied: typing-extensions>=4.10.0 in /usr/local/lib/python3.9/site-packages (from torch) (4.12.2)
+2025-05-07 13:03:05.0125Z Requirement already satisfied: nvidia-curand-cu12==10.3.5.147 in /usr/local/lib/python3.9/site-packages (from torch) (10.3.5.147)
+2025-05-07 13:03:05.0157Z Requirement already satisfied: nvidia-cusparselt-cu12==0.6.2 in /usr/local/lib/python3.9/site-packages (from torch) (0.6.2)
+2025-05-07 13:03:05.0548Z Requirement already satisfied: triton==3.2.0 in /usr/local/lib/python3.9/site-packages (from torch) (3.2.0)
+2025-05-07 13:03:05.0956Z Requirement already satisfied: nvidia-cufft-cu12==11.2.1.3 in /usr/local/lib/python3.9/site-packages (from torch) (11.2.1.3)
+2025-05-07 13:03:05.1355Z Requirement already satisfied: nvidia-cusparse-cu12==12.3.1.170 in /usr/local/lib/python3.9/site-packages (from torch) (12.3.1.170)
+2025-05-07 13:03:05.2125Z Requirement already satisfied: nvidia-cuda-runtime-cu12==12.4.127 in /usr/local/lib/python3.9/site-packages (from torch) (12.4.127)
+2025-05-07 13:03:05.2147Z Requirement already satisfied: filelock in /usr/local/lib/python3.9/site-packages (from torch) (3.17.0)
+2025-05-07 13:03:05.2548Z Requirement already satisfied: nvidia-cudnn-cu12==9.1.0.70 in /usr/local/lib/python3.9/site-packages (from torch) (9.1.0.70)
+2025-05-07 13:03:05.2950Z Requirement already satisfied: nvidia-cublas-cu12==12.4.5.8 in /usr/local/lib/python3.9/site-packages (from torch) (12.4.5.8)
+2025-05-07 13:03:05.3349Z Requirement already satisfied: nvidia-nccl-cu12==2.21.5 in /usr/local/lib/python3.9/site-packages (from torch) (2.21.5)
+2025-05-07 13:03:05.4145Z Requirement already satisfied: nvidia-nvjitlink-cu12==12.4.127 in /usr/local/lib/python3.9/site-packages (from torch) (12.4.127)
+2025-05-07 13:03:05.4158Z Requirement already satisfied: nvidia-cusolver-cu12==11.6.1.9 in /usr/local/lib/python3.9/site-packages (from torch) (11.6.1.9)
+2025-05-07 13:03:05.4549Z Requirement already satisfied: jinja2 in /usr/local/lib/python3.9/site-packages (from torch) (3.1.5)
+2025-05-07 13:03:05.4951Z Requirement already satisfied: networkx in /usr/local/lib/python3.9/site-packages (from torch) (3.2.1)
+2025-05-07 13:03:05.5350Z Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.9/site-packages (from sympy==1.13.1->torch) (1.3.0)
+2025-05-07 13:03:05.6134Z Requirement already satisfied: PyYAML in /usr/local/lib/python3.9/site-packages (from optuna) (6.0.2)
+2025-05-07 13:03:05.6157Z Requirement already satisfied: numpy in /usr/local/lib/python3.9/site-packages (from optuna) (2.0.2)
+2025-05-07 13:03:05.6548Z Requirement already satisfied: colorlog in /usr/local/lib/python3.9/site-packages (from optuna) (6.9.0)
+2025-05-07 13:03:05.6950Z Requirement already satisfied: alembic>=1.5.0 in /usr/local/lib/python3.9/site-packages (from optuna) (1.14.0)
+2025-05-07 13:03:05.7352Z Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.9/site-packages (from optuna) (24.2)
+2025-05-07 13:03:05.8140Z Requirement already satisfied: sqlalchemy>=1.4.2 in /usr/local/lib/python3.9/site-packages (from optuna) (2.0.36)
+2025-05-07 13:03:05.8153Z Requirement already satisfied: tqdm in /usr/local/lib/python3.9/site-packages (from optuna) (4.67.1)
+2025-05-07 13:03:05.8555Z Requirement already satisfied: Mako in /usr/local/lib/python3.9/site-packages (from alembic>=1.5.0->optuna) (1.3.8)
+2025-05-07 13:03:05.8957Z Requirement already satisfied: greenlet!=0.4.17 in /usr/local/lib/python3.9/site-packages (from sqlalchemy>=1.4.2->optuna) (3.2.1)
+2025-05-07 13:03:05.9354Z Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.9/site-packages (from jinja2->torch) (3.0.2)
+2025-05-07 13:03:08.0193Z WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2025-05-07 13:03:08.0332Z 
+2025-05-07 13:03:08.0332Z [notice] A new release of pip is available: 23.0.1 -> 25.1.1
+2025-05-07 13:03:08.0604Z [notice] To update, run: pip install --upgrade pip
+2025-05-07 13:03:08.1450Z Dependencies installed successfully
+2025-05-07 13:03:16.0514Z Project directory structure:
+2025-05-07 13:03:16.0514Z ./
+2025-05-07 13:03:16.0514Z     components_pred_mlp.py
+2025-05-07 13:03:16.0925Z     gpu_optuna.py
+2025-05-07 13:03:16.1320Z     .ml-job-preset.yml
+2025-05-07 13:03:16.2188Z     analysis_functions.py
+2025-05-07 13:03:16.2188Z     requirements.txt
+2025-05-07 13:03:16.2592Z     new_components_resources/
+2025-05-07 13:03:16.2994Z         X_stress_components_new_components.pkl
+2025-05-07 13:03:16.3394Z         X_strain_components_new_components.pkl
+2025-05-07 13:03:16.4165Z         y_strain_components_new_components.pkl
+2025-05-07 13:03:16.4198Z         y_stress_components_new_components.pkl
+2025-05-07 13:03:16.4590Z     __pycache__/
+2025-05-07 13:03:16.4991Z         analysis_functions.cpython-39.pyc
+2025-05-07 13:03:16.5390Z         gpu_optuna.cpython-39.pyc
+2025-05-07 13:03:16.6130Z ==================================================
+2025-05-07 13:03:16.6191Z ./new_components_resources//X_stress_components_new_components.pkl
+2025-05-07 13:03:16.6593Z ./new_components_resources//y_stress_components_new_components.pkl
+2025-05-07 13:03:16.6995Z (3, 1597, 5)
+2025-05-07 13:03:16.7393Z Используется устройство: cuda
+2025-05-07 13:03:16.8138Z Форма входных данных X: (1597, 5)
+2025-05-07 13:03:16.8190Z Форма целевых данных y: (1597, 20)
+2025-05-07 13:03:16.8592Z ====================================
+2025-05-07 13:03:16.8993Z 
+2025-05-07 13:03:16.9391Z ## Запуск GPU-ускоренного MLP с оптимизацией гиперпараметров ##
+2025-05-07 13:03:17.0125Z Запуск оптимизации гиперпараметров MLP с 200 trials...
+2025-05-07 13:03:17.0197Z Using device: cuda
+2025-05-07 13:03:17.7046Z [I 2025-05-07 16:03:17,704] A new study created in memory with name: no-name-7bb0e7ba-c362-46a9-81f3-827e97125227
+2025-05-07 13:21:27.6277Z [I 2025-05-07 16:21:27,627] Trial 0 finished with value: 69.74282417164865 and parameters: {'n_layers': 15, 'n_units_0': 19, 'n_units_1': 64, 'n_units_2': 67, 'n_units_3': 79, 'n_units_4': 87, 'n_units_5': 6, 'n_units_6': 54, 'n_units_7': 97, 'n_units_8': 97, 'n_units_9': 52, 'n_units_10': 51, 'n_units_11': 55, 'n_units_12': 81, 'n_units_13': 54, 'n_units_14': 98, 'activation': 'relu', 'learning_rate': 0.03724360773561107, 'batch_size': 16, 'optimizer': 'Adam', 'max_epochs': 373}. Best is trial 0 with value: 69.74282417164865.
+2025-05-07 13:24:10.7829Z [I 2025-05-07 16:24:10,782] Trial 1 finished with value: 12.142070905091018 and parameters: {'n_layers': 5, 'n_units_0': 36, 'n_units_1': 85, 'n_units_2': 12, 'n_units_3': 35, 'n_units_4': 53, 'activation': 'tanh', 'learning_rate': 0.0013991618016092385, 'batch_size': 256, 'optimizer': 'SGD', 'max_epochs': 398}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 13:25:01.8766Z [I 2025-05-07 16:25:01,876] Trial 2 finished with value: 69.87986342645497 and parameters: {'n_layers': 14, 'n_units_0': 85, 'n_units_1': 33, 'n_units_2': 82, 'n_units_3': 77, 'n_units_4': 5, 'n_units_5': 73, 'n_units_6': 100, 'n_units_7': 43, 'n_units_8': 78, 'n_units_9': 2, 'n_units_10': 45, 'n_units_11': 99, 'n_units_12': 87, 'n_units_13': 87, 'activation': 'logistic', 'learning_rate': 0.025223835491162583, 'batch_size': 256, 'optimizer': 'SGD', 'max_epochs': 89}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 13:36:31.0537Z [I 2025-05-07 16:36:31,053] Trial 3 finished with value: 33.50769865479611 and parameters: {'n_layers': 8, 'n_units_0': 32, 'n_units_1': 51, 'n_units_2': 89, 'n_units_3': 76, 'n_units_4': 25, 'n_units_5': 15, 'n_units_6': 32, 'n_units_7': 37, 'activation': 'relu', 'learning_rate': 1.0678702965586052e-05, 'batch_size': 32, 'optimizer': 'RMSprop', 'max_epochs': 56}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 13:43:04.1474Z [I 2025-05-07 16:43:04,147] Trial 4 finished with value: 12.553307353550112 and parameters: {'n_layers': 11, 'n_units_0': 82, 'n_units_1': 61, 'n_units_2': 52, 'n_units_3': 19, 'n_units_4': 30, 'n_units_5': 51, 'n_units_6': 26, 'n_units_7': 94, 'n_units_8': 60, 'n_units_9': 15, 'n_units_10': 78, 'activation': 'tanh', 'learning_rate': 0.00017334789535532587, 'batch_size': 64, 'optimizer': 'SGD', 'max_epochs': 447}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 13:44:22.0455Z [I 2025-05-07 16:44:22,045] Trial 5 finished with value: 50.790477527011646 and parameters: {'n_layers': 1, 'n_units_0': 12, 'activation': 'relu', 'learning_rate': 0.006788899518172711, 'batch_size': 256, 'optimizer': 'SGD', 'max_epochs': 408}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 13:45:32.6360Z [I 2025-05-07 16:45:32,635] Trial 6 finished with value: 1000000.0 and parameters: {'n_layers': 3, 'n_units_0': 81, 'n_units_1': 69, 'n_units_2': 76, 'activation': 'tanh', 'learning_rate': 0.08857566405354754, 'batch_size': 32, 'optimizer': 'SGD', 'max_epochs': 420}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 14:03:55.3456Z [I 2025-05-07 17:03:55,345] Trial 7 finished with value: 17.78972982663558 and parameters: {'n_layers': 6, 'n_units_0': 17, 'n_units_1': 75, 'n_units_2': 24, 'n_units_3': 36, 'n_units_4': 100, 'n_units_5': 97, 'activation': 'logistic', 'learning_rate': 0.00019723835967779406, 'batch_size': 256, 'optimizer': 'RMSprop', 'max_epochs': 390}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 14:04:50.6637Z [I 2025-05-07 17:04:50,663] Trial 8 finished with value: 69.73570361998938 and parameters: {'n_layers': 13, 'n_units_0': 70, 'n_units_1': 31, 'n_units_2': 32, 'n_units_3': 11, 'n_units_4': 75, 'n_units_5': 96, 'n_units_6': 96, 'n_units_7': 72, 'n_units_8': 96, 'n_units_9': 95, 'n_units_10': 82, 'n_units_11': 2, 'n_units_12': 69, 'activation': 'logistic', 'learning_rate': 0.003091896048758027, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 446}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 14:06:22.5773Z [I 2025-05-07 17:06:22,577] Trial 9 finished with value: 67.1457137500228 and parameters: {'n_layers': 5, 'n_units_0': 57, 'n_units_1': 18, 'n_units_2': 43, 'n_units_3': 94, 'n_units_4': 26, 'activation': 'logistic', 'learning_rate': 0.07649110636869276, 'batch_size': 16, 'optimizer': 'LBFGS', 'max_epochs': 387}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 14:07:17.8541Z [I 2025-05-07 17:07:17,853] Trial 10 finished with value: 257.13751792572003 and parameters: {'n_layers': 9, 'n_units_0': 46, 'n_units_1': 99, 'n_units_2': 1, 'n_units_3': 47, 'n_units_4': 59, 'n_units_5': 35, 'n_units_6': 3, 'n_units_7': 4, 'n_units_8': 3, 'activation': 'tanh', 'learning_rate': 0.0005047758166259524, 'batch_size': 64, 'optimizer': 'LBFGS', 'max_epochs': 266}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 14:12:23.9522Z [I 2025-05-07 17:12:23,951] Trial 11 finished with value: 57.840168632377576 and parameters: {'n_layers': 11, 'n_units_0': 100, 'n_units_1': 95, 'n_units_2': 56, 'n_units_3': 16, 'n_units_4': 44, 'n_units_5': 54, 'n_units_6': 36, 'n_units_7': 99, 'n_units_8': 42, 'n_units_9': 1, 'n_units_10': 95, 'activation': 'tanh', 'learning_rate': 8.004619746917353e-05, 'batch_size': 64, 'optimizer': 'SGD', 'max_epochs': 496}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 14:13:29.3560Z [I 2025-05-07 17:13:29,355] Trial 12 finished with value: 67.05111156796731 and parameters: {'n_layers': 10, 'n_units_0': 46, 'n_units_1': 83, 'n_units_2': 8, 'n_units_3': 31, 'n_units_4': 45, 'n_units_5': 56, 'n_units_6': 5, 'n_units_7': 72, 'n_units_8': 44, 'n_units_9': 34, 'activation': 'tanh', 'learning_rate': 0.0015637296206536672, 'batch_size': 128, 'optimizer': 'SGD', 'max_epochs': 292}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 14:17:36.0484Z [I 2025-05-07 17:17:36,048] Trial 13 finished with value: 22.010156541169735 and parameters: {'n_layers': 6, 'n_units_0': 33, 'n_units_1': 46, 'n_units_2': 49, 'n_units_3': 2, 'n_units_4': 27, 'n_units_5': 33, 'activation': 'tanh', 'learning_rate': 6.894189841565576e-05, 'batch_size': 64, 'optimizer': 'SGD', 'max_epochs': 301}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 14:20:19.0493Z [I 2025-05-07 17:20:19,049] Trial 14 finished with value: 69.73239165059879 and parameters: {'n_layers': 12, 'n_units_0': 1, 'n_units_1': 57, 'n_units_2': 19, 'n_units_3': 27, 'n_units_4': 62, 'n_units_5': 76, 'n_units_6': 67, 'n_units_7': 71, 'n_units_8': 64, 'n_units_9': 37, 'n_units_10': 14, 'n_units_11': 1, 'activation': 'tanh', 'learning_rate': 0.0005338230711606647, 'batch_size': 128, 'optimizer': 'SGD', 'max_epochs': 494}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 14:29:59.3273Z [I 2025-05-07 17:29:59,327] Trial 15 finished with value: 24.10143841134993 and parameters: {'n_layers': 7, 'n_units_0': 69, 'n_units_1': 81, 'n_units_2': 35, 'n_units_3': 54, 'n_units_4': 7, 'n_units_5': 33, 'n_units_6': 24, 'activation': 'tanh', 'learning_rate': 1.6921965330406806e-05, 'batch_size': 64, 'optimizer': 'SGD', 'max_epochs': 215}. Best is trial 1 with value: 12.142070905091018.
+2025-05-07 14:34:16.8329Z [I 2025-05-07 17:34:16,832] Trial 16 finished with value: 10.019098355048948 and parameters: {'n_layers': 4, 'n_units_0': 98, 'n_units_1': 85, 'n_units_2': 61, 'n_units_3': 51, 'activation': 'tanh', 'learning_rate': 0.0058571168017358885, 'batch_size': 64, 'optimizer': 'Adam', 'max_epochs': 337}. Best is trial 16 with value: 10.019098355048948.
+2025-05-07 14:37:08.3691Z [I 2025-05-07 17:37:08,369] Trial 17 finished with value: 8.206402804948725 and parameters: {'n_layers': 3, 'n_units_0': 98, 'n_units_1': 85, 'n_units_2': 64, 'activation': 'tanh', 'learning_rate': 0.004791794454530791, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 332}. Best is trial 17 with value: 8.206402804948725.
+2025-05-07 14:46:06.6961Z [I 2025-05-07 17:46:06,695] Trial 18 finished with value: 11.794807869388176 and parameters: {'n_layers': 1, 'n_units_0': 97, 'activation': 'tanh', 'learning_rate': 0.007581615316882749, 'batch_size': 32, 'optimizer': 'Adam', 'max_epochs': 185}. Best is trial 17 with value: 8.206402804948725.
+2025-05-07 15:00:18.5481Z [I 2025-05-07 18:00:18,547] Trial 19 finished with value: 11.31272660339341 and parameters: {'n_layers': 3, 'n_units_0': 92, 'n_units_1': 5, 'n_units_2': 62, 'activation': 'relu', 'learning_rate': 0.01081457449364294, 'batch_size': 16, 'optimizer': 'Adam', 'max_epochs': 346}. Best is trial 17 with value: 8.206402804948725.
+2025-05-07 15:03:24.4680Z [I 2025-05-07 18:03:24,467] Trial 20 finished with value: 8.102921286426485 and parameters: {'n_layers': 3, 'n_units_0': 68, 'n_units_1': 91, 'n_units_2': 99, 'activation': 'tanh', 'learning_rate': 0.0027101586363502124, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 220}. Best is trial 20 with value: 8.102921286426485.
+2025-05-07 15:06:30.8665Z [I 2025-05-07 18:06:30,866] Trial 21 finished with value: 8.208056088588696 and parameters: {'n_layers': 4, 'n_units_0': 70, 'n_units_1': 90, 'n_units_2': 95, 'n_units_3': 55, 'activation': 'tanh', 'learning_rate': 0.0037838958334374486, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 222}. Best is trial 20 with value: 8.102921286426485.
+2025-05-07 15:13:22.3821Z [I 2025-05-07 18:13:22,381] Trial 22 finished with value: 7.405543297638812 and parameters: {'n_layers': 2, 'n_units_0': 68, 'n_units_1': 92, 'activation': 'tanh', 'learning_rate': 0.002564108946106448, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 171}. Best is trial 22 with value: 7.405543297638812.
+2025-05-07 15:16:39.1609Z [I 2025-05-07 18:16:39,160] Trial 23 finished with value: 8.029277158437845 and parameters: {'n_layers': 2, 'n_units_0': 60, 'n_units_1': 99, 'activation': 'tanh', 'learning_rate': 0.017659691924269333, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 146}. Best is trial 22 with value: 7.405543297638812.
+2025-05-07 15:21:16.4162Z [I 2025-05-07 18:21:16,415] Trial 24 finished with value: 12.63578230204864 and parameters: {'n_layers': 1, 'n_units_0': 61, 'activation': 'tanh', 'learning_rate': 0.01735938732553213, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 142}. Best is trial 22 with value: 7.405543297638812.
+2025-05-07 15:27:34.5237Z [I 2025-05-07 18:27:34,523] Trial 25 finished with value: 8.747623229792774 and parameters: {'n_layers': 2, 'n_units_0': 54, 'n_units_1': 99, 'activation': 'tanh', 'learning_rate': 0.002355406791826452, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 141}. Best is trial 22 with value: 7.405543297638812.
+2025-05-07 15:34:44.8278Z [I 2025-05-07 18:34:44,827] Trial 26 finished with value: 10.192254764768265 and parameters: {'n_layers': 2, 'n_units_0': 62, 'n_units_1': 74, 'activation': 'tanh', 'learning_rate': 0.0005728155752721142, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 138}. Best is trial 22 with value: 7.405543297638812.
+2025-05-07 15:35:18.0331Z [I 2025-05-07 18:35:18,032] Trial 27 finished with value: 7.372662965998451 and parameters: {'n_layers': 2, 'n_units_0': 76, 'n_units_1': 90, 'activation': 'tanh', 'learning_rate': 0.015056225554015165, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 186}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 15:36:12.1323Z [I 2025-05-07 18:36:12,132] Trial 28 finished with value: 9.549734733053043 and parameters: {'n_layers': 2, 'n_units_0': 77, 'n_units_1': 77, 'activation': 'relu', 'learning_rate': 0.03655806877554799, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 176}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 15:36:41.8900Z [I 2025-05-07 18:36:41,889] Trial 29 finished with value: 154.27501190042088 and parameters: {'n_layers': 5, 'n_units_0': 48, 'n_units_1': 95, 'n_units_2': 73, 'n_units_3': 99, 'n_units_4': 72, 'activation': 'logistic', 'learning_rate': 0.01452321416581736, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 98}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 15:37:56.6838Z [I 2025-05-07 18:37:56,683] Trial 30 finished with value: 11.082034348012433 and parameters: {'n_layers': 4, 'n_units_0': 76, 'n_units_1': 100, 'n_units_2': 40, 'n_units_3': 63, 'activation': 'relu', 'learning_rate': 0.03907582770519433, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 249}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 15:45:42.3326Z [I 2025-05-07 18:45:42,332] Trial 31 finished with value: 8.838070828618635 and parameters: {'n_layers': 2, 'n_units_0': 64, 'n_units_1': 92, 'activation': 'tanh', 'learning_rate': 0.001987388553133622, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 178}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 15:49:51.2042Z [I 2025-05-07 18:49:51,204] Trial 32 finished with value: 9.126778625217687 and parameters: {'n_layers': 3, 'n_units_0': 87, 'n_units_1': 90, 'n_units_2': 99, 'activation': 'tanh', 'learning_rate': 0.0008988376934022182, 'batch_size': 128, 'optimizer': 'RMSprop', 'max_epochs': 218}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 15:53:59.2171Z [I 2025-05-07 18:53:59,216] Trial 33 finished with value: 14.779507879135018 and parameters: {'n_layers': 1, 'n_units_0': 40, 'activation': 'tanh', 'learning_rate': 0.023580094558591294, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 92}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 15:54:19.0753Z [I 2025-05-07 18:54:19,075] Trial 34 finished with value: 5369.318392496389 and parameters: {'n_layers': 15, 'n_units_0': 73, 'n_units_1': 68, 'n_units_2': 86, 'n_units_3': 67, 'n_units_4': 99, 'n_units_5': 76, 'n_units_6': 81, 'n_units_7': 1, 'n_units_8': 19, 'n_units_9': 84, 'n_units_10': 9, 'n_units_11': 94, 'n_units_12': 5, 'n_units_13': 2, 'n_units_14': 4, 'activation': 'tanh', 'learning_rate': 0.012043142768418206, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 195}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 16:00:07.2771Z [I 2025-05-07 19:00:07,276] Trial 35 finished with value: 39.48786372844114 and parameters: {'n_layers': 4, 'n_units_0': 65, 'n_units_1': 90, 'n_units_2': 77, 'n_units_3': 3, 'activation': 'tanh', 'learning_rate': 0.04038468106962432, 'batch_size': 16, 'optimizer': 'Adam', 'max_epochs': 116}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 16:03:05.9163Z [I 2025-05-07 19:03:05,916] Trial 36 finished with value: 9.171108025321116 and parameters: {'n_layers': 2, 'n_units_0': 87, 'n_units_1': 79, 'activation': 'tanh', 'learning_rate': 0.008746961098900712, 'batch_size': 128, 'optimizer': 'RMSprop', 'max_epochs': 245}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 16:33:06.0949Z [I 2025-05-07 19:33:06,094] Trial 37 finished with value: 12.815837741696186 and parameters: {'n_layers': 6, 'n_units_0': 56, 'n_units_1': 86, 'n_units_2': 91, 'n_units_3': 87, 'n_units_4': 14, 'n_units_5': 2, 'activation': 'relu', 'learning_rate': 0.0010273446425822612, 'batch_size': 32, 'optimizer': 'Adam', 'max_epochs': 160}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 16:33:25.2286Z [I 2025-05-07 19:33:25,228] Trial 38 finished with value: 283.7291154208535 and parameters: {'n_layers': 3, 'n_units_0': 82, 'n_units_1': 70, 'n_units_2': 100, 'activation': 'logistic', 'learning_rate': 0.003799104114664475, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 62}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 16:34:22.6190Z [I 2025-05-07 19:34:22,618] Trial 39 finished with value: 36.21579912752599 and parameters: {'n_layers': 5, 'n_units_0': 77, 'n_units_1': 43, 'n_units_2': 71, 'n_units_3': 64, 'n_units_4': 83, 'activation': 'tanh', 'learning_rate': 0.060767981260683876, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 212}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 16:36:21.2943Z [I 2025-05-07 19:36:21,294] Trial 40 finished with value: 65.79089522518484 and parameters: {'n_layers': 8, 'n_units_0': 51, 'n_units_1': 63, 'n_units_2': 83, 'n_units_3': 25, 'n_units_4': 39, 'n_units_5': 21, 'n_units_6': 57, 'n_units_7': 25, 'activation': 'tanh', 'learning_rate': 0.024551293264058142, 'batch_size': 128, 'optimizer': 'RMSprop', 'max_epochs': 121}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 16:39:20.1934Z [I 2025-05-07 19:39:20,193] Trial 41 finished with value: 8.804869899535932 and parameters: {'n_layers': 3, 'n_units_0': 92, 'n_units_1': 86, 'n_units_2': 61, 'activation': 'tanh', 'learning_rate': 0.005633502105535121, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 324}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 16:48:28.1954Z [I 2025-05-07 19:48:28,195] Trial 42 finished with value: 13.361257748362018 and parameters: {'n_layers': 1, 'n_units_0': 67, 'activation': 'tanh', 'learning_rate': 0.003997432321206428, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 242}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 16:52:27.8692Z [I 2025-05-07 19:52:27,869] Trial 43 finished with value: 8.497091356660672 and parameters: {'n_layers': 3, 'n_units_0': 61, 'n_units_1': 95, 'n_units_2': 67, 'activation': 'tanh', 'learning_rate': 0.002412120479436757, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 274}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 16:56:03.8584Z [I 2025-05-07 19:56:03,858] Trial 44 finished with value: 8.825975436586404 and parameters: {'n_layers': 2, 'n_units_0': 24, 'n_units_1': 88, 'activation': 'tanh', 'learning_rate': 0.017128820537065517, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 363}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 16:56:28.7492Z [I 2025-05-07 19:56:28,749] Trial 45 finished with value: 833.300553521957 and parameters: {'n_layers': 4, 'n_units_0': 92, 'n_units_1': 95, 'n_units_2': 47, 'n_units_3': 40, 'activation': 'logistic', 'learning_rate': 0.0011830007861111148, 'batch_size': 256, 'optimizer': 'LBFGS', 'max_epochs': 162}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:09:17.9167Z [I 2025-05-07 20:09:17,916] Trial 46 finished with value: 12.172230393359445 and parameters: {'n_layers': 1, 'n_units_0': 81, 'activation': 'tanh', 'learning_rate': 0.00562027704010698, 'batch_size': 32, 'optimizer': 'Adam', 'max_epochs': 311}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:18:14.0151Z [I 2025-05-07 20:18:14,014] Trial 47 finished with value: 24.023319359465606 and parameters: {'n_layers': 5, 'n_units_0': 72, 'n_units_1': 82, 'n_units_2': 79, 'n_units_3': 43, 'n_units_4': 16, 'activation': 'tanh', 'learning_rate': 0.009095572360276664, 'batch_size': 16, 'optimizer': 'Adam', 'max_epochs': 204}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:19:06.1083Z [I 2025-05-07 20:19:06,108] Trial 48 finished with value: 7.731806658084387 and parameters: {'n_layers': 3, 'n_units_0': 57, 'n_units_1': 72, 'n_units_2': 68, 'activation': 'tanh', 'learning_rate': 0.0025895278544506148, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 161}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:19:27.6487Z [I 2025-05-07 20:19:27,648] Trial 49 finished with value: 2228.736974162721 and parameters: {'n_layers': 6, 'n_units_0': 58, 'n_units_1': 73, 'n_units_2': 91, 'n_units_3': 83, 'n_units_4': 69, 'n_units_5': 68, 'activation': 'logistic', 'learning_rate': 0.00024319143325041858, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 73}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:20:02.2207Z [I 2025-05-07 20:20:02,220] Trial 50 finished with value: 4700.516780099822 and parameters: {'n_layers': 2, 'n_units_0': 40, 'n_units_1': 57, 'activation': 'tanh', 'learning_rate': 0.0003234411895506644, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 158}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:20:35.6663Z [I 2025-05-07 20:20:35,666] Trial 51 finished with value: 68.12483873260729 and parameters: {'n_layers': 3, 'n_units_0': 67, 'n_units_1': 79, 'n_units_2': 66, 'activation': 'tanh', 'learning_rate': 0.0015536842882667484, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 118}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:21:46.0894Z [I 2025-05-07 20:21:46,089] Trial 52 finished with value: 13.058195874323049 and parameters: {'n_layers': 4, 'n_units_0': 58, 'n_units_1': 95, 'n_units_2': 55, 'n_units_3': 69, 'activation': 'tanh', 'learning_rate': 0.0028433473966963337, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 229}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:29:20.8121Z [I 2025-05-07 20:29:20,812] Trial 53 finished with value: 14.669723076680226 and parameters: {'n_layers': 1, 'n_units_0': 51, 'activation': 'tanh', 'learning_rate': 0.004840182993856911, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 191}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:31:29.7297Z [I 2025-05-07 20:31:29,729] Trial 54 finished with value: 10.265979499444162 and parameters: {'n_layers': 3, 'n_units_0': 74, 'n_units_1': 100, 'n_units_2': 71, 'activation': 'tanh', 'learning_rate': 0.007760279374461687, 'batch_size': 128, 'optimizer': 'RMSprop', 'max_epochs': 264}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:32:17.7848Z [I 2025-05-07 20:32:17,784] Trial 55 finished with value: 377715.89814568305 and parameters: {'n_layers': 2, 'n_units_0': 45, 'n_units_1': 83, 'activation': 'tanh', 'learning_rate': 0.0016547706785717303, 'batch_size': 64, 'optimizer': 'LBFGS', 'max_epochs': 285}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:42:27.8694Z [I 2025-05-07 20:42:27,869] Trial 56 finished with value: 8.358401118796305 and parameters: {'n_layers': 4, 'n_units_0': 85, 'n_units_1': 92, 'n_units_2': 83, 'n_units_3': 90, 'activation': 'tanh', 'learning_rate': 0.0006689637105681052, 'batch_size': 32, 'optimizer': 'Adam', 'max_epochs': 171}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:45:35.9707Z [I 2025-05-07 20:45:35,970] Trial 57 finished with value: 1000000.0 and parameters: {'n_layers': 7, 'n_units_0': 79, 'n_units_1': 85, 'n_units_2': 22, 'n_units_3': 10, 'n_units_4': 54, 'n_units_5': 42, 'n_units_6': 75, 'activation': 'relu', 'learning_rate': 0.003100097728269777, 'batch_size': 16, 'optimizer': 'SGD', 'max_epochs': 147}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:50:00.2679Z [I 2025-05-07 20:50:00,267] Trial 58 finished with value: 12.93816104987641 and parameters: {'n_layers': 1, 'n_units_0': 54, 'activation': 'tanh', 'learning_rate': 0.02085517976804009, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 429}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:50:37.9454Z [I 2025-05-07 20:50:37,945] Trial 59 finished with value: 10.969026132786713 and parameters: {'n_layers': 3, 'n_units_0': 70, 'n_units_1': 27, 'n_units_2': 29, 'activation': 'tanh', 'learning_rate': 0.01229596923589758, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 128}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:53:15.5449Z [I 2025-05-07 20:53:15,544] Trial 60 finished with value: 68.61981993199925 and parameters: {'n_layers': 14, 'n_units_0': 61, 'n_units_1': 68, 'n_units_2': 44, 'n_units_3': 59, 'n_units_4': 91, 'n_units_5': 88, 'n_units_6': 15, 'n_units_7': 23, 'n_units_8': 25, 'n_units_9': 68, 'n_units_10': 39, 'n_units_11': 43, 'n_units_12': 21, 'n_units_13': 1, 'activation': 'tanh', 'learning_rate': 0.031789741101421215, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 104}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 17:56:04.7912Z [I 2025-05-07 20:56:04,791] Trial 61 finished with value: 9.498138646932233 and parameters: {'n_layers': 4, 'n_units_0': 68, 'n_units_1': 92, 'n_units_2': 95, 'n_units_3': 72, 'activation': 'tanh', 'learning_rate': 0.0031919228411587362, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 234}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 18:02:59.6355Z [I 2025-05-07 21:02:59,635] Trial 62 finished with value: 8.26706618092211 and parameters: {'n_layers': 2, 'n_units_0': 64, 'n_units_1': 89, 'activation': 'tanh', 'learning_rate': 0.001992568565842929, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 199}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 18:06:21.1046Z [I 2025-05-07 21:06:21,104] Trial 63 finished with value: 8.594581813436392 and parameters: {'n_layers': 4, 'n_units_0': 72, 'n_units_1': 98, 'n_units_2': 95, 'n_units_3': 58, 'activation': 'tanh', 'learning_rate': 0.003892416923782223, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 261}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 18:07:50.2356Z [I 2025-05-07 21:07:50,235] Trial 64 finished with value: 67.47201749267062 and parameters: {'n_layers': 10, 'n_units_0': 96, 'n_units_1': 77, 'n_units_2': 88, 'n_units_3': 79, 'n_units_4': 1, 'n_units_5': 19, 'n_units_6': 42, 'n_units_7': 57, 'n_units_8': 75, 'n_units_9': 67, 'activation': 'tanh', 'learning_rate': 0.006828000674067805, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 227}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 18:17:15.4654Z [I 2025-05-07 21:17:15,465] Trial 65 finished with value: 8.807344700800062 and parameters: {'n_layers': 2, 'n_units_0': 59, 'n_units_1': 88, 'activation': 'tanh', 'learning_rate': 0.0008158386782810374, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 183}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 18:17:59.8738Z [I 2025-05-07 21:17:59,873] Trial 66 finished with value: 1000000.0 and parameters: {'n_layers': 3, 'n_units_0': 55, 'n_units_1': 95, 'n_units_2': 79, 'activation': 'relu', 'learning_rate': 0.054590270554193604, 'batch_size': 64, 'optimizer': 'SGD', 'max_epochs': 152}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 18:18:49.3839Z [I 2025-05-07 21:18:49,383] Trial 67 finished with value: 728.0007297386453 and parameters: {'n_layers': 5, 'n_units_0': 64, 'n_units_1': 81, 'n_units_2': 96, 'n_units_3': 44, 'n_units_4': 36, 'activation': 'tanh', 'learning_rate': 0.0042120504758057994, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 215}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 18:25:15.8992Z [I 2025-05-07 21:25:15,899] Trial 68 finished with value: 13.813256704738953 and parameters: {'n_layers': 1, 'n_units_0': 74, 'activation': 'logistic', 'learning_rate': 0.0111589078256017, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 138}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 18:28:21.7101Z [I 2025-05-07 21:28:21,709] Trial 69 finished with value: 9.182687342285584 and parameters: {'n_layers': 3, 'n_units_0': 70, 'n_units_1': 97, 'n_units_2': 55, 'activation': 'tanh', 'learning_rate': 0.002570063324341389, 'batch_size': 128, 'optimizer': 'RMSprop', 'max_epochs': 169}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 18:36:44.8950Z [I 2025-05-07 21:36:44,894] Trial 70 finished with value: 7.940708743347768 and parameters: {'n_layers': 2, 'n_units_0': 89, 'n_units_1': 92, 'activation': 'tanh', 'learning_rate': 0.0011865498758069303, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 383}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 18:46:20.9981Z [I 2025-05-07 21:46:20,997] Trial 71 finished with value: 8.056084971369032 and parameters: {'n_layers': 2, 'n_units_0': 100, 'n_units_1': 89, 'activation': 'tanh', 'learning_rate': 0.0013255207886552574, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 386}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 18:54:30.6437Z [I 2025-05-07 21:54:30,643] Trial 72 finished with value: 8.681846041228429 and parameters: {'n_layers': 2, 'n_units_0': 95, 'n_units_1': 85, 'activation': 'tanh', 'learning_rate': 0.0012380210218405296, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 385}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 19:11:40.0136Z [I 2025-05-07 22:11:40,013] Trial 73 finished with value: 11.681424280359542 and parameters: {'n_layers': 1, 'n_units_0': 89, 'activation': 'tanh', 'learning_rate': 0.001996764079170087, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 368}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 19:27:52.5087Z [I 2025-05-07 22:27:52,508] Trial 74 finished with value: 8.166115359427428 and parameters: {'n_layers': 2, 'n_units_0': 99, 'n_units_1': 92, 'activation': 'tanh', 'learning_rate': 0.0004217530950307164, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 404}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 19:50:26.1607Z [I 2025-05-07 22:50:26,160] Trial 75 finished with value: 8.766617173126487 and parameters: {'n_layers': 2, 'n_units_0': 98, 'n_units_1': 92, 'activation': 'tanh', 'learning_rate': 0.0002780992581894997, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 473}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 20:05:31.5462Z [I 2025-05-07 23:05:31,546] Trial 76 finished with value: 8.545443064462413 and parameters: {'n_layers': 2, 'n_units_0': 94, 'n_units_1': 92, 'activation': 'tanh', 'learning_rate': 0.00045255681082586436, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 403}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 20:25:40.7706Z [I 2025-05-07 23:25:40,770] Trial 77 finished with value: 14.466675446913438 and parameters: {'n_layers': 1, 'n_units_0': 100, 'activation': 'tanh', 'learning_rate': 0.00042687176019498145, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 426}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 20:26:00.9697Z [I 2025-05-07 23:26:00,969] Trial 78 finished with value: 35454.92236629492 and parameters: {'n_layers': 2, 'n_units_0': 89, 'n_units_1': 100, 'activation': 'relu', 'learning_rate': 0.00012157932163900059, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 449}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 20:33:17.0053Z [I 2025-05-07 23:33:17,005] Trial 79 finished with value: 8.225422634409034 and parameters: {'n_layers': 3, 'n_units_0': 83, 'n_units_1': 89, 'n_units_2': 16, 'activation': 'tanh', 'learning_rate': 0.0011230453092849631, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 382}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 21:38:04.6628Z [I 2025-05-08 00:38:04,662] Trial 80 finished with value: 11.744340548200626 and parameters: {'n_layers': 1, 'n_units_0': 100, 'activation': 'tanh', 'learning_rate': 0.000649318178271071, 'batch_size': 16, 'optimizer': 'Adam', 'max_epochs': 416}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 21:47:13.8765Z [I 2025-05-08 00:47:13,876] Trial 81 finished with value: 8.013916309411885 and parameters: {'n_layers': 3, 'n_units_0': 91, 'n_units_1': 94, 'n_units_2': 39, 'activation': 'tanh', 'learning_rate': 0.000870810276389755, 'batch_size': 32, 'optimizer': 'Adam', 'max_epochs': 341}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 22:01:30.3016Z [I 2025-05-08 01:01:30,301] Trial 82 finished with value: 8.36122615674509 and parameters: {'n_layers': 3, 'n_units_0': 90, 'n_units_1': 96, 'n_units_2': 36, 'activation': 'tanh', 'learning_rate': 0.0003545828547840267, 'batch_size': 32, 'optimizer': 'Adam', 'max_epochs': 344}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 22:16:58.9797Z [I 2025-05-08 01:16:58,979] Trial 83 finished with value: 8.459096889764869 and parameters: {'n_layers': 2, 'n_units_0': 94, 'n_units_1': 93, 'activation': 'tanh', 'learning_rate': 0.0008853986151130967, 'batch_size': 32, 'optimizer': 'Adam', 'max_epochs': 361}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 22:25:05.7625Z [I 2025-05-08 01:25:05,762] Trial 84 finished with value: 8.016185599609257 and parameters: {'n_layers': 3, 'n_units_0': 84, 'n_units_1': 87, 'n_units_2': 51, 'activation': 'tanh', 'learning_rate': 0.0015194774019985583, 'batch_size': 32, 'optimizer': 'Adam', 'max_epochs': 401}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 22:34:14.9917Z [I 2025-05-08 01:34:14,991] Trial 85 finished with value: 8.614534524750887 and parameters: {'n_layers': 4, 'n_units_0': 79, 'n_units_1': 88, 'n_units_2': 27, 'n_units_3': 100, 'activation': 'tanh', 'learning_rate': 0.0013831600134655232, 'batch_size': 32, 'optimizer': 'SGD', 'max_epochs': 354}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 22:35:55.4631Z [I 2025-05-08 01:35:55,462] Trial 86 finished with value: 11.272917060708696 and parameters: {'n_layers': 3, 'n_units_0': 85, 'n_units_1': 79, 'n_units_2': 51, 'activation': 'logistic', 'learning_rate': 0.0017162311273988273, 'batch_size': 32, 'optimizer': 'LBFGS', 'max_epochs': 331}. Best is trial 27 with value: 7.372662965998451.
+2025-05-07 23:34:51.0379Z [I 2025-05-08 02:34:51,037] Trial 87 finished with value: 10.890394517602354 and parameters: {'n_layers': 4, 'n_units_0': 79, 'n_units_1': 83, 'n_units_2': 39, 'n_units_3': 22, 'activation': 'tanh', 'learning_rate': 2.9086523281567463e-05, 'batch_size': 32, 'optimizer': 'Adam', 'max_epochs': 381}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 00:12:57.0913Z [I 2025-05-08 03:12:57,091] Trial 88 finished with value: 12.456912432798042 and parameters: {'n_layers': 9, 'n_units_0': 87, 'n_units_1': 5, 'n_units_2': 58, 'n_units_3': 34, 'n_units_4': 16, 'n_units_5': 60, 'n_units_6': 84, 'n_units_7': 59, 'n_units_8': 2, 'activation': 'tanh', 'learning_rate': 0.0007494932190837291, 'batch_size': 32, 'optimizer': 'RMSprop', 'max_epochs': 392}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 00:20:59.0753Z [I 2025-05-08 03:20:59,075] Trial 89 finished with value: 14.439308218407552 and parameters: {'n_layers': 3, 'n_units_0': 3, 'n_units_1': 97, 'n_units_2': 47, 'activation': 'tanh', 'learning_rate': 0.0020385094147771735, 'batch_size': 32, 'optimizer': 'Adam', 'max_epochs': 450}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 00:21:15.7587Z [I 2025-05-08 03:21:15,758] Trial 90 finished with value: 33677.56000662756 and parameters: {'n_layers': 12, 'n_units_0': 84, 'n_units_1': 58, 'n_units_2': 32, 'n_units_3': 14, 'n_units_4': 79, 'n_units_5': 85, 'n_units_6': 46, 'n_units_7': 19, 'n_units_8': 26, 'n_units_9': 100, 'n_units_10': 60, 'n_units_11': 59, 'activation': 'tanh', 'learning_rate': 0.0014121486564225582, 'batch_size': 32, 'optimizer': 'LBFGS', 'max_epochs': 317}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 00:42:54.6265Z [I 2025-05-08 03:42:54,626] Trial 91 finished with value: 9.430269616844829 and parameters: {'n_layers': 2, 'n_units_0': 92, 'n_units_1': 93, 'activation': 'tanh', 'learning_rate': 0.00019401965168474575, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 416}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 01:01:52.6949Z [I 2025-05-08 04:01:52,694] Trial 92 finished with value: 14.46956413071287 and parameters: {'n_layers': 1, 'n_units_0': 97, 'activation': 'tanh', 'learning_rate': 0.0005549174608867775, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 396}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 01:07:48.7353Z [I 2025-05-08 04:07:48,735] Trial 93 finished with value: 8.14086679403386 and parameters: {'n_layers': 3, 'n_units_0': 76, 'n_units_1': 87, 'n_units_2': 43, 'activation': 'tanh', 'learning_rate': 0.0010049720948399283, 'batch_size': 64, 'optimizer': 'Adam', 'max_epochs': 433}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 01:14:28.3640Z [I 2025-05-08 04:14:28,363] Trial 94 finished with value: 8.412491420611106 and parameters: {'n_layers': 3, 'n_units_0': 76, 'n_units_1': 86, 'n_units_2': 43, 'activation': 'tanh', 'learning_rate': 0.0009110081744143828, 'batch_size': 64, 'optimizer': 'Adam', 'max_epochs': 472}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 01:20:16.5095Z [I 2025-05-08 04:20:16,509] Trial 95 finished with value: 8.32920088984405 and parameters: {'n_layers': 3, 'n_units_0': 66, 'n_units_1': 49, 'n_units_2': 38, 'activation': 'tanh', 'learning_rate': 0.0012132475910881743, 'batch_size': 64, 'optimizer': 'Adam', 'max_epochs': 207}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 01:26:30.0740Z [I 2025-05-08 04:26:30,073] Trial 96 finished with value: 9.291368511074875 and parameters: {'n_layers': 3, 'n_units_0': 80, 'n_units_1': 87, 'n_units_2': 8, 'activation': 'tanh', 'learning_rate': 0.0024686665039750557, 'batch_size': 64, 'optimizer': 'Adam', 'max_epochs': 190}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 01:33:12.6555Z [I 2025-05-08 04:33:12,655] Trial 97 finished with value: 8.88276268400719 and parameters: {'n_layers': 5, 'n_units_0': 76, 'n_units_1': 39, 'n_units_2': 33, 'n_units_3': 6, 'n_units_4': 91, 'activation': 'tanh', 'learning_rate': 0.0010684525827355648, 'batch_size': 64, 'optimizer': 'Adam', 'max_epochs': 439}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 01:33:40.9264Z [I 2025-05-08 04:33:40,926] Trial 98 finished with value: 85.61559026763175 and parameters: {'n_layers': 4, 'n_units_0': 62, 'n_units_1': 90, 'n_units_2': 49, 'n_units_3': 93, 'activation': 'relu', 'learning_rate': 0.003219079529891656, 'batch_size': 32, 'optimizer': 'LBFGS', 'max_epochs': 131}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 01:37:38.7046Z [I 2025-05-08 04:37:38,704] Trial 99 finished with value: 9.090249977493485 and parameters: {'n_layers': 2, 'n_units_0': 82, 'n_units_1': 72, 'activation': 'tanh', 'learning_rate': 0.018452794666845858, 'batch_size': 64, 'optimizer': 'Adam', 'max_epochs': 296}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 01:44:42.7490Z [I 2025-05-08 04:44:42,748] Trial 100 finished with value: 11.5625752214614 and parameters: {'n_layers': 1, 'n_units_0': 87, 'activation': 'tanh', 'learning_rate': 0.0018001145727770376, 'batch_size': 16, 'optimizer': 'SGD', 'max_epochs': 169}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 02:00:39.1708Z [I 2025-05-08 05:00:39,170] Trial 101 finished with value: 8.712935063843746 and parameters: {'n_layers': 2, 'n_units_0': 53, 'n_units_1': 98, 'activation': 'tanh', 'learning_rate': 0.0006614559888877228, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 374}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 02:03:32.7616Z [I 2025-05-08 05:03:32,761] Trial 102 finished with value: 8.450516218861093 and parameters: {'n_layers': 2, 'n_units_0': 91, 'n_units_1': 93, 'activation': 'tanh', 'learning_rate': 0.014601702568814958, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 406}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 02:06:13.3713Z [I 2025-05-08 05:06:13,371] Trial 103 finished with value: 10.208572031980227 and parameters: {'n_layers': 2, 'n_units_0': 94, 'n_units_1': 83, 'activation': 'tanh', 'learning_rate': 0.029773719857414917, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 435}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 02:11:34.9166Z [I 2025-05-08 05:11:34,916] Trial 104 finished with value: 8.274090360218608 and parameters: {'n_layers': 3, 'n_units_0': 70, 'n_units_1': 91, 'n_units_2': 59, 'activation': 'tanh', 'learning_rate': 0.0014846431856237164, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 408}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 02:19:24.8856Z [I 2025-05-08 05:19:24,885] Trial 105 finished with value: 14.337446169764629 and parameters: {'n_layers': 2, 'n_units_0': 72, 'n_units_1': 95, 'activation': 'logistic', 'learning_rate': 0.0004930644019454708, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 151}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 02:27:24.5388Z [I 2025-05-08 05:27:24,538] Trial 106 finished with value: 8.694019533390332 and parameters: {'n_layers': 4, 'n_units_0': 97, 'n_units_1': 77, 'n_units_2': 52, 'n_units_3': 74, 'activation': 'tanh', 'learning_rate': 0.000372465360426652, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 423}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 02:28:07.9125Z [I 2025-05-08 05:28:07,912] Trial 107 finished with value: 9.584322494099332 and parameters: {'n_layers': 1, 'n_units_0': 88, 'activation': 'tanh', 'learning_rate': 0.00489443778469534, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 179}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 02:35:53.7998Z [I 2025-05-08 05:35:53,799] Trial 108 finished with value: 8.815613541566906 and parameters: {'n_layers': 3, 'n_units_0': 59, 'n_units_1': 90, 'n_units_2': 42, 'activation': 'tanh', 'learning_rate': 0.0007511962717075588, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 373}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 02:39:07.1270Z [I 2025-05-08 05:39:07,126] Trial 109 finished with value: 20.060534609728748 and parameters: {'n_layers': 2, 'n_units_0': 78, 'n_units_1': 100, 'activation': 'tanh', 'learning_rate': 0.08811223999449623, 'batch_size': 32, 'optimizer': 'RMSprop', 'max_epochs': 459}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 02:43:11.7271Z [I 2025-05-08 05:43:11,726] Trial 110 finished with value: 8.58261707860538 and parameters: {'n_layers': 3, 'n_units_0': 63, 'n_units_1': 87, 'n_units_2': 73, 'activation': 'tanh', 'learning_rate': 0.002197825829874212, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 397}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 02:50:00.9490Z [I 2025-05-08 05:50:00,948] Trial 111 finished with value: 8.137492743282335 and parameters: {'n_layers': 3, 'n_units_0': 99, 'n_units_1': 94, 'n_units_2': 63, 'activation': 'tanh', 'learning_rate': 0.0009693151986270653, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 351}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 03:01:22.4265Z [I 2025-05-08 06:01:22,426] Trial 112 finished with value: 8.18885943359893 and parameters: {'n_layers': 2, 'n_units_0': 100, 'n_units_1': 94, 'activation': 'tanh', 'learning_rate': 0.0009975669337815138, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 350}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 03:07:06.4437Z [I 2025-05-08 06:07:06,443] Trial 113 finished with value: 8.245555720989897 and parameters: {'n_layers': 3, 'n_units_0': 93, 'n_units_1': 97, 'n_units_2': 46, 'activation': 'tanh', 'learning_rate': 0.0012360741748578899, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 337}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 03:10:57.8340Z [I 2025-05-08 06:10:57,833] Trial 114 finished with value: 8.072422752447885 and parameters: {'n_layers': 3, 'n_units_0': 90, 'n_units_1': 90, 'n_units_2': 64, 'activation': 'tanh', 'learning_rate': 0.0030003375519375305, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 413}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 03:16:11.9301Z [I 2025-05-08 06:16:11,929] Trial 115 finished with value: 8.606285246954874 and parameters: {'n_layers': 4, 'n_units_0': 48, 'n_units_1': 85, 'n_units_2': 64, 'n_units_3': 31, 'activation': 'tanh', 'learning_rate': 0.0027672034532572275, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 414}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 03:19:32.8963Z [I 2025-05-08 06:19:32,896] Trial 116 finished with value: 8.426271101604456 and parameters: {'n_layers': 3, 'n_units_0': 86, 'n_units_1': 81, 'n_units_2': 54, 'activation': 'tanh', 'learning_rate': 0.0034699428385496023, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 162}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 03:21:16.4632Z [I 2025-05-08 06:21:16,462] Trial 117 finished with value: 9.186133873506972 and parameters: {'n_layers': 3, 'n_units_0': 96, 'n_units_1': 89, 'n_units_2': 67, 'activation': 'tanh', 'learning_rate': 0.0016633994417676935, 'batch_size': 256, 'optimizer': 'LBFGS', 'max_epochs': 389}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 03:23:57.8142Z [I 2025-05-08 06:23:57,814] Trial 118 finished with value: 12.008510750477594 and parameters: {'n_layers': 5, 'n_units_0': 90, 'n_units_1': 98, 'n_units_2': 71, 'n_units_3': 82, 'n_units_4': 66, 'activation': 'tanh', 'learning_rate': 0.009384111318253107, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 374}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 03:29:38.2723Z [I 2025-05-08 06:29:38,272] Trial 119 finished with value: 10.024729478187421 and parameters: {'n_layers': 4, 'n_units_0': 74, 'n_units_1': 95, 'n_units_2': 58, 'n_units_3': 16, 'activation': 'relu', 'learning_rate': 0.002345218156253724, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 433}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 03:35:49.0781Z [I 2025-05-08 06:35:49,078] Trial 120 finished with value: 8.092960510632691 and parameters: {'n_layers': 3, 'n_units_0': 83, 'n_units_1': 85, 'n_units_2': 64, 'activation': 'tanh', 'learning_rate': 0.0013581592624544695, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 358}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 03:41:52.2809Z [I 2025-05-08 06:41:52,280] Trial 121 finished with value: 7.962199072788059 and parameters: {'n_layers': 3, 'n_units_0': 83, 'n_units_1': 90, 'n_units_2': 62, 'activation': 'tanh', 'learning_rate': 0.001382768542734253, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 357}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 03:47:45.3519Z [I 2025-05-08 06:47:45,351] Trial 122 finished with value: 8.01457555493013 and parameters: {'n_layers': 3, 'n_units_0': 84, 'n_units_1': 90, 'n_units_2': 63, 'activation': 'tanh', 'learning_rate': 0.0013638695010403383, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 360}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 03:56:31.0219Z [I 2025-05-08 06:56:31,021] Trial 123 finished with value: 8.388838082244595 and parameters: {'n_layers': 2, 'n_units_0': 82, 'n_units_1': 90, 'activation': 'tanh', 'learning_rate': 0.0014037014097276587, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 356}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 04:01:48.5764Z [I 2025-05-08 07:01:48,576] Trial 124 finished with value: 8.212710638262621 and parameters: {'n_layers': 3, 'n_units_0': 84, 'n_units_1': 91, 'n_units_2': 69, 'activation': 'tanh', 'learning_rate': 0.001746488084809758, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 365}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 04:03:17.4276Z [I 2025-05-08 07:03:17,427] Trial 125 finished with value: 8.92829004334786 and parameters: {'n_layers': 4, 'n_units_0': 81, 'n_units_1': 65, 'n_units_2': 60, 'n_units_3': 49, 'activation': 'tanh', 'learning_rate': 0.002691304348283052, 'batch_size': 256, 'optimizer': 'LBFGS', 'max_epochs': 340}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 04:13:31.5640Z [I 2025-05-08 07:13:31,563] Trial 126 finished with value: 8.447074826241163 and parameters: {'n_layers': 2, 'n_units_0': 85, 'n_units_1': 84, 'activation': 'logistic', 'learning_rate': 0.004275442953907626, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 324}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 04:17:42.2147Z [I 2025-05-08 07:17:42,214] Trial 127 finished with value: 8.414876262731962 and parameters: {'n_layers': 3, 'n_units_0': 88, 'n_units_1': 81, 'n_units_2': 74, 'activation': 'tanh', 'learning_rate': 0.0020645700262730583, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 311}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 04:19:46.3676Z [I 2025-05-08 07:19:46,367] Trial 128 finished with value: 21.5398396271214 and parameters: {'n_layers': 1, 'n_units_0': 84, 'activation': 'tanh', 'learning_rate': 0.05043203317298399, 'batch_size': 256, 'optimizer': 'SGD', 'max_epochs': 381}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 04:25:59.2524Z [I 2025-05-08 07:25:59,252] Trial 129 finished with value: 8.919323771892776 and parameters: {'n_layers': 2, 'n_units_0': 57, 'n_units_1': 88, 'activation': 'tanh', 'learning_rate': 0.006139686497898695, 'batch_size': 32, 'optimizer': 'Adam', 'max_epochs': 361}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 04:31:30.8370Z [I 2025-05-08 07:31:30,836] Trial 130 finished with value: 8.154163312903176 and parameters: {'n_layers': 7, 'n_units_0': 91, 'n_units_1': 96, 'n_units_2': 65, 'n_units_3': 36, 'n_units_4': 51, 'n_units_5': 44, 'n_units_6': 66, 'activation': 'tanh', 'learning_rate': 0.0013528224904306879, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 256}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 04:38:42.0329Z [I 2025-05-08 07:38:42,032] Trial 131 finished with value: 8.09545550548631 and parameters: {'n_layers': 3, 'n_units_0': 90, 'n_units_1': 94, 'n_units_2': 63, 'activation': 'tanh', 'learning_rate': 0.0008349175120045218, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 350}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 04:45:40.2336Z [I 2025-05-08 07:45:40,233] Trial 132 finished with value: 8.80407398594537 and parameters: {'n_layers': 3, 'n_units_0': 86, 'n_units_1': 93, 'n_units_2': 69, 'activation': 'tanh', 'learning_rate': 0.0008128208933033086, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 369}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 04:53:52.6542Z [I 2025-05-08 07:53:52,654] Trial 133 finished with value: 9.255387670310432 and parameters: {'n_layers': 4, 'n_units_0': 82, 'n_units_1': 90, 'n_units_2': 62, 'n_units_3': 20, 'activation': 'tanh', 'learning_rate': 0.0011084506562525714, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 344}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 04:59:57.2897Z [I 2025-05-08 07:59:57,289] Trial 134 finished with value: 8.250684305189859 and parameters: {'n_layers': 2, 'n_units_0': 89, 'n_units_1': 85, 'activation': 'tanh', 'learning_rate': 0.0016165772669452126, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 145}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 05:19:48.2550Z [I 2025-05-08 08:19:48,254] Trial 135 finished with value: 8.247425486819782 and parameters: {'n_layers': 3, 'n_units_0': 80, 'n_units_1': 98, 'n_units_2': 57, 'activation': 'tanh', 'learning_rate': 0.0005935376364206312, 'batch_size': 16, 'optimizer': 'Adam', 'max_epochs': 332}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 05:20:57.4709Z [I 2025-05-08 08:20:57,470] Trial 136 finished with value: 59.22762548924066 and parameters: {'n_layers': 2, 'n_units_0': 67, 'n_units_1': 88, 'activation': 'tanh', 'learning_rate': 0.0018949209091613972, 'batch_size': 256, 'optimizer': 'LBFGS', 'max_epochs': 285}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 05:31:14.7275Z [I 2025-05-08 08:31:14,727] Trial 137 finished with value: 8.121542326926974 and parameters: {'n_layers': 3, 'n_units_0': 93, 'n_units_1': 91, 'n_units_2': 68, 'activation': 'tanh', 'learning_rate': 0.0008014883040144911, 'batch_size': 32, 'optimizer': 'Adam', 'max_epochs': 389}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 05:35:41.1966Z [I 2025-05-08 08:35:41,196] Trial 138 finished with value: 9.425791772424711 and parameters: {'n_layers': 4, 'n_units_0': 78, 'n_units_1': 93, 'n_units_2': 75, 'n_units_3': 28, 'activation': 'tanh', 'learning_rate': 0.0012287083898174886, 'batch_size': 128, 'optimizer': 'RMSprop', 'max_epochs': 379}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 05:40:57.1420Z [I 2025-05-08 08:40:57,141] Trial 139 finished with value: 7.767897336758759 and parameters: {'n_layers': 2, 'n_units_0': 90, 'n_units_1': 96, 'activation': 'tanh', 'learning_rate': 0.0029559147045339026, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 184}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 05:46:26.5656Z [I 2025-05-08 08:46:26,565] Trial 140 finished with value: 13.946560365212198 and parameters: {'n_layers': 1, 'n_units_0': 91, 'activation': 'tanh', 'learning_rate': 0.0035030577836254262, 'batch_size': 256, 'optimizer': 'Adam', 'max_epochs': 135}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 05:52:53.0917Z [I 2025-05-08 08:52:53,091] Trial 141 finished with value: 8.00893189584633 and parameters: {'n_layers': 2, 'n_units_0': 87, 'n_units_1': 100, 'activation': 'tanh', 'learning_rate': 0.0023904302279554937, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 202}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 05:59:06.9319Z [I 2025-05-08 08:59:06,931] Trial 142 finished with value: 7.79205528010943 and parameters: {'n_layers': 2, 'n_units_0': 87, 'n_units_1': 100, 'activation': 'tanh', 'learning_rate': 0.0029997955619313573, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 195}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 06:03:37.4543Z [I 2025-05-08 09:03:37,454] Trial 143 finished with value: 7.946951457986008 and parameters: {'n_layers': 2, 'n_units_0': 87, 'n_units_1': 100, 'activation': 'tanh', 'learning_rate': 0.0029979508954231632, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 201}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 06:13:29.5092Z [I 2025-05-08 09:13:29,508] Trial 144 finished with value: 12.67108445341542 and parameters: {'n_layers': 1, 'n_units_0': 87, 'activation': 'tanh', 'learning_rate': 0.003047623827429659, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 205}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 06:18:36.6559Z [I 2025-05-08 09:18:36,655] Trial 145 finished with value: 7.97498774512614 and parameters: {'n_layers': 2, 'n_units_0': 95, 'n_units_1': 100, 'activation': 'tanh', 'learning_rate': 0.004998817714107859, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 180}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 06:26:10.4626Z [I 2025-05-08 09:26:10,462] Trial 146 finished with value: 8.10917507505845 and parameters: {'n_layers': 2, 'n_units_0': 94, 'n_units_1': 100, 'activation': 'tanh', 'learning_rate': 0.002236915182958655, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 196}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 06:26:33.8222Z [I 2025-05-08 09:26:33,822] Trial 147 finished with value: 1000000.0 and parameters: {'n_layers': 1, 'n_units_0': 86, 'activation': 'relu', 'learning_rate': 0.005144063392766057, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 187}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 06:30:40.2142Z [I 2025-05-08 09:30:40,214] Trial 148 finished with value: 8.468193232966485 and parameters: {'n_layers': 2, 'n_units_0': 88, 'n_units_1': 100, 'activation': 'tanh', 'learning_rate': 0.006735149510999822, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 173}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 06:35:12.2916Z [I 2025-05-08 09:35:12,291] Trial 149 finished with value: 8.127594518895133 and parameters: {'n_layers': 2, 'n_units_0': 97, 'n_units_1': 98, 'activation': 'tanh', 'learning_rate': 0.004446034025883105, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 182}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 06:43:28.9018Z [I 2025-05-08 09:43:28,901] Trial 150 finished with value: 8.332589790233568 and parameters: {'n_layers': 2, 'n_units_0': 92, 'n_units_1': 96, 'activation': 'logistic', 'learning_rate': 0.0024733544129946407, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 160}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 06:49:32.6730Z [I 2025-05-08 09:49:32,672] Trial 151 finished with value: 7.882731441992189 and parameters: {'n_layers': 2, 'n_units_0': 89, 'n_units_1': 97, 'activation': 'tanh', 'learning_rate': 0.003022789356836311, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 197}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 06:54:22.1977Z [I 2025-05-08 09:54:22,197] Trial 152 finished with value: 8.355153723899997 and parameters: {'n_layers': 2, 'n_units_0': 84, 'n_units_1': 97, 'activation': 'tanh', 'learning_rate': 0.003780107729491633, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 193}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 07:04:37.9732Z [I 2025-05-08 10:04:37,973] Trial 153 finished with value: 12.667144833289743 and parameters: {'n_layers': 1, 'n_units_0': 95, 'activation': 'tanh', 'learning_rate': 0.0027489983627765864, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 215}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 07:11:25.6898Z [I 2025-05-08 10:11:25,689] Trial 154 finished with value: 8.067144904134105 and parameters: {'n_layers': 2, 'n_units_0': 88, 'n_units_1': 99, 'activation': 'tanh', 'learning_rate': 0.001971619581185409, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 198}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 07:13:58.2091Z [I 2025-05-08 10:13:58,208] Trial 155 finished with value: 9.199111762912901 and parameters: {'n_layers': 2, 'n_units_0': 92, 'n_units_1': 96, 'activation': 'tanh', 'learning_rate': 0.020556830844484605, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 175}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 07:23:51.6470Z [I 2025-05-08 10:23:51,646] Trial 156 finished with value: 12.844350536256872 and parameters: {'n_layers': 1, 'n_units_0': 86, 'activation': 'tanh', 'learning_rate': 0.003672194690162196, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 226}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 07:31:41.5679Z [I 2025-05-08 10:31:41,567] Trial 157 finished with value: 7.958723155222489 and parameters: {'n_layers': 2, 'n_units_0': 95, 'n_units_1': 99, 'activation': 'tanh', 'learning_rate': 0.001640527829147482, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 183}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 07:34:54.3825Z [I 2025-05-08 10:34:54,382] Trial 158 finished with value: 16.370019519307238 and parameters: {'n_layers': 1, 'n_units_0': 23, 'activation': 'tanh', 'learning_rate': 0.0022990324092545074, 'batch_size': 128, 'optimizer': 'SGD', 'max_epochs': 164}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 07:35:50.1681Z [I 2025-05-08 10:35:50,167] Trial 159 finished with value: 119.19907684992782 and parameters: {'n_layers': 2, 'n_units_0': 89, 'n_units_1': 100, 'activation': 'tanh', 'learning_rate': 0.001578638712251, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 239}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 07:39:38.6605Z [I 2025-05-08 10:39:38,660] Trial 160 finished with value: 8.234571885247027 and parameters: {'n_layers': 2, 'n_units_0': 83, 'n_units_1': 98, 'activation': 'tanh', 'learning_rate': 0.012933695670164141, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 182}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 07:46:30.7371Z [I 2025-05-08 10:46:30,736] Trial 161 finished with value: 7.9092073601388035 and parameters: {'n_layers': 2, 'n_units_0': 96, 'n_units_1': 96, 'activation': 'tanh', 'learning_rate': 0.0018177649175668857, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 206}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 07:53:48.7751Z [I 2025-05-08 10:53:48,774] Trial 162 finished with value: 8.149369066775872 and parameters: {'n_layers': 2, 'n_units_0': 96, 'n_units_1': 96, 'activation': 'tanh', 'learning_rate': 0.0018762472398746507, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 210}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 07:58:55.1502Z [I 2025-05-08 10:58:55,149] Trial 163 finished with value: 8.110237208047664 and parameters: {'n_layers': 2, 'n_units_0': 94, 'n_units_1': 100, 'activation': 'tanh', 'learning_rate': 0.0031639588522208266, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 201}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 08:08:03.4806Z [I 2025-05-08 11:08:03,480] Trial 164 finished with value: 12.807272537835619 and parameters: {'n_layers': 1, 'n_units_0': 91, 'activation': 'tanh', 'learning_rate': 0.0026655611446531223, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 190}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 08:15:48.8346Z [I 2025-05-08 11:15:48,834] Trial 165 finished with value: 7.631830126857193 and parameters: {'n_layers': 2, 'n_units_0': 60, 'n_units_1': 95, 'activation': 'tanh', 'learning_rate': 0.0022159501612969822, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 150}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 08:22:47.9302Z [I 2025-05-08 11:22:47,929] Trial 166 finished with value: 8.270840764142468 and parameters: {'n_layers': 2, 'n_units_0': 93, 'n_units_1': 94, 'activation': 'tanh', 'learning_rate': 0.0022675253097937105, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 151}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 08:30:41.4996Z [I 2025-05-08 11:30:41,499] Trial 167 finished with value: 8.61748984836194 and parameters: {'n_layers': 2, 'n_units_0': 53, 'n_units_1': 96, 'activation': 'tanh', 'learning_rate': 0.0016655591302095997, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 170}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 08:39:24.2056Z [I 2025-05-08 11:39:24,205] Trial 168 finished with value: 12.802848046072418 and parameters: {'n_layers': 1, 'n_units_0': 85, 'activation': 'tanh', 'learning_rate': 0.004173794439183645, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 181}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 08:45:09.8470Z [I 2025-05-08 11:45:09,846] Trial 169 finished with value: 8.46112280138154 and parameters: {'n_layers': 2, 'n_units_0': 89, 'n_units_1': 98, 'activation': 'tanh', 'learning_rate': 0.00199954814720286, 'batch_size': 128, 'optimizer': 'RMSprop', 'max_epochs': 217}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 08:47:31.5449Z [I 2025-05-08 11:47:31,544] Trial 170 finished with value: 8.188735519254292 and parameters: {'n_layers': 3, 'n_units_0': 81, 'n_units_1': 93, 'n_units_2': 53, 'activation': 'tanh', 'learning_rate': 0.005382577808848233, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 204}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 08:52:53.3773Z [I 2025-05-08 11:52:53,377] Trial 171 finished with value: 8.152944545422972 and parameters: {'n_layers': 2, 'n_units_0': 58, 'n_units_1': 98, 'activation': 'tanh', 'learning_rate': 0.002634110858229303, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 155}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 08:56:45.8867Z [I 2025-05-08 11:56:45,886] Trial 172 finished with value: 7.860278462532031 and parameters: {'n_layers': 2, 'n_units_0': 61, 'n_units_1': 95, 'activation': 'tanh', 'learning_rate': 0.016141997938842228, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 166}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 09:01:21.3684Z [I 2025-05-08 12:01:21,368] Trial 173 finished with value: 7.846958917422022 and parameters: {'n_layers': 2, 'n_units_0': 95, 'n_units_1': 95, 'activation': 'tanh', 'learning_rate': 0.003321438994496186, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 187}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 09:07:26.1033Z [I 2025-05-08 12:07:26,103] Trial 174 finished with value: 8.000641320272052 and parameters: {'n_layers': 2, 'n_units_0': 61, 'n_units_1': 95, 'activation': 'tanh', 'learning_rate': 0.003498737626857368, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 188}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 09:11:52.3572Z [I 2025-05-08 12:11:52,356] Trial 175 finished with value: 8.315167680197717 and parameters: {'n_layers': 2, 'n_units_0': 96, 'n_units_1': 95, 'activation': 'tanh', 'learning_rate': 0.0036759755759173895, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 190}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 09:19:59.5241Z [I 2025-05-08 12:19:59,523] Trial 176 finished with value: 13.896264629543325 and parameters: {'n_layers': 1, 'n_units_0': 62, 'activation': 'tanh', 'learning_rate': 0.0030803858766094085, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 169}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 09:20:29.7387Z [I 2025-05-08 12:20:29,738] Trial 177 finished with value: 9.580019789896296 and parameters: {'n_layers': 2, 'n_units_0': 55, 'n_units_1': 97, 'activation': 'tanh', 'learning_rate': 0.007885134149756919, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 179}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 09:24:49.5639Z [I 2025-05-08 12:24:49,563] Trial 178 finished with value: 8.299785785898145 and parameters: {'n_layers': 2, 'n_units_0': 66, 'n_units_1': 95, 'activation': 'tanh', 'learning_rate': 0.004297019101536158, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 195}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 09:33:45.5042Z [I 2025-05-08 12:33:45,503] Trial 179 finished with value: 14.195296913688471 and parameters: {'n_layers': 1, 'n_units_0': 60, 'activation': 'relu', 'learning_rate': 0.003069315046490857, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 185}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 09:36:48.5680Z [I 2025-05-08 12:36:48,567] Trial 180 finished with value: 8.4941269275154 and parameters: {'n_layers': 2, 'n_units_0': 98, 'n_units_1': 100, 'activation': 'tanh', 'learning_rate': 0.014867412984598925, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 160}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 09:43:11.2412Z [I 2025-05-08 12:43:11,240] Trial 181 finished with value: 8.814519988875023 and parameters: {'n_layers': 2, 'n_units_0': 60, 'n_units_1': 93, 'activation': 'tanh', 'learning_rate': 0.0022778984355520003, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 206}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 09:48:32.6969Z [I 2025-05-08 12:48:32,696] Trial 182 finished with value: 8.45457076649685 and parameters: {'n_layers': 2, 'n_units_0': 57, 'n_units_1': 92, 'activation': 'tanh', 'learning_rate': 0.003403550333684309, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 175}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 09:52:56.9335Z [I 2025-05-08 12:52:56,933] Trial 183 finished with value: 8.367715428898347 and parameters: {'n_layers': 2, 'n_units_0': 64, 'n_units_1': 96, 'activation': 'tanh', 'learning_rate': 0.004862116072710242, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 198}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 09:54:20.5499Z [I 2025-05-08 12:54:20,549] Trial 184 finished with value: 68.40248819030636 and parameters: {'n_layers': 14, 'n_units_0': 95, 'n_units_1': 98, 'n_units_2': 20, 'n_units_3': 8, 'n_units_4': 35, 'n_units_5': 64, 'n_units_6': 14, 'n_units_7': 84, 'n_units_8': 85, 'n_units_9': 25, 'n_units_10': 29, 'n_units_11': 31, 'n_units_12': 40, 'n_units_13': 99, 'activation': 'tanh', 'learning_rate': 0.00257876340335393, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 164}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 10:01:42.3173Z [I 2025-05-08 13:01:42,317] Trial 185 finished with value: 7.928294453146339 and parameters: {'n_layers': 2, 'n_units_0': 91, 'n_units_1': 94, 'activation': 'tanh', 'learning_rate': 0.0014463353072475405, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 144}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 10:08:30.9662Z [I 2025-05-08 13:08:30,965] Trial 186 finished with value: 14.19594722456163 and parameters: {'n_layers': 1, 'n_units_0': 92, 'activation': 'tanh', 'learning_rate': 0.0018848315663047086, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 141}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 10:13:23.5281Z [I 2025-05-08 13:13:23,527] Trial 187 finished with value: 7.846122960278694 and parameters: {'n_layers': 2, 'n_units_0': 91, 'n_units_1': 94, 'activation': 'tanh', 'learning_rate': 0.002259840157641065, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 109}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 10:13:41.8141Z [I 2025-05-08 13:13:41,813] Trial 188 finished with value: 15.21277565373329 and parameters: {'n_layers': 2, 'n_units_0': 93, 'n_units_1': 94, 'activation': 'tanh', 'learning_rate': 0.0022362103059235384, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 61}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 10:19:19.1486Z [I 2025-05-08 13:19:19,148] Trial 189 finished with value: 8.521898223319338 and parameters: {'n_layers': 2, 'n_units_0': 90, 'n_units_1': 97, 'activation': 'logistic', 'learning_rate': 0.010150141589326615, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 124}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 10:24:54.6091Z [I 2025-05-08 13:24:54,608] Trial 190 finished with value: 14.071032025432327 and parameters: {'n_layers': 1, 'n_units_0': 88, 'activation': 'tanh', 'learning_rate': 0.002754802657374902, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 116}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 10:32:40.0455Z [I 2025-05-08 13:32:40,045] Trial 191 finished with value: 7.878453299836528 and parameters: {'n_layers': 2, 'n_units_0': 90, 'n_units_1': 94, 'activation': 'tanh', 'learning_rate': 0.0016134943931967831, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 190}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 10:40:46.2733Z [I 2025-05-08 13:40:46,273] Trial 192 finished with value: 8.080708605221451 and parameters: {'n_layers': 2, 'n_units_0': 95, 'n_units_1': 92, 'activation': 'tanh', 'learning_rate': 0.0016134253125086571, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 186}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 10:48:12.2318Z [I 2025-05-08 13:48:12,231] Trial 193 finished with value: 7.581004808805546 and parameters: {'n_layers': 2, 'n_units_0': 87, 'n_units_1': 100, 'activation': 'tanh', 'learning_rate': 0.002020921047453858, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 222}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 10:53:44.9942Z [I 2025-05-08 13:53:44,993] Trial 194 finished with value: 8.28467601227821 and parameters: {'n_layers': 2, 'n_units_0': 90, 'n_units_1': 95, 'activation': 'tanh', 'learning_rate': 0.001860083522695634, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 106}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 10:58:02.6776Z [I 2025-05-08 13:58:02,677] Trial 195 finished with value: 7.826402668873584 and parameters: {'n_layers': 2, 'n_units_0': 98, 'n_units_1': 98, 'activation': 'tanh', 'learning_rate': 0.003577181430524967, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 174}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 11:05:50.0997Z [I 2025-05-08 14:05:50,099] Trial 196 finished with value: 8.245885111790939 and parameters: {'n_layers': 2, 'n_units_0': 98, 'n_units_1': 97, 'activation': 'tanh', 'learning_rate': 0.0011722858736513497, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 153}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 11:09:13.1717Z [I 2025-05-08 14:09:13,171] Trial 197 finished with value: 11.750413603300643 and parameters: {'n_layers': 1, 'n_units_0': 94, 'activation': 'tanh', 'learning_rate': 0.0015266172092412535, 'batch_size': 128, 'optimizer': 'SGD', 'max_epochs': 77}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 11:15:22.8973Z [I 2025-05-08 14:15:22,897] Trial 198 finished with value: 7.939491322555715 and parameters: {'n_layers': 2, 'n_units_0': 97, 'n_units_1': 99, 'activation': 'tanh', 'learning_rate': 0.002122853866640727, 'batch_size': 128, 'optimizer': 'Adam', 'max_epochs': 222}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 11:31:59.7734Z [I 2025-05-08 14:31:59,773] Trial 199 finished with value: 8.50074764778305 and parameters: {'n_layers': 2, 'n_units_0': 98, 'n_units_1': 93, 'activation': 'tanh', 'learning_rate': 0.0018722627788203593, 'batch_size': 16, 'optimizer': 'Adam', 'max_epochs': 220}. Best is trial 27 with value: 7.372662965998451.
+2025-05-08 11:31:59.7743Z Best Hyperparameters: {'n_layers': 2, 'n_units_0': 76, 'n_units_1': 90, 'activation': 'tanh', 'learning_rate': 0.015056225554015165, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 186}
+2025-05-08 11:31:59.7760Z Оптимизация гиперпараметров MLP завершена!
+2025-05-08 11:31:59.7775Z 2025-05-08 14:31:59,777 - INFO - GPU-MLP Model Training Log - 2025-05-08 14:31:59.777374
+2025-05-08 11:31:59.8144Z Лучшие параметры MLP: {'n_layers': 2, 'n_units_0': 76, 'n_units_1': 90, 'activation': 'tanh', 'learning_rate': 0.015056225554015165, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 186}
+2025-05-08 11:31:59.9180Z Лучшее значение метрики: 7.372662965998451
+2025-05-08 11:31:59.8545Z 2025-05-08 14:31:59,777 - INFO - ==================================================
+2025-05-08 11:31:59.9342Z ====================================
+2025-05-08 11:31:59.9743Z 2025-05-08 14:31:59,777 - INFO - Component Number: 1
+2025-05-08 11:32:00.0142Z Best GPU-MLP parameters: {'n_layers': 2, 'n_units_0': 76, 'n_units_1': 90, 'activation': 'tanh', 'learning_rate': 0.015056225554015165, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 186}
+2025-05-08 11:32:00.1128Z Best GPU-MLP validation RMSE: 7.372662965998451
+2025-05-08 11:32:00.0544Z 2025-05-08 14:31:59,777 - INFO - Number of Trials: 200
+2025-05-08 11:32:00.1341Z Training logs and best parameters written to /output/MY_ARTIFACT
+2025-05-08 11:32:00.1742Z 2025-05-08 14:31:59,777 - INFO - Device: cuda
+2025-05-08 11:32:00.2542Z 2025-05-08 14:31:59,777 - INFO - ## GPU-MLP MODEL RESULTS ##
+2025-05-08 11:32:00.3496Z 2025-05-08 14:31:59,778 - INFO - Best MLP Parameters: {'n_layers': 2, 'n_units_0': 76, 'n_units_1': 90, 'activation': 'tanh', 'learning_rate': 0.015056225554015165, 'batch_size': 128, 'optimizer': 'LBFGS', 'max_epochs': 186}
+2025-05-08 11:32:00.3496Z 2025-05-08 14:31:59,778 - INFO - Best MLP Validation RMSE: 7.372662965998451
+2025-05-08 11:32:00.3898Z 2025-05-08 14:31:59,778 - INFO - ==================================================
+2025-05-08 11:32:00.4296Z 2025-05-08 14:31:59,778 - INFO - Тестовая выборка:
+2025-05-08 11:32:00.5112Z 2025-05-08 14:31:59,778 - INFO -   X_test shape: (4800, 6)
+2025-05-08 11:32:00.5112Z 2025-05-08 14:31:59,778 - INFO -   y_test shape: (4800,)
+2025-05-08 11:32:03.2317Z [[init-process] Main process terminated]
