@@ -128,7 +128,7 @@ def do_optuna_pytorch(X, y, n_trials=100, **kwargs):
             
         activation = trial.suggest_categorical("activation", ["relu", "tanh", "logistic"])
         learning_rate = trial.suggest_float("learning_rate", 1e-5, 1e-1, log=True)
-        batch_size = trial.suggest_categorical("batch_size", [16, 32, 64, 128, 256])
+        batch_size = trial.suggest_categorical("batch_size", [32_768]) # [16, 32, 64, 128, 256])
         optimizer_name = trial.suggest_categorical("optimizer", ["Adam", "SGD", "RMSprop", "LBFGS"])
         max_epochs = trial.suggest_int("max_epochs", 50, 500)
         
@@ -157,7 +157,13 @@ def do_optuna_pytorch(X, y, n_trials=100, **kwargs):
             
             # Create data loaders
             train_dataset = TensorDataset(X_train_tensor, y_train_tensor)
-            train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+            train_loader = DataLoader(
+                train_dataset,
+                batch_size=batch_size,
+                shuffle=True,
+                # num_workers=4,
+                # pin_memory=True,
+            )
             
             # Create standardization layer
             mean = X_train_tensor.mean(0, keepdim=True)
@@ -247,7 +253,7 @@ def do_optuna_pytorch(X, y, n_trials=100, **kwargs):
     
     # Create a study object to optimize the objective
     study = optuna.create_study(direction="minimize")  # rmse
-    study.optimize(optuna_pytorch_objective, n_trials=n_trials, n_jobs=1)  # Use n_jobs=1 for GPU
+    study.optimize(optuna_pytorch_objective, n_trials=n_trials, n_jobs=8)  # Use n_jobs=1 for GPU
     
     # Print the best hyperparameters found by Optuna
     best_params = study.best_params
