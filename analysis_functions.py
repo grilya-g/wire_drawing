@@ -1069,6 +1069,58 @@ def do_optuna(X, y, n_trials=100, **kwargs):
     return best_params, cur_X_test, cur_y_test, best_value
 
 
+def do_optuna_base(X, y, n_trials=50, n_splits=3, n_layers_max=30, n_neurons_max=100):
+    """
+    Optuna optimization for only n_layers and n_neurons.
+    Returns best n_layers, n_neurons, test set, and best value (rmse).
+    """
+    import optuna
+    
+    cur_X_test, cur_y_test, val_list_X, val_list_y, train_list_X, train_list_y = (
+        split_transform_one_comp_cv(X, y, n_splits=n_splits)
+    )
+
+    def objective(trial):
+        n_layers = trial.suggest_int("n_layers", 1, n_layers_max)
+        n_neurons = trial.suggest_int("n_neurons", 1, n_neurons_max)
+        hls_tuple = tuple([n_neurons] * n_layers)
+        
+        params = {
+            "hidden_layer_sizes": hls_tuple,
+            "random_state": 100,
+            "max_iter": 500,
+            "early_stopping": True,
+            "activation": "relu",
+            "solver": "adam",
+        }
+        
+        errors = np.zeros((n_splits, 9))
+        for split_idx in range(n_splits):
+            regr = make_pipeline(
+                StandardScaler(),
+                MLPRegressor(**params),
+            )
+            cur_X_train = train_list_X[split_idx]
+            cur_y_train = train_list_y[split_idx]
+            cur_X_val = val_list_X[split_idx]
+            cur_y_val = val_list_y[split_idx]
+            cur_X_train, cur_y_train = clean_input_array(cur_X_train, cur_y_train)
+            cur_X_val, cur_y_val = clean_input_array(cur_X_val, cur_y_val)
+            regr.fit(cur_X_train, cur_y_train)
+            cur_prediction = regr.predict(cur_X_val)
+            errors[split_idx] = scorer(cur_y_val, cur_prediction, regr, cur_X_train)
+        
+        val_metrics = choose_worst(errors)
+        return val_metrics[-1] if pd.notnull(val_metrics[-1]) else +1e6  # rmse
+
+    study = optuna.create_study(direction="minimize")
+    study.optimize(objective, n_trials=n_trials, n_jobs=-1)
+    best_params = study.best_params
+    best_value = study.best_value
+    print("Best n_layers and n_neurons:", best_params)
+    return best_params, cur_X_test, cur_y_test, best_value
+
+
 @ignore_warnings(category=ConvergenceWarning)
 def do_skopt(X, y, n_calls=100, **kwargs):
     n_splits = kwargs.get("n_splits", 3)
@@ -1259,6 +1311,13 @@ def do_bayes_opt(X, y, n_iter=100, **kwargs):
     return best_params, cur_X_test, cur_y_test, best_value
 
 
+def smape(y_true, y_pred):
+    """
+    Symmetric Mean Absolute Percentage Error (SMAPE)
+    """
+    return 100 * np.mean(2 * np.abs(y_pred - y_true) / (np.abs(y_true) + np.abs(y_pred) + 1e-8))
+
+
 def rmse(y_true, y_pred):
     return root_mean_squared_error(y_true, y_pred)
 
@@ -1300,12 +1359,34 @@ def test_after_opt(best_params, x, y, model_name, path_import, metric="rmse"):
         "evs": explained_variance_score,
         "mean_absolute_percentage_error": mean_absolute_percentage_error,
         "mape": mean_absolute_percentage_error,
+        "smape": smape,
+        "r2_score": r2_score,
+        "r2": r2_score,
     }
-    _metric = metrics_dict.get(metric)
-    test_error = _metric(cur_y_test, cur_prediction)
-    train_error = _metric(cur_y_train, cur_prediction_train)
-    print(f"test {metric} = {test_error}")
-    return best_regr, cur_prediction, cur_y_test, cur_X_test, test_error, train_error
+    
+    # Check if metric is a collection (list, tuple, etc.)
+    if isinstance(metric, (list, tuple)):
+        test_error = []
+        train_error = []
+        for m in metric:
+            _metric = metrics_dict.get(m)
+            if _metric is None:
+                raise ValueError(f"Unknown metric: {m}")
+            test_err = _metric(cur_y_test, cur_prediction)
+            train_err = _metric(cur_y_train, cur_prediction_train)
+            test_error.append(test_err)
+            train_error.append(train_err)
+            print(f"test {m} = {test_err}")
+        return best_regr, cur_prediction, cur_y_test, cur_X_test, test_error, train_error
+    else:
+        # Single metric case (original behavior)
+        _metric = metrics_dict.get(metric)
+        if _metric is None:
+            raise ValueError(f"Unknown metric: {metric}")
+        test_error = _metric(cur_y_test, cur_prediction)
+        train_error = _metric(cur_y_train, cur_prediction_train)
+        print(f"test {metric} = {test_error}")
+        return best_regr, cur_prediction, cur_y_test, cur_X_test, test_error, train_error
 
 
 # Настройка логгера
