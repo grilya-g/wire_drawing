@@ -1071,8 +1071,9 @@ def do_optuna(X, y, n_trials=100, **kwargs):
 
 def do_optuna_base(X, y, n_trials=50, n_splits=3, n_layers_max=30, n_neurons_max=100):
     """
-    Optuna optimization for only n_layers and n_neurons.
-    Returns best n_layers, n_neurons, test set, and best value (rmse).
+    Optuna optimization for network architecture only (n_layers and neurons per layer).  
+    Other hyperparameters are fixed to default values.
+    Returns best architecture params, test set, and best value (rmse).
     """
     import optuna
     
@@ -1081,15 +1082,21 @@ def do_optuna_base(X, y, n_trials=50, n_splits=3, n_layers_max=30, n_neurons_max
     )
 
     def objective(trial):
-        n_layers = trial.suggest_int("n_layers", 1, n_layers_max)
-        n_neurons = trial.suggest_int("n_neurons", 1, n_neurons_max)
-        hls_tuple = tuple([n_neurons] * n_layers)
-        
+        # Only optimize network architecture
+        k_layers = trial.suggest_int("n_layers", 1, n_layers_max)
+        layers = []
+        for i in range(k_layers):
+            layers.append(trial.suggest_int(f"n_units_{i}", 1, n_neurons_max))
+
+        # Fixed hyperparameters (not optimized)
         params = {
-            "hidden_layer_sizes": hls_tuple,
+            "hidden_layer_sizes": tuple(layers),
+            "learning_rate_init": 0.001,
             "random_state": 100,
-            "max_iter": 500,
             "early_stopping": True,
+            "max_iter": 500,
+            "learning_rate": "constant",
+            "alpha": 0.0001,
             "activation": "relu",
             "solver": "adam",
         }
@@ -1117,7 +1124,7 @@ def do_optuna_base(X, y, n_trials=50, n_splits=3, n_layers_max=30, n_neurons_max
     study.optimize(objective, n_trials=n_trials, n_jobs=-1)
     best_params = study.best_params
     best_value = study.best_value
-    print("Best n_layers and n_neurons:", best_params)
+    print("Best architecture:", best_params)
     return best_params, cur_X_test, cur_y_test, best_value
 
 
